@@ -1,0 +1,182 @@
+---
+title: "Imágenes"
+description: |
+  Repasando algunas opciones de Quarto para insertar imágenes.
+author:
+  - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
+    affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
+date: 2023-01-24
+categories: [Quarto, imágenes]
+image: "./thumbnails/thumbnail_24_imagenes.png"
+title-block-banner: true #- {true, false }
+draft: false
+toc: true
+toc-location: left
+toc-depth: 3
+filters:
+   - lightbox
+#css: assets/my_css_file.css
+#bibliography: references.bib
+#nocite: |
+#  @*
+---
+
+
+
+## Figuras en Rmd
+
+Las figuras en documentos Rmarkdown se podían insertar con la sintaxis de Markdown; es decir con `![](<ruta-a-la-imagen>)`, aunque yo prefería hacerlo con `knitr::include_graphics()`. Era algo así, veamos si también funciona en Quarto:
+
+
+```{r}
+#| echo: fenced
+#| fig.show: "hold"
+#| out.width: "45%"
+#| fig.align: "default"
+# graficos side to side en Rmarkdown
+# https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941/12
+
+
+knitr::include_graphics(here::here("blog", "imagenes", "post_24_img_01.jpg"))
+
+```
+
+<br>
+
+## Figuras en Quarto
+
+Documentación [aquí](https://quarto.org/docs/authoring/figures.html).
+
+Las imágenes (o figuras) se pueden insertar de múltiples maneras:
+
+
+1. La sintaxis de Pandoc:
+
+::: panel-tabset
+#### Para hacer esto ...
+
+![Una imagén centrada (75%)](./imagenes/post_24_img_01.jpg){#fig-01 fig-align="center" width="75%"}
+
+#### Has de escribir
+
+``` markdown
+![Una imagén centrada (75%)](./imagenes/post_24_img_01.jpg){#fig-01 fig-align="left" width="75%"}
+```
+
+:::
+
+
+### Subfiguras
+
+
+Documentación [aquí](https://quarto.org/docs/authoring/figures.html#subfigures).
+
+::: panel-tabset
+#### Para hacer esto ...
+
+
+::: {layout-ncol=2}
+
+![Imágen 1](./imagenes/post_24_img_01.jpg){#fig-2.1}
+
+![Imágen 2](./imagenes/post_24_img_01.jpg){#fig-2.2}
+
+Dos imágenes alineadas
+:::
+
+
+#### Has de escribir
+
+
+``` markdown
+::: {layout-ncol=2}
+
+![Imágen 1](./imagenes/post_24_img_01.jpg){#fig-2.1}
+
+![Imágen 2](./imagenes/post_24_img_01.jpg){#fig-2.2}
+
+2 imágenes alineadas
+:::
+```
+
+:::
+
+### Panel de imágenes
+
+Documentación [aquí](https://quarto.org/docs/authoring/figures.html#figure-panels).
+
+::: panel-tabset
+#### Para hacer esto ...
+
+::: {layout-nrow=2}
+![(A)](./imagenes/post_24_img_01.jpg)
+
+![(B)](./imagenes/post_24_img_01.jpg)
+
+![(C)](./imagenes/post_24_img_01.jpg)
+
+![(D)](./imagenes/post_24_img_01.jpg)
+:::
+
+#### Has de escribir
+
+``` markdown
+::: {layout-nrow=2}
+![(A)](./imagenes/post_24_img_01.jpg)
+
+![(B)](./imagenes/post_24_img_01.jpg)
+
+![(C)](./imagenes/post_24_img_01.jpg)
+
+![(D)](./imagenes/post_24_img_01.jpg)
+:::
+```
+
+:::
+
+
+### Custom layouts
+
+Documentación [aquí](https://quarto.org/docs/authoring/figures.html#complex-layouts).
+
+::: panel-tabset
+#### Para hacer esto ...
+
+
+::: {layout="[[40,-20,40], [100]]"}
+![(A)](./imagenes/post_24_img_01.jpg)
+
+![(B)](./imagenes/post_24_img_01.jpg)
+
+![(C)](./imagenes/post_24_img_01.jpg)
+:::
+
+
+#### Has de escribir
+
+``` markdown
+::: {layout="[[40,-20,40], [100]]"}
+![(A)](./imagenes/post_24_img_01.jpg)
+
+![(B)](./imagenes/post_24_img_01.jpg)
+
+![(C)](./imagenes/post_24_img_01.jpg)
+:::
+```
+:::
+
+<br><br>
+
+
+## Tamaño de las imágenes
+
+El tamaño de las imágenes es problemático (al menos para mi).
+
+[Aquí](https://quarto.org/docs/computations/execution-options.html#figure-options)
+puedes ver la documentación oficial de Quarto sobre el tamaño por defecto de las imágenes y como cambiarlo.
+
+
+[Aquí](https://r4ds.hadley.nz/quarto.html#figure-sizing) puedes ver los consejos sobre el tamaño de las imágenes de Hadley en [R4DS (2nd ed.)](https://r4ds.hadley.nz/)

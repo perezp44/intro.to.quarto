@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/02_que-es-quarto.html",
+      "/blog/03_instalación.html",
+      "/blog/04_primeros-pasos-con-RStudio.html",
+      "/blog/05_crear-documento-qmd.html",
+      "/blog/07_crear-slides.html",
+      "/blog/20_referencias-bibliograficas.html",
+      "/blog/21_layouts.html",
+      "/blog/22_shortcodes.html",
+      "/blog/23_extensiones.html",
+      "/blog/24_imagenes.html",
+      "/blog/25_css.html",
+      "/blog/26_css-bizarro.html",
+      "/blog/27_observable.html",
+      "/blog/28_phyton.html",
+      "/blog/29_tuneado-yaml.html",
+      "/blog/99_pruebas.html"
+    ]
+  }
+]

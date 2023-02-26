@@ -1,0 +1,36 @@
+---
+title: "Probando cosas"
+#author: "Nosotros"
+#subtitle: | 
+#  Viendo las posibilidades de Layout que tenemos en Quarto
+description: |
+  Post fake para hacer pruebas
+author:
+  - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
+    affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
+date: 2023-09-09
+categories: [Quarto, pruebas]
+image: "./thumbnails/thumbnail_99_pruebas.png"
+title-block-banner: true #- {true, false }
+draft: false
+toc: true
+toc-location: left
+toc-depth: 3
+#css: assets/my_css_file.css
+bibliography: bib_files/20_referencias-bibliograficas.bib
+nocite: |
+  @*
+---
+
+
+<br>
+
+## Referencias {.unnumbered}
+
+(Algunos artículos que hablan de esto ...)
+
+::: {#refs}
+:::

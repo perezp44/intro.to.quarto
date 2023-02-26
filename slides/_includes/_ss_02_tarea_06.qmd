@@ -1,0 +1,12 @@
+::: {.callout-important icon="false"}
+#### Tarea 2.6: Re-usar el contenido de `"prueba.qmd"`
+
+- Utiliza  `"prueba.qmd"` para generar un pdf
+
+- Utiliza  `"prueba.qmd"` para generar unas "revealjs slides"
+
+- Pégale un vistazo a otros posibles formatos que nos ofrece Quarto
+
+<br>
+
+:::

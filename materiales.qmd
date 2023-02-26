@@ -1,0 +1,43 @@
+---
+title: "Materiales para el Taller"
+---
+
+
+
+
+::: {.callout-note appearance="default" icon="false"}
+#### Contexto
+
+-   Durante el curso se interactuará con [R](https://cran.r-project.org/) y [Quarto](https://quarto.org/) a través de [RStudio](https://www.rstudio.com/products/rstudio/). Se recomienda tener instaladas **versiones recientes** de los 3 programas.
+
+- En la sección `Setup` tienes instrucciones para instalar el software necesario para el taller
+:::
+
+<br>
+
+
+
+## Materiales
+
+Durante el curso se utilizarán las siguientes slides:
+
+
+### [Slides 01: Presentación](./slides/slides_01_presentacion.qmd){target="_blank"}
+
+### [Slides 02: Primeros pasos](./slides/slides_02_primeros-pasos.qmd){target="_blank"}
+
+### [Slides 03: Aprendiendo a escribir en QMD (Intro a QMD)](./slides/slides_03_aprendiendo-Qmd.qmd){target="_blank"}
+
+
+
+
+
+
+
+----------------------
+
+
+Seguramente usaremos esta [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV){target="_blank"}.
+
+
+

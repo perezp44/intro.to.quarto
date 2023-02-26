@@ -1,0 +1,38 @@
+---
+#title: ""
+image: imagenes/portada_web_01.png
+about:
+  #- https://quarto.org/docs/websites/website-about.html#templates
+  template: trestles  #- {jolla, solana, trestles}
+  #- https://quarto.org/docs/websites/website-about.html#image
+  image-width: 28em  #- 39
+  image-shape: rectangle
+  #- https://quarto.org/docs/websites/website-about.html#links
+  links:
+    - icon: github
+      href: https://github.com/perezp44
+    - icon: twitter
+      href: https://twitter.com/pjpv4444
+    - icon: envelope
+      url: "mailto:<pedro.j.perez@uv.es>"
+---
+
+#### **Bienvenidos!!!**
+
+a la web del curso "Creación de documentos reproducibles y páginas web con R". Un título más amable podría ser "Escribiendo con R y Quarto".
+
+El curso es una **introducción a Quarto**. **[Quarto](https://quarto.org/){target="_blank"}**.  es un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc...) científicas y técnicas. **Usaremos Quarto y R a través de RStudio**.
+
+
+<br>
+
+El profesor soy yo, [Pedro J. Pérez](about.qmd).
+
+<br>
+
+Los materiales del curso están en [Materiales](materiales.qmd). Para seguir el curso hay que tener acceso a R, RStudio y Quarto. En [Info](info.qmd) tienes las instrucciones de instalación de los 3 programas.
+
+
+<br>
+
+Los detalles sobre el curso: horario, aula , etc... están en [Info](info.qmd)

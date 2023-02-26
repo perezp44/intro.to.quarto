@@ -1,0 +1,63 @@
+---
+title: "Investigación reproducible"
+#author: "Nosotros"
+#subtitle: | 
+#  Viendo las posibilidades de Layout que tenemos en Quarto
+description: |
+  Se enfatiza la importancia de la IR
+author:
+  - name: Pedro J. Pérez
+    url: https://perezp44.github.io/pjperez.web/
+    affiliation: Universitat de València
+    affiliation-url: https://www.uv.es
+    orcid: 0000-0001-9375-6330
+date: 2023-01-02
+categories: [reproducibilidad]
+image: "./thumbnails/thumbnail_01_R-RStudio.png"
+title-block-banner: true #- {true, false }
+draft: false
+toc: true
+toc-location: left
+toc-depth: 3
+number-sections: true
+number-depth: 2
+
+sort: "date asc"    #-"title"
+fields: [image, date, description, categories, title, author, reading-time]
+
+#css: assets/my_css_file.css
+#bibliography: references.bib
+#nocite: |
+#  @*
+---
+
+
+Reproducibilidad significa que los datos y el código de investigación están disponibles para que otros sean capaces de obtener los mismos resultados alcanzados en sus trabajos. Este concepto está íntimamente relacionado con el de replicabilidad, el acto de repetir una metodología científica con el objetivo de alcanzar conclusiones similares. Estos conceptos son elementos centrales de la investigación empírica.
+
+<https://open-science-training-handbook.github.io/Open-Science-Training-Handbook_ES/>
+
+Mejorar la reproducibilidad conduce a aumentar el rigor y la calidad de los trabajos científicos y, por tanto, a una mayor confianza en la ciencia
+
+La investigación reproducible es un movimiento que busca mejorar la calidad de la investigación científica al permitir que los resultados sean verificados y replicados por otros investigadores. Esto se logra a través del uso de herramientas y recursos para documentar el proceso de investigación, desde el diseño hasta el análisis de los datos[2]
+[1]
+. Esta práctica también ayuda a reducir los sesgos en la publicación de resultados[2]
+.La importancia de la investigación reproducible radica en su capacidad para mejorar la confianza en los resultados científicos, ya que permite a otros verificar y replicar los resultados. Esto también ayuda a prevenir errores y fraudes en la investigación científica[1]
+. Además, esta práctica puede ayudar a reducir el costo y el tiempo necesarios para realizar una investigación[3]
+.Existen varios recursos disponibles para hacer una investigación reproducible. Por ejemplo, hay directrices para redactar artículos reproducibles[4]
+, así como guías directrices para informes Equator[2]
+que pueden ser utilizadas por los investigadores. También hay herramientas como GitBook[2]
+que pueden ser utilizadas para organizar proyectos reproducibles. Además, hay recursos docentes relacionados con la reproducibilidad en la Investigación Cualitativa (CIG)[4]
+, así como recomendaciones sobre cómo abordar un proyecto de investigación[3]
+.
+::: {.callout-warning icon="false" collapse="true"}
+##### Un poco de historia: en un principio fueron los dinosaurios, luego Rmarkdown
+
+Quarto es la segunga generación de Rmarkdown y es el objeto de estudio del curso, así que ya lo veremos
+
+Quarto y Rmarkdown sirven para confeccionar documentos, especialmente documentos cientifico-tecnicos. Estos documentos serán reproducibles.
+
+La idea de documentos reproducibles viene de Literate Programming de Donald Knuth
+
+
+En R siempre ha habido estas herramientas Sweave, pero después knitr
+:::

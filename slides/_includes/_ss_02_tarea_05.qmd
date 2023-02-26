@@ -1,0 +1,18 @@
+::: {.callout-important icon="false"}
+#### Tarea 2.5: Crear un fichero `.qmd` (Un Quarto document)
+
+- Cierra RStudio 
+
+- Crea un "Quarto document" llamado `"prueba.qmd"`. Tienes que crearlo dentro del Qproject  `"my_primer_qproject"`
+
+- El fichero que acabamos de crear es nuestro **documento fuente**
+
+- Pégale un vistazo, antes de que Quarto lo procese, para intentar descubrir sus partes
+
+- Procesa ("Render") el documento `.qmd` que acabas de crear
+
+- ¿Qué ha pasado?
+
+<br>
+
+:::

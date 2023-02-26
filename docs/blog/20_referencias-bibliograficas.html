@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Pedro J. Pérez">
+<meta name="description" content="¿Cómo incluir referencias bibliográficas en documentos .qmd? Una buena opción es a través de ficheros .bib creados en Zotero.">
+
+<title>Escribiendo con R y Quarto (aún muy WIP) - Referencias bibliográficas</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../imagenes/ababol_redondeado.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la busqueda",
+    "search-hide-matches-text": "Esconder resultados adicionales",
+    "search-more-match-text": "hay más resultados en este documento",
+    "search-more-matches-text": "más resultados en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Escribiendo con R y Quarto (aún muy WIP)</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../index.html"><i class="bi bi-house-door" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../info.html">
+ <span class="menu-text">Info</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../materiales.html">
+ <span class="menu-text">Materiales</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../recursos.html">
+ <span class="menu-text">Recursos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">Pedro J. Pérez</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/perezp44"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/pjpv4444"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:pedro.j.perez@uv.es"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-right">
+      <h1 class="title">Referencias bibliográficas</h1>
+                  <div>
+        <div class="description">
+          <p>¿Cómo incluir referencias bibliográficas en documentos <code>.qmd</code>? Una buena opción es a través de ficheros <code>.bib</code> creados en <a href="https://www.zotero.org/">Zotero</a>.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Quarto</div>
+                <div class="quarto-category">bibliografía</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-heading">Afiliación</div>
+    
+      <div class="quarto-title-meta-contents">
+      <a href="https://perezp44.github.io/pjperez.web/">Pedro J. Pérez</a> <a href="https://orcid.org/0000-0001-9375-6330" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="https://www.uv.es">
+              Universitat de València
+              </a>
+            </p>
+        </div>
+      </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Fecha de Publicación</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">20 de enero de 2023</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Fecha de modificación</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">20 de febrero de 2023</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro"><span class="toc-section-number">1</span>  Intro</a></li>
+  <li><a href="#cómo-gestionar-las-referencias-en-quarto" id="toc-cómo-gestionar-las-referencias-en-quarto" class="nav-link" data-scroll-target="#cómo-gestionar-las-referencias-en-quarto"><span class="toc-section-number">2</span>  ¿Cómo gestionar las referencias en Quarto?</a>
+  <ul class="collapse">
+  <li><a href="#introducir-la-referencias" id="toc-introducir-la-referencias" class="nav-link" data-scroll-target="#introducir-la-referencias">2.1 Introducir la referencias</a></li>
+  <li><a href="#creación-del-fichero-.bib" id="toc-creación-del-fichero-.bib" class="nav-link" data-scroll-target="#creación-del-fichero-.bib">2.2 Creación del fichero <code>.bib</code></a></li>
+  <li><a href="#referencia-el-fichero-bib-en-el-yaml" id="toc-referencia-el-fichero-bib-en-el-yaml" class="nav-link" data-scroll-target="#referencia-el-fichero-bib-en-el-yaml">2.3 Referencia el fichero bib` en el yaml</a></li>
+  <li><a href="#estilo-de-las-referencias" id="toc-estilo-de-las-referencias" class="nav-link" data-scroll-target="#estilo-de-las-referencias">2.4 Estilo de las referencias</a></li>
+  </ul></li>
+  <li><a href="#inclusión-de-las-referencias" id="toc-inclusión-de-las-referencias" class="nav-link" data-scroll-target="#inclusión-de-las-referencias"><span class="toc-section-number">3</span>  Inclusión de las referencias</a></li>
+  <li><a href="#inclusión-de-citas" id="toc-inclusión-de-citas" class="nav-link" data-scroll-target="#inclusión-de-citas"><span class="toc-section-number">4</span>  Inclusión de citas</a>
+  <ul class="collapse">
+  <li><a href="#sintaxís-para-las-citas" id="toc-sintaxís-para-las-citas" class="nav-link" data-scroll-target="#sintaxís-para-las-citas">Sintaxís para las citas</a></li>
+  </ul></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/intro.to.quarto/edit/main/blog/20_referencias-bibliograficas.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/intro.to.quarto/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
+
+
+
+
+<section id="intro" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="intro"><span class="header-section-number">1</span> Intro</h2>
+<p>Gestionar y poner en el formato adecuado las referencias bibliográficas no es muy divertido; una forma de hacerlo es a mano. No problem, pero creo que es más sensato gestionarlas con un <a href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software">gestor bibliográfico</a>. Por supuesto que esto tiene un coste de entrada pero no es demasiado alto y el hacerlo facilita después la gestión de estas. Entre los beneficios que tiene gestionar las referencias con un gestor están: tener las referencias organizadas y a mano para poder reusarlas, evitar errores de la transcripción a mano o por copia y pega, facilita la organización y clasificación de las citas en categorías y, principalmente, posibilita la generación de listados bibliográficos con un simple clic en diversos formatos (APA, Chicago etc …)</p>
+<p>Hay muchos <a href="https://es.wikipedia.org/wiki/Gestor_de_referencias_bibliogr%C3%A1ficas">gestores bibliográficos</a>. Los más usados son <a href="https://www.mendeley.com/">Mendeley</a> y <a href="https://www.zotero.org/">Zotero</a>, aunque últimamente oigo hablar mucho de <a href="https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex">CiteDrive</a>.</p>
+<p>No soy un power user de gestores bibliográficos pero uso cada vez más <a href="https://www.zotero.org/">Zotero</a>. Zotero es un gestor bibliográfico de código abierto que cuenta con <strong>extensiones para los principales navegadores</strong> (Firefox, Vivaldi, Chrome, Safari, Opera, …) que <strong>permiten guardar referencias</strong>, ya sean estas artículos, libros, páginas web, libros electrónicos, imágenes, audio, vídeo digital etc … <strong>con un solo clic</strong>. Una vez añadida una referencia, se pueden añadir, notas, etiquetas y relacionarla con otras referencias; además, las referencias se pueden organizar en colecciones. Ilya Kashnitsky tiene <a href="https://ikashnitsky.github.io/2019/zotero/">aquí</a> un fantástico post donde explica las ventajas de Zotero y cómo usarlo.</p>
+<p>El caso es que los gestores bibliográficos, ademas de ayudarnos a gestionar nuestras referencias bibliográficas, nos permiten exportar y generar listados de referencias en distintos formatos. Veamos cómo hacerlo en el entorno Quarto.</p>
+</section>
+<section id="cómo-gestionar-las-referencias-en-quarto" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="cómo-gestionar-las-referencias-en-quarto"><span class="header-section-number">2</span> ¿Cómo gestionar las referencias en Quarto?</h2>
+<p>Una vez tenemos las referencias en Zotero, o en otro gestor bibliográfico, podemos crear una colección con las referencias que usaremos en un proyecto. A partir de ahí se puede fácilmente crear listados con las referencias en múltiples formatos, incluido BibTeX que es el que usa Latex y el que usaremos con Quarto<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>Para generar nuestro listado de referencias con Quarto tenemos que:</p>
+<ol type="1">
+<li><p>Tener las referencias en Zotero, mejor en una colección</p></li>
+<li><p>generar un fichero <code>.bib</code> con los metadatos de las referencias</p></li>
+<li><p>Incluir la ruta al archivo <code>.bib</code> en el yaml de nuestro documento <code>.qmd</code></p></li>
+<li><p>Por defecto Quarto generará el listado de referencias en formato <a href="https://www.chicagomanualofstyle.org/home.html">Chicago Manual of style 17th ed.</a>. Si quieres usar otro formato tendrás que incluir en el yaml de nuestro documento <code>.qmd</code> la ruta al fichero<code>.csl</code> con el estilo que queramos dar al listado de referencias.</p></li>
+</ol>
+<section id="introducir-la-referencias" class="level3">
+<h3 class="anchored" data-anchor-id="introducir-la-referencias">2.1 Introducir la referencias</h3>
+<section id="con-zotero" class="level4">
+<h4 class="anchored" data-anchor-id="con-zotero">Con Zotero</h4>
+<p>Lo primero es tener las referencias en un gestor bibliográfico, por ejemplo Zotero. No explicaré en detalle este paso pero puedes ver la documentación oficial, por ejemplo esta <a href="https://www.zotero.org/support/quick_start_guide">Quick Start Guide</a>.</p>
+<p>Tienes que instalar Zotero y luego una extensión para tu navegador favorito, de esta forma puedes añadir una referencia a tu base de datos con un solo clic: solo tendrás que ir a la pagina web donde este el articulo/vídeo/libro o lo que sea, y pinchar con el botón derecho del ratón y seleccionar <code>Zotero Connector &gt; Guardar a Zotero &gt; Save to Zotero (Embedded metadata)</code>. Puedes ver un ejemplo en la imagen siguiente:</p>
+<div id="fig-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="imagenes/post_20_img_01.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Gráfico&nbsp;1: Guardando una referencia con Zotero Connector</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="desde-rstudio" class="level4">
+<h4 class="anchored" data-anchor-id="desde-rstudio">Desde RStudio</h4>
+<p>También podemos añadir referencias directamente desde RStudio. Para ello tenemos que <strong>usar el “editor visual” de RStudio</strong>. <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/">Aquí</a> lo explica Mine Çetinkaya-Rundel para el caso de que tengamos el DOI de la referencia. Simplemente hay que:</p>
+<ul>
+<li>Activar el editor visual &gt; Insert &gt; Citation … &gt; From DOI (en el menú de la izquierda) &gt; Pegar el DOI y pinchar en Search &gt; una vez ha encontrado la referencia, solo queda pinchar en Insert</li>
+</ul>
+<p>Con esta secuencia se generará un fichero <code>.bib</code> ,si es que no hay uno ya asociado al documento .qmd. Si ya hubiese un documento .bib, se añadiría la referencia a este.</p>
+</section>
+</section>
+<section id="creación-del-fichero-.bib" class="level3">
+<h3 class="anchored" data-anchor-id="creación-del-fichero-.bib">2.2 Creación del fichero <code>.bib</code></h3>
+<p>Para generar las citas y bibliografía necesitaremos un archivo <code>.bib</code> que contenga los metadatos de las referencias que queremos introducir en nuestro archivo <code>.qmd</code>. Este archivo <code>.bib</code> se puede generar de muchas maneras, por ejemplo a mano copiando y pegando, o con Zotero, o desde RStudio, o … Veamos como se hace desde Zotero. Como puedes ver en la imagen de bajo tengo distintas colecciones en Zotero, selecciono la carpeta/colección que quiero exportar con el botón derecho del ratón y pincho en “exportar”. Solo queda seleccionar el formato de exportación. Puedes elegir “better BibTex” o “Bibtext”, los dos funcionarán. Se nos creará un fichero <code>.bib</code> con los metadatos de las referencias bibliográficas que vamos a usar.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-2.1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="imagenes/post_20_img_02_zotero.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Gráfico&nbsp;2: Exportando una colección de referencias</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-2.2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="imagenes/post_20_img_03.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Gráfico&nbsp;3: Exportando a formato Bibtex</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p>Creando el fichero <code>.bib</code> desde Zotero</p>
+</div>
+</div>
+</div>
+<p>El fichero <code>.bib</code> contendrá un listado con los metadatos de nuestras referencias; algo como:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bib number-lines code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1"></a><span class="va">@article</span>{<span class="ot">rodr</span>í<span class="ot">guez</span>-<span class="ot">sanchez2016</span>,</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="dt">title</span> = {Ciencia reproducible: ¿qué, por qué, cómo?},</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="dt">author</span> = {{Rodríguez-Sanchez}, Francisco and {Pérez-Luque}, {Antonio Jesús} and Bartomeus, Ignasi and Varela, Sara},</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    <span class="dt">year</span> = {2016},</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="dt">month</span> = {08},</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    <span class="dt">date</span> = {2016-08-22},</span>
+<span id="cb1-7"><a href="#cb1-7"></a>    <span class="dt">journal</span> = {Ecosistemas},</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    <span class="dt">pages</span> = {83--92},</span>
+<span id="cb1-9"><a href="#cb1-9"></a>    <span class="dt">volume</span> = {25},</span>
+<span id="cb1-10"><a href="#cb1-10"></a>    <span class="dt">number</span> = {2},</span>
+<span id="cb1-11"><a href="#cb1-11"></a>    <span class="dt">doi</span> = {10.7818/ecos.2016.25-2.11},</span>
+<span id="cb1-12"><a href="#cb1-12"></a>    <span class="dt">url</span> = {http://dx.doi.org/10.7818/ECOS.2016.25-2.11}</span>
+<span id="cb1-13"><a href="#cb1-13"></a>}</span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="va">@article</span>{<span class="ot">wickham2010a</span>,</span>
+<span id="cb1-16"><a href="#cb1-16"></a>    <span class="dt">title</span> = {Graphics for Statistics and Data Analysis with{<span class="ch">\emph</span>{R}}},</span>
+<span id="cb1-17"><a href="#cb1-17"></a>    <span class="dt">author</span> = {Wickham, Hadley and Grolemund, Garrett},</span>
+<span id="cb1-18"><a href="#cb1-18"></a>    <span class="dt">year</span> = {2010},</span>
+<span id="cb1-19"><a href="#cb1-19"></a>    <span class="dt">date</span> = {2010},</span>
+<span id="cb1-20"><a href="#cb1-20"></a>    <span class="dt">journal</span> = {Journal of Statistical Software},</span>
+<span id="cb1-21"><a href="#cb1-21"></a>    <span class="dt">volume</span> = {36},</span>
+<span id="cb1-22"><a href="#cb1-22"></a>    <span class="dt">number</span> = {Book Review 3},</span>
+<span id="cb1-23"><a href="#cb1-23"></a>    <span class="dt">doi</span> = {10.18637/jss.v036.b03},</span>
+<span id="cb1-24"><a href="#cb1-24"></a>    <span class="dt">url</span> = {http://dx.doi.org/10.18637/jss.v036.b03},</span>
+<span id="cb1-25"><a href="#cb1-25"></a>    <span class="dt">langid</span> = {en}</span>
+<span id="cb1-26"><a href="#cb1-26"></a>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="referencia-el-fichero-bib-en-el-yaml" class="level3">
+<h3 class="anchored" data-anchor-id="referencia-el-fichero-bib-en-el-yaml">2.3 Referencia el fichero bib` en el yaml</h3>
+<p>Una vez tenemos el fichero <code>.bib</code> con los datos de nuestras referencias, tenemos que referenciarlo en el yaml de nuestro documento <code>.qmd</code>; concretamente así:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi Documento"</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> my_references.bib</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este caso el fichero <code>.bib</code> y el fichero <code>.qmd</code> estarían en la misma carpeta. Si el fichero <code>.bib</code> estuviese en una subcarpeta, tendríamos que especificar la ruta, quedando el yaml como:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mi Documento"</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> my_subcarpeta/my_references.bib</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="estilo-de-las-referencias" class="level3">
+<h3 class="anchored" data-anchor-id="estilo-de-las-referencias">2.4 Estilo de las referencias</h3>
+<p>Ya he dicho que por defecto Zotero (y Pandoc) usan el <a href="https://chicagomanualofstyle.org/">Chicago Manual of Style</a> pero podemos cambiar el estilo usando un archivo <code>.csl</code>y referenciando en nuestro yaml:</p>
+<pre><code>---
+title: "Mi Documento"
+bibliography: my_references.bib
+csl: bib_files/apa_7.csl
+---</code></pre>
+<p>Podemos descargar ficheros <code>.csl</code> con multitud de formatos para nuestras citas del repositorio de Zotero, <a href="https://www.zotero.org/styles?q=apa">aquí</a> . CSL significa <a href="https://citationstyles.org">Citation Style Language</a>. BibTex es limitado para poder almacenar adecuadamente determinadas referencias, por ejemplo no puede diferenciar entre por ejemplo magazine/newspaper articles and journal articles, por eso finalmente</p>
+</section>
+</section>
+<section id="inclusión-de-las-referencias" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="inclusión-de-las-referencias"><span class="header-section-number">3</span> Inclusión de las referencias</h2>
+<p>En la sección anterior hemos dispuesto todo para poder incluir en nuestros documentos <code>.qmd</code> las referencias bibliográficas usando ficheros <code>.bib</code>. Sí, pero aún no las hemos incluido, ¿cómo lo hacemos? Sin hacer nada, si el yaml incluye un fichero <code>.bib</code>, se incluirá automáticamente un apartado al final con las referencias del fichero que hayamos citado en nuestro <code>.qmd</code>. También podemos incluir explicitamente ese apartado así:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">### Referencias {.unnumbered}</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a>::: {#refs}</span>
+<span id="cb5-4"><a href="#cb5-4"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Si quisiéramos incluir todas las referencias presentes en el fichero <code>.bib</code>, incluso aunque no las hayamos citado en el texto, tendríamos que incluir en nuestro yaml lo siguiente:</p>
+<pre><code>---
+nocite: |
+  @*
+---</code></pre>
+</section>
+<section id="inclusión-de-citas" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="inclusión-de-citas"><span class="header-section-number">4</span> Inclusión de citas</h2>
+<p>Generalmente en el texto de un artículo se citan los articulos que figuran en el apartado de referencias.</p>
+<p>Tenemos ya un fichero <code>.bib</code> con las referencias, ¿cómo incluimos citas a ellos en nuestro fichero <code>.qmd</code>? Podemos seguir escribiendo y gestionando estas citas a mano, pero si queremos hacerlo “automaticamente”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> tenemos que saber cómo hacerlo.</p>
+<p>Imagina que tenemos un fichero llamado <code>my_references.bib</code> con 2 referencias, por ejemplo:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bib number-lines code-with-copy"><code class="sourceCode bibtex"><span id="cb7-1"><a href="#cb7-1"></a><span class="va">@article</span>{<span class="ot">rodr</span>í<span class="ot">guez</span>-<span class="ot">sanchez2016</span>,</span>
+<span id="cb7-2"><a href="#cb7-2"></a>    <span class="dt">title</span> = {Ciencia reproducible: ¿qué, por qué, cómo?},</span>
+<span id="cb7-3"><a href="#cb7-3"></a>    <span class="dt">author</span> = {{Rodríguez-Sanchez}, Francisco and {Pérez-Luque}, {Antonio Jesús} and Bartomeus, Ignasi and Varela, Sara},</span>
+<span id="cb7-4"><a href="#cb7-4"></a>    <span class="dt">year</span> = {2016},</span>
+<span id="cb7-5"><a href="#cb7-5"></a>    <span class="dt">month</span> = {08},</span>
+<span id="cb7-6"><a href="#cb7-6"></a>    <span class="dt">date</span> = {2016-08-22},</span>
+<span id="cb7-7"><a href="#cb7-7"></a>    <span class="dt">journal</span> = {Ecosistemas},</span>
+<span id="cb7-8"><a href="#cb7-8"></a>    <span class="dt">pages</span> = {83--92},</span>
+<span id="cb7-9"><a href="#cb7-9"></a>    <span class="dt">volume</span> = {25},</span>
+<span id="cb7-10"><a href="#cb7-10"></a>    <span class="dt">number</span> = {2},</span>
+<span id="cb7-11"><a href="#cb7-11"></a>    <span class="dt">doi</span> = {10.7818/ecos.2016.25-2.11},</span>
+<span id="cb7-12"><a href="#cb7-12"></a>    <span class="dt">url</span> = {http://dx.doi.org/10.7818/ECOS.2016.25-2.11}</span>
+<span id="cb7-13"><a href="#cb7-13"></a>}</span>
+<span id="cb7-14"><a href="#cb7-14"></a></span>
+<span id="cb7-15"><a href="#cb7-15"></a><span class="va">@article</span>{<span class="ot">wickham2010a</span>,</span>
+<span id="cb7-16"><a href="#cb7-16"></a>    <span class="dt">title</span> = {Graphics for Statistics and Data Analysis with{<span class="ch">\emph</span>{R}}},</span>
+<span id="cb7-17"><a href="#cb7-17"></a>    <span class="dt">author</span> = {Wickham, Hadley and Grolemund, Garrett},</span>
+<span id="cb7-18"><a href="#cb7-18"></a>    <span class="dt">year</span> = {2010},</span>
+<span id="cb7-19"><a href="#cb7-19"></a>    <span class="dt">date</span> = {2010},</span>
+<span id="cb7-20"><a href="#cb7-20"></a>    <span class="dt">journal</span> = {Journal of Statistical Software},</span>
+<span id="cb7-21"><a href="#cb7-21"></a>    <span class="dt">volume</span> = {36},</span>
+<span id="cb7-22"><a href="#cb7-22"></a>    <span class="dt">number</span> = {Book Review 3},</span>
+<span id="cb7-23"><a href="#cb7-23"></a>    <span class="dt">doi</span> = {10.18637/jss.v036.b03},</span>
+<span id="cb7-24"><a href="#cb7-24"></a>    <span class="dt">url</span> = {http://dx.doi.org/10.18637/jss.v036.b03},</span>
+<span id="cb7-25"><a href="#cb7-25"></a>    <span class="dt">langid</span> = {en}</span>
+<span id="cb7-26"><a href="#cb7-26"></a>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Fíjate que cada referencia tiene una clave que es lo que tendremos que usar para generar citas referentes a ellos; en concreto las claves están en la primera linea de cada referencia; concretamente son: <code>rodríguez-sanchez2016</code> y <code>wickham2010a</code></p>
+<section id="sintaxís-para-las-citas" class="level3">
+<h3 class="anchored" data-anchor-id="sintaxís-para-las-citas">Sintaxís para las citas</h3>
+<p>En realidad Quarto, utiliza Pandoc, otro programa, para procesar archivos BibTeX y convertirlos al formato de lenguaje de estilo de citas (CSL) estándar, que luego usará para formatear referencias en formato Chicago, APA, MLA o lo que sea<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<p>Quarto usa el <a href="https://www.uv.es/wikibase/doc/cas/pandoc_manual_2.7.3.wiki?138">mismo estándar que Pandoc para las citas</a>; de forma que las citas van entre corchetes y separadas por punto y coma (<code>;</code>), etc …</p>
+<p>Por tanto, una vez tenemos el fichero <code>.bib</code> y lo hemos referenciado en nuestro yaml, podemos generar citas de la siguiente manera:</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Si quieres escribir citas como estas:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Has de escribir esto:</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li><p>“Un estudio científico es reproducible si …” <span class="citation" data-cites="rodríguez-sanchez2016">(<a href="#ref-rodríguez-sanchez2016" role="doc-biblioref">Rodríguez-Sanchez et&nbsp;al., 2016, p. 84</a>)</span></p></li>
+<li><p>R es un lenguaje de programación … <span class="citation" data-cites="rodríguez-sanchez2016 wickham2010a">(véase <a href="#ref-rodríguez-sanchez2016" role="doc-biblioref">Rodríguez-Sanchez et&nbsp;al., 2016, p. 84</a>; y <a href="#ref-wickham2010a" role="doc-biblioref">Wickham &amp; Grolemund, 2010, Capítulo 1</a>)</span></p></li>
+<li><p>R es al menos tan bueno como Phyton ( <span class="citation" data-cites="wickham2010a">Wickham &amp; Grolemund (<a href="#ref-wickham2010a" role="doc-biblioref">2010</a>)</span>; <span class="citation" data-cites="rodríguez-sanchez2016">Rodríguez-Sanchez et&nbsp;al. (<a href="#ref-rodríguez-sanchez2016" role="doc-biblioref">2016</a>)</span>)</p></li>
+<li><p>Según <span class="citation" data-cites="rodríguez-sanchez2016">Rodríguez-Sanchez et&nbsp;al. (<a href="#ref-rodríguez-sanchez2016" role="doc-biblioref">2016</a>)</span>, pp.&nbsp;84, un estudio científico es reproducible si …</p></li>
+<li><p><span class="citation" data-cites="wickham2010a">Wickham &amp; Grolemund (<a href="#ref-wickham2010a" role="doc-biblioref">2010</a>)</span> dicen que ….</p></li>
+<li><p><span class="citation" data-cites="wickham2010a">Wickham &amp; Grolemund (<a href="#ref-wickham2010a" role="doc-biblioref">2010, p. 33</a>)</span> dicen que …</p></li>
+<li><p>Wickham dice que R es un lenguaje funcional <span class="citation" data-cites="wickham2010a">(<a href="#ref-wickham2010a" role="doc-biblioref">2010</a>)</span></p></li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<pre><code>
+- "Un estudio científico es reproducible si ..." [@rodríguez-sanchez2016, pp. 84]
+
+- R es un lenguaje de programación ... [véase @rodríguez-sanchez2016, pp. 84; y  @wickham2010a, cap. 1]
+
+- R es al menos tan bueno como Phyton ( @wickham2010a; @rodríguez-sanchez2016)
+
+- Según @rodríguez-sanchez2016, pp. 84, un estudio científico es reproducible si ...
+
+
+- @wickham2010a dicen que ....
+
+- @wickham2010a [p. 33] dicen que ...
+
+- Wickham dice que R es un lenguaje funcional  [-@wickham2010a]
+</code></pre>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>La documentación oficial de Quarto para citas y bibliografías está <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">aquí</a>. La documentación de Pandoc para las citas está <a href="https://pandoc.org/MANUAL.html#citations">aquí</a>.</p>
+<p><br></p>
+</section>
+</section>
+<section id="referencias" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="referencias">Referencias</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-AndrewHeissAndrew2023" class="csl-entry" role="doc-biblioentry">
+Andrew <span>Heiss</span> (🐘 @andrew@fediscience.org) en <span>Twitter</span>. (2023). En <em>Twitter</em>. <a href="https://twitter.com/andrewheiss/status/1612466959534428161">https://twitter.com/andrewheiss/status/1612466959534428161</a>
+</div>
+<div id="ref-BetterBibliographyManagement" class="csl-entry" role="doc-biblioentry">
+<em>Better bibliography management with <span>Overleaf</span>, <span>CiteDrive</span>, and <span>BibTeX</span>/<span>BibLaTeX</span> — about 3.0 and an updated guide</em>. (s.&nbsp;f.). Recuperado 6 de febrero de 2023, de <a href="https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex">https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex</a>
+</div>
+<div id="ref-cetinkaya-rundelQuartoTipDay2022b" class="csl-entry" role="doc-biblioentry">
+Çetinkaya-Rundel, M. (2022). <em>A <span>Quarto</span> tip a day - <span>Citations</span></em>. <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/">https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/</a>
+</div>
+<div id="ref-citedriveBibliographyManagementMarkdown2022" class="csl-entry" role="doc-biblioentry">
+CiteDrive. (2022). Bibliography <span>Management</span> in <span>R</span> <span>Markdown</span> with <span>CiteDrive</span> and <span>RStudio</span>. En <em>Medium</em>. <a href="https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619">https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619</a>
+</div>
+<div id="ref-heissHowMigrateBibDesk" class="csl-entry" role="doc-biblioentry">
+Heiss, A. (s.&nbsp;f.). <em>How to migrate from <span>BibDesk</span> to <span>Zotero</span> for pandoc-based writing <span></span> <span>Andrew</span> <span>Heiss</span></em>. Recuperado 14 de enero de 2023, de <a href="https://www.andrewheiss.com/blog/2023/01/08/bibdesk-to-zotero-pandoc/">https://www.andrewheiss.com/blog/2023/01/08/bibdesk-to-zotero-pandoc/</a>
+</div>
+<div id="ref-kashnitskyZoteroHacksUnlimited2019" class="csl-entry" role="doc-biblioentry">
+Kashnitsky, I. (2019). <em>Zotero hacks: unlimited synced storage and its smooth use with rmarkdown <span></span> <span>Ilya</span> <span>Kashnitsky</span></em>. <a href="https://ikashnitsky.github.io/2019/zotero/">https://ikashnitsky.github.io/2019/zotero/</a>
+</div>
+<div id="ref-mauryaWaysInstallZotero2022" class="csl-entry" role="doc-biblioentry">
+Maurya, H. (2022). 3 <span>Ways</span> to install <span>Zotero</span> on <span>Ubuntu</span> 22.04 or 20.04 <span>LTS</span>. En <em>Linux Shout</em>. <a href="https://www.how2shout.com/linux/how-to-install-zotero-on-ubuntu-22-04-or-20-04-lts/">https://www.how2shout.com/linux/how-to-install-zotero-on-ubuntu-22-04-or-20-04-lts/</a>
+</div>
+<div id="ref-PrintReferencesReading" class="csl-entry" role="doc-biblioentry">
+Print <span>References</span>/<span>Reading</span> <span>List</span>/<span>Bibliography</span> in <span>Your</span> <span>Syllabus</span> (<span>With</span> <span>Some</span> <span>Style</span>) in <span>R</span> <span>Markdown</span> and {stevemisc}. (s.&nbsp;f.). En <em>Steven V. Miller</em>. Recuperado 6 de febrero de 2023, de <a href="http://svmiller.com/blog/2022/01/print-references-reading-list-syllabus-r-markdown-stevemisc/">http://svmiller.com/blog/2022/01/print-references-reading-list-syllabus-r-markdown-stevemisc/</a>
+</div>
+<div id="ref-QuartoCitationsFootnotes" class="csl-entry" role="doc-biblioentry">
+<em>Quarto - <span>Citations</span> &amp; <span>Footnotes</span></em>. (s.&nbsp;f.). Recuperado 6 de febrero de 2023, de <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">https://quarto.org/docs/authoring/footnotes-and-citations.html</a>
+</div>
+<div id="ref-QuartoTechnicalWriting" class="csl-entry" role="doc-biblioentry">
+<em>Quarto - <span>Technical</span> <span>Writing</span></em>. (s.&nbsp;f.). Recuperado 14 de enero de 2023, de <a href="https://quarto.org/docs/visual-editor/technical.html#citations">https://quarto.org/docs/visual-editor/technical.html#citations</a>
+</div>
+<div id="ref-QuickStartGuide" class="csl-entry" role="doc-biblioentry">
+<em>quick start guide [<span>Zotero</span> <span>Documentation</span>]</em>. (s.&nbsp;f.). Recuperado 14 de enero de 2023, de <a href="https://www.zotero.org/support/quick_start_guide">https://www.zotero.org/support/quick_start_guide</a>
+</div>
+<div id="ref-MarkdownTUTORIALPowerful" class="csl-entry" role="doc-biblioentry">
+<em>R <span>Markdown</span> <span>TUTORIAL</span> <span></span> <span>A</span> powerful tool for <span>LEARNING</span> <span>R</span> (<span>IN</span> 45 <span>MINUTES</span>) - <span>YouTube</span></em>. (s.&nbsp;f.). Recuperado 14 de enero de 2023, de <a href="https://www.youtube.com/watch?v=K418swtFnik">https://www.youtube.com/watch?v=K418swtFnik</a>
+</div>
+<div id="ref-riedererBibliographiesCitationsMarkdown" class="csl-entry" role="doc-biblioentry">
+Riederer, E., Christophe Dervieux. (s.&nbsp;f.). <em>4.5 <span>Bibliographies</span> and citations <span></span> <span>R</span> <span>Markdown</span> <span>Cookbook</span></em>. Recuperado 6 de febrero de 2023, de <a href="https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html">https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html</a>
+</div>
+<div id="ref-rodríguez-sanchez2016" class="csl-entry" role="doc-biblioentry">
+Rodríguez-Sanchez, F., Pérez-Luque, A. J., Bartomeus, I., &amp; Varela, S. (2016). Ciencia reproducible: ¿qué, por qué, cómo? <em>Ecosistemas</em>, <em>25</em>(2), 83-92. <a href="https://doi.org/10.7818/ecos.2016.25-2.11">https://doi.org/10.7818/ecos.2016.25-2.11</a>
+</div>
+<div id="ref-UsingCiteDriveKeep" class="csl-entry" role="doc-biblioentry">
+<em>Using <span>CiteDrive</span> to keep bibliography and references in sync with <span>Quarto</span>® in <span>RStudio</span>.</em> (s.&nbsp;f.). Recuperado 6 de febrero de 2023, de <a href="https://www.youtube.com/watch?v=eukDLQV-EMs">https://www.youtube.com/watch?v=eukDLQV-EMs</a>
+</div>
+<div id="ref-wickham2010a" class="csl-entry" role="doc-biblioentry">
+Wickham, H., &amp; Grolemund, G. (2010). Graphics for Statistics and Data Analysis with<span><em>R</em></span>. <em>Journal of Statistical Software</em>, <em>36</em>(Book Review 3). <a href="https://doi.org/10.18637/jss.v036.b03">https://doi.org/10.18637/jss.v036.b03</a>
+</div>
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p> BibTex, que fue creado para usar con Latex, utiliza ficheros <code>.bib</code> que es una forma conveniente para almacenar bibliografía en texto plano.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>En realidad las citas hay que escribirlas a mano, pero si las incluyes con la sintáxis adecuada, hará que cada cita tenga un enlace a la referencia<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>BibTex fue creado para usar con Latex, utiliza ficheros <code>.bib</code> que es una forma conveniente para almacenar bibliografía en texto plano, pero BibTex es limitado para poder almacenar adecuadamente determinadas referencias, por ejemplo no puede diferenciar entre por ejemplo magazine/newspaper articles and journal articles. Zotero usa the CSL standard que también usa Pandocs.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/perezp44\.github\.io\/intro\.to\.quarto\//);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© 2022 Pedro J. Pérez</div>   
+      <div class="nav-footer-center">Hecho con <a href="https://quarto.org">Quarto</a></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/perezp44">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/pjpv4444">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:pedro.j.perez@uv.es">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.de/citations?user=MFlgHdcAAAAJ&amp;hl=en"><i class="ai ai-google-scholar" role="img"></i></a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-9375-6330"><i class="ai ai-orcid" role="img"></i></a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

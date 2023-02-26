@@ -1,0 +1,8 @@
+---
+title: "Creación de un blog básico con Quarto"
+subtitle: "(1ª parte del taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/))"
+#abstract: "En este tutorial, vamos a ver el **proceso de creación** y la **estructura de ficheros** de un blog creado con Quarto de forma rápida. Alojaremos el blog en [Quarto Pub](https://quartopub.com). Será un blog básico pero completamente operativo. Ya tendremos tiempo de mejorarlo, o tunearlo, en las siguientes secciones del taller."
+toc-title: Tutorial nº 1
+---
+
+Hola
