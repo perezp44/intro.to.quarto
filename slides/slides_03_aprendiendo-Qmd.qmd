@@ -162,6 +162,8 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 2.  Trozos de **código** R (R chunks)  
 3.  **Texto** (escrito en Markdown) ... y **todo lo demás**: imágenes, links, ecuaciones, etc ...  
 
+<br>
+
 . . .
 
 ### Un ejemplo
@@ -338,7 +340,7 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 - "Todo" lo que no es `YAML` o `CHUNKS` de código, es **TEXTO**.
 
-- El texto **se escribe en Markdown** (concretamente en Pandoc's Markdown)
+- El texto **se escribe en Markdown** (concretamente en [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown))
 
 - Documentación oficial de Quarto [aquí](https://quarto.org/docs/authoring/markdown-basics.html)
 

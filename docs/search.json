@@ -473,7 +473,7 @@
     "href": "slides/slides_03_aprendiendo-Qmd.html#los-documentos-.qmd-tienen-3-4-partes",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Los documentos .qmd tienen 3-4 partes",
-    "text": "Los documentos .qmd tienen 3-4 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (escrito en Markdown) … y todo lo demás: imágenes, links, ecuaciones, etc …\n\n\nUn ejemplo\n\n\nsource code\n\n\n\n\n\n\n\n\n\n\n\noutput"
+    "text": "Los documentos .qmd tienen 3-4 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (escrito en Markdown) … y todo lo demás: imágenes, links, ecuaciones, etc …\n\n\n\nUn ejemplo\n\n\nsource code\n\n\n\n\n\n\n\n\n\n\n\noutput"
   },
   {
     "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-narrativa",

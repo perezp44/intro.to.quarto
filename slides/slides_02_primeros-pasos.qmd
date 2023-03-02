@@ -97,13 +97,23 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 
 ### Ventajas de los documentos **reproducibles**
 
--   Ciencia reproducible (credibilidad de los resultados, facilidad de replicar, detección de errores)
+<br>
+. . . 
 
--   Un documento fuente puede generar documentos de varios tipos: tutoriales, slides, ... [\[Gallery\]](https://quarto.org/docs/gallery/)
+-   **Ciencia reproducible** (credibilidad de los resultados, facilidad de replicar, detección de errores)
+
+. . . 
+
+-   Un documento fuente puede **generar documentos de varios tipos** (tutoriales, slides, ...)
+
+. . .
+
+-   Si incluyes código, se acaba el corta y pega para gráficos, tablas de resultados, etc...
+
+. . . 
 
 -   Facilidad de generación de páginas web
 
--   Si incluyes código, se acaba el corta y pega para gráficos etc...
 
 ------------------------------------------------------------------------
 
@@ -113,9 +123,9 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 
     -   R es un lenguaje de programación y un entorno para hacer análisis estadísticos
 
-    -   RStudio es un IDE (para usar Quarto y R de manera más cómoda)
+    -   RStudio es un IDE (para usar R, y Quarto, de manera más cómoda)
 
-    -   **Quarto** es un CLI (y es el que realmente hará los documentos)
+    -   **Quarto** es el que realmente hará los documentos, webs etc ...
 
 <br>
 
@@ -135,7 +145,7 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 
 ### Más detalles sobre **Quarto**
 
--   Es un sistema para generar publicaciones científico-técnicas
+-   Es un sistema para escribir, para generar **publicaciones científico-técnicas**, dentro del ecosistema R.
 
 -   Es la segunda generación de Rmarkdown
 
@@ -243,9 +253,9 @@ Repito, vamos a trabajar con proyectos, concretamente con ...
 
 #### ¿Qué es un **Q**project?
 
--   Es simplemente una **carpeta** donde tendremos los "materiales" que necesitemos para crear uno de nuestros proyectos (tutorial, blog, slides etc...)
+-   Es simplemente una **carpeta** donde tendremos los "materiales" que necesitemos para uno de nuestros proyectos (tutorial, blog, slides, etc ...)
 
--   Usarlos tiene ventajas (usaremos rutas relativas y ...)
+-   Usarlos tiene ventajas (rutas relativas y ...)
 
 <br>
 
@@ -286,7 +296,7 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_03a.png") )
 ::: {columns}
 ::: {.column width="65%"}
 2.  ¿Cómo saber si realmente estás dentro de un proyecto?
-    -   En la esquina superior-izquierda de de RStudio veras el icono azulito junto al nombre del proyecto
+    - En la esquina superior-izquierda de tu RStudio verás el icono azulito junto al nombre de tu proyecto
 :::
 
 ::: {.column width="25%"}

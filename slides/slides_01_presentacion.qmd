@@ -52,16 +52,33 @@ embed-resources: true
 
 . . . 
 
-- Aprender a **"usar R" para hacer distintos tipos de documentos** útiles para nuestras labores docentes, investigadoras y de gestión. 
-
-  - Por ejemplo: **tutoriales**, **transparencias**, **páginas web** y **blogs**
+- Aprender a **"usar R" para hacer distintos tipos de documentos** útiles para nuestras labores docentes, investigadoras y de gestión.  
 
 . . . 
 
+- Por ejemplo: **tutoriales**, **transparencias**, **páginas web**,  **blogs**, ...
+
+. . . 
+
+
 - Estos documentos serán **reproducibles** 
 
-  - ¿Documentos reproducibles? Sí, generaremos directamente el documento final sin copiar ni pegar nada, si no a través de un documento fuente (source)
-  
+. . . 
+
+<br>
+
+
+**¿Documentos reproducibles? **
+
+. . . 
+
+
+- Sí, generaremos directamente el documento final sin copiar ni pegar nada, sino **usando código**.
+
+  - Para ello, hemos de aprender a escribir en **QMD** (Quarto Markdown)
+
+
+
   
 ---------
 
@@ -72,27 +89,34 @@ embed-resources: true
 - Podemos pensar que un análisis con datos tiene **3 etapas**. Nos centraremos en la tercera.
 
 
-![](./imagenes/ss_01_info-r4ds_01.png){#fig-01 fig-align="center" width="95%"}
+![](./imagenes/ss_01_info-r4ds_01.png){#fig-01 fig-align="center" width="85%"}
+<br>
 
+- En 2022 esta tercera etapa se hacía con RMD, pero ahora se hace con **QMD**.
 
+<br>
 
 ---
 
-### ¿Qué tipo de documentos?{.incremental}
+### ¿Qué tipo de documentos veremos?{.incremental}
 
-- Principalmente **tutoriales**, **transparencias**, **páginas web** y **blogs**, pero Con Quarto se pueden generar documentos de muchos tipos y formatos: [Quarto gallery](https://quarto.org/docs/gallery/){target="blank"} 
+- Principalmente **tutoriales**, **transparencias**, **páginas web** y **blogs**, 
 
-- Por ejemplo:
 
-  - **Tutoriales**: por ejemplo [este](){target="blank"} 
+- Con Quarto se pueden generar documentos de muchos tipos y formatos: artículos académicos, libros, tesis, cartas, cuadros de mando,  etc ... etc ...  Puedes visitar la [Quarto gallery](https://quarto.org/docs/gallery/){target="blank"} 
 
-  - **Slides**: por ejemplo [estas](){target="blank"} 
+<br>
+
+### Ejemplos
+
+  - **Tutoriales**: por ejemplo [este](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html){target="blank"} 
+
+  - **Slides**: por ejemplo [estas](https://apreshill.github.io/palmerpenguins-useR-2022/#/title-slide){target="blank"} 
   
-  - **Páginas web**: por ejemplo [esta](https://www.stat.cmu.edu/~ryurko/){target="blank"} 
+  - **Páginas web**: por ejemplo [esta](https://sta210-s22.github.io/website/){target="blank"} o [esta](https://www.stat.cmu.edu/~ryurko/){target="blank"} 
 
-  - **Blogs**: por ejemplo [este](https://www.stat.cmu.edu/~ryurko/){target="blank"} 
+  - **Blogs**: por ejemplo [este](https://www.mm218.dev/){target="blank"} 
 
-  - Artículos académicos, libros, tesis, cartas, cuadros de mando,  etc ... etc ...
 
 
 
