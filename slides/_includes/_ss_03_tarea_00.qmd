@@ -1,0 +1,12 @@
+::: {.callout-important icon="false"}
+#### Tarea 3.0: Crear un nuevo Qproject
+
+- Cierra RStudio 
+
+- Crea un nuevo Qproject llamado "my_qproject"
+
+- Inspecciona os documentos que hay dentro de "my_qproject"
+
+<br>
+
+:::

@@ -104,7 +104,9 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 <br>
 
 
-## Ventajas de Quarto
+
+::: {.callout-tip collapse="true" icon="true"}
+##### Ventajas de Quarto [Opcional]
 
 -   Proyecto en [desarrollo activo](https://quarto.org/docs/download/) ... mientras que Rmarkdown [it's not going away](https://yihui.org/en/2022/04/quarto-r-markdown/) pero ...
 
@@ -112,47 +114,55 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 -   **Por ejemplo**: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans
 
-. . .
-
 -   Para ver si estas ventajas merecen la pena para ti puedes leer a [Occasional Divergences](https://occasionaldivergences.com/posts/quarto-questions/#what-are-the-benefits-of-using-quarto-for-_____), [Nick Tierney](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/), [Alison Hill](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/), [Danielle Navarro](https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/), o [esta pregunta](https://stackoverflow.com/questions/72089640/what-are-the-benefits-of-using-quarto-over-rmarkdown) de Stack Overflow.
-
-
-. . .
 
 
 ```{r}
 #| eval: false
-::: {.smaller width="67%"}
-{{< tweet user=DanOvand0 id=1580343517154770944 >}}
-:::
+#::: {.smaller width="67%"}
+#{{< tweet user=DanOvand0 id=1580343517154770944 >}}
+#:::
 ```
 
 
-------------------------------------------------------------------------
+:::
 
-### ¿Qué es Rmarkdown? ¿Para qué sirve?
+<br>
 
-. . .
+::: {.callout-tip collapse="true" icon="true"}
+
+##### ¿Qué es Rmarkdown? ¿Para qué sirve? [Opcional]
+
+- El predecesor de Quarto
 
 -   Un ["entorno"](https://vimeo.com/178485416) para hacer informes/publicaciones/transparencias **REPRODUCIBLES** con R.
 
 > Is an authoring framework for data science, combining your code, its results, and your prose. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.
 
-. . .
 
 -   Con Rmd se pueden generar **multitud de outputs**. Por ejemplo, visita [está galería](https://rmarkdown.rstudio.com/gallery.html) o [este listado](https://rmarkdown.rstudio.com/formats.html)
 
 <br>
 
-. . .
 
 #### Una oda a Rmarkdown
 
 -   [How Rmarkdown changed my life](https://www.youtube.com/watch?v=_D-ux3MqGug&list=PLXKlQEvIRus-qu1hjc8SyElSamAcT-KaE&index=6): charla de Rob Hyndman sobre su proceso hasta llegar a usar Rmarkdown para hacer sus documentos científicos y webs.
 
+:::
+
+---
+
+## Para poder practicar lo que vayamos aprendiendo ... {background-color="#f7f8f5"}
+
+<br><br><br>
+
+{{< include ./_includes/_ss_03_tarea_00.qmd >}}
 
 
-# Qmarkdown: guía rápida (`.Rmd`) {background-color="#b8c2aa"}
+
+
+# Qmarkdown: guía rápida (`.qmd`) {background-color="#b8c2aa"}
 
 ------------------------------------------------------------------------
 
@@ -224,6 +234,20 @@ format:
   html:
     toc: true
     toc-location: left
+---
+```
+
+
+#### ejemplo 3
+
+```{yaml}
+---
+title: "Mi primer archivo qmd"
+date: "2023-08-08"
+format:
+  html:
+    toc: true
+    toc-location: left
 theme: sketchy
 embed-resources: true
 ---
@@ -232,9 +256,9 @@ embed-resources: true
 
 ------------------------------------------------------------------------
 
-### (IIa) Código R (chunks)
+### (II) Code Blocks o chunks (código R)
 
--   Para que `knitr` sepa qué partes del .Qmd es **código R**, deben ir dentro de estas marcas:
+-   Para que `knitr` sepa qué partes del `qmd` es **código R**, deben ir dentro de estas marcas:
 
 
 ![](./imagenes/ss_03_img_01_chunk-00.png){fig-align="left" width="15%"}
@@ -246,11 +270,12 @@ embed-resources: true
 -   Cuando `knitr` procese el chunk, lo interpretará como código R y **ejecutará las instrucciones y mostrará en el documento final el output** generado por el chunk.
 
 ![](./imagenes/ss_03_img_01_chunk-02.png){fig-align="left" width="80%"}
+
 <br><br>
 
 -----------------------
 
-### (IIa) Opciones en los chunks
+### (II) Chunks: opciones
 
 - Los chunks pueden tener opciones. La documentación oficial está [aquí](https://quarto.org/docs/computations/execution-options.html)
 
@@ -576,3 +601,13 @@ $$
 ```
 
 For HTML math processed using [MathJax](https://docs.mathjax.org/) (the default) you can use the `\def`, `\newcommand`, `\renewcommand`, `\newenvironment`, `\renewenvironment`, and `\let` commands to create your own macros and environments.
+
+
+
+## Resto: tablas, divs etc ...  
+
+
+## mas elementos para escribir (layout, CSS)  
+
+
+## Práctica: un tutorial  

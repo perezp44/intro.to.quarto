@@ -52,7 +52,7 @@ embed-resources: true
 
 2.  ¿Qué son R/RStudio y Quarto?
 
-------------------------------------------------------------------------
+---
 
 ### Documentos ¿reproducibles?
 
@@ -93,14 +93,19 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 <br><br>
 
 
-------------------------------------------------------------------------
+---
 
 ### Ventajas de los documentos **reproducibles**
 
 <br>
+
 . . . 
 
 -   **Ciencia reproducible** (credibilidad de los resultados, facilidad de replicar, detección de errores)
+
+. . . 
+
+- Es un tema de creciente interes, [por ejemplo](https://www.tandfonline.com/toc/ujse21/30/3?nav=tocList)
 
 . . . 
 

@@ -459,14 +459,14 @@
     "href": "slides/slides_03_aprendiendo-Qmd.html#qué-es-quarto-1",
     "title": "Aprendiendo a escribir en QMD",
     "section": "¿Qué es Quarto?",
-    "text": "¿Qué es Quarto?\n\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nEs … la “segunda generación de Rmarkdown”\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R. Soporta lenguajes como Phyton, Julia y Observable.\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\nQuarto unifica funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI"
+    "text": "¿Qué es Quarto?\n\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nEs … la “segunda generación de Rmarkdown”\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R. Soporta lenguajes como Phyton, Julia y Observable.\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\nQuarto unifica funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI\n\n\n\n\n\n\n\n\nVentajas de Quarto [Opcional]\n\n\n\nProyecto en desarrollo activo … mientras que Rmarkdown it’s not going away pero …\nUnifica algunas de las funcionalidades de Rmarkdown\nPor ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\nPara ver si estas ventajas merecen la pena para ti puedes leer a Occasional Divergences, Nick Tierney, Alison Hill, Danielle Navarro, o esta pregunta de Stack Overflow.\n\n\n#::: {.smaller width=\"67%\"}\n#{{< tweet user=DanOvand0 id=1580343517154770944 >}}\n#:::\n\n\n\n\n\n\n\n\n\n\n\n¿Qué es Rmarkdown? ¿Para qué sirve? [Opcional]\n\n\n\nEl predecesor de Quarto\nUn “entorno” para hacer informes/publicaciones/transparencias REPRODUCIBLES con R.\n\n\nIs an authoring framework for data science, combining your code, its results, and your prose. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.\n\n\nCon Rmd se pueden generar multitud de outputs. Por ejemplo, visita está galería o este listado\n\n\nUna oda a Rmarkdown\n\nHow Rmarkdown changed my life: charla de Rob Hyndman sobre su proceso hasta llegar a usar Rmarkdown para hacer sus documentos científicos y webs."
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#ventajas-de-quarto",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#ventajas-de-quarto",
+    "objectID": "slides/slides_03_aprendiendo-Qmd.html#para-poder-practicar-lo-que-aprendamos",
+    "href": "slides/slides_03_aprendiendo-Qmd.html#para-poder-practicar-lo-que-aprendamos",
     "title": "Aprendiendo a escribir en QMD",
-    "section": "Ventajas de Quarto",
-    "text": "Ventajas de Quarto\n\nProyecto en desarrollo activo … mientras que Rmarkdown it’s not going away pero …\nUnifica algunas de las funcionalidades de Rmarkdown\nPor ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\n\n\n\nPara ver si estas ventajas merecen la pena para ti puedes leer a Occasional Divergences, Nick Tierney, Alison Hill, Danielle Navarro, o esta pregunta de Stack Overflow.\n\n\n\n\n::: {.smaller width=\"67%\"}\n{{< tweet user=DanOvand0 id=1580343517154770944 >}}\n:::"
+    "section": "Para poder practicar lo que aprendamos …",
+    "text": "Para poder practicar lo que aprendamos …\n\n\n\n\nTarea 3.0: Crear un nuevo Qproject\n\n\n\nCierra RStudio\nCrea un nuevo Qproject llamado “my_qproject”\nInspecciona os documentos que hay dentro de “my_qproject”"
   },
   {
     "objectID": "slides/slides_03_aprendiendo-Qmd.html#los-documentos-.qmd-tienen-3-4-partes",
@@ -543,7 +543,28 @@
     "href": "slides/slides_03_aprendiendo-Qmd.html#equations",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Equations",
-    "text": "Equations\nUse $ delimiters for inline math and $$ delimiters for display math. For example:\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\ninline math: $E = mc^{2}$\ninline math: \\(E=mc^{2}\\)\n\n\ndisplay math:\n\n$$E = mc^{2}$$\ndisplay math:\n\\[E = mc^{2}\\]\n\n\n\nIf you want to define custom TeX macros, include them within $$ delimiters enclosed in a .hidden block. For example:\n::: {.hidden}\n$$\n \\def\\RR{{\\bf R}}\n \\def\\bold#1{{\\bf #1}}\n$$\n:::\nFor HTML math processed using MathJax (the default) you can use the \\def, \\newcommand, \\renewcommand, \\newenvironment, \\renewenvironment, and \\let commands to create your own macros and environments.\n\n\nhttps://go.uv.es/pjperez/primer.blog"
+    "text": "Equations\nUse $ delimiters for inline math and $$ delimiters for display math. For example:\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\ninline math: $E = mc^{2}$\ninline math: \\(E=mc^{2}\\)\n\n\ndisplay math:\n\n$$E = mc^{2}$$\ndisplay math:\n\\[E = mc^{2}\\]\n\n\n\nIf you want to define custom TeX macros, include them within $$ delimiters enclosed in a .hidden block. For example:\n::: {.hidden}\n$$\n \\def\\RR{{\\bf R}}\n \\def\\bold#1{{\\bf #1}}\n$$\n:::\nFor HTML math processed using MathJax (the default) you can use the \\def, \\newcommand, \\renewcommand, \\newenvironment, \\renewenvironment, and \\let commands to create your own macros and environments."
+  },
+  {
+    "objectID": "slides/slides_03_aprendiendo-Qmd.html#resto-tablas-divs-etc",
+    "href": "slides/slides_03_aprendiendo-Qmd.html#resto-tablas-divs-etc",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "Resto: tablas, divs etc …",
+    "text": "Resto: tablas, divs etc …"
+  },
+  {
+    "objectID": "slides/slides_03_aprendiendo-Qmd.html#mas-elementos-para-escribir-layout-css",
+    "href": "slides/slides_03_aprendiendo-Qmd.html#mas-elementos-para-escribir-layout-css",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "mas elementos para escribir (layout, CSS)",
+    "text": "mas elementos para escribir (layout, CSS)"
+  },
+  {
+    "objectID": "slides/slides_03_aprendiendo-Qmd.html#práctica-un-tutorial",
+    "href": "slides/slides_03_aprendiendo-Qmd.html#práctica-un-tutorial",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "Práctica: un tutorial",
+    "text": "Práctica: un tutorial\n\n\nhttps://go.uv.es/pjperez/primer.blog"
   },
   {
     "objectID": "tutoriales/01_taller_crear-blog-basico.html",
