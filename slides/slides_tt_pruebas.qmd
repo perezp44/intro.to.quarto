@@ -40,7 +40,6 @@ footer: |
 
 
 
-
 ## Estructura del taller {.smaller}
 
 ##### [ Hola ]{.purple}

@@ -1,0 +1,24 @@
+::: {.callout-important icon="false"}
+#### Tarea 3.1: Vamos a jugar con la **opciones de los chunks**
+
+- Utiliza el archivo `prueba_01.qmd` para probar algunas de las opciones de los chunks; por ejemplo prueba las opciones `echo`, `eval`, `message` e `include`
+
+- Puedes utilizar este chunk:
+
+
+```{{r}}
+1 + 2 + 3 + 4
+```
+
+- o este otro chunk:
+
+
+```{{r}}
+# install.packages(ggplot2)
+library(ggplot2)
+ggplot(iris, aes(Sepal.Length, Petal.Length)) + geom_point()
+```
+
+<br>
+
+:::
