@@ -189,19 +189,19 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 
 . . .
 
--   Se utiliza para fijar metadatos (opciones) sobre el documento
+-   Se utiliza para especificar metadatos (opciones) del documento final
 
--   Iremos viendo más opciones a lo largo del curso
 
 ------------------------------------------------------------------------
 
-##### (I) El encabezamiento o "yaml header"
+### (I) El encabezamiento o "yaml header"
 
 -   Se (suele) poner al ppio del documento, entre estas marcas: **`---`**
 
 -   En el yaml son MUY importantes los **espacios y la indentación**
 
--   Puedes aprender más sobre el `yaml` en el [manual de Pandoc](https://pandoc.org/MANUAL.html)
+
+<br>
 
 ##### Ejemplos de yaml
 
@@ -245,11 +245,16 @@ embed-resources: true
 ```
 :::
 
-. . .
+
 
 <br>
 
+
 {{< include ./_includes/_ss_03_tarea_01.qmd >}}
+
+- Veremos más opciones de YAML cuando vemos la creación de páginas web
+
+<br>
 
 # (II): CHUNKS {.unnumbered background-color="#ebf5fb"}
 
@@ -259,11 +264,14 @@ embed-resources: true
 
 . . .
 
--   Con `.qmd` **podemos incorporar código**
-
--   Esto es lo que permite que los documentos sean reproducibles
+-   En documentos `.qmd` **podemos incorporar código**
 
 -   Código que puede ser ejecutado para **mostrar los resultados** en el documento `.qmd`
+
+. . . 
+
+-   Esto es lo que permite que los documentos sean **reproducibles**
+
 
 -   La documentación oficial está [aquí](https://quarto.org/docs/computations/execution-options.html)
 
@@ -279,7 +287,7 @@ embed-resources: true
 
 ![](./imagenes/ss_03_img_01_chunk-01.png){fig-align="left" width="30%"}
 
--   Cuando Quarto/`knitr` procesen el chunk, se interpretará como código R y **ejecutará las instrucciones y mostrará en el documento final el output** generado por el chunk.
+-   Cuando Quarto/`knitr` procesen el chunk, se interpretará como código R y **ejecutará las instrucciones**, de forma que, en el documento final,  se **mostrará  el output** generado por el chunk.
 
 ![](./imagenes/ss_03_img_01_chunk-02.png){fig-align="left" width="80%"}
 
@@ -322,7 +330,7 @@ embed-resources: true
 
 -   `include`: si en un chunk pones `#| include: false`, el código de ese chunk **se ejecutará pero no se mostrará nada**, ni el código, ni el resultado, ni mensajes, ni errores. Esta opción es útil, por ejemplo, para cargar los paquetes de R.
 
--   `echo`: además de los típicos true y false, ahora **incorpora un nuevo valor `fenced`** que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo).
+-   `echo`: además de los típicos true y false, ahora **incorpora un nuevo valor `#| echo: fenced`** que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo).
 
 
 <br>
@@ -332,15 +340,14 @@ embed-resources: true
 
 ------------------------------------------------------------------------
 
-### (II) Chunks:opciones de los chunks en el YAML
+### (II) Chunks: opciones de los chunks en el YAML
 
 - En el YAML, podemos fijar los valores por defecto de las opciones de los chunks
 
-- Se hace de esta forma (dentro de "execute"):
+- Por ejemplo: 
 
 
-
-::: columns
+::: {columns}
 ::: {.column width="46%"}
 ##### .Qmd (chunk options en el chunk)
 
@@ -445,42 +452,103 @@ Ahora, en Quarto, hay **más opciones para los chunks**. Por ejemplo:
 
 -   Documentación oficial de Quarto [aquí](https://quarto.org/docs/authoring/markdown-basics.html)
 
+- Una fantástica guía sobre Markdown [aquí](https://www.markdownguide.org/getting-started/)
+
 <br>
+
+
+------------------------------------------------------------------------
+
+## (III) Texto: ¿qué es Markdown?
+
+- Markdown es un lenguaje de marcado ligero con sintaxis sencilla que permite dar formato y estructura a un texto y convertirlo a `.html`
+
+- Fue creado por [John Grueber](https://daringfireball.net/projects/markdown/) y [Aaron Swartz](https://es.wikipedia.org/wiki/Aaron_Swartz) en 2004
+
+    > Markdown is a text-to-HTML conversion tool for web writers.
+
+-   Se creo con el objetivo de crear un formato de texto fácil de escribir y leer
+
+- En Quarto el texto se escribe en [Markdown](https://es.wikipedia.org/wiki/Markdown)
+
+- Como Quarto se basa en **pandoc**, se usa ["Pandoc`s markdown"](https://pandoc.org/MANUAL.html#pandocs-markdown), una versión revisada y extendida de la propuesta original de Grueber
+
 
 
 ------------------------------------------------------------------------
 
 ## (III) Texto: sintaxis básica de `markdown`
 
--   Documentación oficial de Quarto [aquí](https://quarto.org/docs/authoring/markdown-basics.html): puedes ver (o recordar) la sintaxis básica para escribir en `markdown`. Como ejemplo:
+<br>
 
-```{r echo = FALSE, comment = "",  out.width = '100%', fig.align = 'center'}
-knitr::include_graphics(here::here("slides", "imagenes",  "ss_03_img_06_sintaxis-markdown.png") )
-```
+- Dando formato al texto:
+
++-----------------------------------+------------------------------+
+| Markdown (si escribes esto)       | Se verá esto:                |
++===================================+==============================+
+|     texto normal                  | texto normal                 |
++-----------------------------------+------------------------------+
+|     texto en **negrita**          | texto en **negrita**         |
++-----------------------------------+------------------------------+
+|     texto en *cursiva*            | texto en *cursiva*           |
++-----------------------------------+------------------------------+
+|     un superíndice^2^             | un superíndice^2^            |
++-----------------------------------+------------------------------+
+|     un subíndice~2~               | un subíndice~2~              |
++-----------------------------------+------------------------------+
+|     palabras ~~tachadas~~         | palabras ~~tachadas~~        |
++-----------------------------------+------------------------------+
+|     `verbatim code`               | `verbatim code`              |
++-----------------------------------+------------------------------+
+|     [texto subrayado]{.underline} | [texto subrayado]{.underline}|
++-----------------------------------+------------------------------+
+|     [En versalita]{.underline}    | [En versalita]{.smallcaps}   |
++-----------------------------------+------------------------------+
+
+<br>
+
+## (III) Texto: sintaxis básica de `markdown`
+
+
+-  Títulos
+
++---------------------+-----------------------------------+
+| Markdown:           | Se verá esto:                     |
++=====================+===================================+
+|     # Header 1      | # Header 1                        |
++---------------------+-----------------------------------+
+|     ## Header 2     | ## Header 2                       |
++---------------------+-----------------------------------+
+|     ### Header 3    | ### Header 3 {.heading-output}    |
++---------------------+-----------------------------------+
+|     #### Header 4   | #### Header 4 {.heading-output}   |
++---------------------+-----------------------------------+
+|     ##### Header 5  | ##### Header 5 {.heading-output}  |
++---------------------+-----------------------------------+
+|     ###### Header 6 | ###### Header 6 {.heading-output} |
++---------------------+-----------------------------------+
+
+
+<br>
+
+## (III) Texto: sintaxis básica de `markdown`
+
+- Listas:
+
+<https://quarto.org/docs/authoring/markdown-basics.html#lists>
+
+<br>
+
+## (III) Texto: sintaxis básica de `markdown`
+
+- Párrafos:
+
 
 ------------------------------------------------------------------------
 
 Has de mirar esta referencia para explicar MD: <https://www.markdownguide.org/getting-started/>
 
 -   Y la docu oficial <https://quarto.org/docs/authoring/markdown-basics.html> y su **source**: <https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd>
-
-------------------------------------------------------------------------
-
-## Un podo de historia, ¿q es Markdoww?
-
--   Markdown es un lenguaje de marcado ligero (!!) con sintaxis sencilla que permite dar formato y estructura a un texto y convertirlo a .html, .pdf ...
-
--   Fue creado por John Grueber y Aaron Swwatch en 2004
-
-    > Markdown is a text-to-HTML conversion tool for web writers.
-
--   Se creo con el objetivo de crear un formato de texto fácil de escribir y leer
-
--   Quarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Pandoc markdown is an extended and slightly revised version of John Gruber's Markdown syntax
-
-<https://pandoc.org/MANUAL.html#pandocs-markdown>
-
-<https://daringfireball.net/projects/markdown/>
 
 ------------------------------------------------------------------------
 
@@ -500,53 +568,7 @@ Has de mirar esta referencia para explicar MD: <https://www.markdownguide.org/ge
 
 [Small caps]{.smallcaps}
 
-## Formateo del texto
 
-+-----------------------------------+------------------------------+
-| Markdown Syntax                   | Output                       |
-+===================================+==============================+
-|     texto normal                  | texto normal                 |
-+-----------------------------------+------------------------------+
-|     texto en **negrita**          | texto en **negrita**         |
-+-----------------------------------+------------------------------+
-|     texto en *cursiva*            | texto en *cursiva*           |
-+-----------------------------------+------------------------------+
-|     un superíndice^2^             | un superíndice^2^            |
-+-----------------------------------+------------------------------+
-|     un subíndice~2~               | un subíndice~2~              |
-+-----------------------------------+------------------------------+
-|     palabras ~~tachadas~~         | palabras ~~tachadas~~        |
-+-----------------------------------+------------------------------+
-|     `verbatim code`               | `verbatim code`              |
-+-----------------------------------+------------------------------+
-
-## Títulos
-
-+---------------------+-----------------------------------+
-| Markdown Syntax     | Output                            |
-+=====================+===================================+
-|     # Header 1      | # Header 1                        |
-+---------------------+-----------------------------------+
-|     ## Header 2     | ## Header 2                       |
-+---------------------+-----------------------------------+
-|     ### Header 3    | ### Header 3 {.heading-output}    |
-+---------------------+-----------------------------------+
-|     #### Header 4   | #### Header 4 {.heading-output}   |
-+---------------------+-----------------------------------+
-|     ##### Header 5  | ##### Header 5 {.heading-output}  |
-+---------------------+-----------------------------------+
-|     ###### Header 6 | ###### Header 6 {.heading-output} |
-+---------------------+-----------------------------------+
-
-```{=html}
-<style type="text/css">
-.heading-output {
-  border-bottom: none;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-</style>
-```
 ## Links & Images
 
 +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+

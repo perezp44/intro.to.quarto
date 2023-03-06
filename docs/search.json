@@ -63,18 +63,39 @@
     "text": "Los documentos .qmd tienen 3-4 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (escrito en Markdown) …\n… y todo lo demás: imágenes, links, ecuaciones, etc …\n\n\n\nUn ejemplo\n\n\nsource code\n\n\n\n\n\n\n\n\n\n\n\noutput"
   },
   {
+    "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-qué-es-markdown",
+    "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-qué-es-markdown",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Texto: ¿qué es Markdown?",
+    "text": "(III) Texto: ¿qué es Markdown?\n\nMarkdown es un lenguaje de marcado ligero con sintaxis sencilla que permite dar formato y estructura a un texto y convertirlo a .html\nFue creado por John Grueber y Aaron Swartz en 2004\n\nMarkdown is a text-to-HTML conversion tool for web writers.\n\nSe creo con el objetivo de crear un formato de texto fácil de escribir y leer\nEn Quarto el texto se escribe en Markdown\nComo Quarto se basa en pandoc, se usa “Pandoc`s markdown”, una versión revisada y extendida de la propuesta original de Grueber"
+  },
+  {
     "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-sintaxis-básica-de-markdown",
     "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-sintaxis-básica-de-markdown",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: sintaxis básica de markdown",
-    "text": "(III) Texto: sintaxis básica de markdown\n\nDocumentación oficial de Quarto aquí: puedes ver (o recordar) la sintaxis básica para escribir en markdown. Como ejemplo:"
+    "text": "(III) Texto: sintaxis básica de markdown\n\n\nDando formato al texto:\n\n\n\n\n\n\n\n\nMarkdown (si escribes esto)\nSe verá esto:\n\n\n\n\ntexto normal\ntexto normal\n\n\ntexto en **negrita**\ntexto en negrita\n\n\ntexto en *cursiva*\ntexto en cursiva\n\n\nun superíndice^2^\nun superíndice2\n\n\nun subíndice~2~\nun subíndice2\n\n\npalabras ~~tachadas~~\npalabras tachadas\n\n\n`verbatim code`\nverbatim code\n\n\n[texto subrayado]{.underline}\ntexto subrayado\n\n\n[En versalita]{.underline}\nEn versalita"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#un-podo-de-historia-q-es-markdoww",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#un-podo-de-historia-q-es-markdoww",
+    "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-sintaxis-básica-de-markdown-1",
+    "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-sintaxis-básica-de-markdown-1",
     "title": "Aprendiendo a escribir en QMD",
-    "section": "Un podo de historia, ¿q es Markdoww?",
-    "text": "Un podo de historia, ¿q es Markdoww?\n\nMarkdown es un lenguaje de marcado ligero (!!) con sintaxis sencilla que permite dar formato y estructura a un texto y convertirlo a .html, .pdf …\nFue creado por John Grueber y Aaron Swwatch en 2004\n\nMarkdown is a text-to-HTML conversion tool for web writers.\n\nSe creo con el objetivo de crear un formato de texto fácil de escribir y leer\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Pandoc markdown is an extended and slightly revised version of John Gruber’s Markdown syntax\n\nhttps://pandoc.org/MANUAL.html#pandocs-markdown\nhttps://daringfireball.net/projects/markdown/"
+    "section": "(III) Texto: sintaxis básica de markdown",
+    "text": "(III) Texto: sintaxis básica de markdown\n\nTítulos\n\n\n\n\n\n\n\n\nMarkdown:\nSe verá esto:\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
+  },
+  {
+    "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-sintaxis-básica-de-markdown-2",
+    "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-sintaxis-básica-de-markdown-2",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Texto: sintaxis básica de markdown",
+    "text": "(III) Texto: sintaxis básica de markdown\n\nListas:\n\nhttps://quarto.org/docs/authoring/markdown-basics.html#lists"
+  },
+  {
+    "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-sintaxis-básica-de-markdown-3",
+    "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-sintaxis-básica-de-markdown-3",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Texto: sintaxis básica de markdown",
+    "text": "(III) Texto: sintaxis básica de markdown\n\nPárrafos:"
   },
   {
     "objectID": "slides/slides_03_aprendiendo-Qmd.html#párrafos",
@@ -82,20 +103,6 @@
     "title": "Aprendiendo a escribir en QMD",
     "section": "Párrafos",
     "text": "Párrafos\n\nA paragraph is one or more lines of text followed by one or more blank lines. Newlines are treated as spaces, so you can reflow your paragraphs as you like.\nSi necesitas a hard line break dentro de un párrafo, put two or more spaces at the end of a line. Tb se puede hacer con A backslash followed by a newline is also a hard line break\nNote: in multiline and grid table cells, this is the only way to create a hard line break, since trailing spaces in the cells are ignored.\nPara crear un nuevo párrafo hay que dejar al menos una linea de espacio\nUnderline\n\nSmall caps"
-  },
-  {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#formateo-del-texto",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#formateo-del-texto",
-    "title": "Aprendiendo a escribir en QMD",
-    "section": "Formateo del texto",
-    "text": "Formateo del texto\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\ntexto normal\ntexto normal\n\n\ntexto en **negrita**\ntexto en negrita\n\n\ntexto en *cursiva*\ntexto en cursiva\n\n\nun superíndice^2^\nun superíndice2\n\n\nun subíndice~2~\nun subíndice2\n\n\npalabras ~~tachadas~~\npalabras tachadas\n\n\n`verbatim code`\nverbatim code"
-  },
-  {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#títulos",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#títulos",
-    "title": "Aprendiendo a escribir en QMD",
-    "section": "Títulos",
-    "text": "Títulos\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
   },
   {
     "objectID": "slides/slides_03_aprendiendo-Qmd.html#links-images",
