@@ -40,6 +40,7 @@ revealjs-plugins: [lightbox, pointer]
 embed-resources: true
 ---
 
+
 # Primeras ideas {background-color="#b8c2aa"}
 
 {{< var lineanaranja >}}
@@ -52,7 +53,7 @@ embed-resources: true
 
 2.  ¿Qué son R/RStudio y Quarto?
 
----
+------------------------------------------------------------------------
 
 ### Documentos ¿reproducibles?
 
@@ -72,14 +73,12 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01.png") )
 :::
 
 ::: {.column width="13%"}
-
 <br><br><br>
 
 ```{r echo = FALSE, comment = "",  out.width = '70%', fig.align = 'center'}
 knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01a.png") )
 ```
 :::
-
 
 ::: {.column width="42%"}
 #### output
@@ -92,22 +91,32 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 
 <br><br>
 
-
 ---
 
-### Ventajas de los documentos **reproducibles**
+##### Investigación reproducible
+
+
+<div>
+> **Reproducibility is the minimum standard in research quality**. When with the same data and analysis we obtain the same results and we are able to check the results of others.  -- [Why open science is 'just good science in a digital era'](https://realworlddatascience.net/news-and-views/interviews/posts/02/03/heidi-seibold.html).
+
+
+-   Es un tema de creciente interés, por ejemplo [aquí](https://www.tandfonline.com/toc/ujse21/30/3?nav=tocList) y [aquí](https://www.whitehouse.gov/ostp/news-updates/2023/01/11/fact-sheet-biden-harris-administration-announces-new-actions-to-advance-open-and-equitable-research/).
+
+</div>
+
+. . . 
 
 <br>
 
-. . . 
+<div>
 
--   **Ciencia reproducible** (credibilidad de los resultados, facilidad de replicar, detección de errores)
+##### Ventajas de los documentos **reproducibles**
 
-. . . 
+. . .
 
-- Es un tema de creciente interes, [por ejemplo](https://www.tandfonline.com/toc/ujse21/30/3?nav=tocList)
+-   **Ciencia reproducible** (credibilidad de los resultados, facilidad de replicar, detección de errores, facilita la colaboración)
 
-. . . 
+. . .
 
 -   Un documento fuente puede **generar documentos de varios tipos** (tutoriales, slides, ...)
 
@@ -115,10 +124,17 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 
 -   Si incluyes código, se acaba el corta y pega para gráficos, tablas de resultados, etc...
 
-. . . 
+. . .
 
--   Facilidad de generación de páginas web
+-   Informes parametrizados
 
+. . .
+
+-   Facilidad de generación de páginas web (!!)
+
+</div>
+
+<br><br>
 
 ------------------------------------------------------------------------
 
@@ -278,14 +294,12 @@ Repito, vamos a trabajar con proyectos, concretamente con ...
 
 ------------------------------------------------------------------------
 
-### 2 cosillas sobre los Qprojects
-
-
+### Dos cosillas sobre los Qprojects
 
 ::: {columns}
 ::: {.column width="65%"}
 1.  ¿Cómo abrirlos?
-    -   Siempre desde el fichero con icono azulito y  extensión `.Rproj`
+    -   Siempre desde el fichero con icono azulito y extensión `.Rproj`
 :::
 
 ::: {.column width="25%"}
@@ -297,11 +311,10 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_03a.png") )
 
 . . .
 
-
 ::: {columns}
 ::: {.column width="65%"}
 2.  ¿Cómo saber si realmente estás dentro de un proyecto?
-    - En la esquina superior-izquierda de tu RStudio verás el icono azulito junto al nombre de tu proyecto
+    -   En la esquina superior-izquierda de tu RStudio verás el icono azulito junto al nombre de tu proyecto
 :::
 
 ::: {.column width="25%"}
@@ -310,8 +323,6 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_03b.png") )
 ```
 :::
 :::
-
-
 
 . . .
 
@@ -333,13 +344,11 @@ Vamos ya a crear nuestro primer fichero `.qmd`
 
 ------------------------------------------------------------------------
 
-
 {{< include ./_includes/_ss_02_tarea_05.qmd >}}
 
 <br><br>
 
-----------
-
+------------------------------------------------------------------------
 
 ## Vamos a jugar un rato con RStudio {background-color="#ebf5fb"}
 
@@ -362,3 +371,19 @@ Nos servirá para familiarizarnos con :
 ------------------------------------------------------------------------
 
 {{< include ./_includes/_ss_02_tarea_06.qmd >}}
+
+<br>
+
+. . .
+
+{{< include ./_includes/_ss_02_tarea_07.qmd >}}
+
+<br>
+
+. . .
+
+{{< include ./_includes/_ss_02_tarea_08.qmd >}}
+
+<br>
+
+

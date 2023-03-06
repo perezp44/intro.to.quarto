@@ -1,0 +1,25 @@
+::: {.callout-important icon="false"}
+#### Tarea 2.7: Usamos el contenido de `"prueba.qmd"` para generar una página web
+
+Para ello: 
+
+
+- Dentro del Qproject Crea un archivo llamado `_quarto.yml`
+
+- El contenido de ese archivo debe ser:
+
+```yaml
+project:
+  type: website
+ 
+website:
+  navbar:
+    right: 
+      - prueba.qmd
+```
+
+- Para generar la página web tienes que hacer un "Build > Render Website"
+
+<br>
+
+:::

@@ -1,374 +1,17 @@
 [
   {
+    "objectID": "tutoriales/01_taller_crear-blog-basico.html",
+    "href": "tutoriales/01_taller_crear-blog-basico.html",
+    "title": "Creación de un blog básico con Quarto",
+    "section": "",
+    "text": "Hola\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
+  },
+  {
     "objectID": "info.html",
     "href": "info.html",
     "title": "Información sobre el curso",
     "section": "",
     "text": "Contexto\n\n\n\n\n\n\nEl curso forma parte de la oferta del SFPIE de la Universitat de València. La ficha oficial del curso está aquí.\nEl curso es una introducción a Quarto. Quarto es un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc…) científicas y técnicas. Puedes ver ejemplos en esta Gallery.\nEl curso está pensado para interactuar con R y, fundamentalmente con Quarto, a través del IDE RStudio.\nEs muy-muy conveniente acudir al curso con tu propio ordenador.\nSe recomienda tener instaladas versiones recientes de los 3 programas. Tienes instrucciones de instalación más abajo\nLos materiales que usaremos en el curso están en Materiales.\n\n\n\n\n\n\n\n\n\n\nHorario y aula\n\n\n\n\n\n\nLa duración del curso son 12 horas repartidas en 3 sesiones de 4 horas.\nLas 3 sesiones serán el 26 y 28 de junio y el 3 de julio de 2023.\nEl horario de las 3 sesiones es de 16:00 a 20:00.\nLas clases se desarrollarán en el aula 302 del aulario Sur del Campus de Tarongers.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInstalación de R, RStudio y Quarto\n\n\n\n\n\n\nTodos sabemos instalar R y Rstudio, si no fuese así, aquí tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.\nInstalación de Quarto: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, aquí tienes los instaladores para los principales sistemas operativos."
-  },
-  {
-    "objectID": "recursos.html",
-    "href": "recursos.html",
-    "title": "Recursos sobre Quarto",
-    "section": "",
-    "text": "Desde que Quarto se hizo publico con We don’t talk about Quarto ha sido un no parar de workshops, posts, etc… En esta página tienes una selección de recursos sobre Quarto.\nObviamente la principal referencia es la web de Quarto: absolutamente fantástica!!! En ella hay, entre otras secciones, una Guide, una Reference y una Gallery.\n\nEntre los materiales que he visto sobre Quarto destacar los siguientes:\n\nAWESOME Quarto: un listado muy extenso de recursos Quarto hecho por Mickaël Canouil.\nQuarto tip a day: Un blog de Mine Çetinkaya-Rundel con consejos y tips sobre Quarto.\nGet Started with Quarto: un workshop de Thomas Mock. El video, y otro video de 3h.\nBeautiful Reports and Presentations with Quarto: un workshop de Thomas Mock. El video y el repo.\nIntroducción a RMarkdown, creando reportes con R y Python en RStudio: workshop de Renzo Cáceres para LatinR 2022.\nMaking shareable documents with Quarto: una web de Openscapes.\nQuarto/RMarkdown - What’s Different?: unas slides de Ted Laderas.\nRstudio::conf(2022) Playlist: la presentación en sociedad de Quarto con varias charlas sobre Quarto, Hello Quarto: Share, Collaborate, Teach, Reimagine, Websites & Books & Blogs, oh my! Creating Rich Content with Quarto, Quarto for the Curious entre otras.\nRstudio::conf(2022) Workshops: por ejemplo, Get Started with Quarto o Rmarkdown to Quarto.\nReproducible authoring with Quarto: un video de Mine Çetinkaya-Rundel donde se hace evidente las ventajas de Quarto y la utilidad del editor visual de RStudio. Sus slides aquí.\n\n\n\nRecursos específicos sobre web/blogs\n\nQuarto - Creating a Blog: documentación oficial.\nBuilding a blog with Quarto: un workshop de Isabella Velásquez acerca de cómo construir un blog con Quarto. El repo de los ejercicios, video y RStudioCloud project.\nWebsites & Books & Blogs, oh my! Creating Rich Content with Quarto: ponencia de Devin Pastoor en el marco de RStudio::conf(2022).\nModifying the Default Quarto Blog Structure: post de Eric Ekholm 2022.\nCreating a Blog with Quarto in 10 Steps: post de Bea Milz.\n100 seconds from zero to public site: vídeo de Thomas Mock donde crea una web con Quarto en 100 segundos.\nPorting a Distill Blog to Quarto: post de Danielle Navarro."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Escribiendo con R y Quarto (aún muy WIP)",
-    "section": "",
-    "text": "Bienvenidos!!!\na la web del curso “Creación de documentos reproducibles y páginas web con R”. Un título más amable podría ser “Escribiendo con R y Quarto”.\nEl curso es una introducción a Quarto. Quarto. es un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc…) científicas y técnicas. Usaremos Quarto y R a través de RStudio.\n\nEl profesor soy yo, Pedro J. Pérez.\n\nLos materiales del curso están en Materiales. Para seguir el curso hay que tener acceso a R, RStudio y Quarto. En Info tienes las instrucciones de instalación de los 3 programas.\n\nLos detalles sobre el curso: horario, aula , etc… están en Info"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog para curso “Escribiendo con R y Quarto”",
-    "section": "",
-    "text": "¿Qué son R, RStudio y Quarto?\n\n\n\n\n\n\n\nreproducibilidad\n\n\n\n\nEn el curso usaremos 3 programas: R, RStudio y Quarto, así que la primera tarea es saber qué son y para qué sirven: conviene saber diferenciar entre ellos.\n\n\n\n\n\n\n2 ene 2023\n\n\nPedro J. Pérez\n\n\n6 minutos\n\n\n\n\n\n\n  \n\n\n\n\nInstalación de R, RStudio y Quarto\n\n\n\n\n\n\n\nreproducibilidad\n\n\n\n\nSe presentan algunas ideas y referencias básicas sobre investigación reproducible.\n\n\n\n\n\n\n3 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\n¿Primeros pasos con R/RStudio?\n\n\n\n\n\n\n\nreproducibilidad\n\n\n\n\nSe presentan algunas ideas y referencias básicas sobre investigación reproducible.\n\n\n\n\n\n\n4 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nCreando documentos .qmd\n\n\n\n\n\n\n\nreproducibilidad\n\n\n\n\nSe presentan algunas ideas y referencias básicas sobre investigación reproducible.\n\n\n\n\n\n\n5 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nSlides con Quarto\n\n\n\n\n\n\n\nreproducibilidad\n\n\n\n\nPrimeros pasos para crear slides chulas con Quarto.\n\n\n\n\n\n\n7 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nReferencias bibliográficas\n\n\n\n\n\n\n\nQuarto\n\n\nbibliografía\n\n\n\n\n¿Cómo incluir referencias bibliográficas en documentos .qmd? Una buena opción es a través de ficheros .bib creados en Zotero.\n\n\n\n\n\n\n20 ene 2023\n\n\nPedro J. Pérez\n\n\n8 minutos\n\n\n\n\n\n\n  \n\n\n\n\nLayout’s\n\n\n\n\n\n\n\nQuarto\n\n\nlayout\n\n\n\n\nViendo las posibilidades de Layout que tenemos en Quarto\n\n\n\n\n\n\n21 ene 2023\n\n\nPedro J. Pérez\n\n\n1 minutos\n\n\n\n\n\n\n  \n\n\n\n\nUsando shortcodes\n\n\n\n\n\n\n\nQuarto\n\n\nshortcodes\n\n\n\n\nCómo usar shortcodes en Quarto para, entre otras cosas, poder incluir el mismo contenido en varios documentos.\n\n\n\n\n\n\n22 ene 2023\n\n\nPedro J. Pérez\n\n\n5 minutos\n\n\n\n\n\n\n  \n\n\n\n\nExtensiones\n\n\n\n\n\n\n\nQuarto\n\n\nextensiones\n\n\n\n\nIntentando entender qué son y cómo usar las extensiones de Quarto\n\n\n\n\n\n\n23 ene 2023\n\n\nPedro J. Pérez\n\n\n1 minutos\n\n\n\n\n\n\n  \n\n\n\n\nImágenes\n\n\n\n\n\n\n\nQuarto\n\n\nimágenes\n\n\n\n\nRepasando algunas opciones de Quarto para insertar imágenes.\n\n\n\n\n\n\n24 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nTuneando con CSS\n\n\n\n\n\n\n\nQuarto\n\n\nCSS\n\n\n\n\nCambiando el formato con CSS\n\n\n\n\n\n\n25 ene 2023\n\n\nPedro J. Pérez\n\n\n4 minutos\n\n\n\n\n\n\n  \n\n\n\n\nTuneando con CSS (cambios bizarros!!)\n\n\n\n\n\n\n\nQuarto\n\n\nCSS\n\n\n\n\nEl contenido de este post es el mismo que el del anterior, PERO , pero ahora haciendo cambios bizarros!! con CSS.\n\n\n\n\n\n\n26 ene 2023\n\n\nPedro J. Pérez\n\n\n4 minutos\n\n\n\n\n\n\n  \n\n\n\n\nObservable JS\n\n\n\n\n\n\n\nQuarto\n\n\nObservable\n\n\n\n\nIntentando entender qué es y cómo usar Observable JS en R.\n\n\n\n\n\n\n27 ene 2023\n\n\nPedro J. Pérez\n\n\n3 minutos\n\n\n\n\n\n\n  \n\n\n\n\nUsing R data with phyton\n\n\n\n\n\n\n\nQuarto\n\n\nPython\n\n\n\n\nViendo cómo usar datos de R en chunks de Py con Quarto.\n\n\n\n\n\n\n28 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nTuneado de un post con opciones de YAML\n\n\n\n\n\n\n\nQuarto\n\n\ntuneado yaml\n\n\n\n\nViendo cómo modificar la apariencia de un post con opciones de YAML.\n\n\n\n\n\n\n29 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nProbando cosas\n\n\n\n\n\n\n\nQuarto\n\n\npruebas\n\n\n\n\nPost fake para hacer pruebas\n\n\n\n\n\n\n9 sept 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\nNo hay resultados"
-  },
-  {
-    "objectID": "blog/27_observable.html",
-    "href": "blog/27_observable.html",
-    "title": "Observable JS",
-    "section": "",
-    "text": "Ya sabemos que Quarto® is an open-source scientific and technical publishing system built on Pandoc que permite crear contenidos con R, Python, Julia y Observable\nObervable JS (OJS) es “a JavaScript flavor designed for data analysis”. Observable tiene digamos la interactividad incorporada de serie: es sencillo incorporar filtros interactivos para controlar el output que muestran las tablas y gráficos. Esto abre nuevas posibilidades a los usuarios de R.\nLa documentación oficial de Quarto para hacer disponibles los datos a OJS está aquí.\n\n\n\nComo señala Nicolas Lambert aquí:\n\nCombining R and Observable javascript allows to take advantage of the strengths of both languages. It allows to combine the statistical analysis possibilities of R and the reactive visualization features of Observable. A win win strategy.\n\nAlgo parecido dice Sharon Machlis aquí:\n\nUsing Quarto with Observable JavaScript is a great solution for R and Python users who want to create more interactive and visually engaging reports. Using Quarto with Observable offers an elegant workflow if you want to combine data analysis in Python and R with reactivity. Finally, Observable was set up with collaboration in mind, so it’s fairly easy to find and use someone else’s open source code.\n\nOtra ventaja de Quarto:\n\nQuarto’s rendered HTML files can be hosted on any web server or opened locally with a simple browser, with no separate language or framework installations required. That’s not the case for options like Shiny for R or Dash for Python (alpha Shiny for Python can run without a Shiny server, but it’s not yet production-ready). Using Quarto with Observable offers an elegant workflow if you want to combine data analysis in Python and R with reactivity.\n\nQuarto puede ejecutar código de OJS. Sólo hay que colocar el código entre las marcas habituales : ```{ojs}. Además se puede analizar los datos en R y luego enviarlos a OJS con la función ojs_define()."
-  },
-  {
-    "objectID": "blog/27_observable.html#un-ejemplo",
-    "href": "blog/27_observable.html#un-ejemplo",
-    "title": "Observable JS",
-    "section": "2 Un ejemplo",
-    "text": "2 Un ejemplo\nVoy a adaptar un ejemplo sacado de aquí\nPor ejemplo, voy a crear un sf data.frame para ver si me lo acepta OJS:\n\n\nCódigo\nlibrary(tidyverse)\nlibrary(\"rnaturalearth\")\nlibrary(\"rnaturalearthdata\")\nlibrary(sf)\ndf <- gapminder::gapminder %>% filter(year == 2007) \nworld <- rnaturalearth::ne_countries(scale = \"medium\", returnclass = \"sf\") %>% \n       filter(subregion != \"Antarctica\") %>% \n       filter(admin != \"Greenland\") %>% \n       select(name, iso_a3, geometry) \ndf_world <- left_join(world, df,  by = c(\"name\" = \"country\")) %>% #- solo 142\n  select(-year)\n\n\nPara pasar df_world a OJS, como es un sf, necesitamos el paquete geojsonsf:\n\n\nCódigo\n```{r}\n#| eval: true\nlibrary(\"geojsonsf\")\n#ojs_define(my_ojs_data = df)\nojs_define(data1 = sf_geojson(df_world))\n```\n\n\nHay que hacer un paso más para poder usar datos los datos de R en Observable: hay que transformar los datos a un formato compatible con OJS, para ello usamos la función transpose()\nLas visualizaciones de JavaScript suelen utilizar un formato de datos diferente al de los marcos de datos rectangulares que normalmente se necesitan en R o Python. Aunque en este caso no ha hecho falta (!!)\n\n\nCódigo\ncountries = JSON.parse(data1) \nInputs.table(countries.features.map(d => d.properties))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCargamos la librería bertin\n\n\nCódigo\nbertin = require(\"bertin@1.2.4\")\n//bertin.quickdraw(countries)\n\n\n\n\n\n\n\n\nHacemos una coropleta:\n\n\nCódigo\nviewof nbreaks = Inputs.range([3, 9], { label: \"nbreaks\", step: 1, value: 7 })\nviewof method = Inputs.select([\"jenks\", \"q6\", \"quantile\", \"equal\", \"msd\"], {\n  label: \"method\",\n  value: \"quantile\"\n})\nchoro = bertin.draw({\n  params: { projection: \"Eckert3\"},\n  layers: [\n    {\n      type: \"layer\",\n      geojson: countries,\n      fill: {\n        type: \"choro\",\n        values: \"lifeExp\",\n        nbreaks: nbreaks,\n        method: method,\n        colors: \"RdYlGn\",\n        leg_round: 3,\n        leg_title: `Lifeexperience \n(in years)`,\n        leg_x: 30,\n        leg_y: 100\n      },\n      tooltip: [\"$name\", \"Esperanza de vida\", \"$lifeExp\",  \"PIB per cápita\", \"$gdpPercap\"]\n    },\n    { type: \"graticule\" },\n    { type: \"outline\" }\n  ]\n})"
-  },
-  {
-    "objectID": "blog/27_observable.html#otro-ejemplo",
-    "href": "blog/27_observable.html#otro-ejemplo",
-    "title": "Observable JS",
-    "section": "3 Otro ejemplo",
-    "text": "3 Otro ejemplo\nEsta vez sacado de aquí\n\n\nCódigo\nimport {viewof data} from \"@observablehq/summary-table\"\nviewof data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCódigo\nimport {viewof summary_data} from \"@observablehq/summary-table\"\nviewof summary_data"
-  },
-  {
-    "objectID": "blog/27_observable.html#biblio",
-    "href": "blog/27_observable.html#biblio",
-    "title": "Observable JS",
-    "section": "4 Biblio",
-    "text": "4 Biblio\n\nLet’s make maps with bertin.js in Quarto y aquí: post de Nicolas Lambert.\nBertin.js: a JavaScript library for visualizing geospatial data and make thematic maps for the web.\nA beginner’s guide to using Observable JavaScript, R, and Python with Quarto: una serie de 3 artículos de Infoworld de Sharon Machlis.\nUn ejemplo de boB Rudis, @hrbrmstr, otro, conviriendo OJS notebook in Quarto projects\nPaquete robservable"
-  },
-  {
-    "objectID": "blog/03_instalación.html",
-    "href": "blog/03_instalación.html",
-    "title": "Instalación de R, RStudio y Quarto",
-    "section": "",
-    "text": "La investigación “debería” ser reproducible"
-  },
-  {
-    "objectID": "blog/26_css-bizarro.html",
-    "href": "blog/26_css-bizarro.html",
-    "title": "Tuneando con CSS (cambios bizarros!!)",
-    "section": "",
-    "text": "La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es dar una clase sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS."
-  },
-  {
-    "objectID": "blog/26_css-bizarro.html#cómo-incorporar-cambios-con-css",
-    "href": "blog/26_css-bizarro.html#cómo-incorporar-cambios-con-css",
-    "title": "Tuneando con CSS (cambios bizarros!!)",
-    "section": "1 ¿Cómo incorporar cambios con CSS?",
-    "text": "1 ¿Cómo incorporar cambios con CSS?\n\nUtilizando spans\nEn este quarto-tip, Mine Çetinkaya-Rundel lo explica muy bien.\nPara cambiar la apariencia de un trozo de texto, tienes que meterlo dentro de [] y usando {} para definir el estilo que quieres aplicar a ese texto. Con un ejemplo se entiende mejor:\n\nPara que se muestre esto …Has de escribir\n\n\nPara llamar la atención puedes escribir en rojo o con un fondo amarillo; o las dos cosas a la vez.\n\n\nPara llamar la atención puedes escribir en [rojo]{style=\"color: red\"} \no con un [fondo amarillo]{style=\"background-color: yellow;\"}; \no las [dos cosas a la vez]{style=\"color: red; background-color: yellow;\"}.\n\n\n\n\n\n\nCon ficheros .css\nSi piensas reutilizar algunos estilos, entonces es mejor definir los estilos en un archivo .css.\nSi quisiéramos poder reutilizar los estilos que hemos definido en la anterior sección, tendríamos que crearlos como clases en un archivo css. Por ejemplo crearíamos el archivo: ./assets/mis_estilos_01.css con el siguiente contenido:\n/* css styles */\n\n.rojo {\n  color: red;\n}\n\n.yellow-background {\n  background-color: yellow;\n}\n\n.importante {\n  color: red;\n  background-color: yellow;\n}\nUna vez creado el archivo mis_estilos_01.csspara poder usar los estilos o clases allí definidos tendríamos que hacer 2 cosas:\n\nReferenciar el archivo css en el yaml del documento o post1. Esto lo haríamos incluyendo css: \"assets/mis_estilos_01.css\" en el yaml.\nUna vez incluido el fichero css en el yaml, ya podemos usar los estilos, para ello tendríamos que hacer lo siguiente:\n\n\nPara que se muestre esto …Has de escribirTambién podríamos haberlo hecho así:\n\n\nPara llamar la atención puedes escribir en rojo o con un fondo amarillo; o las dos cosas a la vez.\n\n\nPara llamar la atención puedes escribir en [rojo]{.rojo} \no con un [fondo amarillo]{.yellow-background}; \no las [dos cosas a la vez]{.importante}.\n\n\nPara llamar la atención puedes escribir en [rojo]{.rojo} \no con un [fondo amarillo]{.yellow-background}; \no las [[dos cosas a la vez]{.rojo}]{.yellow-background}."
-  },
-  {
-    "objectID": "blog/26_css-bizarro.html#algunos-estilos-útiles",
-    "href": "blog/26_css-bizarro.html#algunos-estilos-útiles",
-    "title": "Tuneando con CSS (cambios bizarros!!)",
-    "section": "2 Algunos estilos útiles",
-    "text": "2 Algunos estilos útiles\nCon CSS se puede modificar la apariencia de todos los elementos de una página web. En el chunk de abajo muestro algunas de las posibilidades que usaba en mis xaringan slides.\n\n\nCódigo\n/* css styles: algunos q usaba en xaringan */\n\n.rotate-45 {transform: rotate(45deg); }\n.large { font-size: 140%; }\n.small { font-size: 80%; }\n   \n   \n/*  ----------------- colores  -------------- */ \n.purple{ color: #c077af; }\n.red { color: #ef342a; }\n.orange { color: #f57125; }\n.orange2 {color: #F58634;}\n.blue { color: #22b6ed; }\n.green { color: #1fb27f; }\n.green2 {color: #007965;}\n.yellow { color: #faca07; }\n.yellow2 {color: #FFCC29;}\n.brown {color: #a84d18; }\n\n\n/*  ----------------- una nueva clase de inversa: muy chula  -------------- */ \n.inverse2 {\n  background: #69686d;\n  color: #f2f2f6;\n}\n.inverse2 a {\n  color: #b2d68c;\n}\n.inverse2 h1, .inverse2 h2 {\n  color: #f2f2f6;\n  font-size: 72px;\n  line-height: 1.2em;\n}\n\n\n.textverd{\n  color: #b2d68c;\n  font-size: 60px;  \n}"
-  },
-  {
-    "objectID": "blog/26_css-bizarro.html#estilos-útiles-pero-un-poco-bizarros",
-    "href": "blog/26_css-bizarro.html#estilos-útiles-pero-un-poco-bizarros",
-    "title": "Tuneando con CSS (cambios bizarros!!)",
-    "section": "3 Estilos útiles pero (un poco) bizarros!!",
-    "text": "3 Estilos útiles pero (un poco) bizarros!!\nEn clase, para mostrar como podemos modificar algunos de los elementos de un documento hecho con Rmd (ahora con Quarto) usaba un archivo css con cambios digamos un poco raros: a lo mejor ponía el titulo en pink, el autor en verde etc.. etc… Sólo era un ejemplo para mostrar algunas de las posibilidades para modificar la apariencia de un documento con CSS.\nSi quieres ver como quedaría este mismo post pero sin utilizar las reglas CSS (bizarras) que puedes ver abajo, puedes hacerlo aquí\n\n\nCódigo\n/* definiendo estilos del body : de toda la página */ \nbody { \n  background-color: aliceblue; }  /* color del fondo*/ \n\n\n/* importo un tipo de letra */ \n@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300); \n\n/* definiendo estilos de los párrafos */ \np {\n  text-align: justify;         /* justificar el texto del body */      \n  line-height: 1.4;            /* anchura entre las lineas 1.0 is the default in Firefox. 2.0 provides a large space */     \n  margin: 10px 0px 10px 0px;    /* margenes entre los párafos: top, izquierda, abajo, left */   \n  font-size: 13pt;                                     /* tamaño de letra */   \n  font-family: 'Open Sans', Helvetica, sans-serif; }   /* tipo de letra */  \n\n\n\n/* definiendo estilos de las cajas de código (chunks) */ \npre {\n  background-color: pink;  /* color de las cajas de código */ \n    font-size: 10pt;\n    border-radius: 9px;     /* q los bordes de las cajas sean redondas */ \n    font-family: Monaco, monospace;\n    border: 3px solid green; }\n\n/* hacer cambios en el texto en negrita, ahora el texto en negrita saldrá en verde!!! */ \nstrong {\n  color: green; }\n\n\n/* cambiar el color de los hipervinculos/enlaces  */\na {\n  color: brown;\n  font-weight: bold; }\n\n\n/* cambiar el aspecto del TOC: \nhttps://stackoverflow.com/questions/42546001/how-to-change-colors-and-attributes-of-table-of-contents-in-r-markdown-html-docu */\n.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{\n  color: darkgreen;\n  font-weight: bold;\n  background-color: gold; }\n   \n   \n/* para hacer cajas de texto de colorines*/\n\n.caja-darkkhaki { background-color:#bdb76b; border-radius: 4px; padding: 13px;}\n\n.caja-linea-verde {  color: #004346;\n  background-color: #fff;\n  border-top: 4pt solid #09bc8a;\n  border-right-style: none;\n  border-bottom-style: none;\n  border-left-style: none;\n  padding: 23px 10px 21px 10px;\n}\n\n\n/* Guía para los colores: https://htmlcolorcodes.com/es/nombres-de-los-colores/  */\n\n \n /* para las quotes o citas */\n\nblockquote {\n    padding: 10px 20px;\n    margin: 0 0 20px;\n    font-size: 14px;\n    border-left: 5px solid #DC143C;\n}\n\n\n/* para hacer lineas de colores */\n.linea-black {\n  border-top: 1px solid black;\n}\n\n\n.linea-red {\n  border-top: 2px dashed red;\n}"
-  },
-  {
-    "objectID": "blog/20_referencias-bibliograficas.html",
-    "href": "blog/20_referencias-bibliograficas.html",
-    "title": "Referencias bibliográficas",
-    "section": "",
-    "text": "Gestionar y poner en el formato adecuado las referencias bibliográficas no es muy divertido; una forma de hacerlo es a mano. No problem, pero creo que es más sensato gestionarlas con un gestor bibliográfico. Por supuesto que esto tiene un coste de entrada pero no es demasiado alto y el hacerlo facilita después la gestión de estas. Entre los beneficios que tiene gestionar las referencias con un gestor están: tener las referencias organizadas y a mano para poder reusarlas, evitar errores de la transcripción a mano o por copia y pega, facilita la organización y clasificación de las citas en categorías y, principalmente, posibilita la generación de listados bibliográficos con un simple clic en diversos formatos (APA, Chicago etc …)\nHay muchos gestores bibliográficos. Los más usados son Mendeley y Zotero, aunque últimamente oigo hablar mucho de CiteDrive.\nNo soy un power user de gestores bibliográficos pero uso cada vez más Zotero. Zotero es un gestor bibliográfico de código abierto que cuenta con extensiones para los principales navegadores (Firefox, Vivaldi, Chrome, Safari, Opera, …) que permiten guardar referencias, ya sean estas artículos, libros, páginas web, libros electrónicos, imágenes, audio, vídeo digital etc … con un solo clic. Una vez añadida una referencia, se pueden añadir, notas, etiquetas y relacionarla con otras referencias; además, las referencias se pueden organizar en colecciones. Ilya Kashnitsky tiene aquí un fantástico post donde explica las ventajas de Zotero y cómo usarlo.\nEl caso es que los gestores bibliográficos, ademas de ayudarnos a gestionar nuestras referencias bibliográficas, nos permiten exportar y generar listados de referencias en distintos formatos. Veamos cómo hacerlo en el entorno Quarto."
-  },
-  {
-    "objectID": "blog/20_referencias-bibliograficas.html#cómo-gestionar-las-referencias-en-quarto",
-    "href": "blog/20_referencias-bibliograficas.html#cómo-gestionar-las-referencias-en-quarto",
-    "title": "Referencias bibliográficas",
-    "section": "2 ¿Cómo gestionar las referencias en Quarto?",
-    "text": "2 ¿Cómo gestionar las referencias en Quarto?\nUna vez tenemos las referencias en Zotero, o en otro gestor bibliográfico, podemos crear una colección con las referencias que usaremos en un proyecto. A partir de ahí se puede fácilmente crear listados con las referencias en múltiples formatos, incluido BibTeX que es el que usa Latex y el que usaremos con Quarto1.\nPara generar nuestro listado de referencias con Quarto tenemos que:\n\nTener las referencias en Zotero, mejor en una colección\ngenerar un fichero .bib con los metadatos de las referencias\nIncluir la ruta al archivo .bib en el yaml de nuestro documento .qmd\nPor defecto Quarto generará el listado de referencias en formato Chicago Manual of style 17th ed.. Si quieres usar otro formato tendrás que incluir en el yaml de nuestro documento .qmd la ruta al fichero.csl con el estilo que queramos dar al listado de referencias.\n\n\n2.1 Introducir la referencias\n\nCon Zotero\nLo primero es tener las referencias en un gestor bibliográfico, por ejemplo Zotero. No explicaré en detalle este paso pero puedes ver la documentación oficial, por ejemplo esta Quick Start Guide.\nTienes que instalar Zotero y luego una extensión para tu navegador favorito, de esta forma puedes añadir una referencia a tu base de datos con un solo clic: solo tendrás que ir a la pagina web donde este el articulo/vídeo/libro o lo que sea, y pinchar con el botón derecho del ratón y seleccionar Zotero Connector > Guardar a Zotero > Save to Zotero (Embedded metadata). Puedes ver un ejemplo en la imagen siguiente:\n\n\n\nGráfico 1: Guardando una referencia con Zotero Connector\n\n\n\n\nDesde RStudio\nTambién podemos añadir referencias directamente desde RStudio. Para ello tenemos que usar el “editor visual” de RStudio. Aquí lo explica Mine Çetinkaya-Rundel para el caso de que tengamos el DOI de la referencia. Simplemente hay que:\n\nActivar el editor visual > Insert > Citation … > From DOI (en el menú de la izquierda) > Pegar el DOI y pinchar en Search > una vez ha encontrado la referencia, solo queda pinchar en Insert\n\nCon esta secuencia se generará un fichero .bib ,si es que no hay uno ya asociado al documento .qmd. Si ya hubiese un documento .bib, se añadiría la referencia a este.\n\n\n\n2.2 Creación del fichero .bib\nPara generar las citas y bibliografía necesitaremos un archivo .bib que contenga los metadatos de las referencias que queremos introducir en nuestro archivo .qmd. Este archivo .bib se puede generar de muchas maneras, por ejemplo a mano copiando y pegando, o con Zotero, o desde RStudio, o … Veamos como se hace desde Zotero. Como puedes ver en la imagen de bajo tengo distintas colecciones en Zotero, selecciono la carpeta/colección que quiero exportar con el botón derecho del ratón y pincho en “exportar”. Solo queda seleccionar el formato de exportación. Puedes elegir “better BibTex” o “Bibtext”, los dos funcionarán. Se nos creará un fichero .bib con los metadatos de las referencias bibliográficas que vamos a usar.\n\n\n\n\n\n\nGráfico 2: Exportando una colección de referencias\n\n\n\n\n\n\n\nGráfico 3: Exportando a formato Bibtex\n\n\n\n\n\n\nCreando el fichero .bib desde Zotero\n\n\n\nEl fichero .bib contendrá un listado con los metadatos de nuestras referencias; algo como:\n@article{rodríguez-sanchez2016,\n    title = {Ciencia reproducible: ¿qué, por qué, cómo?},\n    author = {{Rodríguez-Sanchez}, Francisco and {Pérez-Luque}, {Antonio Jesús} and Bartomeus, Ignasi and Varela, Sara},\n    year = {2016},\n    month = {08},\n    date = {2016-08-22},\n    journal = {Ecosistemas},\n    pages = {83--92},\n    volume = {25},\n    number = {2},\n    doi = {10.7818/ecos.2016.25-2.11},\n    url = {http://dx.doi.org/10.7818/ECOS.2016.25-2.11}\n}\n\n@article{wickham2010a,\n    title = {Graphics for Statistics and Data Analysis with{\\emph{R}}},\n    author = {Wickham, Hadley and Grolemund, Garrett},\n    year = {2010},\n    date = {2010},\n    journal = {Journal of Statistical Software},\n    volume = {36},\n    number = {Book Review 3},\n    doi = {10.18637/jss.v036.b03},\n    url = {http://dx.doi.org/10.18637/jss.v036.b03},\n    langid = {en}\n}\n\n\n2.3 Referencia el fichero bib` en el yaml\nUna vez tenemos el fichero .bib con los datos de nuestras referencias, tenemos que referenciarlo en el yaml de nuestro documento .qmd; concretamente así:\n---\ntitle: \"Mi Documento\"\nbibliography: my_references.bib\n---\nEn este caso el fichero .bib y el fichero .qmd estarían en la misma carpeta. Si el fichero .bib estuviese en una subcarpeta, tendríamos que especificar la ruta, quedando el yaml como:\n---\ntitle: \"Mi Documento\"\nbibliography: my_subcarpeta/my_references.bib\n---\n\n\n2.4 Estilo de las referencias\nYa he dicho que por defecto Zotero (y Pandoc) usan el Chicago Manual of Style pero podemos cambiar el estilo usando un archivo .csly referenciando en nuestro yaml:\n---\ntitle: \"Mi Documento\"\nbibliography: my_references.bib\ncsl: bib_files/apa_7.csl\n---\nPodemos descargar ficheros .csl con multitud de formatos para nuestras citas del repositorio de Zotero, aquí . CSL significa Citation Style Language. BibTex es limitado para poder almacenar adecuadamente determinadas referencias, por ejemplo no puede diferenciar entre por ejemplo magazine/newspaper articles and journal articles, por eso finalmente"
-  },
-  {
-    "objectID": "blog/20_referencias-bibliograficas.html#inclusión-de-las-referencias",
-    "href": "blog/20_referencias-bibliograficas.html#inclusión-de-las-referencias",
-    "title": "Referencias bibliográficas",
-    "section": "3 Inclusión de las referencias",
-    "text": "3 Inclusión de las referencias\nEn la sección anterior hemos dispuesto todo para poder incluir en nuestros documentos .qmd las referencias bibliográficas usando ficheros .bib. Sí, pero aún no las hemos incluido, ¿cómo lo hacemos? Sin hacer nada, si el yaml incluye un fichero .bib, se incluirá automáticamente un apartado al final con las referencias del fichero que hayamos citado en nuestro .qmd. También podemos incluir explicitamente ese apartado así:\n### Referencias {.unnumbered}\n\n::: {#refs}\n:::\nSi quisiéramos incluir todas las referencias presentes en el fichero .bib, incluso aunque no las hayamos citado en el texto, tendríamos que incluir en nuestro yaml lo siguiente:\n---\nnocite: |\n  @*\n---"
-  },
-  {
-    "objectID": "blog/20_referencias-bibliograficas.html#inclusión-de-citas",
-    "href": "blog/20_referencias-bibliograficas.html#inclusión-de-citas",
-    "title": "Referencias bibliográficas",
-    "section": "4 Inclusión de citas",
-    "text": "4 Inclusión de citas\nGeneralmente en el texto de un artículo se citan los articulos que figuran en el apartado de referencias.\nTenemos ya un fichero .bib con las referencias, ¿cómo incluimos citas a ellos en nuestro fichero .qmd? Podemos seguir escribiendo y gestionando estas citas a mano, pero si queremos hacerlo “automaticamente”2 tenemos que saber cómo hacerlo.\nImagina que tenemos un fichero llamado my_references.bib con 2 referencias, por ejemplo:\n@article{rodríguez-sanchez2016,\n    title = {Ciencia reproducible: ¿qué, por qué, cómo?},\n    author = {{Rodríguez-Sanchez}, Francisco and {Pérez-Luque}, {Antonio Jesús} and Bartomeus, Ignasi and Varela, Sara},\n    year = {2016},\n    month = {08},\n    date = {2016-08-22},\n    journal = {Ecosistemas},\n    pages = {83--92},\n    volume = {25},\n    number = {2},\n    doi = {10.7818/ecos.2016.25-2.11},\n    url = {http://dx.doi.org/10.7818/ECOS.2016.25-2.11}\n}\n\n@article{wickham2010a,\n    title = {Graphics for Statistics and Data Analysis with{\\emph{R}}},\n    author = {Wickham, Hadley and Grolemund, Garrett},\n    year = {2010},\n    date = {2010},\n    journal = {Journal of Statistical Software},\n    volume = {36},\n    number = {Book Review 3},\n    doi = {10.18637/jss.v036.b03},\n    url = {http://dx.doi.org/10.18637/jss.v036.b03},\n    langid = {en}\n}\nFíjate que cada referencia tiene una clave que es lo que tendremos que usar para generar citas referentes a ellos; en concreto las claves están en la primera linea de cada referencia; concretamente son: rodríguez-sanchez2016 y wickham2010a\n\nSintaxís para las citas\nEn realidad Quarto, utiliza Pandoc, otro programa, para procesar archivos BibTeX y convertirlos al formato de lenguaje de estilo de citas (CSL) estándar, que luego usará para formatear referencias en formato Chicago, APA, MLA o lo que sea3.\nQuarto usa el mismo estándar que Pandoc para las citas; de forma que las citas van entre corchetes y separadas por punto y coma (;), etc …\nPor tanto, una vez tenemos el fichero .bib y lo hemos referenciado en nuestro yaml, podemos generar citas de la siguiente manera:\n\nSi quieres escribir citas como estas:Has de escribir esto:\n\n\n\n“Un estudio científico es reproducible si …” (Rodríguez-Sanchez et al., 2016, p. 84)\nR es un lenguaje de programación … (véase Rodríguez-Sanchez et al., 2016, p. 84; y Wickham & Grolemund, 2010, Capítulo 1)\nR es al menos tan bueno como Phyton ( Wickham & Grolemund (2010); Rodríguez-Sanchez et al. (2016))\nSegún Rodríguez-Sanchez et al. (2016), pp. 84, un estudio científico es reproducible si …\nWickham & Grolemund (2010) dicen que ….\nWickham & Grolemund (2010, p. 33) dicen que …\nWickham dice que R es un lenguaje funcional (2010)\n\n\n\n\n- \"Un estudio científico es reproducible si ...\" [@rodríguez-sanchez2016, pp. 84]\n\n- R es un lenguaje de programación ... [véase @rodríguez-sanchez2016, pp. 84; y  @wickham2010a, cap. 1]\n\n- R es al menos tan bueno como Phyton ( @wickham2010a; @rodríguez-sanchez2016)\n\n- Según @rodríguez-sanchez2016, pp. 84, un estudio científico es reproducible si ...\n\n\n- @wickham2010a dicen que ....\n\n- @wickham2010a [p. 33] dicen que ...\n\n- Wickham dice que R es un lenguaje funcional  [-@wickham2010a]\n\n\n\n\n\nLa documentación oficial de Quarto para citas y bibliografías está aquí. La documentación de Pandoc para las citas está aquí."
-  },
-  {
-    "objectID": "blog/20_referencias-bibliograficas.html#referencias",
-    "href": "blog/20_referencias-bibliograficas.html#referencias",
-    "title": "Referencias bibliográficas",
-    "section": "Referencias",
-    "text": "Referencias\n\n\nAndrew Heiss (🐘 @andrew@fediscience.org) en Twitter. (2023). En Twitter. https://twitter.com/andrewheiss/status/1612466959534428161\n\n\nBetter bibliography management with Overleaf, CiteDrive, and BibTeX/BibLaTeX — about 3.0 and an updated guide. (s. f.). Recuperado 6 de febrero de 2023, de https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex\n\n\nÇetinkaya-Rundel, M. (2022). A Quarto tip a day - Citations. https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/\n\n\nCiteDrive. (2022). Bibliography Management in R Markdown with CiteDrive and RStudio. En Medium. https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619\n\n\nHeiss, A. (s. f.). How to migrate from BibDesk to Zotero for pandoc-based writing  Andrew Heiss. Recuperado 14 de enero de 2023, de https://www.andrewheiss.com/blog/2023/01/08/bibdesk-to-zotero-pandoc/\n\n\nKashnitsky, I. (2019). Zotero hacks: unlimited synced storage and its smooth use with rmarkdown  Ilya Kashnitsky. https://ikashnitsky.github.io/2019/zotero/\n\n\nMaurya, H. (2022). 3 Ways to install Zotero on Ubuntu 22.04 or 20.04 LTS. En Linux Shout. https://www.how2shout.com/linux/how-to-install-zotero-on-ubuntu-22-04-or-20-04-lts/\n\n\nPrint References/Reading List/Bibliography in Your Syllabus (With Some Style) in R Markdown and {stevemisc}. (s. f.). En Steven V. Miller. Recuperado 6 de febrero de 2023, de http://svmiller.com/blog/2022/01/print-references-reading-list-syllabus-r-markdown-stevemisc/\n\n\nQuarto - Citations & Footnotes. (s. f.). Recuperado 6 de febrero de 2023, de https://quarto.org/docs/authoring/footnotes-and-citations.html\n\n\nQuarto - Technical Writing. (s. f.). Recuperado 14 de enero de 2023, de https://quarto.org/docs/visual-editor/technical.html#citations\n\n\nquick start guide [Zotero Documentation]. (s. f.). Recuperado 14 de enero de 2023, de https://www.zotero.org/support/quick_start_guide\n\n\nR Markdown TUTORIAL  A powerful tool for LEARNING R (IN 45 MINUTES) - YouTube. (s. f.). Recuperado 14 de enero de 2023, de https://www.youtube.com/watch?v=K418swtFnik\n\n\nRiederer, E., Christophe Dervieux. (s. f.). 4.5 Bibliographies and citations  R Markdown Cookbook. Recuperado 6 de febrero de 2023, de https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html\n\n\nRodríguez-Sanchez, F., Pérez-Luque, A. J., Bartomeus, I., & Varela, S. (2016). Ciencia reproducible: ¿qué, por qué, cómo? Ecosistemas, 25(2), 83-92. https://doi.org/10.7818/ecos.2016.25-2.11\n\n\nUsing CiteDrive to keep bibliography and references in sync with Quarto® in RStudio. (s. f.). Recuperado 6 de febrero de 2023, de https://www.youtube.com/watch?v=eukDLQV-EMs\n\n\nWickham, H., & Grolemund, G. (2010). Graphics for Statistics and Data Analysis withR. Journal of Statistical Software, 36(Book Review 3). https://doi.org/10.18637/jss.v036.b03"
-  },
-  {
-    "objectID": "blog/24_imagenes.html",
-    "href": "blog/24_imagenes.html",
-    "title": "Imágenes",
-    "section": "",
-    "text": "Las figuras en documentos Rmarkdown se podían insertar con la sintaxis de Markdown; es decir con ![](<ruta-a-la-imagen>), aunque yo prefería hacerlo con knitr::include_graphics(). Era algo así, veamos si también funciona en Quarto:\n\n\nCódigo\n```{r}\n#| fig.show: \"hold\"\n#| out.width: \"45%\"\n#| fig.align: \"default\"\n# graficos side to side en Rmarkdown\n# https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941/12\n\n\nknitr::include_graphics(here::here(\"blog\", \"imagenes\", \"post_24_img_01.jpg\"))\n```"
-  },
-  {
-    "objectID": "blog/24_imagenes.html#figuras-en-quarto",
-    "href": "blog/24_imagenes.html#figuras-en-quarto",
-    "title": "Imágenes",
-    "section": "2 Figuras en Quarto",
-    "text": "2 Figuras en Quarto\nDocumentación aquí.\nLas imágenes (o figuras) se pueden insertar de múltiples maneras:\n\nLa sintaxis de Pandoc:\n\n\nPara hacer esto …Has de escribir\n\n\n\n\n\nGráfico 1: Una imagén centrada (75%)\n\n\n\n\n![Una imagén centrada (75%)](./imagenes/post_24_img_01.jpg){#fig-01 fig-align=\"left\" width=\"75%\"}\n\n\n\n\nSubfiguras\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\nGráfico 2: Imágen 1\n\n\n\n\n\n\n\nGráfico 3: Imágen 2\n\n\n\n\n\n\nDos imágenes alineadas\n\n\n\n\n\n::: {layout-ncol=2}\n\n![Imágen 1](./imagenes/post_24_img_01.jpg){#fig-2.1}\n\n![Imágen 2](./imagenes/post_24_img_01.jpg){#fig-2.2}\n\n2 imágenes alineadas\n:::\n\n\n\n\n\nPanel de imágenes\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n(A)\n\n\n\n\n\n\n\n(B)\n\n\n\n\n\n\n\n\n\n(C)\n\n\n\n\n\n\n\n(D)\n\n\n\n\n\n\n\n::: {layout-nrow=2}\n![(A)](./imagenes/post_24_img_01.jpg)\n\n![(B)](./imagenes/post_24_img_01.jpg)\n\n![(C)](./imagenes/post_24_img_01.jpg)\n\n![(D)](./imagenes/post_24_img_01.jpg)\n:::\n\n\n\n\n\nCustom layouts\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n(A)\n\n\n\n\n \n\n\n\n\n\n(B)\n\n\n\n\n\n\n\n\n\n(C)\n\n\n\n\n\n\n\n::: {layout=\"[[40,-20,40], [100]]\"}\n![(A)](./imagenes/post_24_img_01.jpg)\n\n![(B)](./imagenes/post_24_img_01.jpg)\n\n![(C)](./imagenes/post_24_img_01.jpg)\n:::"
-  },
-  {
-    "objectID": "blog/24_imagenes.html#tamaño-de-las-imágenes",
-    "href": "blog/24_imagenes.html#tamaño-de-las-imágenes",
-    "title": "Imágenes",
-    "section": "3 Tamaño de las imágenes",
-    "text": "3 Tamaño de las imágenes\nEl tamaño de las imágenes es problemático (al menos para mi).\nAquí puedes ver la documentación oficial de Quarto sobre el tamaño por defecto de las imágenes y como cambiarlo.\nAquí puedes ver los consejos sobre el tamaño de las imágenes de Hadley en R4DS (2nd ed.)"
-  },
-  {
-    "objectID": "blog/28_phyton.html",
-    "href": "blog/28_phyton.html",
-    "title": "Using R data with phyton",
-    "section": "",
-    "text": "Quarto ha hecho que me vuelva a interesar por Phyton!!!\nEs muy fácil combinar chunks de R con Py, solo hay que pasar los datos así: my_py_data = r.df"
-  },
-  {
-    "objectID": "blog/28_phyton.html#some-biblio",
-    "href": "blog/28_phyton.html#some-biblio",
-    "title": "Using R data with phyton",
-    "section": "1 Some biblio",
-    "text": "1 Some biblio\n\nQuarto with Python"
-  },
-  {
-    "objectID": "blog/05_crear-documento-qmd.html",
-    "href": "blog/05_crear-documento-qmd.html",
-    "title": "Creando documentos .qmd",
-    "section": "",
-    "text": "La investigación “debería” ser reproducible"
-  },
-  {
-    "objectID": "blog/29_tuneado-yaml.html",
-    "href": "blog/29_tuneado-yaml.html",
-    "title": "Tuneado de un post con opciones de YAML",
-    "section": "",
-    "text": "A este post le he puesto en el YAML algunas opciones un poco raras. Deberían haberse ejecutado pero … no ha salido. Si las pusiésemos en el archivo _quarto.yml sí funcionaría pero entonces empeoraríamos todo la web, así que mejor no hacerlo.\nConcretamente le he puesto estas opciones:"
-  },
-  {
-    "objectID": "blog/29_tuneado-yaml.html#veamos-como-queda",
-    "href": "blog/29_tuneado-yaml.html#veamos-como-queda",
-    "title": "Tuneado de un post con opciones de YAML",
-    "section": "1 Veamos como queda",
-    "text": "1 Veamos como queda\nVa a empeorar bastante\n\n\nCódigo\n2 + 2\n\n\n[1] 4"
-  },
-  {
-    "objectID": "blog/29_tuneado-yaml.html#un-enlace",
-    "href": "blog/29_tuneado-yaml.html#un-enlace",
-    "title": "Tuneado de un post con opciones de YAML",
-    "section": "2 Un enlace",
-    "text": "2 Un enlace\nVamos a ver como quedaría un link. Por ejemplo este enlace\naqui"
-  },
-  {
-    "objectID": "blog/02_que-es-quarto.html",
-    "href": "blog/02_que-es-quarto.html",
-    "title": "¿Qué son R, RStudio y Quarto?",
-    "section": "",
-    "text": "En el curso usaremos R, RStudio y Quarto. Los 3 son programas de ordenador, pero son muy diferentes. Conviene diferenciarlos y saber para qué sirve cada uno. Trato de explicarlo."
-  },
-  {
-    "objectID": "blog/02_que-es-quarto.html#qué-es-r",
-    "href": "blog/02_que-es-quarto.html#qué-es-r",
-    "title": "¿Qué son R, RStudio y Quarto?",
-    "section": "1 ¿Qué es R?",
-    "text": "1 ¿Qué es R?\nR es un programa de ordenador, una pieza de software, pero principalmente es un lenguaje de programación y un entorno para hacer estadística o ciencia de datos.\nLa página oficial de R dice que:\n\nR is a language and environment for statistical computing and graphics.\n\nActualmente R es el principal lenguaje usado (junto con Phyton) en el campo de la estadística y la ciencia de datos.\nR fue creado por 2 profesores de la universidad de Auckcland: Ross Ihaka y Robert Gentleman. Algunos dicen que el nombre R viene de sus iniciales, otros piensan que se debe a que para crear R se basaron en el lenguaje S1. Quizás se deba a las 2 cosas.\nR. Ihaka y R. Gentleman crearon R en 1993 con el objetivo de tener un programa para enseñar estadística en sus clases. En 1995 decidieron que R pasase a ser a dominio público, de forma que actualmente es un proyecto GNU con licencia GPL; es decir, es software libre.\nEn 1997 se creo un “consejo de sabios” (The R Core Team) para desarrollar y extender las capacidades de R. La primera versión oficial de R, la 1.0.0 vio la luz en febrero de 2000.\nActualmente el entorno R es el resultado de toda una comunidad de usuarios.\n\n\n\n\n\n\n¿R o Phyton?\n\n\n\n\n\nEn la actualidad, en el campo de la ciencia de datos, hay 2 alternativas, Phyton o R. De hecho hay un intenso debate sobre cual es más adecuado. Hay muchas opiniones al respecto, pero yo he seleccionado esta y esta, aunque la verdad, tampoco es necesario elegir un sólo lenguaje, R y Phyton pueden colaborar.\nR se está convirtiendo en el software estadístico de referencia en la mayoría de los centros de investigación y universidades, y su uso se está extendiendo también dentro de la empresa privada. Entre las empresas que usan R están: Google, Facebook, Twitter, Microsoft, IBM, Uber, Ford, Airbnb, American Express, Barclays Bank, Bank of America y muchas otras. Aquí o aquí puedes encontrar un listado más completo.\nCreo que en la actualidad R es el mejor programa para iniciarse y hacer análisis de datos. Si no me acabas de creer, o quieres leer algo sobre la importancia y capacidades de R puedes hacerlo aquí o aquí, o aquí o más recientemente aquí. Elmo lo tiene super-claro:\n\n\nFinally an end to the #rstats vs. 🐍 debate! pic.twitter.com/IDjmE0XIRG— Mine Çetinkaya-Rundel (@minebocek) September 18, 2019\n\n\n\nSi te gustan los rankings de lenguajes de programación, aquí tienes uno, de enero de 2020, en el Phyton está en segundo lugar mientras que R está en el puesto 13. Esto es lo que que se decía de R:\n\nIn our first run of these rankings, R placed 17th. All these years later it jumps two spots from the last quarter’s edition up to #13. In the interim, it has ranked as high as 12th but mostly commonly is found in the 13-15 range. Given the language’s specialized focus, this is likely its effective ceiling, but it’s also an illustration of the remarkable popularity of a language whose usage is restricted for all intents and purposes to a single domain – those who work with and operate on data. R’s success is an example of the power of an academia-supported community to elevate a language beyond its expected threshold, and it is notable that the aforementioned growth of Python and its expansion into data analytics has not observably come at the expense of traction in R.\n\nEl ranking más actual puedes verlo aquí.\nPara hacerte una idea de las capacidades de R puedes visitar:\n\nListado de paquetes R agrupados por temática\nAwesome R learning resources\nAwesome R\nRviews: un blog sobre R. cada mes promocionan 4o paquetes nuevos, por ejemplo este\nRweekly: publicación semanal sobre novedades en el mundo R.\nBig Book of R: libro electrónico con multitud de recursos sobre R.\n\n¿Aprender R es complicado? No, bueno, ya hablaré de eso en clase. No mires el siguiente tweet:\n\n\nLearning curve of R versus other tools (h/t @timothycbates) #rstats pic.twitter.com/UItBGTZ1s4— rogier kievit (@rogierK) May 12, 2016"
-  },
-  {
-    "objectID": "blog/02_que-es-quarto.html#qué-es-rstudio",
-    "href": "blog/02_que-es-quarto.html#qué-es-rstudio",
-    "title": "¿Qué son R, RStudio y Quarto?",
-    "section": "2 ¿Qué es RStudio?",
-    "text": "2 ¿Qué es RStudio?\nSí, es un programa de ordenador, pero no es un programa para hacer estadística ni es un lenguaje de programación. RStudio nos servirá para poder interactuar con R de forma más cómoda y eficiente.\nPara entenderlo: cuando hacemos un análisis estadístico, R es el que hace los cálculos, gráficos etc… R lo hace todo pero le damos las ordenes a R a través de RStudio. RStudio es una interfaz para acceder a R de manera más cómoda. Técnicamente RStudio es un IDE (Integrated development environment) diseñado especialmente para R. Intuitivamente es un programa que nos facilita dar nuestras ordenes a R: si R y RStudio formasen parte de un coche, R sería el motor y Rstudio el volante y los pedales.\nRStudio fue creado en 2011 y actualmente es el entorno, o IDE, más usado para programar con R.\nTodavía no sabemos que es Quarto, pero RStudio nos facilita la interacción tanto con R como con Quarto. Son ellos, son R y Quarto, los que harán el “trabajo duro”, concreta mente R hará los cálculos, si es que nuestro documento/informe es de índole cuantitativo, y Quarto generará el documento final, ya sea este un tutorial, unas slides, página web, etc …\nA pesar de que Quarto y R son los que generan los resultados, nosotros no veremos habitualmente a estos dos programas, porque interactuaremos con ellos a través de RStudio."
-  },
-  {
-    "objectID": "blog/02_que-es-quarto.html#qué-es-quarto",
-    "href": "blog/02_que-es-quarto.html#qué-es-quarto",
-    "title": "¿Qué son R, RStudio y Quarto?",
-    "section": "3 ¿Qué es Quarto?",
-    "text": "3 ¿Qué es Quarto?\nSí, también es un programa de ordenador, por tanto tenemos que instalarlo.\nEs un programa sin interfaz gráfica (sin menús ni ventanas). Se maneja a través la Términal con lineas de comandos, así que técnicamente es un programa de tipo CLI (command line interface), pero no sufras porque (casi siempre) interactuaremos con él a través de RStudio.\nQuarto es un programa para confeccionar documentos, documentos reproducibles. Se trata de escribir las ordenes que generan el documento en un archivo (source document) para que Quarto al procesarlo genere el documento final. Este documento final puede ser de diferentes tipos (tutoriales, informes, slides, webs, blogs, …) y formatos (html, pdf, docx, …).\nParece complicado pero enseguida verás que es easy-peasy-lemon-squeezy!!\nEn la página oficial de Quarto se dice que:\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc\n\nEs un programa de código abierto que sirve para escribir documentos (en sentido amplio) de carácter técnico y científico; y sí, usa Pandoc que es … otro programa!!\nQuarto es la segunda generación de Rmarkdown (otro entorno para hacer documentos técnicos) y podemos pensar que su anuncio semi-oficial se hizo con este post de Allison Hill, aunque su presentación a la sociedad y puesta de largo fue en el congreso rstudio::conf(2022).\nActualmente Quarto está en proceso de implantación por la comunidad R (pero también en las comunidades de Phyton y Julia) y es de esperar que cabe sustituyendo completamente al anterior sistema, Rmarkdown.\n\n\n\n\n\n\nUn poco de historia: en un principio fueron los dinosaurios, luego Rmarkdown\n\n\n\n\n\nQuarto es la segunga generación de Rmarkdown y es el objeto de estudio del curso, así que ya lo veremos\nQuarto y Rmarkdown sirven para confeccionar documentos, especialmente documentos cientifico-tecnicos. Estos documentos serán reproducibles.\nLa idea de documentos reproducibles viene de Literate Programming de Donald Knuth\nEn R siempre ha habido estas herramientas Sweave, pero después knitr"
-  },
-  {
-    "objectID": "blog/04_primeros-pasos-con-RStudio.html",
-    "href": "blog/04_primeros-pasos-con-RStudio.html",
-    "title": "¿Primeros pasos con R/RStudio?",
-    "section": "",
-    "text": "La investigación “debería” ser reproducible"
-  },
-  {
-    "objectID": "blog/23_extensiones.html",
-    "href": "blog/23_extensiones.html",
-    "title": "Extensiones",
-    "section": "",
-    "text": "Una de las novedades de Quarto es la posibilidad de usar extensiones. Las extensiones se escriben en el lenguaje Lua. Aquí la documentación oficial.\nVamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión “quarto-youtube-embed” que sirve para incluir vídeos de youtube en un documento .qmd."
-  },
-  {
-    "objectID": "blog/23_extensiones.html#un-ejemplo",
-    "href": "blog/23_extensiones.html#un-ejemplo",
-    "title": "Extensiones",
-    "section": "2 Un ejemplo",
-    "text": "2 Un ejemplo\nCon Rmd alguna vez he puesto vídeos en mis slides o tutoriales. Usaba el paquete de R vembed. Ahora, con Quarto, también podríamos hacerlo de esa forma, solo tendríamos que insertar en nuestro documento un chunk como:\n\n\nCódigo\n```{r}\n#| eval: false\nlibrary(\"vembedr\")\nembed_url(\"https://www.youtube.com/watch?v=ACv9zaBa1A4\")\n```\n\n\nAhora, con Quarto, podemos también hacerlo usando la extensión “quarto-youtube-embed”. Aquí está el repo de la extensión. Veamos cómo:\n\n\n\n\n\n\nTarea: Instalar y usar una extensión\n\n\n\nConcretamente instalaremos la extensión “quarto-youtube-embed”. El repo aquí. Aunque realmente el repo ha sido archivado. Veremos si se puede seguir instalando.\n\nLo primero es instalar la extensión de Quarto. Como pone en el repo, lo haremos desde la Terminal así:\n\n\n\nCódigo\nquarto install extension sellorm/quarto-youtube-embed\n\n\n\nUna vez instalada, podemos incrustar un vídeo usando el siguiente “shortcode” en nuestro documento .qmd:\n\n\n\nCódigo\n{{< youtube zk9zHqXm6m0 >}}\n\n\nCon lo que habremos incrustado el vídeo en nuestro documento .html final."
-  },
-  {
-    "objectID": "blog/23_extensiones.html#el-shortcode-video",
-    "href": "blog/23_extensiones.html#el-shortcode-video",
-    "title": "Extensiones",
-    "section": "3 El shortcode << video >>",
-    "text": "3 El shortcode << video >>\nLa extensión “quarto-youtube-embed” funcionaba perfectamente pero se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. Solo hay que usar el siguiente shortcode:\n\n\nCódigo\n{{< video https://youtu.be/7SVYNyvi0wQ >}}\n\n\n\n\nAquí la documentación oficial del shortcode {{ < video   >}}. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar vídeos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el vídeo y algunas cosas más."
-  },
-  {
-    "objectID": "blog/23_extensiones.html#listado-de-extensiones",
-    "href": "blog/23_extensiones.html#listado-de-extensiones",
-    "title": "Extensiones",
-    "section": "4 Listado de extensiones",
-    "text": "4 Listado de extensiones\nAquí tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están aquí."
-  },
-  {
-    "objectID": "blog/23_extensiones.html#otro-ejemplo-lightbox",
-    "href": "blog/23_extensiones.html#otro-ejemplo-lightbox",
-    "title": "Extensiones",
-    "section": "5 Otro ejemplo (Lightbox)",
-    "text": "5 Otro ejemplo (Lightbox)\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Lightbox”.\nLo que hace esta extensión es que podamos pinchar en una imagen y verla ampliada y con una descripción. Aquí puedes ver ejemplos de lo que se puede hacer con “Lightbox”.\nEn el repo se explica con más detalle lo que se puede hacer con “Lightbox”.\n\n\n\n\n\n\nTarea: Instalar y usar la extensión “Lightbox”\n\n\n\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Lightbox”. Su repo aquí\n\nLo primero es instalar la extensión desde la Terminal:\n\n\n\nCódigo\nquarto install extension quarto-ext/lightbox\n\n\nEsta vez, para poder usar la extensión en un documento .qmd hemos de incluir en el yaml del documento lo siguiente:\n---\ntitle: Simple Lightbox Example\nfilters:\n   - lightbox\n---\n\n![Mi imagen con Lighbox activado](./imagenes/economia.gif){.lightbox description=\"El logo-nano de la facultad de Economía de la Universtat de València\"\ndesc-position=\"left\"}\n\nCon lo que veríamos algo como:\n\n\n\n\nMi imagen con Lighbox activado"
-  },
-  {
-    "objectID": "blog/23_extensiones.html#otro-ejemplo-tweets",
-    "href": "blog/23_extensiones.html#otro-ejemplo-tweets",
-    "title": "Extensiones",
-    "section": "6 Otro ejemplo (tweets)",
-    "text": "6 Otro ejemplo (tweets)\nVoy a instalar una nueva extensión, concretamente la extensión Quarto social embeds. Concretamente con esta extensión podremos insertar en nuestros documentos: gists de GitHub, videos de Loom, youtube y Vimeo y tweets. Realmente la instalo porque quiero tenerla disponible para insertar tweets.\nEn el repo se explica con más detalle lo que se puede hacer con Quarto social embeds.\n\n\n\n\n\n\nInstalar y usar la extensión Quarto social embeds\n\n\n\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Quarto social embeds”. Su repo está aquí.\n\nLo primero es instalar la extensión desde la Terminal:\n\n\n\nCódigo\nquarto install extension sellorm/quarto-social-embeds\n\n\n\nPara insertar un tweet has de:\n\n\nCódigo\n{{< tweet user=<username> id=<id> >}}\n\npor ejemplo:\n\n{{< tweet user=ambitocultural id=1589543369512026112 >}}\n\n\n\n\nPara insertar un gist de Github has de:\n\n\nCódigo\n{{< gist sellorm 20525aff669acafb975b7495b8f2066e >}}"
-  },
-  {
-    "objectID": "blog/07_crear-slides.html",
-    "href": "blog/07_crear-slides.html",
-    "title": "Slides con Quarto",
-    "section": "",
-    "text": "La investigación “debería” ser reproducible"
-  },
-  {
-    "objectID": "blog/07_crear-slides.html#incremental",
-    "href": "blog/07_crear-slides.html#incremental",
-    "title": "Slides con Quarto",
-    "section": "2 Incremental",
-    "text": "2 Incremental\nSe puede hacer con . . . o con ### ¿Qué tipo de documentos?{.incremental} en el título inicial de la slide"
-  },
-  {
-    "objectID": "blog/99_pruebas.html#referencias",
-    "href": "blog/99_pruebas.html#referencias",
-    "title": "Probando cosas",
-    "section": "Referencias",
-    "text": "Referencias\n(Algunos artículos que hablan de esto …)\n\n\n«Andrew Heiss (🐘 @andrew@fediscience.org) en Twitter». 2023. Twitter. https://twitter.com/andrewheiss/status/1612466959534428161.\n\n\n«Better bibliography management with Overleaf, CiteDrive, and BibTeX/BibLaTeX — about 3.0 and an updated guide». s. f. Accedido 6 de febrero de 2023. https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex.\n\n\nÇetinkaya-Rundel, Mine. 2022. «A Quarto tip a day - Citations». https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/.\n\n\nCiteDrive. 2022. «Bibliography Management in R Markdown with CiteDrive and RStudio». Medium. https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619.\n\n\nHeiss, Andrew. s. f. «How to migrate from BibDesk to Zotero for pandoc-based writing  Andrew Heiss». Accedido 14 de enero de 2023. https://www.andrewheiss.com/blog/2023/01/08/bibdesk-to-zotero-pandoc/.\n\n\nKashnitsky, Ilya. 2019. «Zotero hacks: unlimited synced storage and its smooth use with rmarkdown  Ilya Kashnitsky». https://ikashnitsky.github.io/2019/zotero/.\n\n\nMaurya, Heyan. 2022. «3 Ways to install Zotero on Ubuntu 22.04 or 20.04 LTS». Linux Shout. https://www.how2shout.com/linux/how-to-install-zotero-on-ubuntu-22-04-or-20-04-lts/.\n\n\n«Print References/Reading List/Bibliography in Your Syllabus (With Some Style) in R Markdown and {stevemisc}». s. f. Steven V. Miller. Accedido 6 de febrero de 2023. http://svmiller.com/blog/2022/01/print-references-reading-list-syllabus-r-markdown-stevemisc/.\n\n\n«Quarto - Citations & Footnotes». s. f. Accedido 6 de febrero de 2023. https://quarto.org/docs/authoring/footnotes-and-citations.html.\n\n\n«Quarto - Technical Writing». s. f. Accedido 14 de enero de 2023. https://quarto.org/docs/visual-editor/technical.html#citations.\n\n\n«quick start guide [Zotero Documentation]». s. f. Accedido 14 de enero de 2023. https://www.zotero.org/support/quick_start_guide.\n\n\n«R Markdown TUTORIAL  A powerful tool for LEARNING R (IN 45 MINUTES) - YouTube». s. f. Accedido 14 de enero de 2023. https://www.youtube.com/watch?v=K418swtFnik.\n\n\nRiederer, Emily, Christophe Dervieux. s. f. 4.5 Bibliographies and citations  R Markdown Cookbook. Accedido 6 de febrero de 2023. https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html.\n\n\nRodríguez-Sanchez, Francisco, Antonio Jesús Pérez-Luque, Ignasi Bartomeus, y Sara Varela. 2016. «Ciencia reproducible: ¿qué, por qué, cómo?» Ecosistemas 25 (2): 83-92. https://doi.org/10.7818/ecos.2016.25-2.11.\n\n\n«Using CiteDrive to keep bibliography and references in sync with Quarto® in RStudio.» s. f. Accedido 6 de febrero de 2023. https://www.youtube.com/watch?v=eukDLQV-EMs.\n\n\nWickham, Hadley, y Garrett Grolemund. 2010. «Graphics for Statistics and Data Analysis withR». Journal of Statistical Software 36 (Book Review 3). https://doi.org/10.18637/jss.v036.b03."
-  },
-  {
-    "objectID": "blog/21_layouts.html",
-    "href": "blog/21_layouts.html",
-    "title": "Layout’s",
-    "section": "",
-    "text": "Además de yaml, texto y chunks, para escribir con Quarto conviene conocer la estructura o layout de los artículos que se generan con él. Las páginas tienen un body, un margin y un área para las sidebars, que en nuestro caso contiene un TOC1. Documentación oficial aquí.\nUsando divs y spans podemos añadir clases y atributos, haciendo que determinados elementos de nuestro documento cambien sus “propiedades”. En esta sección usaremos divs para hacer que determinadas partes de nuestro post se ajusten a distintos layout’s."
-  },
-  {
-    "objectID": "blog/21_layouts.html#ejemplo-con-imágenes",
-    "href": "blog/21_layouts.html#ejemplo-con-imágenes",
-    "title": "Layout’s",
-    "section": "2 Ejemplo (con imágenes)",
-    "text": "2 Ejemplo (con imágenes)\nPara ver las distintas posibilidades que tenemos, insertaremos una imagen ocupando distintas áreas del artículo. Empezaremos situando la imagen en el margen. para ello habría que hacer lo siguiente:\n::: {.column-margin}\n\n![](imagenes/post_21_img_01.png){fig-align=\"center\"}\n\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSi queremos podemos llegar a ocupar el 100% de la pantalla. Sólo habría que indicarlo en las opciones de la imagen con width=\"100%\"."
-  },
-  {
-    "objectID": "blog/21_layouts.html#ejemplo-con-chunks",
-    "href": "blog/21_layouts.html#ejemplo-con-chunks",
-    "title": "Layout’s",
-    "section": "3 Ejemplo (con chunks)",
-    "text": "3 Ejemplo (con chunks)\nEl output de los chunks también puede ocupar distintas áreas. Veamos si un leaflet se puede poner en el margen:\n\n\nCódigo\n```{r}\n#| column: margin\nlibrary(leaflet)\nleaflet() %>%\n  addTiles() %>%  # Add default OpenStreetMap map tiles\n  addMarkers(lng = -4.7880, lat = 37.885, popup = \"Rectorado de la Universidad de Córdoba\\n (Sede de las XII Jornadas de usuarios de R)\")\n```\n\n\n\n\n\n\n\nY ahora ocupando toda la pantalla:\n\n\nCódigo\n```{r}\n#| column: screen\nlibrary(leaflet)\nleaflet() %>%\n  addTiles() %>%  # Add default OpenStreetMap map tiles\naddMarkers(lng = -4.7880, lat = 37.885, popup = \"Rectorado de la Universidad de Córdoba\\n (Sede de las XII Jornadas de usuarios de R)\")\n```\n\n\n\n\n\n\n\nComo no puede ser de otro modo, aún hay más opciones para el layout. Documentación aquí"
-  },
-  {
-    "objectID": "blog/21_layouts.html#layout-de-las-páginas",
-    "href": "blog/21_layouts.html#layout-de-las-páginas",
-    "title": "Layout’s",
-    "section": "4 Layout de las páginas",
-    "text": "4 Layout de las páginas\nAdemás, para el layout de toda la página tienes las opciones aquí. Si quieres crear un “custom layout” quizás tengas que usar Bootstrap CSS grid."
-  },
-  {
-    "objectID": "blog/22_shortcodes.html",
-    "href": "blog/22_shortcodes.html",
-    "title": "Usando shortcodes",
-    "section": "",
-    "text": "La documentación oficial de Quarto señala que:\n\nShortcodes are special markdown directives that generate various types of content.\n\nUn shortcode es un código (una etiqueta, un elemento) que puedes insertar en tus documentos .qmd para añadir algún tipo de contenido en ellos sin tener que escribirlo directamente.\n¿Y por qué querríamos hacer esto? Pues resulta que muchas veces, en un proyecto, queremos incluir el mismo contenido en varios sitios o en varios documentos; esto es facilitado al usar shortcodes.\nMás que qué son, lo importante es para lo que sirven, y sirven para poder insertar fácilmente contenido que se repite.\n\n\nLo más evidente es que si hemos de insertar el mismo contenido varias veces o en varios documentos es más fácil hacerlo con shortcodes; además, si el contenido que gestionas con shortcodes cambia, solo tendrás que modificarlo una vez y automáticamente se cambiara en todos los sitios en los que hayan incluido tu shortcode.\nPor ejemplo, es muy probable que incluyas tu dirección de contacto en varios sitios de una página web o en varios archivos de tu Qproject, así que mejor gestionar e incluir este contenido en tus documentos a través de shortcodes, porque si esta dirección cambia solo tendrás que modificarla una vez.\n\n\n\nEl título de este post es “Usando shortcodes”. Imagina que ahora mismo necesito incluir el título del post en esta sección. No nos costaría mucho copiarlo y pegarlo pero … ¿y si luego decido cambiar el título? Es evidente, que si hay algún tipo de contenido que se repite, quizás debamos plantearnos la posibilidad de gestionarlo con shortcodes. Veamos un primer ejemplo.\nPor ejemplo, {{< meta >}} es un shortcode que permite incluir elementos de los metadatos de un archivo quarto: si incluimos {{< meta title >}} estaríamos insertando el título del documento; mientras que si incluimos {{< meta date >}} incluiríamos la fecha de creación del documento.\nVeamos como podemos usarlo:\n\nPara que se muestre esto …Has de escribir\n\n\nEl título de este post es “Usando shortcodes”, y fue creado el 22 de enero de 2023.\nEl objetivo del post es: “Cómo usar shortcodes en Quarto para, entre otras cosas, poder incluir el mismo contenido en varios documentos.”\n\n\nEl título de este post es \"{{< meta title >}}\", y fue creado el {{< meta date >}}. \n\nEl objetivo del post es:  \"{{< meta description >}}\""
-  },
-  {
-    "objectID": "blog/22_shortcodes.html#tipos-de-shortcodes",
-    "href": "blog/22_shortcodes.html#tipos-de-shortcodes",
-    "title": "Usando shortcodes",
-    "section": "2 Tipos de shortcodes",
-    "text": "2 Tipos de shortcodes\nDe momento, los que yo he usado son:\n\n{{< meta >}} : permite incluir elementos de los metadatos de un documento\n{{< var >}} : permite incluir elementos definidos en el fichero _variables.yml. Este fichero es de nivel proyecto\n\nAdemás:\n\n{{< include >}} : permite incluir el contenido de un archivo .qmd. Documentación oficial aquí\n{{< video >}} : permite incluir vídeos"
-  },
-  {
-    "objectID": "blog/22_shortcodes.html#más-ejemplos",
-    "href": "blog/22_shortcodes.html#más-ejemplos",
-    "title": "Usando shortcodes",
-    "section": "3 Más ejemplos",
-    "text": "3 Más ejemplos\n\n\nIncluir contenido de _variables.yml\nDentro de un proyecto, podemos crear un fichero llamado _variables.yml donde podemos definir variables con contenido para ser incluido en nuestros documentos .qmd con el shortcode {{< var >}}. El fichero _variables.yml tiene que residir en la carpeta raíz del proyecto.\nVamos a ver un ejemplo de uso:\n\nSi el contenido de _variables.yml es …… puedes escribir lo siguiente ….… para que se muestre ….\n\n\nemail:\n  pedro: pedro@uvv.es\n  juan: juan@gmaillll.com\n\npedroblog: \"[Uno de mis blogs](https://perezp44.github.io/pjperez.web/01_blog.html)\"\n\n\nEl email de Pedro es {{< var email.pedro >}} y el de Juan es {{< var email.juan >}}.\nUno de los blogs de Pedro es {{< var pedroblog >}} .\n\n\nEl email de Pedro es pedro@uvv.es y el de Juan es juan@gmaillll.com.\nUno de los blogs de Pedro es Pedro’s blog .\n\n\n\n\n\n\nIncluir contenido de un archivo\nEn un proyecto en el que elaboraba tutoriales y slides con el mismo contenido en algunas partes, usé muchas veces el shortcode {{< include >}}. Me permitió incluir el mismo contenido en varios ficheros. Además, tuve que modificarlo varias veces, pero como gestionaba ese contenido con {{< include >}} solo tenía que modificarlo en un sitio. Os cuento con un ejemplo cómo se hace.\nSi crees que un determinado contenido puede ser utilizado en varios sitios, quizá sea más eficiente tener ese contenido en un fichero independiente e incluirlo a través del shortcode {{< include >}}.\nImagina que quieres incluir este contenido:\n\nQuieres incluir este contenido …… contenido que es generado con este código\n\n\nEl conjunto de datos iris tiene 5 variables y 150 filas. Veamos un resumen con summary()\n\n\nCódigo\nsummary(iris)\n\n\n  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   \n Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  \n 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  \n Median :5.800   Median :3.000   Median :4.350   Median :1.300  \n Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  \n 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  \n Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  \n       Species  \n setosa    :50  \n versicolor:50  \n virginica :50  \n                \n                \n                \n\n\n\n\nEl conjunto de datos iris tiene `r ncol(iris)` variables y `r nrow(iris)` filas. Veamos un resumen con `summary()`\nsummary(iris)\n\n\n\nPara poder incluir ese contenido haciendo uso de {{< include >}} deberás:\n\nCrear un documento, llamado por ejemplo _my_include_01.qmd, que contenga el código que hemos visto anteriormente.\n\nEl nombre del fichero es conveniente que empiece por _ porque eso hace que cuando hagamos un render del proyecto, este archivo no se procese. No queremos procesarlo, queremos que su contenido se incluya en otro documento y eso lo haremos utilizando el shortcode {{< include >}}.\n\nUna vez hemos creado el documento _my_include_01.qmd para que su contenido aparezca (y se ejecute, si tiene código ejecutable) en el documento que nosotros queramos, tendremos que incluir en este último documento lo siguiente: {{< include _my_include_01.qmd >}}\n\nRealmente {{< include _my_include_01.qmd >}} funcionará si el fichero _my_include_01.qmd está en la misma carpeta que el documento en el que queremos que parezca su contenido; si estuviese en otra ubicación habría que proporcionar la ruta relativa a _my_include_01.qmd.\n\n\n\n\n\nIncluir videos\nSe pueden incluir vídeos usando paquetes de R, también con extensiones de Quarto, pero es más cómodo hacerlo con el shortcode {{< video >}}\n\nPara incluir este video …… has de …\n\n\n\n\n\nHas de usar este shortcode:\n{{< video video https://www.youtube.com/embed/ZkECLuuRwTg >}}\nNo es tan-tan sencillo porque cuando vas a Youtube a ver ese vídeo lo ves en esta dirección: https://www.youtube.com/watch?v=ZkECLuuRwTg; como ves hay que sustituir watch?v= por embed/.\n\n\n\n\n\n\nSaltos de página\nComo casi siempre uso Quarto para generar documentos html, no me suelo preocupar por los saltos de página; aunque es verdad que si luego quiero imprimir el documento html como un pdf me arrepiento de no haberlo hecho; vamos que conviene pensar en los saltos de página y es que además es muy fácil incorporarlos con el shortcode {{< pagebreak >}}. Además, como se cuenta aquí, estos saltos de página funcionan para diferentes formatos de salida:\n\nNative pagebreaks are supported for HTML, LaTeX, Context, MS Word, Open Document, and ePub"
-  },
-  {
-    "objectID": "blog/22_shortcodes.html#referencias",
-    "href": "blog/22_shortcodes.html#referencias",
-    "title": "Usando shortcodes",
-    "section": "Referencias",
-    "text": "Referencias\n(Algunos artículos que hablan de esto …)\n\n\n«6 Productivity Hacks for Quarto». 2022. https://www.rstudio.com/blog/6-productivity-hacks-for-quarto/.\n\n\n«Quarto - Creating Shortcodes». s. f. Accedido 2 de febrero de 2023. https://quarto.org/docs/extensions/shortcodes.html."
-  },
-  {
-    "objectID": "blog/25_css.html",
-    "href": "blog/25_css.html",
-    "title": "Tuneando con CSS",
-    "section": "",
-    "text": "La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo del post no es dar una clase sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS."
-  },
-  {
-    "objectID": "blog/25_css.html#cómo-incorporar-cambios-con-css",
-    "href": "blog/25_css.html#cómo-incorporar-cambios-con-css",
-    "title": "Tuneando con CSS",
-    "section": "1 ¿Cómo incorporar cambios con CSS?",
-    "text": "1 ¿Cómo incorporar cambios con CSS?\n\nUtilizando spans\nEn este quarto-tip, Mine Çetinkaya-Rundel lo explica muy bien.\nPara cambiar la apariencia de un trozo de texto, tienes que meterlo dentro de [] y usando {} para definir el estilo que quieres aplicar a ese texto. Con un ejemplo se entiende mejor:\n\nPara que se muestre esto …Has de escribir\n\n\nPara llamar la atención puedes escribir en rojo o con un fondo amarillo; o las dos cosas a la vez.\n\n\nPara llamar la atención puedes escribir en [rojo]{style=\"color: red\"} \no con un [fondo amarillo]{style=\"background-color: yellow;\"}; \no las [dos cosas a la vez]{style=\"color: red; background-color: yellow;\"}.\n\n\n\n\n\n\nCon ficheros .css\nSi piensas reutilizar algunos estilos, entonces es mejor definir los estilos en un archivo .css.\nSi quisiéramos poder reutilizar los estilos que hemos definido en la anterior sección, tendríamos que crearlos como clases en un archivo css. Por ejemplo crearíamos el archivo: ./assets/mis_estilos_01.css con el siguiente contenido:\n/* css styles */\n\n.rojo {\n  color: red;\n}\n\n.yellow-background {\n  background-color: yellow;\n}\n\n.importante {\n  color: red;\n  background-color: yellow;\n}\nUna vez creado el archivo mis_estilos_01.csspara poder usar los estilos o clases allí definidos tendríamos que hacer 2 cosas:\n\nReferenciar el archivo css en el yaml del documento o post1. Esto lo haríamos incluyendo css: \"assets/mis_estilos_01.css\" en el yaml.\nUna vez incluido el fichero css en el yaml, ya podemos usar los estilos, para ello tendríamos que hacer lo siguiente:\n\n\nPara que se muestre esto …Has de escribirTambién podríamos haberlo hecho así:\n\n\nPara llamar la atención puedes escribir en rojo o con un fondo amarillo; o las dos cosas a la vez.\n\n\nPara llamar la atención puedes escribir en [rojo]{.rojo} \no con un [fondo amarillo]{.yellow-background}; \no las [dos cosas a la vez]{.importante}.\n\n\nPara llamar la atención puedes escribir en [rojo]{.rojo} \no con un [fondo amarillo]{.yellow-background}; \no las [[dos cosas a la vez]{.rojo}]{.yellow-background}."
-  },
-  {
-    "objectID": "blog/25_css.html#algunos-estilos-útiles",
-    "href": "blog/25_css.html#algunos-estilos-útiles",
-    "title": "Tuneando con CSS",
-    "section": "2 Algunos estilos útiles",
-    "text": "2 Algunos estilos útiles\nCon CSS se puede modificar la apariencia de todos los elementos de una página web. En el chunk de abajo muestro algunas de las posibilidades que usaba en mis xaringan slides.\n\n\nCódigo\n/* css styles: algunos q usaba en xaringan */\n\n.rotate-45 {transform: rotate(45deg); }\n.large { font-size: 140%; }\n.small { font-size: 80%; }\n   \n   \n/*  ----------------- colores  -------------- */ \n.purple{ color: #c077af; }\n.red { color: #ef342a; }\n.orange { color: #f57125; }\n.orange2 {color: #F58634;}\n.blue { color: #22b6ed; }\n.green { color: #1fb27f; }\n.green2 {color: #007965;}\n.yellow { color: #faca07; }\n.yellow2 {color: #FFCC29;}\n.brown {color: #a84d18; }\n\n\n/*  ----------------- una nueva clase de inversa: muy chula  -------------- */ \n.inverse2 {\n  background: #69686d;\n  color: #f2f2f6;\n}\n.inverse2 a {\n  color: #b2d68c;\n}\n.inverse2 h1, .inverse2 h2 {\n  color: #f2f2f6;\n  font-size: 72px;\n  line-height: 1.2em;\n}\n\n\n.textverd{\n  color: #b2d68c;\n  font-size: 60px;  \n}"
-  },
-  {
-    "objectID": "blog/25_css.html#estilos-útiles-pero-un-poco-bizarros",
-    "href": "blog/25_css.html#estilos-útiles-pero-un-poco-bizarros",
-    "title": "Tuneando con CSS",
-    "section": "3 Estilos útiles pero (un poco) bizarros!!",
-    "text": "3 Estilos útiles pero (un poco) bizarros!!\nEn clase, para mostrar como podemos modificar algunos de los elementos de un documento hecho con Rmd (ahora con Quarto) usaba un archivo css con cambios digamos un poco raros: a lo mejor ponía el titulo en pink, el autor en verde etc.. etc… Sólo era un ejemplo para mostrar algunas de las posibilidades para modificar la apariencia de un documento con CSS.\nSi quieres ver como quedaría este mismo post pero utilizando las reglas CSS (bizarras) que puedes ver abajo, puedes hacerlo aquí. Ya os digo que los cambios son un poco raros, vamos no muy estéticos.\n\n\nCódigo\n/* definiendo estilos del body : de toda la página */ \nbody { \n  background-color: aliceblue; }  /* color del fondo*/ \n\n\n/* importo un tipo de letra */ \n@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300); \n\n/* definiendo estilos de los párrafos */ \np {\n  text-align: justify;         /* justificar el texto del body */      \n  line-height: 1.4;            /* anchura entre las lineas 1.0 is the default in Firefox. 2.0 provides a large space */     \n  margin: 10px 0px 10px 0px;    /* margenes entre los párafos: top, izquierda, abajo, left */   \n  font-size: 13pt;                                     /* tamaño de letra */   \n  font-family: 'Open Sans', Helvetica, sans-serif; }   /* tipo de letra */  \n\n\n\n/* definiendo estilos de las cajas de código (chunks) */ \npre {\n  background-color: pink;  /* color de las cajas de código */ \n    font-size: 10pt;\n    border-radius: 9px;     /* q los bordes de las cajas sean redondas */ \n    font-family: Monaco, monospace;\n    border: 3px solid green; }\n\n/* hacer cambios en el texto en negrita, ahora el texto en negrita saldrá en verde!!! */ \nstrong {\n  color: green; }\n\n\n/* cambiar el color de los hipervinculos/enlaces  */\na {\n  color: brown;\n  font-weight: bold; }\n\n\n/* cambiar el aspecto del TOC: \nhttps://stackoverflow.com/questions/42546001/how-to-change-colors-and-attributes-of-table-of-contents-in-r-markdown-html-docu */\n.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{\n  color: darkgreen;\n  font-weight: bold;\n  background-color: gold; }\n   \n   \n/* para hacer cajas de texto de colorines*/\n\n.caja-darkkhaki { background-color:#bdb76b; border-radius: 4px; padding: 13px;}\n\n.caja-linea-verde {  color: #004346;\n  background-color: #fff;\n  border-top: 4pt solid #09bc8a;\n  border-right-style: none;\n  border-bottom-style: none;\n  border-left-style: none;\n  padding: 23px 10px 21px 10px;\n}\n\n\n/* Guía para los colores: https://htmlcolorcodes.com/es/nombres-de-los-colores/  */\n\n \n /* para las quotes o citas */\n\nblockquote {\n    padding: 10px 20px;\n    margin: 0 0 20px;\n    font-size: 14px;\n    border-left: 5px solid #DC143C;\n}\n\n\n/* para hacer lineas de colores */\n.linea-black {\n  border-top: 1px solid black;\n}\n\n\n.linea-red {\n  border-top: 2px dashed red;\n}"
   },
   {
     "objectID": "materiales.html",
@@ -385,95 +28,39 @@
     "text": "Materiales\nDurante el curso se utilizarán las siguientes slides:\n\nSlides 01: Presentación\n\n\nSlides 02: Primeros pasos\n\n\nSlides 03: Aprendiendo a escribir en QMD (Intro a QMD)\n\nSeguramente usaremos esta Etherpad."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Pedro J. Pérez",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog para curso “Escribiendo con R y Quarto”",
     "section": "",
-    "text": "Mi nombre es Pedro J. Pérez. Soy profesor del departamento de Análisis Económico de la Universitat de València. Utilizo R en mi docencia e investigación, aquí uno de mis cursos. Me gusta aprender y trastear con ; vamos, que aún soy un entusiasta de R. Me divierto!!\nA pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien soy un creador y liquidador de blogs. Aquí, puedes ver un listado no exhaustivo de los blogs que he liquidado.\nLa verdad es que me gusta escribir posts, tienes mucha más libertad que al escribir un informe o un artículo académico; además, los posts no tienen porque estar perfectos, cuando te apetece los puedes dejar. Aunque los posts no estén acabados del todo, el pensar que alguien puede leerlos te hace pensar y reflexionar sobre lo que escribes.\n\nRemember kids, the only difference between screwing around and science is writing it down — Adam Savage de MythBusters"
+    "text": "¿Qué son R, RStudio y Quarto?\n\n\n\n\n\n\n\nreproducibilidad\n\n\n\n\nEn el curso usaremos 3 programas: R, RStudio y Quarto, así que la primera tarea es saber qué son y para qué sirven: conviene saber diferenciar entre ellos.\n\n\n\n\n\n\n2 ene 2023\n\n\nPedro J. Pérez\n\n\n6 minutos\n\n\n\n\n\n\n  \n\n\n\n\nInstalación de R, RStudio y Quarto\n\n\n\n\n\n\n\nreproducibilidad\n\n\n\n\nSe presentan algunas ideas y referencias básicas sobre investigación reproducible.\n\n\n\n\n\n\n3 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\n¿Primeros pasos con R/RStudio?\n\n\n\n\n\n\n\nreproducibilidad\n\n\n\n\nSe presentan algunas ideas y referencias básicas sobre investigación reproducible.\n\n\n\n\n\n\n4 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nCreando documentos .qmd\n\n\n\n\n\n\n\nreproducibilidad\n\n\n\n\nSe presentan algunas ideas y referencias básicas sobre investigación reproducible.\n\n\n\n\n\n\n5 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nSlides con Quarto\n\n\n\n\n\n\n\nreproducibilidad\n\n\n\n\nPrimeros pasos para crear slides chulas con Quarto.\n\n\n\n\n\n\n7 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nReferencias bibliográficas\n\n\n\n\n\n\n\nQuarto\n\n\nbibliografía\n\n\n\n\n¿Cómo incluir referencias bibliográficas en documentos .qmd? Una buena opción es a través de ficheros .bib creados en Zotero.\n\n\n\n\n\n\n20 ene 2023\n\n\nPedro J. Pérez\n\n\n8 minutos\n\n\n\n\n\n\n  \n\n\n\n\nLayout’s\n\n\n\n\n\n\n\nQuarto\n\n\nlayout\n\n\n\n\nViendo las posibilidades de Layout que tenemos en Quarto\n\n\n\n\n\n\n21 ene 2023\n\n\nPedro J. Pérez\n\n\n1 minutos\n\n\n\n\n\n\n  \n\n\n\n\nUsando shortcodes\n\n\n\n\n\n\n\nQuarto\n\n\nshortcodes\n\n\n\n\nCómo usar shortcodes en Quarto para, entre otras cosas, poder incluir el mismo contenido en varios documentos.\n\n\n\n\n\n\n22 ene 2023\n\n\nPedro J. Pérez\n\n\n5 minutos\n\n\n\n\n\n\n  \n\n\n\n\nExtensiones\n\n\n\n\n\n\n\nQuarto\n\n\nextensiones\n\n\n\n\nIntentando entender qué son y cómo usar las extensiones de Quarto\n\n\n\n\n\n\n23 ene 2023\n\n\nPedro J. Pérez\n\n\n1 minutos\n\n\n\n\n\n\n  \n\n\n\n\nImágenes\n\n\n\n\n\n\n\nQuarto\n\n\nimágenes\n\n\n\n\nRepasando algunas opciones de Quarto para insertar imágenes.\n\n\n\n\n\n\n24 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nTuneando con CSS\n\n\n\n\n\n\n\nQuarto\n\n\nCSS\n\n\n\n\nCambiando el formato con CSS\n\n\n\n\n\n\n25 ene 2023\n\n\nPedro J. Pérez\n\n\n4 minutos\n\n\n\n\n\n\n  \n\n\n\n\nTuneando con CSS (cambios bizarros!!)\n\n\n\n\n\n\n\nQuarto\n\n\nCSS\n\n\n\n\nEl contenido de este post es el mismo que el del anterior, PERO , pero ahora haciendo cambios bizarros!! con CSS.\n\n\n\n\n\n\n26 ene 2023\n\n\nPedro J. Pérez\n\n\n4 minutos\n\n\n\n\n\n\n  \n\n\n\n\nObservable JS\n\n\n\n\n\n\n\nQuarto\n\n\nObservable\n\n\n\n\nIntentando entender qué es y cómo usar Observable JS en R.\n\n\n\n\n\n\n27 ene 2023\n\n\nPedro J. Pérez\n\n\n3 minutos\n\n\n\n\n\n\n  \n\n\n\n\nUsing R data with phyton\n\n\n\n\n\n\n\nQuarto\n\n\nPython\n\n\n\n\nViendo cómo usar datos de R en chunks de Py con Quarto.\n\n\n\n\n\n\n28 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nTuneado de un post con opciones de YAML\n\n\n\n\n\n\n\nQuarto\n\n\ntuneado yaml\n\n\n\n\nViendo cómo modificar la apariencia de un post con opciones de YAML.\n\n\n\n\n\n\n29 ene 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\n  \n\n\n\n\nProbando cosas\n\n\n\n\n\n\n\nQuarto\n\n\npruebas\n\n\n\n\nPost fake para hacer pruebas\n\n\n\n\n\n\n9 sept 2023\n\n\nPedro J. Pérez\n\n\n0 minutos\n\n\n\n\n\n\nNo hay resultados"
   },
   {
-    "objectID": "slides/slides_01_presentacion.html#calendario-1",
-    "href": "slides/slides_01_presentacion.html#calendario-1",
-    "title": "Presentación del curso",
-    "section": "Calendario",
-    "text": "Calendario\n\nLunes 26 de junio:\n\nIntro\nPrimeros pasos con R/RStudio/Quarto,\nMarkdown\nCreación de tutorial básico\n\nMiércoles 28 de junio:\n\nMejorando/tuneando nuestro tutorial,\nCreación de slides\nMás tipos de documentos\n\nLunes 3 de julio:\n\nCreación de webs y /blogs"
-  },
-  {
-    "objectID": "slides/slides_01_presentacion.html#sobre-mi-pedro-j.-pérez",
-    "href": "slides/slides_01_presentacion.html#sobre-mi-pedro-j.-pérez",
-    "title": "Presentación del curso",
-    "section": "Sobre mi (Pedro J. Pérez)",
-    "text": "Sobre mi (Pedro J. Pérez)\n\nProfesor en la UV (departamento de Análisis Económico) y entusiasta de R.\n\n\n\nWeb de mis cursos en 2022-23:\n\nEconometría\nIntro a la Ciencia de datos con R (tenéis que ver los trabajos de los estudiantes)\nCurso de Introducción a R (en el SFPIE).\n\n\n\n\n\nNo soy bloguero pero he impartido el taller Mi primer blog con Quarto en las XII Jornadas de ususarios de R. Algunos de mis blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto"
-  },
-  {
-    "objectID": "slides/slides_02_primeros-pasos.html#instalación",
-    "href": "slides/slides_02_primeros-pasos.html#instalación",
-    "title": "Primeros pasos con R/RStudio y Quarto",
-    "section": "Instalación",
-    "text": "Instalación\n\nTenemos que instalar los 3 programas.\n\n\n\nEn este orden:\n\nR: https://cran.r-project.org/\nRStudio: https://posit.co/download/rstudio-desktop/\nQuarto: https://quarto.org/docs/download/\n\n\n\n\nEn los 3 casos has de (logicamente) utilizar el instalador adecuado para tu sistema operativo"
-  },
-  {
-    "objectID": "slides/slides_02_primeros-pasos.html#formas-de-dar-ordenes-a-r-usando-rstudio",
-    "href": "slides/slides_02_primeros-pasos.html#formas-de-dar-ordenes-a-r-usando-rstudio",
-    "title": "Primeros pasos con R/RStudio y Quarto",
-    "section": "2 formas de dar ordenes a R (usando RStudio)",
-    "text": "2 formas de dar ordenes a R (usando RStudio)\n\nCon la ConsolaCon scripts ( o ficheros .R)\n\n\nAl abrir RStudio vemos (al ppio) 3 paneles\n\nLa Consola es el panel de la izquierda\nEl símbolo > en la consola se llama prompt\n\n\n\n\n\n\n\nPara dar una orden a R (desde la consola) solo tienes que escribir la orden (p.ej. 2 + 2) y pulsar Enter\nInconveniente: hay que escribir y ejecutar las instrucciones una a una\n\n\n\n\n\nTarea 2.1: Dar ordenes a R (a través de RStudio) desde la Consola\n\n\nDesde la Consola de RStudio haz que R haga las siguientes operaciones:\n\n2 + 2\nsqrt(9)\n\n\n\n\n\n\n\n\n\nUn “script” no es más que un fichero (con extensión .R) que contiene instrucciones o código R\nPodemos crear un fichero .R siguiendo esta ruta de menús: File > New file > R Script.\nSe abrirá un cuarto panel en RStudio, justo encima de la Consola\nUna vez has creado el fichero, escribes la instrucción y pulsas las teclas CONTROL + Enter\nEn un script sólo se pueden escribir 2 cosas:\n\nComentarios (si la linea comienza por el símbolo #)\nCódigo R (todas las lineas que no empiezan por #)\n\n\n\n\n\nTarea 2.2: Dar ordenes a R con scripts\n\n\nCrea un script (o fichero .R) para que R haga las siguientes operaciones:\n\n\n# operaciones básicas con R\n2 + 2    \n2 - 2    \n2 * 2    \n2 / 2 \n\n# raíz cuadrada\nsqrt(9)"
-  },
-  {
-    "objectID": "slides/slides_02_primeros-pasos.html#vamos-a-jugar-un-rato-con-rstudio",
-    "href": "slides/slides_02_primeros-pasos.html#vamos-a-jugar-un-rato-con-rstudio",
-    "title": "Primeros pasos con R/RStudio y Quarto",
-    "section": "Vamos a jugar un rato con RStudio",
-    "text": "Vamos a jugar un rato con RStudio\n\n\n\nNos servirá para familiarizarnos con :\n\nla interfaz de Rstudio\nlos conceptos de documento fuente (.qmd) y documento final (.html, .pdf, etc…)\n\n\n… y empezar a entender la sintaxis de “Quarto Markdown”"
-  },
-  {
-    "objectID": "slides/zz_sobre-mi.html#sobre-mi",
-    "href": "slides/zz_sobre-mi.html#sobre-mi",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Escribiendo con R y Quarto (aún muy WIP)",
-    "section": "Sobre mi",
-    "text": "Sobre mi\n\n\nProfesor en la UV: Econometría e Intro a la Ciencia de datos con R\nEntusiasta de R\n\n\n\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto\n\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
+    "section": "",
+    "text": "Bienvenidos!!!\na la web del curso “Creación de documentos reproducibles y páginas web con R”. Un título más amable podría ser “Escribiendo con R y Quarto”.\nEl curso es una introducción a Quarto. Quarto. es un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc…) científicas y técnicas. Usaremos Quarto y R a través de RStudio.\n\nEl profesor soy yo, Pedro J. Pérez.\n\nLos materiales del curso están en Materiales. Para seguir el curso hay que tener acceso a R, RStudio y Quarto. En Info tienes las instrucciones de instalación de los 3 programas.\n\nLos detalles sobre el curso: horario, aula , etc… están en Info"
   },
   {
-    "objectID": "slides/slides_tt_pruebas.html#estructura-del-taller",
-    "href": "slides/slides_tt_pruebas.html#estructura-del-taller",
-    "title": "Mi primer blog  con Quarto",
-    "section": "Estructura del taller",
-    "text": "Estructura del taller\nHola\n\nHola pepe como estas bien siiii bien bien\npepeote"
-  },
-  {
-    "objectID": "slides/slides_tt_pruebas.html#hola-1",
-    "href": "slides/slides_tt_pruebas.html#hola-1",
-    "title": "Mi primer blog  con Quarto",
-    "section": "Hola",
-    "text": "Hola"
-  },
-  {
-    "objectID": "slides/slides_tt_pruebas.html#cómo-va",
-    "href": "slides/slides_tt_pruebas.html#cómo-va",
-    "title": "Mi primer blog  con Quarto",
-    "section": "¿Cómo va?",
-    "text": "¿Cómo va?\nComo vas tete\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
-  },
-  {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#qué-es-quarto-1",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#qué-es-quarto-1",
+    "objectID": "slides/slides_03_aprendiendo-Qmd.html#qué-es-quarto-2",
+    "href": "slides/slides_03_aprendiendo-Qmd.html#qué-es-quarto-2",
     "title": "Aprendiendo a escribir en QMD",
     "section": "¿Qué es Quarto?",
     "text": "¿Qué es Quarto?\n\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nEs … la “segunda generación de Rmarkdown”\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R. Soporta lenguajes como Phyton, Julia y Observable.\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\nQuarto unifica funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI\n\n\n\n\n\n\n\n\nVentajas de Quarto [Opcional]\n\n\n\nProyecto en desarrollo activo … mientras que Rmarkdown it’s not going away pero …\nUnifica algunas de las funcionalidades de Rmarkdown\nPor ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\nPara ver si estas ventajas merecen la pena para ti puedes leer a Occasional Divergences, Nick Tierney, Alison Hill, Danielle Navarro, o esta pregunta de Stack Overflow.\n\n\n#::: {.smaller width=\"67%\"}\n#{{< tweet user=DanOvand0 id=1580343517154770944 >}}\n#:::\n\n\n\n\n\n\n\n\n\n\n\n¿Qué es Rmarkdown? ¿Para qué sirve? [Opcional]\n\n\n\nEl predecesor de Quarto\nUn “entorno” para hacer informes/publicaciones/transparencias REPRODUCIBLES con R.\n\n\nIs an authoring framework for data science, combining your code, its results, and your prose. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.\n\n\nCon Rmd se pueden generar multitud de outputs. Por ejemplo, visita está galería o este listado\n\n\nUna oda a Rmarkdown\n\nHow Rmarkdown changed my life: charla de Rob Hyndman sobre su proceso hasta llegar a usar Rmarkdown para hacer sus documentos científicos y webs."
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#para-poder-practicar-lo-que-aprendamos",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#para-poder-practicar-lo-que-aprendamos",
+    "objectID": "slides/slides_03_aprendiendo-Qmd.html#para-poder-practicar-lo-que-vayamos-aprendiendo",
+    "href": "slides/slides_03_aprendiendo-Qmd.html#para-poder-practicar-lo-que-vayamos-aprendiendo",
     "title": "Aprendiendo a escribir en QMD",
-    "section": "Para poder practicar lo que aprendamos …",
-    "text": "Para poder practicar lo que aprendamos …\n\n\n\n\nTarea 3.0: Crear un nuevo Qproject\n\n\n\nCierra RStudio\nCrea un nuevo Qproject llamado “my_qproject”\nInspecciona os documentos que hay dentro de “my_qproject”"
+    "section": "Para poder practicar lo que vayamos aprendiendo …",
+    "text": "Para poder practicar lo que vayamos aprendiendo …\n\n\n\n\nTarea 3.0: Vamos a crear un nuevo Qproject\n\n\n\nCierra RStudio\nCrea un nuevo Qproject llamado “my_qproject”\nInspecciona los documentos que hay dentro de “my_qproject”\nBorra el archivo my_qproject.qmd\nCrea un archivo .qmd llamado prueba_01.qmd"
   },
   {
     "objectID": "slides/slides_03_aprendiendo-Qmd.html#los-documentos-.qmd-tienen-3-4-partes",
     "href": "slides/slides_03_aprendiendo-Qmd.html#los-documentos-.qmd-tienen-3-4-partes",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Los documentos .qmd tienen 3-4 partes",
-    "text": "Los documentos .qmd tienen 3-4 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (escrito en Markdown) … y todo lo demás: imágenes, links, ecuaciones, etc …\n\n\n\nUn ejemplo\n\n\nsource code\n\n\n\n\n\n\n\n\n\n\n\noutput"
+    "text": "Los documentos .qmd tienen 3-4 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (escrito en Markdown) …\n… y todo lo demás: imágenes, links, ecuaciones, etc …\n\n\n\nUn ejemplo\n\n\nsource code\n\n\n\n\n\n\n\n\n\n\n\noutput"
   },
   {
     "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-narrativa",
@@ -567,10 +154,423 @@
     "text": "Práctica: un tutorial\n\n\nhttps://go.uv.es/pjperez/primer.blog"
   },
   {
-    "objectID": "tutoriales/01_taller_crear-blog-basico.html",
-    "href": "tutoriales/01_taller_crear-blog-basico.html",
-    "title": "Creación de un blog básico con Quarto",
+    "objectID": "slides/zz_sobre-mi.html#sobre-mi",
+    "href": "slides/zz_sobre-mi.html#sobre-mi",
+    "title": "Escribiendo con R y Quarto (aún muy WIP)",
+    "section": "Sobre mi",
+    "text": "Sobre mi\n\n\nProfesor en la UV: Econometría e Intro a la Ciencia de datos con R\nEntusiasta de R\n\n\n\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto\n\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
+  },
+  {
+    "objectID": "slides/slides_02_primeros-pasos.html#instalación",
+    "href": "slides/slides_02_primeros-pasos.html#instalación",
+    "title": "Primeros pasos con R/RStudio y Quarto",
+    "section": "Instalación",
+    "text": "Instalación\n\nTenemos que instalar los 3 programas.\n\n\n\nEn este orden:\n\nR: https://cran.r-project.org/\nRStudio: https://posit.co/download/rstudio-desktop/\nQuarto: https://quarto.org/docs/download/\n\n\n\n\nEn los 3 casos has de (logicamente) utilizar el instalador adecuado para tu sistema operativo"
+  },
+  {
+    "objectID": "slides/slides_02_primeros-pasos.html#formas-de-dar-ordenes-a-r-usando-rstudio",
+    "href": "slides/slides_02_primeros-pasos.html#formas-de-dar-ordenes-a-r-usando-rstudio",
+    "title": "Primeros pasos con R/RStudio y Quarto",
+    "section": "2 formas de dar ordenes a R (usando RStudio)",
+    "text": "2 formas de dar ordenes a R (usando RStudio)\n\nCon la ConsolaCon scripts ( o ficheros .R)\n\n\nAl abrir RStudio vemos (al ppio) 3 paneles\n\nLa Consola es el panel de la izquierda\nEl símbolo > en la consola se llama prompt\n\n\n\n\n\n\n\nPara dar una orden a R (desde la consola) solo tienes que escribir la orden (p.ej. 2 + 2) y pulsar Enter\nInconveniente: hay que escribir y ejecutar las instrucciones una a una\n\n\n\n\n\nTarea 2.1: Dar ordenes a R (a través de RStudio) desde la Consola\n\n\nDesde la Consola de RStudio haz que R haga las siguientes operaciones:\n\n2 + 2\nsqrt(9)\n\n\n\n\n\n\n\n\n\nUn “script” no es más que un fichero (con extensión .R) que contiene instrucciones o código R\nPodemos crear un fichero .R siguiendo esta ruta de menús: File > New file > R Script.\nSe abrirá un cuarto panel en RStudio, justo encima de la Consola\nUna vez has creado el fichero, escribes la instrucción y pulsas las teclas CONTROL + Enter\nEn un script sólo se pueden escribir 2 cosas:\n\nComentarios (si la linea comienza por el símbolo #)\nCódigo R (todas las lineas que no empiezan por #)\n\n\n\n\n\nTarea 2.2: Dar ordenes a R con scripts\n\n\nCrea un script (o fichero .R) para que R haga las siguientes operaciones:\n\n\n# operaciones básicas con R\n2 + 2    \n2 - 2    \n2 * 2    \n2 / 2 \n\n# raíz cuadrada\nsqrt(9)"
+  },
+  {
+    "objectID": "slides/slides_02_primeros-pasos.html#vamos-a-jugar-un-rato-con-rstudio",
+    "href": "slides/slides_02_primeros-pasos.html#vamos-a-jugar-un-rato-con-rstudio",
+    "title": "Primeros pasos con R/RStudio y Quarto",
+    "section": "Vamos a jugar un rato con RStudio",
+    "text": "Vamos a jugar un rato con RStudio\n\n\n\nNos servirá para familiarizarnos con :\n\nla interfaz de Rstudio\nlos conceptos de documento fuente (.qmd) y documento final (.html, .pdf, etc…)\n\n\n… y empezar a entender la sintaxis de “Quarto Markdown”"
+  },
+  {
+    "objectID": "slides/slides_01_presentacion.html#calendario-1",
+    "href": "slides/slides_01_presentacion.html#calendario-1",
+    "title": "Presentación del curso",
+    "section": "Calendario",
+    "text": "Calendario\n\nLunes 26 de junio:\n\nIntro\nPrimeros pasos con R/RStudio/Quarto,\nMarkdown\nCreación de tutorial básico\n\nMiércoles 28 de junio:\n\nMejorando/tuneando nuestro tutorial,\nCreación de slides\nMás tipos de documentos\n\nLunes 3 de julio:\n\nCreación de webs y /blogs"
+  },
+  {
+    "objectID": "slides/slides_01_presentacion.html#sobre-mi-pedro-j.-pérez",
+    "href": "slides/slides_01_presentacion.html#sobre-mi-pedro-j.-pérez",
+    "title": "Presentación del curso",
+    "section": "Sobre mi (Pedro J. Pérez)",
+    "text": "Sobre mi (Pedro J. Pérez)\n\nProfesor en la UV (departamento de Análisis Económico) y entusiasta de R.\n\n\n\nWeb de mis cursos en 2022-23:\n\nEconometría\nIntro a la Ciencia de datos con R (tenéis que ver los trabajos de los estudiantes)\nCurso de Introducción a R (en el SFPIE).\n\n\n\n\n\nNo soy bloguero pero he impartido el taller Mi primer blog con Quarto en las XII Jornadas de ususarios de R. Algunos de mis blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto"
+  },
+  {
+    "objectID": "slides/slides_tt_pruebas.html#estructura-del-taller",
+    "href": "slides/slides_tt_pruebas.html#estructura-del-taller",
+    "title": "Mi primer blog  con Quarto",
+    "section": "Estructura del taller",
+    "text": "Estructura del taller\nHola\n\nHola pepe como estas bien siiii bien bien\npepeote"
+  },
+  {
+    "objectID": "slides/slides_tt_pruebas.html#hola-1",
+    "href": "slides/slides_tt_pruebas.html#hola-1",
+    "title": "Mi primer blog  con Quarto",
+    "section": "Hola",
+    "text": "Hola"
+  },
+  {
+    "objectID": "slides/slides_tt_pruebas.html#cómo-va",
+    "href": "slides/slides_tt_pruebas.html#cómo-va",
+    "title": "Mi primer blog  con Quarto",
+    "section": "¿Cómo va?",
+    "text": "¿Cómo va?\nComo vas tete\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Pedro J. Pérez",
     "section": "",
-    "text": "Hola\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
+    "text": "Mi nombre es Pedro J. Pérez. Soy profesor del departamento de Análisis Económico de la Universitat de València. Utilizo R en mi docencia e investigación, aquí uno de mis cursos. Me gusta aprender y trastear con ; vamos, que aún soy un entusiasta de R. Me divierto!!\nA pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien soy un creador y liquidador de blogs. Aquí, puedes ver un listado no exhaustivo de los blogs que he liquidado.\nLa verdad es que me gusta escribir posts, tienes mucha más libertad que al escribir un informe o un artículo académico; además, los posts no tienen porque estar perfectos, cuando te apetece los puedes dejar. Aunque los posts no estén acabados del todo, el pensar que alguien puede leerlos te hace pensar y reflexionar sobre lo que escribes.\n\nRemember kids, the only difference between screwing around and science is writing it down — Adam Savage de MythBusters"
+  },
+  {
+    "objectID": "blog/05_crear-documento-qmd.html",
+    "href": "blog/05_crear-documento-qmd.html",
+    "title": "Creando documentos .qmd",
+    "section": "",
+    "text": "La investigación “debería” ser reproducible"
+  },
+  {
+    "objectID": "blog/22_shortcodes.html",
+    "href": "blog/22_shortcodes.html",
+    "title": "Usando shortcodes",
+    "section": "",
+    "text": "La documentación oficial de Quarto señala que:\n\nShortcodes are special markdown directives that generate various types of content.\n\nUn shortcode es un código (una etiqueta, un elemento) que puedes insertar en tus documentos .qmd para añadir algún tipo de contenido en ellos sin tener que escribirlo directamente.\n¿Y por qué querríamos hacer esto? Pues resulta que muchas veces, en un proyecto, queremos incluir el mismo contenido en varios sitios o en varios documentos; esto es facilitado al usar shortcodes.\nMás que qué son, lo importante es para lo que sirven, y sirven para poder insertar fácilmente contenido que se repite.\n\n\nLo más evidente es que si hemos de insertar el mismo contenido varias veces o en varios documentos es más fácil hacerlo con shortcodes; además, si el contenido que gestionas con shortcodes cambia, solo tendrás que modificarlo una vez y automáticamente se cambiara en todos los sitios en los que hayan incluido tu shortcode.\nPor ejemplo, es muy probable que incluyas tu dirección de contacto en varios sitios de una página web o en varios archivos de tu Qproject, así que mejor gestionar e incluir este contenido en tus documentos a través de shortcodes, porque si esta dirección cambia solo tendrás que modificarla una vez.\n\n\n\nEl título de este post es “Usando shortcodes”. Imagina que ahora mismo necesito incluir el título del post en esta sección. No nos costaría mucho copiarlo y pegarlo pero … ¿y si luego decido cambiar el título? Es evidente, que si hay algún tipo de contenido que se repite, quizás debamos plantearnos la posibilidad de gestionarlo con shortcodes. Veamos un primer ejemplo.\nPor ejemplo, {{< meta >}} es un shortcode que permite incluir elementos de los metadatos de un archivo quarto: si incluimos {{< meta title >}} estaríamos insertando el título del documento; mientras que si incluimos {{< meta date >}} incluiríamos la fecha de creación del documento.\nVeamos como podemos usarlo:\n\nPara que se muestre esto …Has de escribir\n\n\nEl título de este post es “Usando shortcodes”, y fue creado el 22 de enero de 2023.\nEl objetivo del post es: “Cómo usar shortcodes en Quarto para, entre otras cosas, poder incluir el mismo contenido en varios documentos.”\n\n\nEl título de este post es \"{{< meta title >}}\", y fue creado el {{< meta date >}}. \n\nEl objetivo del post es:  \"{{< meta description >}}\""
+  },
+  {
+    "objectID": "blog/22_shortcodes.html#tipos-de-shortcodes",
+    "href": "blog/22_shortcodes.html#tipos-de-shortcodes",
+    "title": "Usando shortcodes",
+    "section": "2 Tipos de shortcodes",
+    "text": "2 Tipos de shortcodes\nDe momento, los que yo he usado son:\n\n{{< meta >}} : permite incluir elementos de los metadatos de un documento\n{{< var >}} : permite incluir elementos definidos en el fichero _variables.yml. Este fichero es de nivel proyecto\n\nAdemás:\n\n{{< include >}} : permite incluir el contenido de un archivo .qmd. Documentación oficial aquí\n{{< video >}} : permite incluir vídeos"
+  },
+  {
+    "objectID": "blog/22_shortcodes.html#más-ejemplos",
+    "href": "blog/22_shortcodes.html#más-ejemplos",
+    "title": "Usando shortcodes",
+    "section": "3 Más ejemplos",
+    "text": "3 Más ejemplos\n\n\nIncluir contenido de _variables.yml\nDentro de un proyecto, podemos crear un fichero llamado _variables.yml donde podemos definir variables con contenido para ser incluido en nuestros documentos .qmd con el shortcode {{< var >}}. El fichero _variables.yml tiene que residir en la carpeta raíz del proyecto.\nVamos a ver un ejemplo de uso:\n\nSi el contenido de _variables.yml es …… puedes escribir lo siguiente ….… para que se muestre ….\n\n\nemail:\n  pedro: pedro@uvv.es\n  juan: juan@gmaillll.com\n\npedroblog: \"[Uno de mis blogs](https://perezp44.github.io/pjperez.web/01_blog.html)\"\n\n\nEl email de Pedro es {{< var email.pedro >}} y el de Juan es {{< var email.juan >}}.\nUno de los blogs de Pedro es {{< var pedroblog >}} .\n\n\nEl email de Pedro es pedro@uvv.es y el de Juan es juan@gmaillll.com.\nUno de los blogs de Pedro es Pedro’s blog .\n\n\n\n\n\n\nIncluir contenido de un archivo\nEn un proyecto en el que elaboraba tutoriales y slides con el mismo contenido en algunas partes, usé muchas veces el shortcode {{< include >}}. Me permitió incluir el mismo contenido en varios ficheros. Además, tuve que modificarlo varias veces, pero como gestionaba ese contenido con {{< include >}} solo tenía que modificarlo en un sitio. Os cuento con un ejemplo cómo se hace.\nSi crees que un determinado contenido puede ser utilizado en varios sitios, quizá sea más eficiente tener ese contenido en un fichero independiente e incluirlo a través del shortcode {{< include >}}.\nImagina que quieres incluir este contenido:\n\nQuieres incluir este contenido …… contenido que es generado con este código\n\n\nEl conjunto de datos iris tiene 5 variables y 150 filas. Veamos un resumen con summary()\n\n\nCódigo\nsummary(iris)\n\n\n  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   \n Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  \n 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  \n Median :5.800   Median :3.000   Median :4.350   Median :1.300  \n Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  \n 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  \n Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  \n       Species  \n setosa    :50  \n versicolor:50  \n virginica :50  \n                \n                \n                \n\n\n\n\nEl conjunto de datos iris tiene `r ncol(iris)` variables y `r nrow(iris)` filas. Veamos un resumen con `summary()`\nsummary(iris)\n\n\n\nPara poder incluir ese contenido haciendo uso de {{< include >}} deberás:\n\nCrear un documento, llamado por ejemplo _my_include_01.qmd, que contenga el código que hemos visto anteriormente.\n\nEl nombre del fichero es conveniente que empiece por _ porque eso hace que cuando hagamos un render del proyecto, este archivo no se procese. No queremos procesarlo, queremos que su contenido se incluya en otro documento y eso lo haremos utilizando el shortcode {{< include >}}.\n\nUna vez hemos creado el documento _my_include_01.qmd para que su contenido aparezca (y se ejecute, si tiene código ejecutable) en el documento que nosotros queramos, tendremos que incluir en este último documento lo siguiente: {{< include _my_include_01.qmd >}}\n\nRealmente {{< include _my_include_01.qmd >}} funcionará si el fichero _my_include_01.qmd está en la misma carpeta que el documento en el que queremos que parezca su contenido; si estuviese en otra ubicación habría que proporcionar la ruta relativa a _my_include_01.qmd.\n\n\n\n\n\nIncluir videos\nSe pueden incluir vídeos usando paquetes de R, también con extensiones de Quarto, pero es más cómodo hacerlo con el shortcode {{< video >}}\n\nPara incluir este video …… has de …\n\n\n\n\n\nHas de usar este shortcode:\n{{< video video https://www.youtube.com/embed/ZkECLuuRwTg >}}\nNo es tan-tan sencillo porque cuando vas a Youtube a ver ese vídeo lo ves en esta dirección: https://www.youtube.com/watch?v=ZkECLuuRwTg; como ves hay que sustituir watch?v= por embed/.\n\n\n\n\n\n\nSaltos de página\nComo casi siempre uso Quarto para generar documentos html, no me suelo preocupar por los saltos de página; aunque es verdad que si luego quiero imprimir el documento html como un pdf me arrepiento de no haberlo hecho; vamos que conviene pensar en los saltos de página y es que además es muy fácil incorporarlos con el shortcode {{< pagebreak >}}. Además, como se cuenta aquí, estos saltos de página funcionan para diferentes formatos de salida:\n\nNative pagebreaks are supported for HTML, LaTeX, Context, MS Word, Open Document, and ePub"
+  },
+  {
+    "objectID": "blog/22_shortcodes.html#referencias",
+    "href": "blog/22_shortcodes.html#referencias",
+    "title": "Usando shortcodes",
+    "section": "Referencias",
+    "text": "Referencias\n(Algunos artículos que hablan de esto …)\n\n\n«6 Productivity Hacks for Quarto». 2022. https://www.rstudio.com/blog/6-productivity-hacks-for-quarto/.\n\n\n«Quarto - Creating Shortcodes». s. f. Accedido 2 de febrero de 2023. https://quarto.org/docs/extensions/shortcodes.html."
+  },
+  {
+    "objectID": "blog/20_referencias-bibliograficas.html",
+    "href": "blog/20_referencias-bibliograficas.html",
+    "title": "Referencias bibliográficas",
+    "section": "",
+    "text": "Gestionar y poner en el formato adecuado las referencias bibliográficas no es muy divertido; una forma de hacerlo es a mano. No problem, pero creo que es más sensato gestionarlas con un gestor bibliográfico. Por supuesto que esto tiene un coste de entrada pero no es demasiado alto y el hacerlo facilita después la gestión de estas. Entre los beneficios que tiene gestionar las referencias con un gestor están: tener las referencias organizadas y a mano para poder reusarlas, evitar errores de la transcripción a mano o por copia y pega, facilita la organización y clasificación de las citas en categorías y, principalmente, posibilita la generación de listados bibliográficos con un simple clic en diversos formatos (APA, Chicago etc …)\nHay muchos gestores bibliográficos. Los más usados son Mendeley y Zotero, aunque últimamente oigo hablar mucho de CiteDrive.\nNo soy un power user de gestores bibliográficos pero uso cada vez más Zotero. Zotero es un gestor bibliográfico de código abierto que cuenta con extensiones para los principales navegadores (Firefox, Vivaldi, Chrome, Safari, Opera, …) que permiten guardar referencias, ya sean estas artículos, libros, páginas web, libros electrónicos, imágenes, audio, vídeo digital etc … con un solo clic. Una vez añadida una referencia, se pueden añadir, notas, etiquetas y relacionarla con otras referencias; además, las referencias se pueden organizar en colecciones. Ilya Kashnitsky tiene aquí un fantástico post donde explica las ventajas de Zotero y cómo usarlo.\nEl caso es que los gestores bibliográficos, ademas de ayudarnos a gestionar nuestras referencias bibliográficas, nos permiten exportar y generar listados de referencias en distintos formatos. Veamos cómo hacerlo en el entorno Quarto."
+  },
+  {
+    "objectID": "blog/20_referencias-bibliograficas.html#cómo-gestionar-las-referencias-en-quarto",
+    "href": "blog/20_referencias-bibliograficas.html#cómo-gestionar-las-referencias-en-quarto",
+    "title": "Referencias bibliográficas",
+    "section": "2 ¿Cómo gestionar las referencias en Quarto?",
+    "text": "2 ¿Cómo gestionar las referencias en Quarto?\nUna vez tenemos las referencias en Zotero, o en otro gestor bibliográfico, podemos crear una colección con las referencias que usaremos en un proyecto. A partir de ahí se puede fácilmente crear listados con las referencias en múltiples formatos, incluido BibTeX que es el que usa Latex y el que usaremos con Quarto1.\nPara generar nuestro listado de referencias con Quarto tenemos que:\n\nTener las referencias en Zotero, mejor en una colección\ngenerar un fichero .bib con los metadatos de las referencias\nIncluir la ruta al archivo .bib en el yaml de nuestro documento .qmd\nPor defecto Quarto generará el listado de referencias en formato Chicago Manual of style 17th ed.. Si quieres usar otro formato tendrás que incluir en el yaml de nuestro documento .qmd la ruta al fichero.csl con el estilo que queramos dar al listado de referencias.\n\n\n2.1 Introducir la referencias\n\nCon Zotero\nLo primero es tener las referencias en un gestor bibliográfico, por ejemplo Zotero. No explicaré en detalle este paso pero puedes ver la documentación oficial, por ejemplo esta Quick Start Guide.\nTienes que instalar Zotero y luego una extensión para tu navegador favorito, de esta forma puedes añadir una referencia a tu base de datos con un solo clic: solo tendrás que ir a la pagina web donde este el articulo/vídeo/libro o lo que sea, y pinchar con el botón derecho del ratón y seleccionar Zotero Connector > Guardar a Zotero > Save to Zotero (Embedded metadata). Puedes ver un ejemplo en la imagen siguiente:\n\n\n\nGráfico 1: Guardando una referencia con Zotero Connector\n\n\n\n\nDesde RStudio\nTambién podemos añadir referencias directamente desde RStudio. Para ello tenemos que usar el “editor visual” de RStudio. Aquí lo explica Mine Çetinkaya-Rundel para el caso de que tengamos el DOI de la referencia. Simplemente hay que:\n\nActivar el editor visual > Insert > Citation … > From DOI (en el menú de la izquierda) > Pegar el DOI y pinchar en Search > una vez ha encontrado la referencia, solo queda pinchar en Insert\n\nCon esta secuencia se generará un fichero .bib ,si es que no hay uno ya asociado al documento .qmd. Si ya hubiese un documento .bib, se añadiría la referencia a este.\n\n\n\n2.2 Creación del fichero .bib\nPara generar las citas y bibliografía necesitaremos un archivo .bib que contenga los metadatos de las referencias que queremos introducir en nuestro archivo .qmd. Este archivo .bib se puede generar de muchas maneras, por ejemplo a mano copiando y pegando, o con Zotero, o desde RStudio, o … Veamos como se hace desde Zotero. Como puedes ver en la imagen de bajo tengo distintas colecciones en Zotero, selecciono la carpeta/colección que quiero exportar con el botón derecho del ratón y pincho en “exportar”. Solo queda seleccionar el formato de exportación. Puedes elegir “better BibTex” o “Bibtext”, los dos funcionarán. Se nos creará un fichero .bib con los metadatos de las referencias bibliográficas que vamos a usar.\n\n\n\n\n\n\nGráfico 2: Exportando una colección de referencias\n\n\n\n\n\n\n\nGráfico 3: Exportando a formato Bibtex\n\n\n\n\n\n\nCreando el fichero .bib desde Zotero\n\n\n\nEl fichero .bib contendrá un listado con los metadatos de nuestras referencias; algo como:\n@article{rodríguez-sanchez2016,\n    title = {Ciencia reproducible: ¿qué, por qué, cómo?},\n    author = {{Rodríguez-Sanchez}, Francisco and {Pérez-Luque}, {Antonio Jesús} and Bartomeus, Ignasi and Varela, Sara},\n    year = {2016},\n    month = {08},\n    date = {2016-08-22},\n    journal = {Ecosistemas},\n    pages = {83--92},\n    volume = {25},\n    number = {2},\n    doi = {10.7818/ecos.2016.25-2.11},\n    url = {http://dx.doi.org/10.7818/ECOS.2016.25-2.11}\n}\n\n@article{wickham2010a,\n    title = {Graphics for Statistics and Data Analysis with{\\emph{R}}},\n    author = {Wickham, Hadley and Grolemund, Garrett},\n    year = {2010},\n    date = {2010},\n    journal = {Journal of Statistical Software},\n    volume = {36},\n    number = {Book Review 3},\n    doi = {10.18637/jss.v036.b03},\n    url = {http://dx.doi.org/10.18637/jss.v036.b03},\n    langid = {en}\n}\n\n\n2.3 Referencia el fichero bib` en el yaml\nUna vez tenemos el fichero .bib con los datos de nuestras referencias, tenemos que referenciarlo en el yaml de nuestro documento .qmd; concretamente así:\n---\ntitle: \"Mi Documento\"\nbibliography: my_references.bib\n---\nEn este caso el fichero .bib y el fichero .qmd estarían en la misma carpeta. Si el fichero .bib estuviese en una subcarpeta, tendríamos que especificar la ruta, quedando el yaml como:\n---\ntitle: \"Mi Documento\"\nbibliography: my_subcarpeta/my_references.bib\n---\n\n\n2.4 Estilo de las referencias\nYa he dicho que por defecto Zotero (y Pandoc) usan el Chicago Manual of Style pero podemos cambiar el estilo usando un archivo .csly referenciando en nuestro yaml:\n---\ntitle: \"Mi Documento\"\nbibliography: my_references.bib\ncsl: bib_files/apa_7.csl\n---\nPodemos descargar ficheros .csl con multitud de formatos para nuestras citas del repositorio de Zotero, aquí . CSL significa Citation Style Language. BibTex es limitado para poder almacenar adecuadamente determinadas referencias, por ejemplo no puede diferenciar entre por ejemplo magazine/newspaper articles and journal articles, por eso finalmente"
+  },
+  {
+    "objectID": "blog/20_referencias-bibliograficas.html#inclusión-de-las-referencias",
+    "href": "blog/20_referencias-bibliograficas.html#inclusión-de-las-referencias",
+    "title": "Referencias bibliográficas",
+    "section": "3 Inclusión de las referencias",
+    "text": "3 Inclusión de las referencias\nEn la sección anterior hemos dispuesto todo para poder incluir en nuestros documentos .qmd las referencias bibliográficas usando ficheros .bib. Sí, pero aún no las hemos incluido, ¿cómo lo hacemos? Sin hacer nada, si el yaml incluye un fichero .bib, se incluirá automáticamente un apartado al final con las referencias del fichero que hayamos citado en nuestro .qmd. También podemos incluir explicitamente ese apartado así:\n### Referencias {.unnumbered}\n\n::: {#refs}\n:::\nSi quisiéramos incluir todas las referencias presentes en el fichero .bib, incluso aunque no las hayamos citado en el texto, tendríamos que incluir en nuestro yaml lo siguiente:\n---\nnocite: |\n  @*\n---"
+  },
+  {
+    "objectID": "blog/20_referencias-bibliograficas.html#inclusión-de-citas",
+    "href": "blog/20_referencias-bibliograficas.html#inclusión-de-citas",
+    "title": "Referencias bibliográficas",
+    "section": "4 Inclusión de citas",
+    "text": "4 Inclusión de citas\nGeneralmente en el texto de un artículo se citan los articulos que figuran en el apartado de referencias.\nTenemos ya un fichero .bib con las referencias, ¿cómo incluimos citas a ellos en nuestro fichero .qmd? Podemos seguir escribiendo y gestionando estas citas a mano, pero si queremos hacerlo “automaticamente”2 tenemos que saber cómo hacerlo.\nImagina que tenemos un fichero llamado my_references.bib con 2 referencias, por ejemplo:\n@article{rodríguez-sanchez2016,\n    title = {Ciencia reproducible: ¿qué, por qué, cómo?},\n    author = {{Rodríguez-Sanchez}, Francisco and {Pérez-Luque}, {Antonio Jesús} and Bartomeus, Ignasi and Varela, Sara},\n    year = {2016},\n    month = {08},\n    date = {2016-08-22},\n    journal = {Ecosistemas},\n    pages = {83--92},\n    volume = {25},\n    number = {2},\n    doi = {10.7818/ecos.2016.25-2.11},\n    url = {http://dx.doi.org/10.7818/ECOS.2016.25-2.11}\n}\n\n@article{wickham2010a,\n    title = {Graphics for Statistics and Data Analysis with{\\emph{R}}},\n    author = {Wickham, Hadley and Grolemund, Garrett},\n    year = {2010},\n    date = {2010},\n    journal = {Journal of Statistical Software},\n    volume = {36},\n    number = {Book Review 3},\n    doi = {10.18637/jss.v036.b03},\n    url = {http://dx.doi.org/10.18637/jss.v036.b03},\n    langid = {en}\n}\nFíjate que cada referencia tiene una clave que es lo que tendremos que usar para generar citas referentes a ellos; en concreto las claves están en la primera linea de cada referencia; concretamente son: rodríguez-sanchez2016 y wickham2010a\n\nSintaxís para las citas\nEn realidad Quarto, utiliza Pandoc, otro programa, para procesar archivos BibTeX y convertirlos al formato de lenguaje de estilo de citas (CSL) estándar, que luego usará para formatear referencias en formato Chicago, APA, MLA o lo que sea3.\nQuarto usa el mismo estándar que Pandoc para las citas; de forma que las citas van entre corchetes y separadas por punto y coma (;), etc …\nPor tanto, una vez tenemos el fichero .bib y lo hemos referenciado en nuestro yaml, podemos generar citas de la siguiente manera:\n\nSi quieres escribir citas como estas:Has de escribir esto:\n\n\n\n“Un estudio científico es reproducible si …” (Rodríguez-Sanchez et al., 2016, p. 84)\nR es un lenguaje de programación … (véase Rodríguez-Sanchez et al., 2016, p. 84; y Wickham & Grolemund, 2010, Capítulo 1)\nR es al menos tan bueno como Phyton ( Wickham & Grolemund (2010); Rodríguez-Sanchez et al. (2016))\nSegún Rodríguez-Sanchez et al. (2016), pp. 84, un estudio científico es reproducible si …\nWickham & Grolemund (2010) dicen que ….\nWickham & Grolemund (2010, p. 33) dicen que …\nWickham dice que R es un lenguaje funcional (2010)\n\n\n\n\n- \"Un estudio científico es reproducible si ...\" [@rodríguez-sanchez2016, pp. 84]\n\n- R es un lenguaje de programación ... [véase @rodríguez-sanchez2016, pp. 84; y  @wickham2010a, cap. 1]\n\n- R es al menos tan bueno como Phyton ( @wickham2010a; @rodríguez-sanchez2016)\n\n- Según @rodríguez-sanchez2016, pp. 84, un estudio científico es reproducible si ...\n\n\n- @wickham2010a dicen que ....\n\n- @wickham2010a [p. 33] dicen que ...\n\n- Wickham dice que R es un lenguaje funcional  [-@wickham2010a]\n\n\n\n\n\nLa documentación oficial de Quarto para citas y bibliografías está aquí. La documentación de Pandoc para las citas está aquí."
+  },
+  {
+    "objectID": "blog/20_referencias-bibliograficas.html#referencias",
+    "href": "blog/20_referencias-bibliograficas.html#referencias",
+    "title": "Referencias bibliográficas",
+    "section": "Referencias",
+    "text": "Referencias\n\n\nAndrew Heiss (🐘 @andrew@fediscience.org) en Twitter. (2023). En Twitter. https://twitter.com/andrewheiss/status/1612466959534428161\n\n\nBetter bibliography management with Overleaf, CiteDrive, and BibTeX/BibLaTeX — about 3.0 and an updated guide. (s. f.). Recuperado 6 de febrero de 2023, de https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex\n\n\nÇetinkaya-Rundel, M. (2022). A Quarto tip a day - Citations. https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/\n\n\nCiteDrive. (2022). Bibliography Management in R Markdown with CiteDrive and RStudio. En Medium. https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619\n\n\nHeiss, A. (s. f.). How to migrate from BibDesk to Zotero for pandoc-based writing  Andrew Heiss. Recuperado 14 de enero de 2023, de https://www.andrewheiss.com/blog/2023/01/08/bibdesk-to-zotero-pandoc/\n\n\nKashnitsky, I. (2019). Zotero hacks: unlimited synced storage and its smooth use with rmarkdown  Ilya Kashnitsky. https://ikashnitsky.github.io/2019/zotero/\n\n\nMaurya, H. (2022). 3 Ways to install Zotero on Ubuntu 22.04 or 20.04 LTS. En Linux Shout. https://www.how2shout.com/linux/how-to-install-zotero-on-ubuntu-22-04-or-20-04-lts/\n\n\nPrint References/Reading List/Bibliography in Your Syllabus (With Some Style) in R Markdown and {stevemisc}. (s. f.). En Steven V. Miller. Recuperado 6 de febrero de 2023, de http://svmiller.com/blog/2022/01/print-references-reading-list-syllabus-r-markdown-stevemisc/\n\n\nQuarto - Citations & Footnotes. (s. f.). Recuperado 6 de febrero de 2023, de https://quarto.org/docs/authoring/footnotes-and-citations.html\n\n\nQuarto - Technical Writing. (s. f.). Recuperado 14 de enero de 2023, de https://quarto.org/docs/visual-editor/technical.html#citations\n\n\nquick start guide [Zotero Documentation]. (s. f.). Recuperado 14 de enero de 2023, de https://www.zotero.org/support/quick_start_guide\n\n\nR Markdown TUTORIAL  A powerful tool for LEARNING R (IN 45 MINUTES) - YouTube. (s. f.). Recuperado 14 de enero de 2023, de https://www.youtube.com/watch?v=K418swtFnik\n\n\nRiederer, E., Christophe Dervieux. (s. f.). 4.5 Bibliographies and citations  R Markdown Cookbook. Recuperado 6 de febrero de 2023, de https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html\n\n\nRodríguez-Sanchez, F., Pérez-Luque, A. J., Bartomeus, I., & Varela, S. (2016). Ciencia reproducible: ¿qué, por qué, cómo? Ecosistemas, 25(2), 83-92. https://doi.org/10.7818/ecos.2016.25-2.11\n\n\nUsing CiteDrive to keep bibliography and references in sync with Quarto® in RStudio. (s. f.). Recuperado 6 de febrero de 2023, de https://www.youtube.com/watch?v=eukDLQV-EMs\n\n\nWickham, H., & Grolemund, G. (2010). Graphics for Statistics and Data Analysis withR. Journal of Statistical Software, 36(Book Review 3). https://doi.org/10.18637/jss.v036.b03"
+  },
+  {
+    "objectID": "blog/07_crear-slides.html",
+    "href": "blog/07_crear-slides.html",
+    "title": "Slides con Quarto",
+    "section": "",
+    "text": "La investigación “debería” ser reproducible"
+  },
+  {
+    "objectID": "blog/07_crear-slides.html#incremental",
+    "href": "blog/07_crear-slides.html#incremental",
+    "title": "Slides con Quarto",
+    "section": "2 Incremental",
+    "text": "2 Incremental\nSe puede hacer con . . . o con ### ¿Qué tipo de documentos?{.incremental} en el título inicial de la slide"
+  },
+  {
+    "objectID": "blog/21_layouts.html",
+    "href": "blog/21_layouts.html",
+    "title": "Layout’s",
+    "section": "",
+    "text": "Además de yaml, texto y chunks, para escribir con Quarto conviene conocer la estructura o layout de los artículos que se generan con él. Las páginas tienen un body, un margin y un área para las sidebars, que en nuestro caso contiene un TOC1. Documentación oficial aquí.\nUsando divs y spans podemos añadir clases y atributos, haciendo que determinados elementos de nuestro documento cambien sus “propiedades”. En esta sección usaremos divs para hacer que determinadas partes de nuestro post se ajusten a distintos layout’s."
+  },
+  {
+    "objectID": "blog/21_layouts.html#ejemplo-con-imágenes",
+    "href": "blog/21_layouts.html#ejemplo-con-imágenes",
+    "title": "Layout’s",
+    "section": "2 Ejemplo (con imágenes)",
+    "text": "2 Ejemplo (con imágenes)\nPara ver las distintas posibilidades que tenemos, insertaremos una imagen ocupando distintas áreas del artículo. Empezaremos situando la imagen en el margen. para ello habría que hacer lo siguiente:\n::: {.column-margin}\n\n![](imagenes/post_21_img_01.png){fig-align=\"center\"}\n\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSi queremos podemos llegar a ocupar el 100% de la pantalla. Sólo habría que indicarlo en las opciones de la imagen con width=\"100%\"."
+  },
+  {
+    "objectID": "blog/21_layouts.html#ejemplo-con-chunks",
+    "href": "blog/21_layouts.html#ejemplo-con-chunks",
+    "title": "Layout’s",
+    "section": "3 Ejemplo (con chunks)",
+    "text": "3 Ejemplo (con chunks)\nEl output de los chunks también puede ocupar distintas áreas. Veamos si un leaflet se puede poner en el margen:\n\n\nCódigo\n```{r}\n#| column: margin\nlibrary(leaflet)\nleaflet() %>%\n  addTiles() %>%  # Add default OpenStreetMap map tiles\n  addMarkers(lng = -4.7880, lat = 37.885, popup = \"Rectorado de la Universidad de Córdoba\\n (Sede de las XII Jornadas de usuarios de R)\")\n```\n\n\n\n\n\n\n\nY ahora ocupando toda la pantalla:\n\n\nCódigo\n```{r}\n#| column: screen\nlibrary(leaflet)\nleaflet() %>%\n  addTiles() %>%  # Add default OpenStreetMap map tiles\naddMarkers(lng = -4.7880, lat = 37.885, popup = \"Rectorado de la Universidad de Córdoba\\n (Sede de las XII Jornadas de usuarios de R)\")\n```\n\n\n\n\n\n\n\nComo no puede ser de otro modo, aún hay más opciones para el layout. Documentación aquí"
+  },
+  {
+    "objectID": "blog/21_layouts.html#layout-de-las-páginas",
+    "href": "blog/21_layouts.html#layout-de-las-páginas",
+    "title": "Layout’s",
+    "section": "4 Layout de las páginas",
+    "text": "4 Layout de las páginas\nAdemás, para el layout de toda la página tienes las opciones aquí. Si quieres crear un “custom layout” quizás tengas que usar Bootstrap CSS grid."
+  },
+  {
+    "objectID": "blog/23_extensiones.html",
+    "href": "blog/23_extensiones.html",
+    "title": "Extensiones",
+    "section": "",
+    "text": "Una de las novedades de Quarto es la posibilidad de usar extensiones. Las extensiones se escriben en el lenguaje Lua. Aquí la documentación oficial.\nVamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión “quarto-youtube-embed” que sirve para incluir vídeos de youtube en un documento .qmd."
+  },
+  {
+    "objectID": "blog/23_extensiones.html#un-ejemplo",
+    "href": "blog/23_extensiones.html#un-ejemplo",
+    "title": "Extensiones",
+    "section": "2 Un ejemplo",
+    "text": "2 Un ejemplo\nCon Rmd alguna vez he puesto vídeos en mis slides o tutoriales. Usaba el paquete de R vembed. Ahora, con Quarto, también podríamos hacerlo de esa forma, solo tendríamos que insertar en nuestro documento un chunk como:\n\n\nCódigo\n```{r}\n#| eval: false\nlibrary(\"vembedr\")\nembed_url(\"https://www.youtube.com/watch?v=ACv9zaBa1A4\")\n```\n\n\nAhora, con Quarto, podemos también hacerlo usando la extensión “quarto-youtube-embed”. Aquí está el repo de la extensión. Veamos cómo:\n\n\n\n\n\n\nTarea: Instalar y usar una extensión\n\n\n\nConcretamente instalaremos la extensión “quarto-youtube-embed”. El repo aquí. Aunque realmente el repo ha sido archivado. Veremos si se puede seguir instalando.\n\nLo primero es instalar la extensión de Quarto. Como pone en el repo, lo haremos desde la Terminal así:\n\n\n\nCódigo\nquarto install extension sellorm/quarto-youtube-embed\n\n\n\nUna vez instalada, podemos incrustar un vídeo usando el siguiente “shortcode” en nuestro documento .qmd:\n\n\n\nCódigo\n{{< youtube zk9zHqXm6m0 >}}\n\n\nCon lo que habremos incrustado el vídeo en nuestro documento .html final."
+  },
+  {
+    "objectID": "blog/23_extensiones.html#el-shortcode-video",
+    "href": "blog/23_extensiones.html#el-shortcode-video",
+    "title": "Extensiones",
+    "section": "3 El shortcode << video >>",
+    "text": "3 El shortcode << video >>\nLa extensión “quarto-youtube-embed” funcionaba perfectamente pero se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. Solo hay que usar el siguiente shortcode:\n\n\nCódigo\n{{< video https://youtu.be/7SVYNyvi0wQ >}}\n\n\n\n\nAquí la documentación oficial del shortcode {{ < video   >}}. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar vídeos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el vídeo y algunas cosas más."
+  },
+  {
+    "objectID": "blog/23_extensiones.html#listado-de-extensiones",
+    "href": "blog/23_extensiones.html#listado-de-extensiones",
+    "title": "Extensiones",
+    "section": "4 Listado de extensiones",
+    "text": "4 Listado de extensiones\nAquí tienes un listado de extensiones disponibles. Las extensiones oficiales de Quarto están aquí."
+  },
+  {
+    "objectID": "blog/23_extensiones.html#otro-ejemplo-lightbox",
+    "href": "blog/23_extensiones.html#otro-ejemplo-lightbox",
+    "title": "Extensiones",
+    "section": "5 Otro ejemplo (Lightbox)",
+    "text": "5 Otro ejemplo (Lightbox)\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Lightbox”.\nLo que hace esta extensión es que podamos pinchar en una imagen y verla ampliada y con una descripción. Aquí puedes ver ejemplos de lo que se puede hacer con “Lightbox”.\nEn el repo se explica con más detalle lo que se puede hacer con “Lightbox”.\n\n\n\n\n\n\nTarea: Instalar y usar la extensión “Lightbox”\n\n\n\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Lightbox”. Su repo aquí\n\nLo primero es instalar la extensión desde la Terminal:\n\n\n\nCódigo\nquarto install extension quarto-ext/lightbox\n\n\nEsta vez, para poder usar la extensión en un documento .qmd hemos de incluir en el yaml del documento lo siguiente:\n---\ntitle: Simple Lightbox Example\nfilters:\n   - lightbox\n---\n\n![Mi imagen con Lighbox activado](./imagenes/economia.gif){.lightbox description=\"El logo-nano de la facultad de Economía de la Universtat de València\"\ndesc-position=\"left\"}\n\nCon lo que veríamos algo como:\n\n\n\n\nMi imagen con Lighbox activado"
+  },
+  {
+    "objectID": "blog/23_extensiones.html#otro-ejemplo-tweets",
+    "href": "blog/23_extensiones.html#otro-ejemplo-tweets",
+    "title": "Extensiones",
+    "section": "6 Otro ejemplo (tweets)",
+    "text": "6 Otro ejemplo (tweets)\nVoy a instalar una nueva extensión, concretamente la extensión Quarto social embeds. Concretamente con esta extensión podremos insertar en nuestros documentos: gists de GitHub, videos de Loom, youtube y Vimeo y tweets. Realmente la instalo porque quiero tenerla disponible para insertar tweets.\nEn el repo se explica con más detalle lo que se puede hacer con Quarto social embeds.\n\n\n\n\n\n\nInstalar y usar la extensión Quarto social embeds\n\n\n\nVamos a instalar y usar una nueva extensión, concretamente la extensión “Quarto social embeds”. Su repo está aquí.\n\nLo primero es instalar la extensión desde la Terminal:\n\n\n\nCódigo\nquarto install extension sellorm/quarto-social-embeds\n\n\n\nPara insertar un tweet has de:\n\n\nCódigo\n{{< tweet user=<username> id=<id> >}}\n\npor ejemplo:\n\n{{< tweet user=ambitocultural id=1589543369512026112 >}}\n\n\n\n\nPara insertar un gist de Github has de:\n\n\nCódigo\n{{< gist sellorm 20525aff669acafb975b7495b8f2066e >}}"
+  },
+  {
+    "objectID": "blog/24_imagenes.html",
+    "href": "blog/24_imagenes.html",
+    "title": "Imágenes",
+    "section": "",
+    "text": "Las figuras en documentos Rmarkdown se podían insertar con la sintaxis de Markdown; es decir con ![](<ruta-a-la-imagen>), aunque yo prefería hacerlo con knitr::include_graphics(). Era algo así, veamos si también funciona en Quarto:\n\n\nCódigo\n```{r}\n#| fig.show: \"hold\"\n#| out.width: \"45%\"\n#| fig.align: \"default\"\n# graficos side to side en Rmarkdown\n# https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941/12\n\n\nknitr::include_graphics(here::here(\"blog\", \"imagenes\", \"post_24_img_01.jpg\"))\n```"
+  },
+  {
+    "objectID": "blog/24_imagenes.html#figuras-en-quarto",
+    "href": "blog/24_imagenes.html#figuras-en-quarto",
+    "title": "Imágenes",
+    "section": "2 Figuras en Quarto",
+    "text": "2 Figuras en Quarto\nDocumentación aquí.\nLas imágenes (o figuras) se pueden insertar de múltiples maneras:\n\nLa sintaxis de Pandoc:\n\n\nPara hacer esto …Has de escribir\n\n\n\n\n\nGráfico 1: Una imagén centrada (75%)\n\n\n\n\n![Una imagén centrada (75%)](./imagenes/post_24_img_01.jpg){#fig-01 fig-align=\"left\" width=\"75%\"}\n\n\n\n\nSubfiguras\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\nGráfico 2: Imágen 1\n\n\n\n\n\n\n\nGráfico 3: Imágen 2\n\n\n\n\n\n\nDos imágenes alineadas\n\n\n\n\n\n::: {layout-ncol=2}\n\n![Imágen 1](./imagenes/post_24_img_01.jpg){#fig-2.1}\n\n![Imágen 2](./imagenes/post_24_img_01.jpg){#fig-2.2}\n\n2 imágenes alineadas\n:::\n\n\n\n\n\nPanel de imágenes\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n(A)\n\n\n\n\n\n\n\n(B)\n\n\n\n\n\n\n\n\n\n(C)\n\n\n\n\n\n\n\n(D)\n\n\n\n\n\n\n\n::: {layout-nrow=2}\n![(A)](./imagenes/post_24_img_01.jpg)\n\n![(B)](./imagenes/post_24_img_01.jpg)\n\n![(C)](./imagenes/post_24_img_01.jpg)\n\n![(D)](./imagenes/post_24_img_01.jpg)\n:::\n\n\n\n\n\nCustom layouts\nDocumentación aquí.\n\nPara hacer esto …Has de escribir\n\n\n\n\n\n\n\n\n(A)\n\n\n\n\n \n\n\n\n\n\n(B)\n\n\n\n\n\n\n\n\n\n(C)\n\n\n\n\n\n\n\n::: {layout=\"[[40,-20,40], [100]]\"}\n![(A)](./imagenes/post_24_img_01.jpg)\n\n![(B)](./imagenes/post_24_img_01.jpg)\n\n![(C)](./imagenes/post_24_img_01.jpg)\n:::"
+  },
+  {
+    "objectID": "blog/24_imagenes.html#tamaño-de-las-imágenes",
+    "href": "blog/24_imagenes.html#tamaño-de-las-imágenes",
+    "title": "Imágenes",
+    "section": "3 Tamaño de las imágenes",
+    "text": "3 Tamaño de las imágenes\nEl tamaño de las imágenes es problemático (al menos para mi).\nAquí puedes ver la documentación oficial de Quarto sobre el tamaño por defecto de las imágenes y como cambiarlo.\nAquí puedes ver los consejos sobre el tamaño de las imágenes de Hadley en R4DS (2nd ed.)"
+  },
+  {
+    "objectID": "blog/02_que-es-quarto.html",
+    "href": "blog/02_que-es-quarto.html",
+    "title": "¿Qué son R, RStudio y Quarto?",
+    "section": "",
+    "text": "En el curso usaremos R, RStudio y Quarto. Los 3 son programas de ordenador, pero son muy diferentes. Conviene diferenciarlos y saber para qué sirve cada uno. Trato de explicarlo."
+  },
+  {
+    "objectID": "blog/02_que-es-quarto.html#qué-es-r",
+    "href": "blog/02_que-es-quarto.html#qué-es-r",
+    "title": "¿Qué son R, RStudio y Quarto?",
+    "section": "1 ¿Qué es R?",
+    "text": "1 ¿Qué es R?\nR es un programa de ordenador, una pieza de software, pero principalmente es un lenguaje de programación y un entorno para hacer estadística o ciencia de datos.\nLa página oficial de R dice que:\n\nR is a language and environment for statistical computing and graphics.\n\nActualmente R es el principal lenguaje usado (junto con Phyton) en el campo de la estadística y la ciencia de datos.\nR fue creado por 2 profesores de la universidad de Auckcland: Ross Ihaka y Robert Gentleman. Algunos dicen que el nombre R viene de sus iniciales, otros piensan que se debe a que para crear R se basaron en el lenguaje S1. Quizás se deba a las 2 cosas.\nR. Ihaka y R. Gentleman crearon R en 1993 con el objetivo de tener un programa para enseñar estadística en sus clases. En 1995 decidieron que R pasase a ser a dominio público, de forma que actualmente es un proyecto GNU con licencia GPL; es decir, es software libre.\nEn 1997 se creo un “consejo de sabios” (The R Core Team) para desarrollar y extender las capacidades de R. La primera versión oficial de R, la 1.0.0 vio la luz en febrero de 2000.\nActualmente el entorno R es el resultado de toda una comunidad de usuarios.\n\n\n\n\n\n\n¿R o Phyton?\n\n\n\n\n\nEn la actualidad, en el campo de la ciencia de datos, hay 2 alternativas, Phyton o R. De hecho hay un intenso debate sobre cual es más adecuado. Hay muchas opiniones al respecto, pero yo he seleccionado esta y esta, aunque la verdad, tampoco es necesario elegir un sólo lenguaje, R y Phyton pueden colaborar.\nR se está convirtiendo en el software estadístico de referencia en la mayoría de los centros de investigación y universidades, y su uso se está extendiendo también dentro de la empresa privada. Entre las empresas que usan R están: Google, Facebook, Twitter, Microsoft, IBM, Uber, Ford, Airbnb, American Express, Barclays Bank, Bank of America y muchas otras. Aquí o aquí puedes encontrar un listado más completo.\nCreo que en la actualidad R es el mejor programa para iniciarse y hacer análisis de datos. Si no me acabas de creer, o quieres leer algo sobre la importancia y capacidades de R puedes hacerlo aquí o aquí, o aquí o más recientemente aquí. Elmo lo tiene super-claro:\n\n\nFinally an end to the #rstats vs. 🐍 debate! pic.twitter.com/IDjmE0XIRG— Mine Çetinkaya-Rundel (@minebocek) September 18, 2019\n\n\n\nSi te gustan los rankings de lenguajes de programación, aquí tienes uno, de enero de 2020, en el Phyton está en segundo lugar mientras que R está en el puesto 13. Esto es lo que que se decía de R:\n\nIn our first run of these rankings, R placed 17th. All these years later it jumps two spots from the last quarter’s edition up to #13. In the interim, it has ranked as high as 12th but mostly commonly is found in the 13-15 range. Given the language’s specialized focus, this is likely its effective ceiling, but it’s also an illustration of the remarkable popularity of a language whose usage is restricted for all intents and purposes to a single domain – those who work with and operate on data. R’s success is an example of the power of an academia-supported community to elevate a language beyond its expected threshold, and it is notable that the aforementioned growth of Python and its expansion into data analytics has not observably come at the expense of traction in R.\n\nEl ranking más actual puedes verlo aquí.\nPara hacerte una idea de las capacidades de R puedes visitar:\n\nListado de paquetes R agrupados por temática\nAwesome R learning resources\nAwesome R\nRviews: un blog sobre R. cada mes promocionan 4o paquetes nuevos, por ejemplo este\nRweekly: publicación semanal sobre novedades en el mundo R.\nBig Book of R: libro electrónico con multitud de recursos sobre R.\n\n¿Aprender R es complicado? No, bueno, ya hablaré de eso en clase. No mires el siguiente tweet:\n\n\nLearning curve of R versus other tools (h/t @timothycbates) #rstats pic.twitter.com/UItBGTZ1s4— rogier kievit (@rogierK) May 12, 2016"
+  },
+  {
+    "objectID": "blog/02_que-es-quarto.html#qué-es-rstudio",
+    "href": "blog/02_que-es-quarto.html#qué-es-rstudio",
+    "title": "¿Qué son R, RStudio y Quarto?",
+    "section": "2 ¿Qué es RStudio?",
+    "text": "2 ¿Qué es RStudio?\nSí, es un programa de ordenador, pero no es un programa para hacer estadística ni es un lenguaje de programación. RStudio nos servirá para poder interactuar con R de forma más cómoda y eficiente.\nPara entenderlo: cuando hacemos un análisis estadístico, R es el que hace los cálculos, gráficos etc… R lo hace todo pero le damos las ordenes a R a través de RStudio. RStudio es una interfaz para acceder a R de manera más cómoda. Técnicamente RStudio es un IDE (Integrated development environment) diseñado especialmente para R. Intuitivamente es un programa que nos facilita dar nuestras ordenes a R: si R y RStudio formasen parte de un coche, R sería el motor y Rstudio el volante y los pedales.\nRStudio fue creado en 2011 y actualmente es el entorno, o IDE, más usado para programar con R.\nTodavía no sabemos que es Quarto, pero RStudio nos facilita la interacción tanto con R como con Quarto. Son ellos, son R y Quarto, los que harán el “trabajo duro”, concreta mente R hará los cálculos, si es que nuestro documento/informe es de índole cuantitativo, y Quarto generará el documento final, ya sea este un tutorial, unas slides, página web, etc …\nA pesar de que Quarto y R son los que generan los resultados, nosotros no veremos habitualmente a estos dos programas, porque interactuaremos con ellos a través de RStudio."
+  },
+  {
+    "objectID": "blog/02_que-es-quarto.html#qué-es-quarto",
+    "href": "blog/02_que-es-quarto.html#qué-es-quarto",
+    "title": "¿Qué son R, RStudio y Quarto?",
+    "section": "3 ¿Qué es Quarto?",
+    "text": "3 ¿Qué es Quarto?\nSí, también es un programa de ordenador, por tanto tenemos que instalarlo.\nEs un programa sin interfaz gráfica (sin menús ni ventanas). Se maneja a través la Términal con lineas de comandos, así que técnicamente es un programa de tipo CLI (command line interface), pero no sufras porque (casi siempre) interactuaremos con él a través de RStudio.\nQuarto es un programa para confeccionar documentos, documentos reproducibles. Se trata de escribir las ordenes que generan el documento en un archivo (source document) para que Quarto al procesarlo genere el documento final. Este documento final puede ser de diferentes tipos (tutoriales, informes, slides, webs, blogs, …) y formatos (html, pdf, docx, …).\nParece complicado pero enseguida verás que es easy-peasy-lemon-squeezy!!\nEn la página oficial de Quarto se dice que:\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc\n\nEs un programa de código abierto que sirve para escribir documentos (en sentido amplio) de carácter técnico y científico; y sí, usa Pandoc que es … otro programa!!\nQuarto es la segunda generación de Rmarkdown (otro entorno para hacer documentos técnicos) y podemos pensar que su anuncio semi-oficial se hizo con este post de Allison Hill, aunque su presentación a la sociedad y puesta de largo fue en el congreso rstudio::conf(2022).\nActualmente Quarto está en proceso de implantación por la comunidad R (pero también en las comunidades de Phyton y Julia) y es de esperar que cabe sustituyendo completamente al anterior sistema, Rmarkdown.\n\n\n\n\n\n\nUn poco de historia: en un principio fueron los dinosaurios, luego Rmarkdown\n\n\n\n\n\nQuarto es la segunga generación de Rmarkdown y es el objeto de estudio del curso, así que ya lo veremos\nQuarto y Rmarkdown sirven para confeccionar documentos, especialmente documentos cientifico-tecnicos. Estos documentos serán reproducibles.\nLa idea de documentos reproducibles viene de Literate Programming de Donald Knuth\nEn R siempre ha habido estas herramientas Sweave, pero después knitr"
+  },
+  {
+    "objectID": "blog/03_instalación.html",
+    "href": "blog/03_instalación.html",
+    "title": "Instalación de R, RStudio y Quarto",
+    "section": "",
+    "text": "La investigación “debería” ser reproducible"
+  },
+  {
+    "objectID": "blog/27_observable.html",
+    "href": "blog/27_observable.html",
+    "title": "Observable JS",
+    "section": "",
+    "text": "Ya sabemos que Quarto® is an open-source scientific and technical publishing system built on Pandoc que permite crear contenidos con R, Python, Julia y Observable\nObervable JS (OJS) es “a JavaScript flavor designed for data analysis”. Observable tiene digamos la interactividad incorporada de serie: es sencillo incorporar filtros interactivos para controlar el output que muestran las tablas y gráficos. Esto abre nuevas posibilidades a los usuarios de R.\nLa documentación oficial de Quarto para hacer disponibles los datos a OJS está aquí.\n\n\n\nComo señala Nicolas Lambert aquí:\n\nCombining R and Observable javascript allows to take advantage of the strengths of both languages. It allows to combine the statistical analysis possibilities of R and the reactive visualization features of Observable. A win win strategy.\n\nAlgo parecido dice Sharon Machlis aquí:\n\nUsing Quarto with Observable JavaScript is a great solution for R and Python users who want to create more interactive and visually engaging reports. Using Quarto with Observable offers an elegant workflow if you want to combine data analysis in Python and R with reactivity. Finally, Observable was set up with collaboration in mind, so it’s fairly easy to find and use someone else’s open source code.\n\nOtra ventaja de Quarto:\n\nQuarto’s rendered HTML files can be hosted on any web server or opened locally with a simple browser, with no separate language or framework installations required. That’s not the case for options like Shiny for R or Dash for Python (alpha Shiny for Python can run without a Shiny server, but it’s not yet production-ready). Using Quarto with Observable offers an elegant workflow if you want to combine data analysis in Python and R with reactivity.\n\nQuarto puede ejecutar código de OJS. Sólo hay que colocar el código entre las marcas habituales : ```{ojs}. Además se puede analizar los datos en R y luego enviarlos a OJS con la función ojs_define()."
+  },
+  {
+    "objectID": "blog/27_observable.html#un-ejemplo",
+    "href": "blog/27_observable.html#un-ejemplo",
+    "title": "Observable JS",
+    "section": "2 Un ejemplo",
+    "text": "2 Un ejemplo\nVoy a adaptar un ejemplo sacado de aquí\nPor ejemplo, voy a crear un sf data.frame para ver si me lo acepta OJS:\n\n\nCódigo\nlibrary(tidyverse)\nlibrary(\"rnaturalearth\")\nlibrary(\"rnaturalearthdata\")\nlibrary(sf)\ndf <- gapminder::gapminder %>% filter(year == 2007) \nworld <- rnaturalearth::ne_countries(scale = \"medium\", returnclass = \"sf\") %>% \n       filter(subregion != \"Antarctica\") %>% \n       filter(admin != \"Greenland\") %>% \n       select(name, iso_a3, geometry) \ndf_world <- left_join(world, df,  by = c(\"name\" = \"country\")) %>% #- solo 142\n  select(-year)\n\n\nPara pasar df_world a OJS, como es un sf, necesitamos el paquete geojsonsf:\n\n\nCódigo\n```{r}\n#| eval: true\nlibrary(\"geojsonsf\")\n#ojs_define(my_ojs_data = df)\nojs_define(data1 = sf_geojson(df_world))\n```\n\n\nHay que hacer un paso más para poder usar datos los datos de R en Observable: hay que transformar los datos a un formato compatible con OJS, para ello usamos la función transpose()\nLas visualizaciones de JavaScript suelen utilizar un formato de datos diferente al de los marcos de datos rectangulares que normalmente se necesitan en R o Python. Aunque en este caso no ha hecho falta (!!)\n\n\nCódigo\ncountries = JSON.parse(data1) \nInputs.table(countries.features.map(d => d.properties))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCargamos la librería bertin\n\n\nCódigo\nbertin = require(\"bertin@1.2.4\")\n//bertin.quickdraw(countries)\n\n\n\n\n\n\n\n\nHacemos una coropleta:\n\n\nCódigo\nviewof nbreaks = Inputs.range([3, 9], { label: \"nbreaks\", step: 1, value: 7 })\nviewof method = Inputs.select([\"jenks\", \"q6\", \"quantile\", \"equal\", \"msd\"], {\n  label: \"method\",\n  value: \"quantile\"\n})\nchoro = bertin.draw({\n  params: { projection: \"Eckert3\"},\n  layers: [\n    {\n      type: \"layer\",\n      geojson: countries,\n      fill: {\n        type: \"choro\",\n        values: \"lifeExp\",\n        nbreaks: nbreaks,\n        method: method,\n        colors: \"RdYlGn\",\n        leg_round: 3,\n        leg_title: `Lifeexperience \n(in years)`,\n        leg_x: 30,\n        leg_y: 100\n      },\n      tooltip: [\"$name\", \"Esperanza de vida\", \"$lifeExp\",  \"PIB per cápita\", \"$gdpPercap\"]\n    },\n    { type: \"graticule\" },\n    { type: \"outline\" }\n  ]\n})"
+  },
+  {
+    "objectID": "blog/27_observable.html#otro-ejemplo",
+    "href": "blog/27_observable.html#otro-ejemplo",
+    "title": "Observable JS",
+    "section": "3 Otro ejemplo",
+    "text": "3 Otro ejemplo\nEsta vez sacado de aquí\n\n\nCódigo\nimport {viewof data} from \"@observablehq/summary-table\"\nviewof data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCódigo\nimport {viewof summary_data} from \"@observablehq/summary-table\"\nviewof summary_data"
+  },
+  {
+    "objectID": "blog/27_observable.html#biblio",
+    "href": "blog/27_observable.html#biblio",
+    "title": "Observable JS",
+    "section": "4 Biblio",
+    "text": "4 Biblio\n\nLet’s make maps with bertin.js in Quarto y aquí: post de Nicolas Lambert.\nBertin.js: a JavaScript library for visualizing geospatial data and make thematic maps for the web.\nA beginner’s guide to using Observable JavaScript, R, and Python with Quarto: una serie de 3 artículos de Infoworld de Sharon Machlis.\nUn ejemplo de boB Rudis, @hrbrmstr, otro, conviriendo OJS notebook in Quarto projects\nPaquete robservable"
+  },
+  {
+    "objectID": "blog/29_tuneado-yaml.html",
+    "href": "blog/29_tuneado-yaml.html",
+    "title": "Tuneado de un post con opciones de YAML",
+    "section": "",
+    "text": "A este post le he puesto en el YAML algunas opciones un poco raras. Deberían haberse ejecutado pero … no ha salido. Si las pusiésemos en el archivo _quarto.yml sí funcionaría pero entonces empeoraríamos todo la web, así que mejor no hacerlo.\nConcretamente le he puesto estas opciones:"
+  },
+  {
+    "objectID": "blog/29_tuneado-yaml.html#veamos-como-queda",
+    "href": "blog/29_tuneado-yaml.html#veamos-como-queda",
+    "title": "Tuneado de un post con opciones de YAML",
+    "section": "1 Veamos como queda",
+    "text": "1 Veamos como queda\nVa a empeorar bastante\n\n\nCódigo\n2 + 2\n\n\n[1] 4"
+  },
+  {
+    "objectID": "blog/29_tuneado-yaml.html#un-enlace",
+    "href": "blog/29_tuneado-yaml.html#un-enlace",
+    "title": "Tuneado de un post con opciones de YAML",
+    "section": "2 Un enlace",
+    "text": "2 Un enlace\nVamos a ver como quedaría un link. Por ejemplo este enlace\naqui"
+  },
+  {
+    "objectID": "blog/99_pruebas.html#referencias",
+    "href": "blog/99_pruebas.html#referencias",
+    "title": "Probando cosas",
+    "section": "Referencias",
+    "text": "Referencias\n(Algunos artículos que hablan de esto …)\n\n\n«Andrew Heiss (🐘 @andrew@fediscience.org) en Twitter». 2023. Twitter. https://twitter.com/andrewheiss/status/1612466959534428161.\n\n\n«Better bibliography management with Overleaf, CiteDrive, and BibTeX/BibLaTeX — about 3.0 and an updated guide». s. f. Accedido 6 de febrero de 2023. https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex.\n\n\nÇetinkaya-Rundel, Mine. 2022. «A Quarto tip a day - Citations». https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/.\n\n\nCiteDrive. 2022. «Bibliography Management in R Markdown with CiteDrive and RStudio». Medium. https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619.\n\n\nHeiss, Andrew. s. f. «How to migrate from BibDesk to Zotero for pandoc-based writing  Andrew Heiss». Accedido 14 de enero de 2023. https://www.andrewheiss.com/blog/2023/01/08/bibdesk-to-zotero-pandoc/.\n\n\nKashnitsky, Ilya. 2019. «Zotero hacks: unlimited synced storage and its smooth use with rmarkdown  Ilya Kashnitsky». https://ikashnitsky.github.io/2019/zotero/.\n\n\nMaurya, Heyan. 2022. «3 Ways to install Zotero on Ubuntu 22.04 or 20.04 LTS». Linux Shout. https://www.how2shout.com/linux/how-to-install-zotero-on-ubuntu-22-04-or-20-04-lts/.\n\n\n«Print References/Reading List/Bibliography in Your Syllabus (With Some Style) in R Markdown and {stevemisc}». s. f. Steven V. Miller. Accedido 6 de febrero de 2023. http://svmiller.com/blog/2022/01/print-references-reading-list-syllabus-r-markdown-stevemisc/.\n\n\n«Quarto - Citations & Footnotes». s. f. Accedido 6 de febrero de 2023. https://quarto.org/docs/authoring/footnotes-and-citations.html.\n\n\n«Quarto - Technical Writing». s. f. Accedido 14 de enero de 2023. https://quarto.org/docs/visual-editor/technical.html#citations.\n\n\n«quick start guide [Zotero Documentation]». s. f. Accedido 14 de enero de 2023. https://www.zotero.org/support/quick_start_guide.\n\n\n«R Markdown TUTORIAL  A powerful tool for LEARNING R (IN 45 MINUTES) - YouTube». s. f. Accedido 14 de enero de 2023. https://www.youtube.com/watch?v=K418swtFnik.\n\n\nRiederer, Emily, Christophe Dervieux. s. f. 4.5 Bibliographies and citations  R Markdown Cookbook. Accedido 6 de febrero de 2023. https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html.\n\n\nRodríguez-Sanchez, Francisco, Antonio Jesús Pérez-Luque, Ignasi Bartomeus, y Sara Varela. 2016. «Ciencia reproducible: ¿qué, por qué, cómo?» Ecosistemas 25 (2): 83-92. https://doi.org/10.7818/ecos.2016.25-2.11.\n\n\n«Using CiteDrive to keep bibliography and references in sync with Quarto® in RStudio.» s. f. Accedido 6 de febrero de 2023. https://www.youtube.com/watch?v=eukDLQV-EMs.\n\n\nWickham, Hadley, y Garrett Grolemund. 2010. «Graphics for Statistics and Data Analysis withR». Journal of Statistical Software 36 (Book Review 3). https://doi.org/10.18637/jss.v036.b03."
+  },
+  {
+    "objectID": "blog/04_primeros-pasos-con-RStudio.html",
+    "href": "blog/04_primeros-pasos-con-RStudio.html",
+    "title": "¿Primeros pasos con R/RStudio?",
+    "section": "",
+    "text": "La investigación “debería” ser reproducible"
+  },
+  {
+    "objectID": "blog/26_css-bizarro.html",
+    "href": "blog/26_css-bizarro.html",
+    "title": "Tuneando con CSS (cambios bizarros!!)",
+    "section": "",
+    "text": "La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es dar una clase sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS."
+  },
+  {
+    "objectID": "blog/26_css-bizarro.html#cómo-incorporar-cambios-con-css",
+    "href": "blog/26_css-bizarro.html#cómo-incorporar-cambios-con-css",
+    "title": "Tuneando con CSS (cambios bizarros!!)",
+    "section": "1 ¿Cómo incorporar cambios con CSS?",
+    "text": "1 ¿Cómo incorporar cambios con CSS?\n\nUtilizando spans\nEn este quarto-tip, Mine Çetinkaya-Rundel lo explica muy bien.\nPara cambiar la apariencia de un trozo de texto, tienes que meterlo dentro de [] y usando {} para definir el estilo que quieres aplicar a ese texto. Con un ejemplo se entiende mejor:\n\nPara que se muestre esto …Has de escribir\n\n\nPara llamar la atención puedes escribir en rojo o con un fondo amarillo; o las dos cosas a la vez.\n\n\nPara llamar la atención puedes escribir en [rojo]{style=\"color: red\"} \no con un [fondo amarillo]{style=\"background-color: yellow;\"}; \no las [dos cosas a la vez]{style=\"color: red; background-color: yellow;\"}.\n\n\n\n\n\n\nCon ficheros .css\nSi piensas reutilizar algunos estilos, entonces es mejor definir los estilos en un archivo .css.\nSi quisiéramos poder reutilizar los estilos que hemos definido en la anterior sección, tendríamos que crearlos como clases en un archivo css. Por ejemplo crearíamos el archivo: ./assets/mis_estilos_01.css con el siguiente contenido:\n/* css styles */\n\n.rojo {\n  color: red;\n}\n\n.yellow-background {\n  background-color: yellow;\n}\n\n.importante {\n  color: red;\n  background-color: yellow;\n}\nUna vez creado el archivo mis_estilos_01.csspara poder usar los estilos o clases allí definidos tendríamos que hacer 2 cosas:\n\nReferenciar el archivo css en el yaml del documento o post1. Esto lo haríamos incluyendo css: \"assets/mis_estilos_01.css\" en el yaml.\nUna vez incluido el fichero css en el yaml, ya podemos usar los estilos, para ello tendríamos que hacer lo siguiente:\n\n\nPara que se muestre esto …Has de escribirTambién podríamos haberlo hecho así:\n\n\nPara llamar la atención puedes escribir en rojo o con un fondo amarillo; o las dos cosas a la vez.\n\n\nPara llamar la atención puedes escribir en [rojo]{.rojo} \no con un [fondo amarillo]{.yellow-background}; \no las [dos cosas a la vez]{.importante}.\n\n\nPara llamar la atención puedes escribir en [rojo]{.rojo} \no con un [fondo amarillo]{.yellow-background}; \no las [[dos cosas a la vez]{.rojo}]{.yellow-background}."
+  },
+  {
+    "objectID": "blog/26_css-bizarro.html#algunos-estilos-útiles",
+    "href": "blog/26_css-bizarro.html#algunos-estilos-útiles",
+    "title": "Tuneando con CSS (cambios bizarros!!)",
+    "section": "2 Algunos estilos útiles",
+    "text": "2 Algunos estilos útiles\nCon CSS se puede modificar la apariencia de todos los elementos de una página web. En el chunk de abajo muestro algunas de las posibilidades que usaba en mis xaringan slides.\n\n\nCódigo\n/* css styles: algunos q usaba en xaringan */\n\n.rotate-45 {transform: rotate(45deg); }\n.large { font-size: 140%; }\n.small { font-size: 80%; }\n   \n   \n/*  ----------------- colores  -------------- */ \n.purple{ color: #c077af; }\n.red { color: #ef342a; }\n.orange { color: #f57125; }\n.orange2 {color: #F58634;}\n.blue { color: #22b6ed; }\n.green { color: #1fb27f; }\n.green2 {color: #007965;}\n.yellow { color: #faca07; }\n.yellow2 {color: #FFCC29;}\n.brown {color: #a84d18; }\n\n\n/*  ----------------- una nueva clase de inversa: muy chula  -------------- */ \n.inverse2 {\n  background: #69686d;\n  color: #f2f2f6;\n}\n.inverse2 a {\n  color: #b2d68c;\n}\n.inverse2 h1, .inverse2 h2 {\n  color: #f2f2f6;\n  font-size: 72px;\n  line-height: 1.2em;\n}\n\n\n.textverd{\n  color: #b2d68c;\n  font-size: 60px;  \n}"
+  },
+  {
+    "objectID": "blog/26_css-bizarro.html#estilos-útiles-pero-un-poco-bizarros",
+    "href": "blog/26_css-bizarro.html#estilos-útiles-pero-un-poco-bizarros",
+    "title": "Tuneando con CSS (cambios bizarros!!)",
+    "section": "3 Estilos útiles pero (un poco) bizarros!!",
+    "text": "3 Estilos útiles pero (un poco) bizarros!!\nEn clase, para mostrar como podemos modificar algunos de los elementos de un documento hecho con Rmd (ahora con Quarto) usaba un archivo css con cambios digamos un poco raros: a lo mejor ponía el titulo en pink, el autor en verde etc.. etc… Sólo era un ejemplo para mostrar algunas de las posibilidades para modificar la apariencia de un documento con CSS.\nSi quieres ver como quedaría este mismo post pero sin utilizar las reglas CSS (bizarras) que puedes ver abajo, puedes hacerlo aquí\n\n\nCódigo\n/* definiendo estilos del body : de toda la página */ \nbody { \n  background-color: aliceblue; }  /* color del fondo*/ \n\n\n/* importo un tipo de letra */ \n@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300); \n\n/* definiendo estilos de los párrafos */ \np {\n  text-align: justify;         /* justificar el texto del body */      \n  line-height: 1.4;            /* anchura entre las lineas 1.0 is the default in Firefox. 2.0 provides a large space */     \n  margin: 10px 0px 10px 0px;    /* margenes entre los párafos: top, izquierda, abajo, left */   \n  font-size: 13pt;                                     /* tamaño de letra */   \n  font-family: 'Open Sans', Helvetica, sans-serif; }   /* tipo de letra */  \n\n\n\n/* definiendo estilos de las cajas de código (chunks) */ \npre {\n  background-color: pink;  /* color de las cajas de código */ \n    font-size: 10pt;\n    border-radius: 9px;     /* q los bordes de las cajas sean redondas */ \n    font-family: Monaco, monospace;\n    border: 3px solid green; }\n\n/* hacer cambios en el texto en negrita, ahora el texto en negrita saldrá en verde!!! */ \nstrong {\n  color: green; }\n\n\n/* cambiar el color de los hipervinculos/enlaces  */\na {\n  color: brown;\n  font-weight: bold; }\n\n\n/* cambiar el aspecto del TOC: \nhttps://stackoverflow.com/questions/42546001/how-to-change-colors-and-attributes-of-table-of-contents-in-r-markdown-html-docu */\n.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{\n  color: darkgreen;\n  font-weight: bold;\n  background-color: gold; }\n   \n   \n/* para hacer cajas de texto de colorines*/\n\n.caja-darkkhaki { background-color:#bdb76b; border-radius: 4px; padding: 13px;}\n\n.caja-linea-verde {  color: #004346;\n  background-color: #fff;\n  border-top: 4pt solid #09bc8a;\n  border-right-style: none;\n  border-bottom-style: none;\n  border-left-style: none;\n  padding: 23px 10px 21px 10px;\n}\n\n\n/* Guía para los colores: https://htmlcolorcodes.com/es/nombres-de-los-colores/  */\n\n \n /* para las quotes o citas */\n\nblockquote {\n    padding: 10px 20px;\n    margin: 0 0 20px;\n    font-size: 14px;\n    border-left: 5px solid #DC143C;\n}\n\n\n/* para hacer lineas de colores */\n.linea-black {\n  border-top: 1px solid black;\n}\n\n\n.linea-red {\n  border-top: 2px dashed red;\n}"
+  },
+  {
+    "objectID": "blog/25_css.html",
+    "href": "blog/25_css.html",
+    "title": "Tuneando con CSS",
+    "section": "",
+    "text": "La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo del post no es dar una clase sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS."
+  },
+  {
+    "objectID": "blog/25_css.html#cómo-incorporar-cambios-con-css",
+    "href": "blog/25_css.html#cómo-incorporar-cambios-con-css",
+    "title": "Tuneando con CSS",
+    "section": "1 ¿Cómo incorporar cambios con CSS?",
+    "text": "1 ¿Cómo incorporar cambios con CSS?\n\nUtilizando spans\nEn este quarto-tip, Mine Çetinkaya-Rundel lo explica muy bien.\nPara cambiar la apariencia de un trozo de texto, tienes que meterlo dentro de [] y usando {} para definir el estilo que quieres aplicar a ese texto. Con un ejemplo se entiende mejor:\n\nPara que se muestre esto …Has de escribir\n\n\nPara llamar la atención puedes escribir en rojo o con un fondo amarillo; o las dos cosas a la vez.\n\n\nPara llamar la atención puedes escribir en [rojo]{style=\"color: red\"} \no con un [fondo amarillo]{style=\"background-color: yellow;\"}; \no las [dos cosas a la vez]{style=\"color: red; background-color: yellow;\"}.\n\n\n\n\n\n\nCon ficheros .css\nSi piensas reutilizar algunos estilos, entonces es mejor definir los estilos en un archivo .css.\nSi quisiéramos poder reutilizar los estilos que hemos definido en la anterior sección, tendríamos que crearlos como clases en un archivo css. Por ejemplo crearíamos el archivo: ./assets/mis_estilos_01.css con el siguiente contenido:\n/* css styles */\n\n.rojo {\n  color: red;\n}\n\n.yellow-background {\n  background-color: yellow;\n}\n\n.importante {\n  color: red;\n  background-color: yellow;\n}\nUna vez creado el archivo mis_estilos_01.csspara poder usar los estilos o clases allí definidos tendríamos que hacer 2 cosas:\n\nReferenciar el archivo css en el yaml del documento o post1. Esto lo haríamos incluyendo css: \"assets/mis_estilos_01.css\" en el yaml.\nUna vez incluido el fichero css en el yaml, ya podemos usar los estilos, para ello tendríamos que hacer lo siguiente:\n\n\nPara que se muestre esto …Has de escribirTambién podríamos haberlo hecho así:\n\n\nPara llamar la atención puedes escribir en rojo o con un fondo amarillo; o las dos cosas a la vez.\n\n\nPara llamar la atención puedes escribir en [rojo]{.rojo} \no con un [fondo amarillo]{.yellow-background}; \no las [dos cosas a la vez]{.importante}.\n\n\nPara llamar la atención puedes escribir en [rojo]{.rojo} \no con un [fondo amarillo]{.yellow-background}; \no las [[dos cosas a la vez]{.rojo}]{.yellow-background}."
+  },
+  {
+    "objectID": "blog/25_css.html#algunos-estilos-útiles",
+    "href": "blog/25_css.html#algunos-estilos-útiles",
+    "title": "Tuneando con CSS",
+    "section": "2 Algunos estilos útiles",
+    "text": "2 Algunos estilos útiles\nCon CSS se puede modificar la apariencia de todos los elementos de una página web. En el chunk de abajo muestro algunas de las posibilidades que usaba en mis xaringan slides.\n\n\nCódigo\n/* css styles: algunos q usaba en xaringan */\n\n.rotate-45 {transform: rotate(45deg); }\n.large { font-size: 140%; }\n.small { font-size: 80%; }\n   \n   \n/*  ----------------- colores  -------------- */ \n.purple{ color: #c077af; }\n.red { color: #ef342a; }\n.orange { color: #f57125; }\n.orange2 {color: #F58634;}\n.blue { color: #22b6ed; }\n.green { color: #1fb27f; }\n.green2 {color: #007965;}\n.yellow { color: #faca07; }\n.yellow2 {color: #FFCC29;}\n.brown {color: #a84d18; }\n\n\n/*  ----------------- una nueva clase de inversa: muy chula  -------------- */ \n.inverse2 {\n  background: #69686d;\n  color: #f2f2f6;\n}\n.inverse2 a {\n  color: #b2d68c;\n}\n.inverse2 h1, .inverse2 h2 {\n  color: #f2f2f6;\n  font-size: 72px;\n  line-height: 1.2em;\n}\n\n\n.textverd{\n  color: #b2d68c;\n  font-size: 60px;  \n}"
+  },
+  {
+    "objectID": "blog/25_css.html#estilos-útiles-pero-un-poco-bizarros",
+    "href": "blog/25_css.html#estilos-útiles-pero-un-poco-bizarros",
+    "title": "Tuneando con CSS",
+    "section": "3 Estilos útiles pero (un poco) bizarros!!",
+    "text": "3 Estilos útiles pero (un poco) bizarros!!\nEn clase, para mostrar como podemos modificar algunos de los elementos de un documento hecho con Rmd (ahora con Quarto) usaba un archivo css con cambios digamos un poco raros: a lo mejor ponía el titulo en pink, el autor en verde etc.. etc… Sólo era un ejemplo para mostrar algunas de las posibilidades para modificar la apariencia de un documento con CSS.\nSi quieres ver como quedaría este mismo post pero utilizando las reglas CSS (bizarras) que puedes ver abajo, puedes hacerlo aquí. Ya os digo que los cambios son un poco raros, vamos no muy estéticos.\n\n\nCódigo\n/* definiendo estilos del body : de toda la página */ \nbody { \n  background-color: aliceblue; }  /* color del fondo*/ \n\n\n/* importo un tipo de letra */ \n@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300); \n\n/* definiendo estilos de los párrafos */ \np {\n  text-align: justify;         /* justificar el texto del body */      \n  line-height: 1.4;            /* anchura entre las lineas 1.0 is the default in Firefox. 2.0 provides a large space */     \n  margin: 10px 0px 10px 0px;    /* margenes entre los párafos: top, izquierda, abajo, left */   \n  font-size: 13pt;                                     /* tamaño de letra */   \n  font-family: 'Open Sans', Helvetica, sans-serif; }   /* tipo de letra */  \n\n\n\n/* definiendo estilos de las cajas de código (chunks) */ \npre {\n  background-color: pink;  /* color de las cajas de código */ \n    font-size: 10pt;\n    border-radius: 9px;     /* q los bordes de las cajas sean redondas */ \n    font-family: Monaco, monospace;\n    border: 3px solid green; }\n\n/* hacer cambios en el texto en negrita, ahora el texto en negrita saldrá en verde!!! */ \nstrong {\n  color: green; }\n\n\n/* cambiar el color de los hipervinculos/enlaces  */\na {\n  color: brown;\n  font-weight: bold; }\n\n\n/* cambiar el aspecto del TOC: \nhttps://stackoverflow.com/questions/42546001/how-to-change-colors-and-attributes-of-table-of-contents-in-r-markdown-html-docu */\n.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{\n  color: darkgreen;\n  font-weight: bold;\n  background-color: gold; }\n   \n   \n/* para hacer cajas de texto de colorines*/\n\n.caja-darkkhaki { background-color:#bdb76b; border-radius: 4px; padding: 13px;}\n\n.caja-linea-verde {  color: #004346;\n  background-color: #fff;\n  border-top: 4pt solid #09bc8a;\n  border-right-style: none;\n  border-bottom-style: none;\n  border-left-style: none;\n  padding: 23px 10px 21px 10px;\n}\n\n\n/* Guía para los colores: https://htmlcolorcodes.com/es/nombres-de-los-colores/  */\n\n \n /* para las quotes o citas */\n\nblockquote {\n    padding: 10px 20px;\n    margin: 0 0 20px;\n    font-size: 14px;\n    border-left: 5px solid #DC143C;\n}\n\n\n/* para hacer lineas de colores */\n.linea-black {\n  border-top: 1px solid black;\n}\n\n\n.linea-red {\n  border-top: 2px dashed red;\n}"
+  },
+  {
+    "objectID": "blog/28_phyton.html",
+    "href": "blog/28_phyton.html",
+    "title": "Using R data with phyton",
+    "section": "",
+    "text": "Quarto ha hecho que me vuelva a interesar por Phyton!!!\nEs muy fácil combinar chunks de R con Py, solo hay que pasar los datos así: my_py_data = r.df"
+  },
+  {
+    "objectID": "blog/28_phyton.html#some-biblio",
+    "href": "blog/28_phyton.html#some-biblio",
+    "title": "Using R data with phyton",
+    "section": "1 Some biblio",
+    "text": "1 Some biblio\n\nQuarto with Python"
+  },
+  {
+    "objectID": "recursos.html",
+    "href": "recursos.html",
+    "title": "Recursos sobre Quarto",
+    "section": "",
+    "text": "Desde que Quarto se hizo publico con We don’t talk about Quarto ha sido un no parar de workshops, posts, etc… En esta página tienes una selección de recursos sobre Quarto.\nObviamente la principal referencia es la web de Quarto: absolutamente fantástica!!! En ella hay, entre otras secciones, una Guide, una Reference y una Gallery.\n\nEntre los materiales que he visto sobre Quarto destacar los siguientes:\n\nAWESOME Quarto: un listado muy extenso de recursos Quarto hecho por Mickaël Canouil.\nQuarto tip a day: Un blog de Mine Çetinkaya-Rundel con consejos y tips sobre Quarto.\nGet Started with Quarto: un workshop de Thomas Mock. El video, y otro video de 3h.\nBeautiful Reports and Presentations with Quarto: un workshop de Thomas Mock. El video y el repo.\nIntroducción a RMarkdown, creando reportes con R y Python en RStudio: workshop de Renzo Cáceres para LatinR 2022.\nMaking shareable documents with Quarto: una web de Openscapes.\nQuarto/RMarkdown - What’s Different?: unas slides de Ted Laderas.\nRstudio::conf(2022) Playlist: la presentación en sociedad de Quarto con varias charlas sobre Quarto, Hello Quarto: Share, Collaborate, Teach, Reimagine, Websites & Books & Blogs, oh my! Creating Rich Content with Quarto, Quarto for the Curious entre otras.\nRstudio::conf(2022) Workshops: por ejemplo, Get Started with Quarto o Rmarkdown to Quarto.\nReproducible authoring with Quarto: un video de Mine Çetinkaya-Rundel donde se hace evidente las ventajas de Quarto y la utilidad del editor visual de RStudio. Sus slides aquí.\n\n\n\nRecursos específicos sobre web/blogs\n\nQuarto - Creating a Blog: documentación oficial.\nBuilding a blog with Quarto: un workshop de Isabella Velásquez acerca de cómo construir un blog con Quarto. El repo de los ejercicios, video y RStudioCloud project.\nWebsites & Books & Blogs, oh my! Creating Rich Content with Quarto: ponencia de Devin Pastoor en el marco de RStudio::conf(2022).\nModifying the Default Quarto Blog Structure: post de Eric Ekholm 2022.\nCreating a Blog with Quarto in 10 Steps: post de Bea Milz.\n100 seconds from zero to public site: vídeo de Thomas Mock donde crea una web con Quarto en 100 segundos.\nPorting a Distill Blog to Quarto: post de Danielle Navarro."
   }
 ]

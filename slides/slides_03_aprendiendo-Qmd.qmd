@@ -56,6 +56,40 @@ embed-resources: true
 
 
 
+# Lo que ya sabemos {background-color="#ebf5fb"}
+
+{{< var lineanaranja >}}
+
+<br>
+
+. . .
+
+1.  Trabajamos con Qprojects
+
+2. Documento fuente escrito en Qmd
+
+2.  Genera diferentes outputs
+
+
+
+# ¿Qué es Quarto? {.unnumbered background-color="#ebf5fb"}
+
+{{< var lineanaranja >}}
+
+
+> Quarto is a multi-language, next generation version of R Markdown, with many new features and capabilities.
+
+. . .
+
+<br>
+
+Permite incorporar texto y código para producir documentos (reproducibles) en multiples formatos
+
+<br>
+
+Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segundos
+
+
 # ¿Qué es Quarto? {.unnumbered background-color="#b8c2aa"}
 
 
@@ -155,11 +189,9 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 ## Para poder practicar lo que vayamos aprendiendo ... {background-color="#f7f8f5"}
 
-<br><br><br>
+<br><br>
 
 {{< include ./_includes/_ss_03_tarea_00.qmd >}}
-
-
 
 
 # Qmarkdown: guía rápida (`.qmd`) {background-color="#b8c2aa"}
@@ -170,7 +202,9 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 1.  Encabezamiento (**yaml** header)  
 2.  Trozos de **código** R (R chunks)  
-3.  **Texto** (escrito en Markdown) ... y **todo lo demás**: imágenes, links, ecuaciones, etc ...  
+3.  **Texto** (escrito en Markdown) ... 
+
+      ... y **todo lo demás**: imágenes, links, ecuaciones, etc ...  
 
 <br>
 
@@ -253,6 +287,14 @@ embed-resources: true
 ---
 ```
 :::
+
+. . .
+
+<br>
+
+{{< include ./_includes/_ss_03_tarea_01.qmd >}}
+
+
 
 ------------------------------------------------------------------------
 

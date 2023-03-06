@@ -1,0 +1,8 @@
+::: {.callout-important icon="false"}
+#### Tarea 3.1: Vamos a jugar con el `yaml`
+
+- Utiliza el archivo `prueba_01.qmd` para probar como quedaría `prueba_01.html` al usar los 3 anteriores `yaml's`
+
+<br>
+
+:::

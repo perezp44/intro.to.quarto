@@ -50,7 +50,7 @@ embed-resources: true
 
 . . .
 
-- Aprender a **usar R**, mejor "el entorno R" (❗),  **para hacer distintos tipos de documentos**.
+- Aprender a **usar "el entorno R" (❗) para escribir**,   para hacer distintos tipos de documentos.
 
 . . . 
 
@@ -177,7 +177,7 @@ embed-resources: true
     -   [2021, pedro.j.perez blog's](https://perezp44.github.io/pjperez.web/){target="\"blank”"}, con Distill
     -   [2022, R & flowers](https://perezp44.github.io/pjperez.blog.2022/){target="\"blank”"}, con Quarto
 
-# Os toca presentaros :slightly_smiling_face: !! {background-color="#abd2d6"}
+# Os toca presentaros!! :slightly_smiling_face: {background-color="#abd2d6"}
 
 <br>
 
