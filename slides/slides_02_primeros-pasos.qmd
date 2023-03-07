@@ -159,9 +159,12 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 
 ### Importante: sólo interactuaremos con RStudio
 
--   No "veremos" a R ni a Quarto.
+- No "veremos" a R ni a Quarto.
 
--   Daremos ordenes a R y Quarto a través de RStudio
+- Daremos ordenes a R y Quarto a través de RStudio
+
+- La [User Guide](https://docs.posit.co/ide/user/) de RStudio
+
 
 ::: footer
 \[Más info [aquí](https://perezp44.github.io/intro.to.quarto/blog/02_que-es-quarto.html)\]

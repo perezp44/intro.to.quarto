@@ -38,7 +38,13 @@ footer: |
 #css: /assets/styles_slides_tareas.css
 ---
 
+> :warning: **Warning:** Do not push the big red button.  
+> :smile: **Nota:** Sunrises are beautiful.
 
+
+Hola &hairsp; tete como va &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; hola &nbsp jjj
+
+Price of this beer: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wait for it... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 $
 
 ## Estructura del taller {.smaller}
 

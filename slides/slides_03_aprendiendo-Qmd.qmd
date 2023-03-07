@@ -334,6 +334,8 @@ embed-resources: true
 
 -   `echo`: además de los típicos true y false, ahora **incorpora un nuevo valor `#| echo: fenced`** que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo).
 
+- `output: asis`: permite generar raw-markdown. Un ejemplo [aquí](https://quarto.org/docs/computations/execution-options.html#raw-output)
+
 
 <br>
 
@@ -526,9 +528,10 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 . . . 
 
 
--   Documentación oficial de Quarto [aquí](https://quarto.org/docs/authoring/markdown-basics.html)
+- Documentación oficial de Quarto [aquí](https://quarto.org/docs/authoring/markdown-basics.html) y su [documento fuente](https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd)
 
 - Una fantástica guía sobre Markdown [aquí](https://www.markdownguide.org/getting-started/)
+
 
 <br>
 
@@ -539,7 +542,7 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 . . . 
 
-- Es un **lenguaje de marcas** diseñado para escribir fácilmente **para la web** y que sea también fácilmente legible.
+- Es un **lenguaje de marcas** diseñado para escribir fácilmente **para la web** y que también sea fácilmente legible.
 
 . . . 
 
@@ -576,6 +579,11 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 - Como Quarto se basa en **pandoc**, se usa ["Pandoc`s markdown"](https://pandoc.org/MANUAL.html#pandocs-markdown), una versión revisada y extendida de la propuesta original de Grueber
 
+<br>
+
+- Tienes una fantástica guía de Markdown [aquí](https://www.markdownguide.org/), y [aquí](https://www.markdownguide.org/cheat-sheet/) una cheatsheet.
+
+
 
 
 ------------------------------------------------------------------------
@@ -603,6 +611,11 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 +-----------------------------------+------------------------------+
 |     `verbatim code`               | `verbatim code`              |
 +-----------------------------------+------------------------------+
+|     > un blockquote               |  > un blockquote             |
++-----------------------------------+------------------------------+
+
+
+I need to highlight these ==very important words==
 
 <br>
 
@@ -615,6 +628,12 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 +-----------------------------------+------------------------------+
 |     [En versalita]{.smallcaps}    | [En versalita]{.smallcaps}   |
 +-----------------------------------+------------------------------+
+|     el emoji :joy:                | el emoji :joy:               |
++-----------------------------------+------------------------------+
+|     > :warning: **Cuidado!!** no  | > :warning: **Cuidado!!** no |
++-----------------------------------+------------------------------+
+
+
 
 
 <br>
@@ -658,40 +677,79 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 ## (III) Texto: Parrafos, lineas, espacios, ...
 
+. . . 
 
-Has de mirar esta referencia para explicar MD: <https://www.markdownguide.org/getting-started/>
+- Para crear un nuevo **párrafo** has de dejar una (o más) **lineas en blanco**
 
--   Y la [docu oficial](https://quarto.org/docs/authoring/markdown-basics.html) y su [**source**](https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd)
+. . . 
 
-<br>
+- Si dentro de un párrafo necesitas que una frase empiece en otra linea entonces, **has de dejar 2 (o más) espacios al final**; en inglés esto se conoce como un "hard line break"
 
-- Si en una frase/linea de texto hay 2 espacios o más, estos se reducen a un espacio.
+    - El "hard line break" se puede hacer con `<br>`
 
+    - El "hard line break" también se puede hacer con \ seguido de nueva linea. 
+    
+    - En una celda de una tabla, esta es la única forma de crear un salto de línea, ya que se ignoran los espacios finales en las celdas.
 
-- Para que una linea pase a ser de verdad otra linea, hay que dejar 2 o más espacios al final.
+. . . 
 
-- En Markdown un párrafo consiste en una o más lineas de texto segidas de una o más lines en blanco; por lo tanto, para crear un nuevo párrafo has de dejar una (o más) lineas en blanco.
+- Si en una linea de texto hay **2 espacios o más**, estos se reducen a un espacio.
 
-- Si dentro de un párrafo necesitas que se empiece en otra linea, entonces has de dejar 2 (o más) espacios al final de una linea. ( hard line break tb se puede hacer con \ seguido de nueva linea).  Note: in multiline and grid table cells, this is the only way to create a hard line break, since trailing spaces in the cells are ignored.
+- Por lo tanto, si quieres separar palabras con más de un espacio, tendrás que usar lo que en html se conoce como "entities": `&nbsp;`(1 espacio)  `&ensp;`(2 espacios)  y `&emsp;`(4 espacios). Otra forma sería con la etiqueta `<pre>`.
 
-
-
-<br>
-
-- Para crear más espacio entre párrafos (una linea en blanco extra): `<br>`
-
-- Si queremos dejar extra espacio entre 2 palabras: `&nbsp;` `&ensp;` o `&nbsp;`
-
+. . . 
 
 <br>
 
-- Los espacios de lineas que empiezan con `|` se mantienen (🤓)
+- Para crear más espacio entre párrafos (una linea en blanco extra) podemos usar: `<br>`
+
+
+
+<br>
+
+- Los espacios al principio de las lineas que empiezan con `|` se mantienen (🤓)
+
+
+- Para practicar a escribir con Markdown podemos hacerlo en RStudio o usar editores online como [este](https://dillinger.io/) o [este](https://vuejs.org/examples/#markdown)
+
+
+
+# (III) Más elementos {.unnumbered background-color="#ebf5fb"}
+
+{{< var lineanaranja >}}
+
+<br>
+
+-   Además de YAML, chunks y texto, **Markdown tiene más elementos para escribir**
+
+. . . 
+
+- Por ejemplo: links, imágenes, videos, ecuaciones, tablas, notas al pie, bibliografía, etc ....
+
+
+-----
+
+
+<br>
+
+- **Ecuaciones**: admite ecuaciones en Latex si van entre **$** para ecuaciones inline y **$$** para ecuaciones independientes. [Aquí](http://www.sciweavers.org/free-online-latex-equation-editor) tienes un editor de ecuaciones en latex online, y [aquí](https://dereksonderegger.github.io/570L/16-rmarkdown-tricks.html) algunos ejemplos de ecuaciones escritas en Latex.
+
+<br>
+
+- **Hyperlinks**: Si escribes **`<https://www.rstudio.com/>`** o **`[Web de RStdudio](https://www.rstudio.com/)`**, cuando los procese `knitr`, se convertirán en hyperlinks.
+
+<br>
+
+- **Notas al pie**: si quieres poner una nota al pie aquí`^[el texto que quieres en la nota al pie]`
+
+<br>
+
+- **Tablas**: por ejemplo `knitr::kable(df)`, o `gt::gt(df)`, o `DT::datatable(df)` y más. Si te interesa el tema de las tablas puedes visitar [esto](https://perezp44.github.io/intro-ds-21-22-web/tutoriales/tt_08_tablas-Rmarkdown.html) o [esto](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/)
 
 
 
 
-
-## Links & Images
+## Links
 
 +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 | Markdown Syntax                                                  | Output                                                                                                 |
@@ -708,42 +766,6 @@ Has de mirar esta referencia para explicar MD: <https://www.markdownguide.org/ge
 +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |     [![](elephant.png){fig-alt="Alt text"}](https://quarto.org)  | [![](elephant.png){fig-alt="A line drawing of an elephant."}](https://quarto.org)                      |
 +------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-
-## Lists
-
-+-------------------------------------+---------------------------------+
-| Markdown Syntax                     | Output                          |
-+=====================================+=================================+
-|     * unordered list                | -   unordered list              |
-|         + sub-item 1                |                                 |
-|         + sub-item 2                |     -   sub-item 1              |
-|             - sub-sub-item 1        |                                 |
-|                                     |     -   sub-item 2              |
-|                                     |                                 |
-|                                     |         -   sub-sub-item 1      |
-+-------------------------------------+---------------------------------+
-|     *   item 2                      | -   item 2                      |
-|                                     |                                 |
-|         Continued (indent 4 spaces) |     Continued (indent 4 spaces) |
-+-------------------------------------+---------------------------------+
-|     1. ordered list                 | 1.  ordered list                |
-|     2. item 2                       |                                 |
-|         i) sub-item 1               | 2.  item 2                      |
-|              A.  sub-sub-item 1     |                                 |
-|                                     |     i)  sub-item 1              |
-|                                     |                                 |
-|                                     |         A.  sub-sub-item 1      |
-+-------------------------------------+---------------------------------+
-|     (@)  A list whose numbering     | (1) A list whose numbering      |
-|                                     |                                 |
-|     continues after                 | continues after                 |
-|                                     |                                 |
-|     (@)  an interruption            | (2) an interruption             |
-+-------------------------------------+---------------------------------+
-|     term                            | term                            |
-|     : definition                    |                                 |
-|                                     | :   definition                  |
-+-------------------------------------+---------------------------------+
 
 ## Tables
 
