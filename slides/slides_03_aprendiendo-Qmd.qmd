@@ -252,7 +252,7 @@ embed-resources: true
 
 {{< include ./_includes/_ss_03_tarea_01.qmd >}}
 
-- Veremos más opciones de YAML cuando vemos la creación de páginas web
+- Veremos más opciones de YAML cuando veamos la creación de páginas web
 
 <br>
 
@@ -313,9 +313,11 @@ embed-resources: true
  
  <br>
  
--   Por ejemplo:  
+-  Por ejemplo:  
+
 
 ![](./imagenes/ss_03_img_01_chunk-04.png)
+
 
 
 ``` {{r}}
@@ -364,26 +366,35 @@ embed-resources: true
 
 <br>
 
-#### Más opciones de `knitr`
+------------------------------------------------------------------------
+
+### (II) Chunks: Más opciones de `knitr`
 
 - Si usamos `knitr` para ejecutar los chunks entonces, podemos usar todas las [opciones nativas de `knitr`](https://yihui.org/knitr/options/), como: collapse, fig.width, comment, etc ... Más información [aquí](https://quarto.org/docs/computations/execution-options.html#knitr-options). Un ejemplo:
 
 ![](./imagenes/ss_03_img_02.png){fig-align="center"}
 
+- Si quieres ver todas las opciones disponibles para los chunks en `knitr` tendrás que ir a la [página web de knitr](https://yihui.name/knitr/options/), a la [cheat sheet sobre Rmarkdown](https://raw.githubusercontent.com/rstudio/cheatsheets/master/rmarkdown-2.0.pdf), o a la [Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+
+<br>
 
 ------------------------------------------------------------------------
 
 ### (II) Chunks: otras opciones
 
+<br>
+
 Ahora, en Quarto, hay **más opciones para los chunks**. Por ejemplo:
 
-  - hacer **folding code** con `#| code-fold: true`  
+  - Hacer **folding code** con `#| code-fold: true`  
   
-  - si el código es muy largo, puedes usar `#| code-overflow: wrap` o  scroll
+  - Si el código es muy largo, puedes usar `#| code-overflow: wrap` o  scroll
 
-  - puedes hacer que se muestren los **números de linea** con `#| code-line-numbers: true`
+  - Puedes hacer que se muestren los **números de linea** con `#| code-line-numbers: true`
 
-(La documentación oficial la tienes [aquí](https://quarto.org/docs/output-formats/html-code.html))  y [aquí](https://quarto.org/docs/reference/cells/cells-knitr.html#code-output)
+<br>
+
+La documentación oficial la tienes [aquí](https://quarto.org/docs/output-formats/html-code.html) y [aquí](https://quarto.org/docs/reference/cells/cells-knitr.html#code-output)
 
 
 <br>
@@ -392,33 +403,92 @@ Ahora, en Quarto, hay **más opciones para los chunks**. Por ejemplo:
 
 ------------------------------------------------------------------------
 
-### (IIc) "Chunks" inline (inline code)
+### (II) "Chunks": inline code
 
-<https://quarto.org/docs/computations/execution-options.html#inline-code> y 
+
+- La mayoría del código suele ir en los chunks, pero a veces necesitamos <span style="background-color: #e5e5e5; border-radius: 3px; padding: 4px; font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;"><code> inline code </code></span> ; es decir, código R dentro de nuestro texto.
+
+. . . 
+
+<br>
+
+- Por ejemplo, si quiero describir un df puedo hacerlo así: 
+
+    - "El data.frame iris  tiene 150 filas y 5 variables" 
+
+<br>
+
+- Pero es mejor hacerlo con  <span style="background-color: #e5e5e5; border-radius: 3px; padding: 4px; font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;"><code> inline code </code></span>. Para ello tienes que poner el código R dentro de estas marcas:  <span style="background-color: #e5e5e5; border-radius: 3px; padding: 4px; font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;"><code>&grave;r &grave;</code></span> 
+
+<br>
+
+-  Documentación oficial de Quarto [aquí](https://quarto.org/docs/computations/execution-options.html#inline-code). No hay mucho
 
 ------------------------------------------------------------------------
 
-### (IId) "Chunks" **no ejecutables**
+### (II) Chunks: Chunks **no ejecutables**
 
-<https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks>
+- Hemos visto que podemos incluir código R en nuestro `.qmd`.
+
+- El código R normalmente es ejecutado por el paquete `knitr`. Para ello hay que usar estas marcas:
+
+````
+```{{r}}
+2 + 2
+```
+````
+
+<br>
+
+. . . 
+
+- **Además**, como estamos usando Markdown, podemos incorporar en nuestro `.qmd` bloques de código no ejecutables.
+
+- Se usan las mismas marcas <span style="background-color: #e5e5e5; border-radius: 3px; padding: 4px; font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;"><code> ``` </code></span>, pero sin las llaves. Puede hacerse de 2 formas:
 
 
+
+::::  {columns}
+::: {.column width="43%"}
+
+````
+```r
+2 + 2
+```
+````
+:::
+
+::: {.column width="43%"}
+
+````
+```
+2 + 2
+```
+````
+:::
+::::
+
+<br>
+
+- Documentación oficial [aquí](https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks), pero no hay mucho.
+
+<br>
 
 
 ------------------------------------------------------------------------
 
-### (IIc) Chunks: diferencias entre Quarto y Rmd
+### (II) Chunks: diferencias entre Quarto y Rmd
 
--   **No hace falta chunk inicial**: con Quarto se pueden poner **las opciones de  los chunks en el YAML**
+- **No hace falta chunk inicial**: con Quarto se pueden poner **las opciones de  los chunks en el YAML**
 
--   En ficheros `.qmd`, **las opciones de los chunks se pueden especificar globalmente en el YAML** y a nivel individual en cada uno de los chunks.
+- En ficheros `.qmd`, **las opciones de los chunks se pueden especificar globalmente en el YAML** y a nivel individual en cada uno de los chunks.
 
--   En los **chunks individuales** ahora se se utiliza la **sintaxis YAML** (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
+- En los **chunks individuales** ahora se se utiliza la **sintaxis YAML** (`key: value`) en lineas dentro del chunk que empiezan con `#|`. Por ejemplo:
 
 ![](./imagenes/ss_03_img_02b.png){fig-align="center"}
 
 
-- Un ejemplo (diferencias `.qmd` vs. `.Rmd`)
+- Un ejemplo (diferencias `.qmd` vs. `.Rmd`):
 
 
 :::  {columns}
@@ -439,7 +509,6 @@ Ahora, en Quarto, hay **más opciones para los chunks**. Por ejemplo:
 
 
 
-{{< include ./_includes/_ss_03_tarea_01.qmd >}}
 
 # (III) Texto {.unnumbered background-color="#ebf5fb"}
 
@@ -448,6 +517,13 @@ Ahora, en Quarto, hay **más opciones para los chunks**. Por ejemplo:
 <br>
 
 -   El texto (o narrativas) **se escribe en Markdown** (concretamente en [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown))
+
+. . . 
+
+- Markdown es un lenguaje de marcado ligero con sintaxis sencilla que permite dar formato y estructura a un texto y convertirlo a `.html`
+
+
+. . . 
 
 
 -   Documentación oficial de Quarto [aquí](https://quarto.org/docs/authoring/markdown-basics.html)
@@ -459,15 +535,42 @@ Ahora, en Quarto, hay **más opciones para los chunks**. Por ejemplo:
 
 ------------------------------------------------------------------------
 
-## (III) Texto: ¿qué es Markdown?
+## (III) Texto: ¿qué narices es esto de Markdown?
 
-- Markdown es un lenguaje de marcado ligero con sintaxis sencilla que permite dar formato y estructura a un texto y convertirlo a `.html`
+. . . 
 
-- Fue creado por [John Grueber](https://daringfireball.net/projects/markdown/) y [Aaron Swartz](https://es.wikipedia.org/wiki/Aaron_Swartz) en 2004
+- Es un **lenguaje de marcas** diseñado para escribir fácilmente **para la web** y que sea también fácilmente legible.
 
-    > Markdown is a text-to-HTML conversion tool for web writers.
+. . . 
 
--   Se creo con el objetivo de crear un formato de texto fácil de escribir y leer
+- Markdown es un lenguaje **estoico** para escribir (para la web)
+
+. . . 
+
+- Markdown fue creado por [John Grueber](https://daringfireball.net/projects/markdown/) y [Aaron Swartz](https://es.wikipedia.org/wiki/Aaron_Swartz) en 2004. Para saber más sobre Aaron Swartz puedes ver [este documental](https://www.youtube.com/watch?v=7jhdj0vKbYo).
+
+-  Se creó con el objetivo de crear un formato de texto fácil de escribir y leer y que se convirtiera fácilmente en `.html`
+
+   > Markdown is a text-to-HTML conversion tool for web writers.
+   
+
+. . . 
+
+-  La ventaja de escribir en Markdown es que es un lenguaje muy fácil de aprender y que, como está basado en un formato de texto plano, es y será compatible con la mayoría de plataformas.
+
+. . . 
+
+- En este otro [tutorial  de Markdown](https://www.markdowntutorial.com/), se puede leer lo siguiente:
+
+> Markdown is a way to write for the web. It’s written in what nerds like to call “plaintext”. Plaintext is just the regular alphabet, with a few familiar symbols. Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments.
+
+
+
+------------------------------------------------------------------------
+
+## (III) Texto: ideas básicas (otra vez)
+
+- En los documentos `.qmd`, **"todo"** lo que no es el yaml o un chunk, es texto. 
 
 - En Quarto el texto se escribe en [Markdown](https://es.wikipedia.org/wiki/Markdown)
 
@@ -477,14 +580,14 @@ Ahora, en Quarto, hay **más opciones para los chunks**. Por ejemplo:
 
 ------------------------------------------------------------------------
 
-## (III) Texto: sintaxis básica de `markdown`
+## (III) Texto: Dando formato al texto 
 
 <br>
 
-- Dando formato al texto:
+- Sintaxis básica de `markdown`
 
 +-----------------------------------+------------------------------+
-| Markdown (si escribes esto)       | Se verá esto:                |
+| Si escribes esto:                 | Se verá esto:                |
 +===================================+==============================+
 |     texto normal                  | texto normal                 |
 +-----------------------------------+------------------------------+
@@ -500,10 +603,19 @@ Ahora, en Quarto, hay **más opciones para los chunks**. Por ejemplo:
 +-----------------------------------+------------------------------+
 |     `verbatim code`               | `verbatim code`              |
 +-----------------------------------+------------------------------+
+
+<br>
+
+- Más posibilidades:
+
++-----------------------------------+------------------------------+
+| Si escribes esto:                 | Se verá esto:                |
++===================================+==============================+
 |     [texto subrayado]{.underline} | [texto subrayado]{.underline}|
 +-----------------------------------+------------------------------+
-|     [En versalita]{.underline}    | [En versalita]{.smallcaps}   |
+|     [En versalita]{.smallcaps}    | [En versalita]{.smallcaps}   |
 +-----------------------------------+------------------------------+
+
 
 <br>
 
@@ -531,42 +643,52 @@ Ahora, en Quarto, hay **más opciones para los chunks**. Por ejemplo:
 
 <br>
 
-## (III) Texto: sintaxis básica de `markdown`
+## (III) Texto: Creando **listas**
 
-- Listas:
 
-<https://quarto.org/docs/authoring/markdown-basics.html#lists>
+<div>
+
+![](./imagenes/ss_03_img_07_listas.png){fig-align="center" width="65%"}
+
+</div>
+
+- Mas posibilidades [aquí](https://quarto.org/docs/authoring/markdown-basics.html#lists)
 
 <br>
 
-## (III) Texto: sintaxis básica de `markdown`
+## (III) Texto: Parrafos, lineas, espacios, ...
 
-- Párrafos:
-
-
-------------------------------------------------------------------------
 
 Has de mirar esta referencia para explicar MD: <https://www.markdownguide.org/getting-started/>
 
--   Y la docu oficial <https://quarto.org/docs/authoring/markdown-basics.html> y su **source**: <https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd>
+-   Y la [docu oficial](https://quarto.org/docs/authoring/markdown-basics.html) y su [**source**](https://github.com/quarto-dev/quarto-web/blob/main/docs/authoring/markdown-basics.qmd)
 
-------------------------------------------------------------------------
+<br>
 
-### Sintaxis básica de `markdown`
+- Si en una frase/linea de texto hay 2 espacios o más, estos se reducen a un espacio.
 
-## Párrafos
 
--   A paragraph is one or more lines of text followed by one or more blank lines. Newlines are treated as spaces, so you can reflow your paragraphs as you like.
+- Para que una linea pase a ser de verdad otra linea, hay que dejar 2 o más espacios al final.
 
--   Si necesitas a hard line break dentro de un párrafo, put two or more spaces at the end of a line. Tb se puede hacer con A backslash followed by a newline is also a hard line break
+- En Markdown un párrafo consiste en una o más lineas de texto segidas de una o más lines en blanco; por lo tanto, para crear un nuevo párrafo has de dejar una (o más) lineas en blanco.
 
--   Note: in multiline and grid table cells, this is the only way to create a hard line break, since trailing spaces in the cells are ignored.
+- Si dentro de un párrafo necesitas que se empiece en otra linea, entonces has de dejar 2 (o más) espacios al final de una linea. ( hard line break tb se puede hacer con \ seguido de nueva linea).  Note: in multiline and grid table cells, this is the only way to create a hard line break, since trailing spaces in the cells are ignored.
 
--   Para crear un nuevo párrafo hay que dejar al menos una linea de espacio
 
--   [Underline]{.underline}
 
-[Small caps]{.smallcaps}
+<br>
+
+- Para crear más espacio entre párrafos (una linea en blanco extra): `<br>`
+
+- Si queremos dejar extra espacio entre 2 palabras: `&nbsp;` `&ensp;` o `&nbsp;`
+
+
+<br>
+
+- Los espacios de lineas que empiezan con `|` se mantienen (🤓)
+
+
+
 
 
 ## Links & Images

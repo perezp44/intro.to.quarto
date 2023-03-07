@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.242">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,10 +19,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -49,19 +48,48 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -75,7 +103,8 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -135,57 +164,55 @@ div.csl-indent {
     <span class="navbar-title">Escribiendo con R y Quarto (aún muy WIP)</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Buscar"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../index.html" rel="" target=""><i class="bi bi-house-door" role="img">
+    <a class="nav-link" href="../index.html"><i class="bi bi-house-door" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../info.html" rel="" target="">
+    <a class="nav-link" href="../info.html">
  <span class="menu-text">Info</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../materiales.html" rel="" target="">
+    <a class="nav-link" href="../materiales.html">
  <span class="menu-text">Materiales</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../recursos.html" rel="" target="">
+    <a class="nav-link" href="../recursos.html">
  <span class="menu-text">Recursos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog.html" rel="" target="">
+    <a class="nav-link" href="../blog.html">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
+    <a class="nav-link" href="../about.html">
  <span class="menu-text">Pedro J. Pérez</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/perezp44" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/perezp44"><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/pjpv4444" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/pjpv4444"><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:pedro.j.perez@uv.es" rel="" target=""><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:pedro.j.perez@uv.es"><i class="bi bi-envelope" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -212,7 +239,7 @@ div.csl-indent {
     <div class="quarto-title-meta-heading">Afiliación</div>
     
       <div class="quarto-title-meta-contents">
-      <p class="author"><a href="https://perezp44.github.io/pjperez.web/">Pedro J. Pérez</a> <a href="https://orcid.org/0000-0001-9375-6330" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+      <a href="https://perezp44.github.io/pjperez.web/">Pedro J. Pérez</a> <a href="https://orcid.org/0000-0001-9375-6330" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
     </div>
       <div class="quarto-title-meta-contents">
           <p class="affiliation">
@@ -245,21 +272,21 @@ div.csl-indent {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro"><span class="header-section-number">1</span> Intro</a></li>
-  <li><a href="#cómo-gestionar-las-referencias-en-quarto" id="toc-cómo-gestionar-las-referencias-en-quarto" class="nav-link" data-scroll-target="#cómo-gestionar-las-referencias-en-quarto"><span class="header-section-number">2</span> ¿Cómo gestionar las referencias en Quarto?</a>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro"><span class="toc-section-number">1</span>  Intro</a></li>
+  <li><a href="#cómo-gestionar-las-referencias-en-quarto" id="toc-cómo-gestionar-las-referencias-en-quarto" class="nav-link" data-scroll-target="#cómo-gestionar-las-referencias-en-quarto"><span class="toc-section-number">2</span>  ¿Cómo gestionar las referencias en Quarto?</a>
   <ul class="collapse">
   <li><a href="#introducir-la-referencias" id="toc-introducir-la-referencias" class="nav-link" data-scroll-target="#introducir-la-referencias">2.1 Introducir la referencias</a></li>
   <li><a href="#creación-del-fichero-.bib" id="toc-creación-del-fichero-.bib" class="nav-link" data-scroll-target="#creación-del-fichero-.bib">2.2 Creación del fichero <code>.bib</code></a></li>
   <li><a href="#referencia-el-fichero-bib-en-el-yaml" id="toc-referencia-el-fichero-bib-en-el-yaml" class="nav-link" data-scroll-target="#referencia-el-fichero-bib-en-el-yaml">2.3 Referencia el fichero bib` en el yaml</a></li>
   <li><a href="#estilo-de-las-referencias" id="toc-estilo-de-las-referencias" class="nav-link" data-scroll-target="#estilo-de-las-referencias">2.4 Estilo de las referencias</a></li>
   </ul></li>
-  <li><a href="#inclusión-de-las-referencias" id="toc-inclusión-de-las-referencias" class="nav-link" data-scroll-target="#inclusión-de-las-referencias"><span class="header-section-number">3</span> Inclusión de las referencias</a></li>
-  <li><a href="#inclusión-de-citas" id="toc-inclusión-de-citas" class="nav-link" data-scroll-target="#inclusión-de-citas"><span class="header-section-number">4</span> Inclusión de citas</a>
+  <li><a href="#inclusión-de-las-referencias" id="toc-inclusión-de-las-referencias" class="nav-link" data-scroll-target="#inclusión-de-las-referencias"><span class="toc-section-number">3</span>  Inclusión de las referencias</a></li>
+  <li><a href="#inclusión-de-citas" id="toc-inclusión-de-citas" class="nav-link" data-scroll-target="#inclusión-de-citas"><span class="toc-section-number">4</span>  Inclusión de citas</a>
   <ul class="collapse">
   <li><a href="#sintaxís-para-las-citas" id="toc-sintaxís-para-las-citas" class="nav-link" data-scroll-target="#sintaxís-para-las-citas">Sintaxís para las citas</a></li>
   </ul></li>
@@ -267,7 +294,6 @@ div.csl-indent {
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/intro.to.quarto/edit/main/blog/20_referencias-bibliograficas.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/intro.to.quarto/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
@@ -487,53 +513,53 @@ nocite: |
 </section>
 <section id="referencias" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="referencias">Referencias</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
-<div id="ref-AndrewHeissAndrew2023" class="csl-entry" role="listitem">
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
+<div id="ref-AndrewHeissAndrew2023" class="csl-entry" role="doc-biblioentry">
 Andrew <span>Heiss</span> (🐘 @andrew@fediscience.org) en <span>Twitter</span>. (2023). En <em>Twitter</em>. <a href="https://twitter.com/andrewheiss/status/1612466959534428161">https://twitter.com/andrewheiss/status/1612466959534428161</a>
 </div>
-<div id="ref-BetterBibliographyManagement" class="csl-entry" role="listitem">
+<div id="ref-BetterBibliographyManagement" class="csl-entry" role="doc-biblioentry">
 <em>Better bibliography management with <span>Overleaf</span>, <span>CiteDrive</span>, and <span>BibTeX</span>/<span>BibLaTeX</span> — about 3.0 and an updated guide</em>. (s.&nbsp;f.). Recuperado 6 de febrero de 2023, de <a href="https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex">https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex</a>
 </div>
-<div id="ref-cetinkaya-rundelQuartoTipDay2022b" class="csl-entry" role="listitem">
+<div id="ref-cetinkaya-rundelQuartoTipDay2022b" class="csl-entry" role="doc-biblioentry">
 Çetinkaya-Rundel, M. (2022). <em>A <span>Quarto</span> tip a day - <span>Citations</span></em>. <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/">https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/24-citations/</a>
 </div>
-<div id="ref-citedriveBibliographyManagementMarkdown2022" class="csl-entry" role="listitem">
+<div id="ref-citedriveBibliographyManagementMarkdown2022" class="csl-entry" role="doc-biblioentry">
 CiteDrive. (2022). Bibliography <span>Management</span> in <span>R</span> <span>Markdown</span> with <span>CiteDrive</span> and <span>RStudio</span>. En <em>Medium</em>. <a href="https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619">https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619</a>
 </div>
-<div id="ref-heissHowMigrateBibDesk" class="csl-entry" role="listitem">
+<div id="ref-heissHowMigrateBibDesk" class="csl-entry" role="doc-biblioentry">
 Heiss, A. (s.&nbsp;f.). <em>How to migrate from <span>BibDesk</span> to <span>Zotero</span> for pandoc-based writing <span></span> <span>Andrew</span> <span>Heiss</span></em>. Recuperado 14 de enero de 2023, de <a href="https://www.andrewheiss.com/blog/2023/01/08/bibdesk-to-zotero-pandoc/">https://www.andrewheiss.com/blog/2023/01/08/bibdesk-to-zotero-pandoc/</a>
 </div>
-<div id="ref-kashnitskyZoteroHacksUnlimited2019" class="csl-entry" role="listitem">
+<div id="ref-kashnitskyZoteroHacksUnlimited2019" class="csl-entry" role="doc-biblioentry">
 Kashnitsky, I. (2019). <em>Zotero hacks: unlimited synced storage and its smooth use with rmarkdown <span></span> <span>Ilya</span> <span>Kashnitsky</span></em>. <a href="https://ikashnitsky.github.io/2019/zotero/">https://ikashnitsky.github.io/2019/zotero/</a>
 </div>
-<div id="ref-mauryaWaysInstallZotero2022" class="csl-entry" role="listitem">
+<div id="ref-mauryaWaysInstallZotero2022" class="csl-entry" role="doc-biblioentry">
 Maurya, H. (2022). 3 <span>Ways</span> to install <span>Zotero</span> on <span>Ubuntu</span> 22.04 or 20.04 <span>LTS</span>. En <em>Linux Shout</em>. <a href="https://www.how2shout.com/linux/how-to-install-zotero-on-ubuntu-22-04-or-20-04-lts/">https://www.how2shout.com/linux/how-to-install-zotero-on-ubuntu-22-04-or-20-04-lts/</a>
 </div>
-<div id="ref-PrintReferencesReading" class="csl-entry" role="listitem">
+<div id="ref-PrintReferencesReading" class="csl-entry" role="doc-biblioentry">
 Print <span>References</span>/<span>Reading</span> <span>List</span>/<span>Bibliography</span> in <span>Your</span> <span>Syllabus</span> (<span>With</span> <span>Some</span> <span>Style</span>) in <span>R</span> <span>Markdown</span> and {stevemisc}. (s.&nbsp;f.). En <em>Steven V. Miller</em>. Recuperado 6 de febrero de 2023, de <a href="http://svmiller.com/blog/2022/01/print-references-reading-list-syllabus-r-markdown-stevemisc/">http://svmiller.com/blog/2022/01/print-references-reading-list-syllabus-r-markdown-stevemisc/</a>
 </div>
-<div id="ref-QuartoCitationsFootnotes" class="csl-entry" role="listitem">
+<div id="ref-QuartoCitationsFootnotes" class="csl-entry" role="doc-biblioentry">
 <em>Quarto - <span>Citations</span> &amp; <span>Footnotes</span></em>. (s.&nbsp;f.). Recuperado 6 de febrero de 2023, de <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">https://quarto.org/docs/authoring/footnotes-and-citations.html</a>
 </div>
-<div id="ref-QuartoTechnicalWriting" class="csl-entry" role="listitem">
+<div id="ref-QuartoTechnicalWriting" class="csl-entry" role="doc-biblioentry">
 <em>Quarto - <span>Technical</span> <span>Writing</span></em>. (s.&nbsp;f.). Recuperado 14 de enero de 2023, de <a href="https://quarto.org/docs/visual-editor/technical.html#citations">https://quarto.org/docs/visual-editor/technical.html#citations</a>
 </div>
-<div id="ref-QuickStartGuide" class="csl-entry" role="listitem">
+<div id="ref-QuickStartGuide" class="csl-entry" role="doc-biblioentry">
 <em>quick start guide [<span>Zotero</span> <span>Documentation</span>]</em>. (s.&nbsp;f.). Recuperado 14 de enero de 2023, de <a href="https://www.zotero.org/support/quick_start_guide">https://www.zotero.org/support/quick_start_guide</a>
 </div>
-<div id="ref-MarkdownTUTORIALPowerful" class="csl-entry" role="listitem">
+<div id="ref-MarkdownTUTORIALPowerful" class="csl-entry" role="doc-biblioentry">
 <em>R <span>Markdown</span> <span>TUTORIAL</span> <span></span> <span>A</span> powerful tool for <span>LEARNING</span> <span>R</span> (<span>IN</span> 45 <span>MINUTES</span>) - <span>YouTube</span></em>. (s.&nbsp;f.). Recuperado 14 de enero de 2023, de <a href="https://www.youtube.com/watch?v=K418swtFnik">https://www.youtube.com/watch?v=K418swtFnik</a>
 </div>
-<div id="ref-riedererBibliographiesCitationsMarkdown" class="csl-entry" role="listitem">
+<div id="ref-riedererBibliographiesCitationsMarkdown" class="csl-entry" role="doc-biblioentry">
 Riederer, E., Christophe Dervieux. (s.&nbsp;f.). <em>4.5 <span>Bibliographies</span> and citations <span></span> <span>R</span> <span>Markdown</span> <span>Cookbook</span></em>. Recuperado 6 de febrero de 2023, de <a href="https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html">https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html</a>
 </div>
-<div id="ref-rodríguez-sanchez2016" class="csl-entry" role="listitem">
+<div id="ref-rodríguez-sanchez2016" class="csl-entry" role="doc-biblioentry">
 Rodríguez-Sanchez, F., Pérez-Luque, A. J., Bartomeus, I., &amp; Varela, S. (2016). Ciencia reproducible: ¿qué, por qué, cómo? <em>Ecosistemas</em>, <em>25</em>(2), 83-92. <a href="https://doi.org/10.7818/ecos.2016.25-2.11">https://doi.org/10.7818/ecos.2016.25-2.11</a>
 </div>
-<div id="ref-UsingCiteDriveKeep" class="csl-entry" role="listitem">
+<div id="ref-UsingCiteDriveKeep" class="csl-entry" role="doc-biblioentry">
 <em>Using <span>CiteDrive</span> to keep bibliography and references in sync with <span>Quarto</span>® in <span>RStudio</span>.</em> (s.&nbsp;f.). Recuperado 6 de febrero de 2023, de <a href="https://www.youtube.com/watch?v=eukDLQV-EMs">https://www.youtube.com/watch?v=eukDLQV-EMs</a>
 </div>
-<div id="ref-wickham2010a" class="csl-entry" role="listitem">
+<div id="ref-wickham2010a" class="csl-entry" role="doc-biblioentry">
 Wickham, H., &amp; Grolemund, G. (2010). Graphics for Statistics and Data Analysis with<span><em>R</em></span>. <em>Journal of Statistical Software</em>, <em>36</em>(Book Review 3). <a href="https://doi.org/10.18637/jss.v036.b03">https://doi.org/10.18637/jss.v036.b03</a>
 </div>
 </div>
@@ -549,7 +575,7 @@ Wickham, H., &amp; Grolemund, G. (2010). Graphics for Statistics and Data Analys
 <li id="fn2"><p>En realidad las citas hay que escribirlas a mano, pero si las incluyes con la sintáxis adecuada, hará que cada cita tenga un enlace a la referencia<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>BibTex fue creado para usar con Latex, utiliza ficheros <code>.bib</code> que es una forma conveniente para almacenar bibliografía en texto plano, pero BibTex es limitado para poder almacenar adecuadamente determinadas referencias, por ejemplo no puede diferenciar entre por ejemplo magazine/newspaper articles and journal articles. Zotero usa the CSL standard que también usa Pandocs.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></div></section></div></main> <!-- /main -->
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -577,23 +603,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
@@ -658,92 +670,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -787,7 +713,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -801,7 +727,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">© 2022 Pedro J. Pérez</div>   
-    <div class="nav-footer-center">Hecho con <a href="https://quarto.org">Quarto</a></div>
+      <div class="nav-footer-center">Hecho con <a href="https://quarto.org">Quarto</a></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

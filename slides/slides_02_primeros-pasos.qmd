@@ -53,9 +53,14 @@ embed-resources: true
 
 2.  ¿Qué son R/RStudio y Quarto?
 
-------------------------------------------------------------------------
+---
 
 ### Documentos ¿reproducibles?
+
+- Todos tenemos que hacer documentos con algún contenido estadístico: informes o transparencias o .... Quarto hace posible que podamos hacer esos documentos directamente desde R. Además, nuestros informes serán Reproducibles!!
+
+- ¿Cómo lo haremos?
+
 
 . . .
 
