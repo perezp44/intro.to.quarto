@@ -1,11 +1,12 @@
 ---
-title: "Primeros pasos con Revealjs slides"
+title: "Revealjs slides (primeros pasos)"
 date: 2023-06-26  #- ISO8601 YYYY-MM-DD format 
 subtitle: "(Web del curso [aquí](https://perezp44.github.io/intro.to.quarto/))"
 date-format: long
 lang: es
 format: 
   revealjs:
+#    theme: dark
     scrollable: true
     slide-level: 2
     height: 900
@@ -40,7 +41,8 @@ revealjs-plugins: [lightbox, pointer]
 embed-resources: true
 ---
 
-# Primeras ideas {background-color="#b8c2aa"}
+
+# Intro {background-color="#b8c2aa"}
 
 {{< var lineanaranja >}}
 
@@ -50,8 +52,64 @@ embed-resources: true
 
 1.  A veces tenemos que hacer slides
 
-2.  Revealjs es fácil
+2. Quarto puede hacer slides de varios tipos (.ppt, slidy, beamer)
+
+3. Nos centraremos en **Revealjs**
+
+4.  Revealjs es fácil y chachi
+
+> is highly recommended unless you have specific requirements for Office or LaTeX output
+
+
+
+# Presentaciones (generico) {.unnumbered background-color="#ebf5fb"} 
+
+{{< var lineanaranja >}}
+
+- [Documentación oficial](https://quarto.org/docs/presentations/)
+
+
+- To put material in side by side columns, you can use a native div container with class .columns, containing two or more div containers with class .column and a width attribute:
+
+
+
+
+# Revealjs slides {.unnumbered background-color="#ebf5fb"} 
+
+{{< var lineanaranja >}}
+
+
+
+# Otros formatos {.unnumbered background-color="#ebf5fb"} 
+
+{{< var lineanaranja >}}
+
+- Beamer
+
+- Power Point
+
+- Slidy
+
+
+
+# Beamer slides {.unnumbered background-color="#ebf5fb"} 
+
+{{< var lineanaranja >}}
 
 ---
 
-### Hagamos unas revealjs
+- pdf/Latex
+
+- easy
+
+
+-------------
+
+### Creamos unas beamer slides
+
+- [Dcumentación oficial](https://quarto.org/docs/presentations/beamer.html)
+
+
+<kbd>S</kbd>
+
+pp

@@ -60,10 +60,11 @@ format:
 ```
 
 
+<br>
+
 :::
 
 - Aún no podemos refrescar la web porque ahora no tenemos archivo `index.qmd`. 
 
 
-:::
 
