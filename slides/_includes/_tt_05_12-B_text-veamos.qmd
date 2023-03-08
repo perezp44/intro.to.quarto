@@ -1,0 +1,37 @@
+
+
+#### Layouts {.unnumbered}
+
+
+- Además de yaml, texto y chunk, para escribir con Quarto **conviene conocer la estructura o layout de los artículos** que se generan con él.
+
+- Los "artículos" tienen un **body**, un **margin** y un área para las **sidebars**, que en nuestro caso contiene el TOC^[Además, el layout puede venir afectado por la opción `page-layout: custom   #- {article, full, custom}`]. 
+
+
+- Usando **divs** se puede hacer que **alguna sección de nuestra página ocupe un espacio mayor al habitual**; es decir, mayor al espacio habitualmente reservado para el body.
+
+
+- Veamos las **posibilidades que tenemos de layout** con [este post](/posts/post_01_layout.html){target="_blank"} 
+
+<br>
+
+---
+
+#### Extensiones {.unnumbered}
+
+- Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en lenguaje [Lua](https://es.wikipedia.org/wiki/Lua). 
+
+- Para ver como **instalar y usar extensiones** vamos a ir, otra vez, a otro de los post del blog del taller: concretamente [aquí](/posts/post_02_extensiones.html){target="_blank"}  
+
+
+<br>
+
+---
+
+#### Imágenes {.unnumbered}
+
+- Conocemos la sintaxis básica para insertar imágenes `![](<ruta-a-imagen>)`; ahora veremos posibilidades más avanzadas
+
+- Veamos como **insertar imágenes** con [este post](/posts/post_03_imagenes.html){target="_blank"} del blog del taller.
+
+<br>

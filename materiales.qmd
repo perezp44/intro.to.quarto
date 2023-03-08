@@ -31,7 +31,7 @@ Durante el curso se utilizarán las siguientes slides:
 
 ### [Slides 04: Revealsjs slides](./slides/04_revealjs.qmd){target="_blank"}
 
-### [Slides 05: Revealsjs slides](./slides/05_primer_web.qmd){target="_blank"}
+### [Slides 05: Webs/blogs con Quarto](./slides/05_primer_web.qmd){target="_blank"}
 
 
 
