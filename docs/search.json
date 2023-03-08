@@ -25,7 +25,7 @@
     "href": "materiales.html#materiales",
     "title": "Materiales para el Taller",
     "section": "Materiales",
-    "text": "Materiales\nDurante el curso se utilizarán las siguientes slides:\n\nSlides 01: Presentación\n\n\nSlides 02: Primeros pasos\n\n\nSlides 03: Aprendiendo a escribir en QMD (Intro a QMD)\n\nSeguramente usaremos esta Etherpad."
+    "text": "Materiales\nDurante el curso se utilizarán las siguientes slides:\n\nSlides 01: Presentación\n\n\nSlides 02: Primeros pasos\n\n\nSlides 03: Aprendiendo a escribir en QMD\n\n\nSlides 04: Revealsjs slides\n\n\nSlides 05: Revealsjs slides\n\nSeguramente usaremos esta Etherpad."
   },
   {
     "objectID": "blog.html",
@@ -42,120 +42,113 @@
     "text": "Bienvenidos!!!\na la web del curso “Creación de documentos reproducibles y páginas web con R”. Un título más amable podría ser “Escribiendo con R y Quarto”.\nEl curso es una introducción a Quarto. Quarto. es un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc…) científicas y técnicas. Usaremos Quarto y R a través de RStudio.\n\nEl profesor soy yo, Pedro J. Pérez.\n\nLos materiales del curso están en Materiales. Para seguir el curso hay que tener acceso a R, RStudio y Quarto. En Info tienes las instrucciones de instalación de los 3 programas.\n\nLos detalles sobre el curso: horario, aula , etc… están en Info"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#qué-es-quarto-1",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#qué-es-quarto-1",
+    "objectID": "slides/03_aprendiendo_Qmd.html#qué-es-quarto-1",
+    "href": "slides/03_aprendiendo_Qmd.html#qué-es-quarto-1",
     "title": "Aprendiendo a escribir en QMD",
     "section": "¿Qué es Quarto?",
     "text": "¿Qué es Quarto?\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nPermite incorporar texto y código para producir documentos (reproducibles) en multiples formatos\n\n\n\n\nEs … la “segunda generación de Rmarkdown”\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R. Soporta lenguajes como Phyton, Julia y Observable.\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\nQuarto unifica funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI\n\n\n\n\n\n\n\n\nVentajas de Quarto [Opcional]\n\n\n\nProyecto en desarrollo activo … mientras que Rmarkdown it’s not going away pero …\nUnifica algunas de las funcionalidades de Rmarkdown\nPor ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\nPara ver si estas ventajas merecen la pena para ti puedes leer a Occasional Divergences, Nick Tierney, Alison Hill, Danielle Navarro, o esta pregunta de Stack Overflow.\n\n\n#::: {.smaller width=\"67%\"}\n#{{< tweet user=DanOvand0 id=1580343517154770944 >}}\n#:::\n\n\n\n\n\n\n\n\n\n\n\n¿Qué es Rmarkdown? ¿Para qué sirve? [Opcional]\n\n\n\nEl predecesor de Quarto\nUn “entorno” para hacer informes/publicaciones/transparencias REPRODUCIBLES con R.\n\n\nIs an authoring framework for data science, combining your code, its results, and your prose. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.\n\n\nCon Rmd se pueden generar multitud de outputs. Por ejemplo, visita está galería o este listado\n\n\nUna oda a Rmarkdown\n\nHow Rmarkdown changed my life: charla de Rob Hyndman sobre su proceso hasta llegar a usar Rmarkdown para hacer sus documentos científicos y webs."
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#para-poder-practicar-lo-que-vayamos-aprendiendo",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#para-poder-practicar-lo-que-vayamos-aprendiendo",
+    "objectID": "slides/03_aprendiendo_Qmd.html#para-poder-practicar-lo-que-vayamos-aprendiendo",
+    "href": "slides/03_aprendiendo_Qmd.html#para-poder-practicar-lo-que-vayamos-aprendiendo",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Para poder practicar lo que vayamos aprendiendo …",
     "text": "Para poder practicar lo que vayamos aprendiendo …\n\n\n\n\nTarea 3.0: Vamos a crear un nuevo Qproject\n\n\n\nCierra RStudio\nCrea un nuevo Qproject llamado “my_qproject”\nInspecciona los documentos que hay dentro de “my_qproject”\nBorra el archivo my_qproject.qmd\nCrea un archivo .qmd llamado prueba_01.qmd"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#los-documentos-.qmd-tienen-3-4-partes",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#los-documentos-.qmd-tienen-3-4-partes",
+    "objectID": "slides/03_aprendiendo_Qmd.html#los-documentos-.qmd-tienen-3-4-partes",
+    "href": "slides/03_aprendiendo_Qmd.html#los-documentos-.qmd-tienen-3-4-partes",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Los documentos .qmd tienen 3-4 partes",
     "text": "Los documentos .qmd tienen 3-4 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (escrito en Markdown) …\n… y todo lo demás: imágenes, links, ecuaciones, etc …\n\n\n\nUn ejemplo\n\n\nsource code\n\n\n\n\n\n\n\n\n\n\n\noutput"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-qué-narices-es-esto-de-markdown",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-qué-narices-es-esto-de-markdown",
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-qué-narices-es-esto-de-markdown",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-qué-narices-es-esto-de-markdown",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: ¿qué narices es esto de Markdown?",
     "text": "(III) Texto: ¿qué narices es esto de Markdown?\n\n\nEs un lenguaje de marcas diseñado para escribir fácilmente para la web y que también sea fácilmente legible.\n\n\n\n\nMarkdown es un lenguaje estoico para escribir (para la web)\n\n\n\n\nMarkdown fue creado por John Grueber y Aaron Swartz en 2004. Para saber más sobre Aaron Swartz puedes ver este documental.\nSe creó con el objetivo de crear un formato de texto fácil de escribir y leer y que se convirtiera fácilmente en .html\n\nMarkdown is a text-to-HTML conversion tool for web writers.\n\n\n\n\n\nLa ventaja de escribir en Markdown es que es un lenguaje muy fácil de aprender y que, como está basado en un formato de texto plano, es y será compatible con la mayoría de plataformas.\n\n\n\n\nEn este otro tutorial de Markdown, se puede leer lo siguiente:\n\n\nMarkdown is a way to write for the web. It’s written in what nerds like to call “plaintext”. Plaintext is just the regular alphabet, with a few familiar symbols. Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments."
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-ideas-básicas-otra-vez",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-ideas-básicas-otra-vez",
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-ideas-básicas-otra-vez",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-ideas-básicas-otra-vez",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: ideas básicas (otra vez)",
     "text": "(III) Texto: ideas básicas (otra vez)\n\nEn los documentos .qmd, “todo” lo que no es el yaml o un chunk, es texto.\nEn Quarto el texto se escribe en Markdown\nComo Quarto se basa en pandoc, se usa “Pandoc`s markdown”, una versión revisada y extendida de la propuesta original de Grueber\n\n\n\nTienes una fantástica guía de Markdown aquí, y aquí una cheatsheet."
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-dando-formato-al-texto",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-dando-formato-al-texto",
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-dando-formato-al-texto",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-dando-formato-al-texto",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: Dando formato al texto",
     "text": "(III) Texto: Dando formato al texto\n\n\nSintaxis básica de markdown\n\n\n\n\n\n\n\n\nSi escribes esto:\nSe verá esto:\n\n\n\n\ntexto normal\ntexto normal\n\n\ntexto en **negrita**\ntexto en negrita\n\n\ntexto en *cursiva*\ntexto en cursiva\n\n\nun superíndice^2^\nun superíndice2\n\n\nun subíndice~2~\nun subíndice2\n\n\npalabras ~~tachadas~~\npalabras tachadas\n\n\n`verbatim code`\nverbatim code\n\n\n> un blockquote\n\nun blockquote\n\n\n\n\nI need to highlight these ==very important words==\n\n\nMás posibilidades:\n\n\n\n\n\n\n\n\nSi escribes esto:\nSe verá esto:\n\n\n\n\n[texto subrayado]{.underline}\ntexto subrayado\n\n\n[En versalita]{.smallcaps}\nEn versalita\n\n\nel emoji :joy:\nel emoji 😂\n\n\n> :warning: **Cuidado!!** no\n\n⚠️ Cuidado!! no"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-sintaxis-básica-de-markdown",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-sintaxis-básica-de-markdown",
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-sintaxis-básica-de-markdown",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-sintaxis-básica-de-markdown",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: sintaxis básica de markdown",
     "text": "(III) Texto: sintaxis básica de markdown\n\nTítulos\n\n\n\n\n\n\n\n\nMarkdown:\nSe verá esto:\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-creando-listas",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-creando-listas",
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-creando-listas",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-creando-listas",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: Creando listas",
     "text": "(III) Texto: Creando listas\n\n\n\n\n\n\n\n\nMas posibilidades aquí"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-parrafos-lineas-espacios",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#iii-texto-parrafos-lineas-espacios",
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-parrafos-lineas-espacios",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-parrafos-lineas-espacios",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: Parrafos, lineas, espacios, …",
     "text": "(III) Texto: Parrafos, lineas, espacios, …\n\n\nPara crear un nuevo párrafo has de dejar una (o más) lineas en blanco\n\n\n\n\nSi dentro de un párrafo necesitas que una frase empiece en otra linea entonces, has de dejar 2 (o más) espacios al final; en inglés esto se conoce como un “hard line break”\n\nEl “hard line break” se puede hacer con <br>\nEl “hard line break” también se puede hacer con  seguido de nueva linea.\nEn una celda de una tabla, esta es la única forma de crear un salto de línea, ya que se ignoran los espacios finales en las celdas.\n\n\n\n\n\nSi en una linea de texto hay 2 espacios o más, estos se reducen a un espacio.\nPor lo tanto, si quieres separar palabras con más de un espacio, tendrás que usar lo que en html se conoce como “entities”: &nbsp;(1 espacio) &ensp;(2 espacios) y &emsp;(4 espacios). Otra forma sería con la etiqueta <pre>.\n\n\n\n\n\nPara crear más espacio entre párrafos (una linea en blanco extra) podemos usar: <br>\n\n\n\nLos espacios al principio de las lineas que empiezan con | se mantienen (🤓)\nPara practicar a escribir con Markdown podemos hacerlo en RStudio o usar editores online como este o este"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#links-images",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#links-images",
+    "objectID": "slides/03_aprendiendo_Qmd.html#links",
+    "href": "slides/03_aprendiendo_Qmd.html#links",
     "title": "Aprendiendo a escribir en QMD",
-    "section": "Links & Images",
-    "text": "Links & Images\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n<https://quarto.org>\nhttps://quarto.org\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n![Caption](elephant.png)\n\n\n\n[![Caption](elephant.png)](https://quarto.org)\n\n\n\n[![Caption](elephant.png)](https://quarto.org \"An elephant\")\n\n\n\n[![](elephant.png){fig-alt=\"Alt text\"}](https://quarto.org)"
+    "section": "Links",
+    "text": "Links\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n<https://quarto.org>\nhttps://quarto.org\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n![Caption](elephant.png)\n\n\n\n[![Caption](elephant.png)](https://quarto.org)\n\n\n\n[![Caption](elephant.png)](https://quarto.org \"An elephant\")\n\n\n\n[![](elephant.png){fig-alt=\"Alt text\"}](https://quarto.org)"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#lists",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#lists",
-    "title": "Aprendiendo a escribir en QMD",
-    "section": "Lists",
-    "text": "Lists\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n* unordered list\n    + sub-item 1\n    + sub-item 2\n        - sub-sub-item 1\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\n\n\n\n*   item 2\n\n    Continued (indent 4 spaces)\n\nitem 2\nContinued (indent 4 spaces)\n\n\n\n1. ordered list\n2. item 2\n    i) sub-item 1\n         A.  sub-sub-item 1\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\n(@)  A list whose numbering\n\ncontinues after\n\n(@)  an interruption\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\n\nterm\n: definition\n\nterm\n\ndefinition"
-  },
-  {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#tables",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#tables",
+    "objectID": "slides/03_aprendiendo_Qmd.html#tables",
+    "href": "slides/03_aprendiendo_Qmd.html#tables",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Tables",
     "text": "Tables\nMarkdown Syntax\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\nOutput\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nLearn more in the article on Tables."
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#source-code-1",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#source-code-1",
+    "objectID": "slides/03_aprendiendo_Qmd.html#source-code-1",
+    "href": "slides/03_aprendiendo_Qmd.html#source-code-1",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Source Code",
     "text": "Source Code\nUse ``` to delimit blocks of source code:\n```\ncode\n```\nAdd a language to syntax highlight code blocks:\n```python\n1 + 1\n```\nPandoc supports syntax highlighting for over 140 different languages. If your language is not supported then you can use the default language to get a similar visual treatment:\n```default\ncode\n```\nIf you are creating HTML output there is a wide variety of options available for code block output. See the article on HTML Code for additional details."
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#equations",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#equations",
+    "objectID": "slides/03_aprendiendo_Qmd.html#equations",
+    "href": "slides/03_aprendiendo_Qmd.html#equations",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Equations",
     "text": "Equations\nUse $ delimiters for inline math and $$ delimiters for display math. For example:\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\ninline math: $E = mc^{2}$\ninline math: \\(E=mc^{2}\\)\n\n\ndisplay math:\n\n$$E = mc^{2}$$\ndisplay math:\n\\[E = mc^{2}\\]\n\n\n\nIf you want to define custom TeX macros, include them within $$ delimiters enclosed in a .hidden block. For example:\n::: {.hidden}\n$$\n \\def\\RR{{\\bf R}}\n \\def\\bold#1{{\\bf #1}}\n$$\n:::\nFor HTML math processed using MathJax (the default) you can use the \\def, \\newcommand, \\renewcommand, \\newenvironment, \\renewenvironment, and \\let commands to create your own macros and environments."
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#resto-tablas-divs-etc",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#resto-tablas-divs-etc",
+    "objectID": "slides/03_aprendiendo_Qmd.html#resto-tablas-divs-etc",
+    "href": "slides/03_aprendiendo_Qmd.html#resto-tablas-divs-etc",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Resto: tablas, divs etc …",
     "text": "Resto: tablas, divs etc …"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#mas-elementos-para-escribir-layout-css",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#mas-elementos-para-escribir-layout-css",
+    "objectID": "slides/03_aprendiendo_Qmd.html#mas-elementos-para-escribir-layout-css",
+    "href": "slides/03_aprendiendo_Qmd.html#mas-elementos-para-escribir-layout-css",
     "title": "Aprendiendo a escribir en QMD",
     "section": "mas elementos para escribir (layout, CSS)",
     "text": "mas elementos para escribir (layout, CSS)"
   },
   {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#práctica-un-tutorial",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#práctica-un-tutorial",
+    "objectID": "slides/03_aprendiendo_Qmd.html#práctica-un-tutorial",
+    "href": "slides/03_aprendiendo_Qmd.html#práctica-un-tutorial",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Práctica: un tutorial",
     "text": "Práctica: un tutorial\n\n\nhttps://go.uv.es/pjperez/primer.blog"
@@ -168,36 +161,15 @@
     "text": "Sobre mi\n\n\nProfesor en la UV: Econometría e Intro a la Ciencia de datos con R\nEntusiasta de R\n\n\n\nNo soy “bloguero”, más bien soy creador y liquidador de blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto\n\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
   },
   {
-    "objectID": "slides/slides_02_primeros-pasos.html#instalación",
-    "href": "slides/slides_02_primeros-pasos.html#instalación",
-    "title": "Primeros pasos con R/RStudio y Quarto",
-    "section": "Instalación",
-    "text": "Instalación\n\nTenemos que instalar los 3 programas.\n\n\n\nEn este orden:\n\nR: https://cran.r-project.org/\nRStudio: https://posit.co/download/rstudio-desktop/\nQuarto: https://quarto.org/docs/download/\n\n\n\n\nEn los 3 casos has de (logicamente) utilizar el instalador adecuado para tu sistema operativo"
-  },
-  {
-    "objectID": "slides/slides_02_primeros-pasos.html#formas-de-dar-ordenes-a-r-usando-rstudio",
-    "href": "slides/slides_02_primeros-pasos.html#formas-de-dar-ordenes-a-r-usando-rstudio",
-    "title": "Primeros pasos con R/RStudio y Quarto",
-    "section": "2 formas de dar ordenes a R (usando RStudio)",
-    "text": "2 formas de dar ordenes a R (usando RStudio)\n\nCon la ConsolaCon scripts ( o ficheros .R)\n\n\nAl abrir RStudio vemos (al ppio) 3 paneles\n\nLa Consola es el panel de la izquierda\nEl símbolo > en la consola se llama prompt\n\n\n\n\n\n\n\nPara dar una orden a R (desde la consola) solo tienes que escribir la orden (p.ej. 2 + 2) y pulsar Enter\nInconveniente: hay que escribir y ejecutar las instrucciones una a una\n\n\n\n\n\nTarea 2.1: Dar ordenes a R (a través de RStudio) desde la Consola\n\n\nDesde la Consola de RStudio haz que R haga las siguientes operaciones:\n\n2 + 2\nsqrt(9)\n\n\n\n\n\n\n\n\n\nUn “script” no es más que un fichero (con extensión .R) que contiene instrucciones o código R\nPodemos crear un fichero .R siguiendo esta ruta de menús: File > New file > R Script.\nSe abrirá un cuarto panel en RStudio, justo encima de la Consola\nUna vez has creado el fichero, escribes la instrucción y pulsas las teclas CONTROL + Enter\nEn un script sólo se pueden escribir 2 cosas:\n\nComentarios (si la linea comienza por el símbolo #)\nCódigo R (todas las lineas que no empiezan por #)\n\n\n\n\n\nTarea 2.2: Dar ordenes a R con scripts\n\n\nCrea un script (o fichero .R) para que R haga las siguientes operaciones:\n\n\n# operaciones básicas con R\n2 + 2    \n2 - 2    \n2 * 2    \n2 / 2 \n\n# raíz cuadrada\nsqrt(9)"
-  },
-  {
-    "objectID": "slides/slides_02_primeros-pasos.html#vamos-a-jugar-un-rato-con-rstudio",
-    "href": "slides/slides_02_primeros-pasos.html#vamos-a-jugar-un-rato-con-rstudio",
-    "title": "Primeros pasos con R/RStudio y Quarto",
-    "section": "Vamos a jugar un rato con RStudio",
-    "text": "Vamos a jugar un rato con RStudio\n\n\n\nNos servirá para familiarizarnos con :\n\nla interfaz de Rstudio\nlos conceptos de documento fuente (.qmd) y documento final (.html, .pdf, etc…)\n\n\n… y empezar a entender la sintaxis de “Quarto Markdown”"
-  },
-  {
-    "objectID": "slides/slides_01_presentacion.html#calendario-1",
-    "href": "slides/slides_01_presentacion.html#calendario-1",
+    "objectID": "slides/01_presentacion.html#calendario-1",
+    "href": "slides/01_presentacion.html#calendario-1",
     "title": "Presentación del curso",
     "section": "Calendario",
     "text": "Calendario\n\nLunes 26 de junio:\n\nIntro\nPrimeros pasos con R/RStudio/Quarto,\nMarkdown\nCreación de tutorial básico\n\nMiércoles 28 de junio:\n\nMejorando/tuneando nuestro tutorial,\nCreación de slides\nMás tipos de documentos\n\nLunes 3 de julio:\n\nCreación de webs y /blogs"
   },
   {
-    "objectID": "slides/slides_01_presentacion.html#sobre-mi-pedro-j.-pérez",
-    "href": "slides/slides_01_presentacion.html#sobre-mi-pedro-j.-pérez",
+    "objectID": "slides/01_presentacion.html#sobre-mi-pedro-j.-pérez",
+    "href": "slides/01_presentacion.html#sobre-mi-pedro-j.-pérez",
     "title": "Presentación del curso",
     "section": "Sobre mi (Pedro J. Pérez)",
     "text": "Sobre mi (Pedro J. Pérez)\n\nProfesor en la UV (departamento de Análisis Económico) y entusiasta de R.\n\n\n\nWeb de mis cursos en 2022-23:\n\nEconometría\nIntro a la Ciencia de datos con R (tenéis que ver los trabajos de los estudiantes)\nCurso de Introducción a R (en el SFPIE).\n\n\n\n\n\nNo soy bloguero pero he impartido el taller Mi primer blog con Quarto en las XII Jornadas de ususarios de R. Algunos de mis blogs:\n\n2015, R & flowers , con Jekyll\n2018, R & flowers V, con Hugo y blogdown\n2020, R & flowers (o casi), con radix\n2021, pedro.j.perez blog’s, con Distill\n2022, R & flowers, con Quarto"
@@ -222,6 +194,27 @@
     "title": "Mi primer blog  con Quarto",
     "section": "¿Cómo va?",
     "text": "¿Cómo va?\nComo vas tete\n\n\n\nSlides hechas con Quarto para las XII Jornadas de Usuarios de R"
+  },
+  {
+    "objectID": "slides/02_primeros_pasos.html#instalación",
+    "href": "slides/02_primeros_pasos.html#instalación",
+    "title": "Primeros pasos con R/RStudio y Quarto",
+    "section": "Instalación",
+    "text": "Instalación\n\nTenemos que instalar los 3 programas.\n\n\n\nEn este orden:\n\nR: https://cran.r-project.org/\nRStudio: https://posit.co/download/rstudio-desktop/\nQuarto: https://quarto.org/docs/download/\n\n\n\n\nEn los 3 casos has de (logicamente) utilizar el instalador adecuado para tu sistema operativo"
+  },
+  {
+    "objectID": "slides/02_primeros_pasos.html#formas-de-dar-ordenes-a-r-usando-rstudio",
+    "href": "slides/02_primeros_pasos.html#formas-de-dar-ordenes-a-r-usando-rstudio",
+    "title": "Primeros pasos con R/RStudio y Quarto",
+    "section": "2 formas de dar ordenes a R (usando RStudio)",
+    "text": "2 formas de dar ordenes a R (usando RStudio)\n\nCon la ConsolaCon scripts ( o ficheros .R)\n\n\nAl abrir RStudio vemos (al ppio) 3 paneles\n\nLa Consola es el panel de la izquierda\nEl símbolo > en la consola se llama prompt\n\n\n\n\n\n\n\nPara dar una orden a R (desde la consola) solo tienes que escribir la orden (p.ej. 2 + 2) y pulsar Enter\nInconveniente: hay que escribir y ejecutar las instrucciones una a una\n\n\n\n\n\nTarea 2.1: Dar ordenes a R (a través de RStudio) desde la Consola\n\n\nDesde la Consola de RStudio haz que R haga las siguientes operaciones:\n\n2 + 2\nsqrt(9)\n\n\n\n\n\n\n\n\n\nUn “script” no es más que un fichero (con extensión .R) que contiene instrucciones o código R\nPodemos crear un fichero .R siguiendo esta ruta de menús: File > New file > R Script.\nSe abrirá un cuarto panel en RStudio, justo encima de la Consola\nUna vez has creado el fichero, escribes la instrucción y pulsas las teclas CONTROL + Enter\nEn un script sólo se pueden escribir 2 cosas:\n\nComentarios (si la linea comienza por el símbolo #)\nCódigo R (todas las lineas que no empiezan por #)\n\n\n\n\n\nTarea 2.2: Dar ordenes a R con scripts\n\n\nCrea un script (o fichero .R) para que R haga las siguientes operaciones:\n\n\n# operaciones básicas con R\n2 + 2    \n2 - 2    \n2 * 2    \n2 / 2 \n\n# raíz cuadrada\nsqrt(9)"
+  },
+  {
+    "objectID": "slides/02_primeros_pasos.html#vamos-a-jugar-un-rato-con-rstudio",
+    "href": "slides/02_primeros_pasos.html#vamos-a-jugar-un-rato-con-rstudio",
+    "title": "Primeros pasos con R/RStudio y Quarto",
+    "section": "Vamos a jugar un rato con RStudio",
+    "text": "Vamos a jugar un rato con RStudio\n\n\n\nNos servirá para familiarizarnos con :\n\nla interfaz de Rstudio\nlos conceptos de documento fuente (.qmd) y documento final (.html, .pdf, etc…)\n\n\n… y empezar a entender la sintaxis de “Quarto Markdown”"
   },
   {
     "objectID": "about.html",
@@ -579,12 +572,5 @@
     "title": "Recursos sobre Quarto",
     "section": "",
     "text": "Desde que Quarto se hizo publico con We don’t talk about Quarto ha sido un no parar de workshops, posts, etc… En esta página tienes una selección de recursos sobre Quarto.\nObviamente la principal referencia es la web de Quarto: absolutamente fantástica!!! En ella hay, entre otras secciones, una Guide, una Reference y una Gallery.\n\nEntre los materiales que he visto sobre Quarto destacar los siguientes:\n\nAWESOME Quarto: un listado muy extenso de recursos Quarto hecho por Mickaël Canouil.\nQuarto tip a day: Un blog de Mine Çetinkaya-Rundel con consejos y tips sobre Quarto.\nGet Started with Quarto: un workshop de Thomas Mock. El video, y otro video de 3h.\nBeautiful Reports and Presentations with Quarto: un workshop de Thomas Mock. El video y el repo.\nIntroducción a RMarkdown, creando reportes con R y Python en RStudio: workshop de Renzo Cáceres para LatinR 2022.\nMaking shareable documents with Quarto: una web de Openscapes.\nQuarto/RMarkdown - What’s Different?: unas slides de Ted Laderas.\nRstudio::conf(2022) Playlist: la presentación en sociedad de Quarto con varias charlas sobre Quarto, Hello Quarto: Share, Collaborate, Teach, Reimagine, Websites & Books & Blogs, oh my! Creating Rich Content with Quarto, Quarto for the Curious entre otras.\nRstudio::conf(2022) Workshops: por ejemplo, Get Started with Quarto o Rmarkdown to Quarto.\nReproducible authoring with Quarto: un video de Mine Çetinkaya-Rundel donde se hace evidente las ventajas de Quarto y la utilidad del editor visual de RStudio. Sus slides aquí.\n\n\n\nRecursos específicos sobre web/blogs\n\nQuarto - Creating a Blog: documentación oficial.\nBuilding a blog with Quarto: un workshop de Isabella Velásquez acerca de cómo construir un blog con Quarto. El repo de los ejercicios, video y RStudioCloud project.\nWebsites & Books & Blogs, oh my! Creating Rich Content with Quarto: ponencia de Devin Pastoor en el marco de RStudio::conf(2022).\nModifying the Default Quarto Blog Structure: post de Eric Ekholm 2022.\nCreating a Blog with Quarto in 10 Steps: post de Bea Milz.\n100 seconds from zero to public site: vídeo de Thomas Mock donde crea una web con Quarto en 100 segundos.\nPorting a Distill Blog to Quarto: post de Danielle Navarro."
-  },
-  {
-    "objectID": "slides/slides_03_aprendiendo-Qmd.html#links",
-    "href": "slides/slides_03_aprendiendo-Qmd.html#links",
-    "title": "Aprendiendo a escribir en QMD",
-    "section": "Links",
-    "text": "Links\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n<https://quarto.org>\nhttps://quarto.org\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n![Caption](elephant.png)\n\n\n\n[![Caption](elephant.png)](https://quarto.org)\n\n\n\n[![Caption](elephant.png)](https://quarto.org \"An elephant\")\n\n\n\n[![](elephant.png){fig-alt=\"Alt text\"}](https://quarto.org)"
   }
 ]

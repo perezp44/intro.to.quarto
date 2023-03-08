@@ -22,14 +22,16 @@ title: "Materiales para el Taller"
 Durante el curso se utilizarán las siguientes slides:
 
 
-### [Slides 01: Presentación](./slides/slides_01_presentacion.qmd){target="_blank"}
+### [Slides 01: Presentación](./slides/01_presentacion.qmd){target="_blank"}
 
-### [Slides 02: Primeros pasos](./slides/slides_02_primeros-pasos.qmd){target="_blank"}
+### [Slides 02: Primeros pasos](./slides/02_primeros_pasos.qmd){target="_blank"}
 
-### [Slides 03: Aprendiendo a escribir en QMD (Intro a QMD)](./slides/slides_03_aprendiendo-Qmd.qmd){target="_blank"}
+### [Slides 03: Aprendiendo a escribir en QMD](./slides/03_aprendiendo_Qmd.qmd){target="_blank"}
 
 
+### [Slides 04: Revealsjs slides](./slides/04_revealjs.qmd){target="_blank"}
 
+### [Slides 05: Revealsjs slides](./slides/05_primer_web.qmd){target="_blank"}
 
 
 
