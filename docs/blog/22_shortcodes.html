@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.335">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="Pedro J. Pérez">
 <meta name="description" content="Cómo usar shortcodes en Quarto para, entre otras cosas, poder incluir el mismo contenido en varios documentos.">
-
 <title>Escribiendo con R y Quarto (aún muy WIP) - Usando shortcodes</title>
 <style>
 code{white-space: pre-wrap;}
@@ -106,7 +103,6 @@ div.csl-indent {
 }
 </style>
 
-
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -123,8 +119,7 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -142,24 +137,17 @@ div.csl-indent {
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar"
   }
-}</script>
-<style>html{ scroll-behavior: smooth; }</style>
-
-
+}</script><style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="../assets/styles.css">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
-
 <body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo">
-    </a>
+    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Escribiendo con R y Quarto (aún muy WIP)</span>
     </a>
@@ -169,14 +157,14 @@ div.csl-indent {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item compact">
+<li class="nav-item compact">
     <a class="nav-link" href="../index.html"><i class="bi bi-house-door" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item">
     <a class="nav-link" href="../info.html">
  <span class="menu-text">Info</span></a>
   </li>  
@@ -212,14 +200,10 @@ div.csl-indent {
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+<div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-right">
       <h1 class="title">Usando shortcodes</h1>
                   <div>
@@ -272,39 +256,33 @@ div.csl-indent {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Índice</h2>
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#qué-son-los-shortcodes" id="toc-qué-son-los-shortcodes" class="nav-link active" data-scroll-target="#qué-son-los-shortcodes"><span class="toc-section-number">1</span>  ¿Qué son los <em>shortcodes</em>?</a>
+<li>
+<a href="#qu%C3%A9-son-los-shortcodes" id="toc-qué-son-los-shortcodes" class="nav-link active" data-scroll-target="#qu%C3%A9-son-los-shortcodes"><span class="toc-section-number">1</span>  ¿Qué son los <em>shortcodes</em>?</a>
   <ul class="collapse">
-  <li><a href="#beneficios-de-usar-shortcodes" id="toc-beneficios-de-usar-shortcodes" class="nav-link" data-scroll-target="#beneficios-de-usar-shortcodes">Beneficios de usar shortcodes</a></li>
+<li><a href="#beneficios-de-usar-shortcodes" id="toc-beneficios-de-usar-shortcodes" class="nav-link" data-scroll-target="#beneficios-de-usar-shortcodes">Beneficios de usar shortcodes</a></li>
   <li><a href="#un-ejemplo-de-uso" id="toc-un-ejemplo-de-uso" class="nav-link" data-scroll-target="#un-ejemplo-de-uso">Un ejemplo de uso</a></li>
-  </ul></li>
+  </ul>
+</li>
   <li><a href="#tipos-de-shortcodes" id="toc-tipos-de-shortcodes" class="nav-link" data-scroll-target="#tipos-de-shortcodes"><span class="toc-section-number">2</span>  Tipos de shortcodes</a></li>
-  <li><a href="#más-ejemplos" id="toc-más-ejemplos" class="nav-link" data-scroll-target="#más-ejemplos"><span class="toc-section-number">3</span>  Más ejemplos</a>
+  <li>
+<a href="#m%C3%A1s-ejemplos" id="toc-más-ejemplos" class="nav-link" data-scroll-target="#m%C3%A1s-ejemplos"><span class="toc-section-number">3</span>  Más ejemplos</a>
   <ul class="collapse">
-  <li><a href="#incluir-contenido-de-_variables.yml" id="toc-incluir-contenido-de-_variables.yml" class="nav-link" data-scroll-target="#incluir-contenido-de-_variables.yml">Incluir contenido de <code>_variables.yml</code></a></li>
+<li><a href="#incluir-contenido-de-_variables.yml" id="toc-incluir-contenido-de-_variables.yml" class="nav-link" data-scroll-target="#incluir-contenido-de-_variables.yml">Incluir contenido de <code>_variables.yml</code></a></li>
   <li><a href="#incluir-contenido-de-un-archivo" id="toc-incluir-contenido-de-un-archivo" class="nav-link" data-scroll-target="#incluir-contenido-de-un-archivo">Incluir contenido de un archivo</a></li>
   <li><a href="#incluir-videos" id="toc-incluir-videos" class="nav-link" data-scroll-target="#incluir-videos">Incluir videos</a></li>
-  <li><a href="#saltos-de-página" id="toc-saltos-de-página" class="nav-link" data-scroll-target="#saltos-de-página">Saltos de página</a></li>
-  </ul></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  <li><a href="#saltos-de-p%C3%A1gina" id="toc-saltos-de-página" class="nav-link" data-scroll-target="#saltos-de-p%C3%A1gina">Saltos de página</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/intro.to.quarto/edit/main/blog/22_shortcodes.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/intro.to.quarto/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/intro.to.quarto/edit/main/blog/22_shortcodes.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/intro.to.quarto/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
+</nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
-
-
-
-
-<section id="qué-son-los-shortcodes" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="qué-son-los-shortcodes"><span class="header-section-number">1</span> ¿Qué son los <em>shortcodes</em>?</h2>
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content"><section id="qué-son-los-shortcodes" class="level2" data-number="1"><h2 data-number="1" class="anchored" data-anchor-id="qué-son-los-shortcodes">
+<span class="header-section-number">1</span> ¿Qué son los <em>shortcodes</em>?</h2>
 <p>La <a href="https://quarto.org/docs/extensions/shortcodes.html">documentación oficial de Quarto</a> señala que:</p>
 <blockquote class="blockquote">
 <p>Shortcodes are special markdown directives that generate various types of content.</p>
@@ -312,18 +290,18 @@ div.csl-indent {
 <p>Un shortcode es un código (una etiqueta, un elemento) que puedes insertar en tus documentos .qmd para añadir algún tipo de contenido en ellos sin tener que escribirlo directamente.</p>
 <p>¿Y por qué querríamos hacer esto? Pues resulta que muchas veces, en un proyecto, queremos incluir el mismo contenido en varios sitios o en varios documentos; esto es facilitado al usar shortcodes.</p>
 <p>Más que qué son, lo importante es para lo que sirven, y sirven para poder insertar fácilmente contenido que se repite.</p>
-<section id="beneficios-de-usar-shortcodes" class="level3">
-<h3 class="anchored" data-anchor-id="beneficios-de-usar-shortcodes">Beneficios de usar shortcodes</h3>
+<section id="beneficios-de-usar-shortcodes" class="level3"><h3 class="anchored" data-anchor-id="beneficios-de-usar-shortcodes">Beneficios de usar shortcodes</h3>
 <p>Lo más evidente es que si hemos de insertar el mismo contenido varias veces o en varios documentos es más fácil hacerlo con shortcodes; además, si el contenido que gestionas con shortcodes cambia, solo tendrás que modificarlo una vez y automáticamente se cambiara en todos los sitios en los que hayan incluido tu shortcode.</p>
 <p>Por ejemplo, es muy probable que incluyas tu dirección de contacto en varios sitios de una página web o en varios archivos de tu Qproject, así que mejor gestionar e incluir este contenido en tus documentos a través de shortcodes, porque si esta dirección cambia solo tendrás que modificarla una vez.</p>
-</section>
-<section id="un-ejemplo-de-uso" class="level3">
-<h3 class="anchored" data-anchor-id="un-ejemplo-de-uso">Un ejemplo de uso</h3>
+</section><section id="un-ejemplo-de-uso" class="level3"><h3 class="anchored" data-anchor-id="un-ejemplo-de-uso">Un ejemplo de uso</h3>
 <p>El título de este post es “Usando shortcodes”. Imagina que ahora mismo necesito incluir el título del post en esta sección. No nos costaría mucho copiarlo y pegarlo pero … ¿y si luego decido cambiar el título? Es evidente, que si hay algún tipo de contenido que se repite, quizás debamos plantearnos la posibilidad de gestionarlo con shortcodes. Veamos un primer ejemplo.</p>
 <p>Por ejemplo, <code>{{&lt; meta &gt;}}</code> es un shortcode que permite incluir elementos de los metadatos de un archivo quarto: si incluimos <code>{{&lt; meta title &gt;}}</code> estaríamos insertando el título del documento; mientras que si incluimos <code>{{&lt; meta date &gt;}}</code> incluiríamos la fecha de creación del documento.</p>
 <p>Veamos como podemos usarlo:</p>
 <div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Para que se muestre esto …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Has de escribir</a></li></ul>
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Para que se muestre esto …</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Has de escribir</a></li>
+</ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>El título de este post es “Usando shortcodes”, y fue creado el 22 de enero de 2023.</p>
@@ -336,10 +314,8 @@ El objetivo del post es:  "{{&lt; meta description &gt;}}"</code></pre>
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="tipos-de-shortcodes" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="tipos-de-shortcodes"><span class="header-section-number">2</span> Tipos de shortcodes</h2>
+</section></section><section id="tipos-de-shortcodes" class="level2" data-number="2"><h2 data-number="2" class="anchored" data-anchor-id="tipos-de-shortcodes">
+<span class="header-section-number">2</span> Tipos de shortcodes</h2>
 <p>De momento, los que yo he usado son:</p>
 <ul>
 <li><p><code>{{&lt; meta &gt;}}</code> : permite incluir elementos de los metadatos de un documento</p></li>
@@ -351,16 +327,19 @@ El objetivo del post es:  "{{&lt; meta description &gt;}}"</code></pre>
 <li><p><code>{{&lt; video &gt;}}</code> : permite incluir vídeos</p></li>
 </ul>
 <p><br></p>
-</section>
-<section id="más-ejemplos" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="más-ejemplos"><span class="header-section-number">3</span> Más ejemplos</h2>
+</section><section id="más-ejemplos" class="level2" data-number="3"><h2 data-number="3" class="anchored" data-anchor-id="más-ejemplos">
+<span class="header-section-number">3</span> Más ejemplos</h2>
 <p><br></p>
-<section id="incluir-contenido-de-_variables.yml" class="level3">
-<h3 class="anchored" data-anchor-id="incluir-contenido-de-_variables.yml">Incluir contenido de <code>_variables.yml</code></h3>
+<section id="incluir-contenido-de-_variables.yml" class="level3"><h3 class="anchored" data-anchor-id="incluir-contenido-de-_variables.yml">Incluir contenido de <code>_variables.yml</code>
+</h3>
 <p>Dentro de un proyecto, podemos crear un fichero llamado <code>_variables.yml</code> donde podemos definir variables con contenido para ser incluido en nuestros documentos <code>.qmd</code> con el shortcode <code>{{&lt; var &gt;}}</code>. El fichero <code>_variables.yml</code> tiene que residir en la carpeta raíz del proyecto.</p>
 <p>Vamos a ver un ejemplo de uso:</p>
 <div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Si el contenido de <code>_variables.yml</code> es …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">… puedes escribir lo siguiente ….</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">… para que se muestre ….</a></li></ul>
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Si el contenido de <code>_variables.yml</code> es …</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">… puedes escribir lo siguiente ….</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">… para que se muestre ….</a></li>
+</ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">email</span><span class="kw">:</span></span>
@@ -380,23 +359,21 @@ El objetivo del post es:  "{{&lt; meta description &gt;}}"</code></pre>
 </div>
 </div>
 <p><br></p>
-</section>
-<section id="incluir-contenido-de-un-archivo" class="level3">
-<h3 class="anchored" data-anchor-id="incluir-contenido-de-un-archivo">Incluir contenido de un archivo</h3>
+</section><section id="incluir-contenido-de-un-archivo" class="level3"><h3 class="anchored" data-anchor-id="incluir-contenido-de-un-archivo">Incluir contenido de un archivo</h3>
 <p>En un proyecto en el que elaboraba tutoriales y slides con el mismo contenido en algunas partes, usé muchas veces el shortcode <code>{{&lt; include &gt;}}</code>. Me permitió incluir el mismo contenido en varios ficheros. Además, tuve que modificarlo varias veces, pero como gestionaba ese contenido con <code>{{&lt; include &gt;}}</code> solo tenía que modificarlo en un sitio. Os cuento con un ejemplo cómo se hace.</p>
 <p>Si crees que un determinado contenido puede ser utilizado en varios sitios, quizá sea más eficiente tener ese contenido en un fichero independiente e incluirlo a través del shortcode <code>{{&lt; include &gt;}}</code>.</p>
 <p>Imagina que quieres incluir este contenido:</p>
 <div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Quieres incluir este contenido …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">… contenido que es generado con este código</a></li></ul>
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Quieres incluir este contenido …</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">… contenido que es generado con este código</a></li>
+</ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<p>El conjunto de datos iris tiene 5 variables y 150 filas. Veamos un resumen con <code>summary()</code></p>
+<p>El conjunto de datos iris tiene 5 variables y 150 filas. Veamos un resumen con <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code></p>
 <div class="cell">
-<details open="">
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">summary</span>(iris)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
+<details open=""><summary>Código</summary><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">summary</span>(iris)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><div class="cell-output cell-output-stdout">
 <pre><code>  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
@@ -422,22 +399,27 @@ El objetivo del post es:  "{{&lt; meta description &gt;}}"</code></pre>
 </div>
 <p>Para poder incluir ese contenido haciendo uso de <code>{{&lt; include &gt;}}</code> deberás:</p>
 <ul>
-<li><p>Crear un documento, llamado por ejemplo <code>_my_include_01.qmd</code>, que contenga el código que hemos visto anteriormente.</p>
+<li>
+<p>Crear un documento, llamado por ejemplo <code>_my_include_01.qmd</code>, que contenga el código que hemos visto anteriormente.</p>
 <ul>
 <li>El nombre del fichero es conveniente que empiece por <code>_</code> porque eso hace que cuando hagamos un render del proyecto, este archivo no se procese. No queremos procesarlo, queremos que su contenido se incluya en otro documento y eso lo haremos utilizando el shortcode <code>{{&lt; include &gt;}}</code>.</li>
-</ul></li>
-<li><p>Una vez hemos creado el documento <code>_my_include_01.qmd</code> para que su contenido aparezca (y se ejecute, si tiene código ejecutable) en el documento que nosotros queramos, tendremos que incluir en este último documento lo siguiente: <code>{{&lt; include _my_include_01.qmd &gt;}}</code></p>
+</ul>
+</li>
+<li>
+<p>Una vez hemos creado el documento <code>_my_include_01.qmd</code> para que su contenido aparezca (y se ejecute, si tiene código ejecutable) en el documento que nosotros queramos, tendremos que incluir en este último documento lo siguiente: <code>{{&lt; include _my_include_01.qmd &gt;}}</code></p>
 <ul>
 <li>Realmente <code>{{&lt; include _my_include_01.qmd &gt;}}</code> funcionará si el fichero <code>_my_include_01.qmd</code> está en la misma carpeta que el documento en el que queremos que parezca su contenido; si estuviese en otra ubicación habría que proporcionar la ruta relativa a <code>_my_include_01.qmd</code>.</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 <p><br></p>
-</section>
-<section id="incluir-videos" class="level3">
-<h3 class="anchored" data-anchor-id="incluir-videos">Incluir videos</h3>
+</section><section id="incluir-videos" class="level3"><h3 class="anchored" data-anchor-id="incluir-videos">Incluir videos</h3>
 <p>Se pueden incluir vídeos usando paquetes de R, también con extensiones de Quarto, pero es más cómodo hacerlo con el shortcode <code>{{&lt; video &gt;}}</code></p>
 <div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Para incluir este video …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">… has de …</a></li></ul>
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Para incluir este video …</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">… has de …</a></li>
+</ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/ZkECLuuRwTg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
@@ -450,18 +432,13 @@ El objetivo del post es:  "{{&lt; meta description &gt;}}"</code></pre>
 </div>
 </div>
 <p><br></p>
-</section>
-<section id="saltos-de-página" class="level3">
-<h3 class="anchored" data-anchor-id="saltos-de-página">Saltos de página</h3>
+</section><section id="saltos-de-página" class="level3"><h3 class="anchored" data-anchor-id="saltos-de-página">Saltos de página</h3>
 <p>Como casi siempre uso Quarto para generar documentos html, no me suelo preocupar por los saltos de página; aunque es verdad que si luego quiero imprimir el documento html como un pdf me arrepiento de no haberlo hecho; vamos que conviene pensar en los saltos de página y es que además es muy fácil incorporarlos con el shortcode <code>{{&lt; pagebreak &gt;}}</code>. Además, como se cuenta <a href="https://quarto.org/docs/authoring/markdown-basics.html#page-breaks">aquí</a>, estos saltos de página funcionan para diferentes formatos de salida:</p>
 <blockquote class="blockquote">
 <p>Native pagebreaks are supported for HTML, LaTeX, Context, MS Word, Open Document, and ePub</p>
 </blockquote>
 <p><br></p>
-</section>
-</section>
-<section id="referencias" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="referencias">Referencias</h2>
+</section></section><section id="referencias" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="referencias">Referencias</h2>
 <p>(Algunos artículos que hablan de esto …)</p>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-noauthor_6_2022" class="csl-entry" role="doc-biblioentry">
@@ -473,10 +450,7 @@ El objetivo del post es:  "{{&lt; meta description &gt;}}"</code></pre>
 </div>
 
 
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -624,13 +598,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">© 2022 Pedro J. Pérez</div>   
       <div class="nav-footer-center">Hecho con <a href="https://quarto.org">Quarto</a></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
+<li class="nav-item compact">
     <a class="nav-link" href="https://github.com/perezp44">
       <i class="bi bi-github" role="img">
 </i> 
@@ -655,10 +628,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <a class="nav-link" href="https://orcid.org/0000-0001-9375-6330"><i class="ai ai-orcid" role="img"></i></a>
   </li>  
 </ul>
-    </div>
+</div>
   </div>
 </footer>
-
 
 
 <script src="../site_libs/quarto-html/zenscroll-min.js"></script>

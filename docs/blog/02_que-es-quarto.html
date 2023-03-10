@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.335">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="Pedro J. Pérez">
 <meta name="description" content="En el curso usaremos 3 programas: R, RStudio y Quarto, así que la primera tarea es saber qué son y para qué sirven: conviene saber diferenciar entre ellos.">
-
 <title>Escribiendo con R y Quarto (aún muy WIP) - ¿Qué son R, RStudio y Quarto?</title>
 <style>
 code{white-space: pre-wrap;}
@@ -23,7 +20,6 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
@@ -41,8 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -60,24 +55,17 @@ ul.task-list li input[type="checkbox"] {
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar"
   }
-}</script>
-<style>html{ scroll-behavior: smooth; }</style>
-
-
+}</script><style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="../assets/styles.css">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
-
 <body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo">
-    </a>
+    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Escribiendo con R y Quarto (aún muy WIP)</span>
     </a>
@@ -87,14 +75,14 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item compact">
+<li class="nav-item compact">
     <a class="nav-link" href="../index.html"><i class="bi bi-house-door" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item">
     <a class="nav-link" href="../info.html">
  <span class="menu-text">Info</span></a>
   </li>  
@@ -130,14 +118,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+<div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-right">
       <h1 class="title">¿Qué son R, RStudio y Quarto?</h1>
                   <div>
@@ -189,29 +173,19 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Índice</h2>
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#qué-es-r" id="toc-qué-es-r" class="nav-link active" data-scroll-target="#qué-es-r"><span class="toc-section-number">1</span>  ¿Qué es R?</a></li>
-  <li><a href="#qué-es-rstudio" id="toc-qué-es-rstudio" class="nav-link" data-scroll-target="#qué-es-rstudio"><span class="toc-section-number">2</span>  ¿Qué es RStudio?</a></li>
-  <li><a href="#qué-es-quarto" id="toc-qué-es-quarto" class="nav-link" data-scroll-target="#qué-es-quarto"><span class="toc-section-number">3</span>  ¿Qué es Quarto?</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/intro.to.quarto/edit/main/blog/02_que-es-quarto.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/intro.to.quarto/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+<li><a href="#qu%C3%A9-es-r" id="toc-qué-es-r" class="nav-link active" data-scroll-target="#qu%C3%A9-es-r"><span class="toc-section-number">1</span>  ¿Qué es R?</a></li>
+  <li><a href="#qu%C3%A9-es-rstudio" id="toc-qué-es-rstudio" class="nav-link" data-scroll-target="#qu%C3%A9-es-rstudio"><span class="toc-section-number">2</span>  ¿Qué es RStudio?</a></li>
+  <li><a href="#qu%C3%A9-es-quarto" id="toc-qué-es-quarto" class="nav-link" data-scroll-target="#qu%C3%A9-es-quarto"><span class="toc-section-number">3</span>  ¿Qué es Quarto?</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/intro.to.quarto/edit/main/blog/02_que-es-quarto.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/intro.to.quarto/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
+</nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
-
-
-
-
-<p>En el curso usaremos R, RStudio y Quarto. Los 3 son programas de ordenador, pero son muy diferentes. Conviene diferenciarlos y saber para qué sirve cada uno. Trato de explicarlo.</p>
-<section id="qué-es-r" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="qué-es-r"><span class="header-section-number">1</span> ¿Qué es R?</h2>
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content"><p>En el curso usaremos R, RStudio y Quarto. Los 3 son programas de ordenador, pero son muy diferentes. Conviene diferenciarlos y saber para qué sirve cada uno. Trato de explicarlo.</p>
+<section id="qué-es-r" class="level2" data-number="1"><h2 data-number="1" class="anchored" data-anchor-id="qué-es-r">
+<span class="header-section-number">1</span> ¿Qué es R?</h2>
 <p>R es un programa de ordenador, una pieza de software, <strong>pero</strong> principalmente es un <strong>lenguaje de programación</strong> y un entorno para hacer estadística o ciencia de datos.</p>
 <p>La <a href="https://www.r-project.org/about.html">página oficial de R</a> dice que:</p>
 <blockquote class="blockquote">
@@ -239,7 +213,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Creo que en la actualidad R es el mejor programa para iniciarse y hacer análisis de datos. Si no me acabas de creer, o quieres leer algo sobre la importancia y capacidades de R puedes hacerlo <a href="http://nadaesgratis.es/fernandez-villaverde/r">aquí</a> o <a href="https://www.r-bloggers.com/why-r-is-the-best-data-science-language-to-learn-today/">aquí</a>, o <a href="https://shirinsplayground.netlify.com/2017/09/ode_to_r/">aquí</a> o más recientemente <a href="https://www.eoda.de/en/wissen/blog/r-python-julia-data-science-2019">aquí</a>. Elmo lo tiene super-claro:</p>
 <div class="cell" data-fig.asp="0.7778">
 <div class="cell-output-display">
-<blockquote class="twitter-tweet blockquote" align="center" data-width="300" data-lang="en" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Finally an end to the <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> vs. 🐍 debate! <a href="https://t.co/IDjmE0XIRG">pic.twitter.com/IDjmE0XIRG</a></p>— Mine Çetinkaya-Rundel (@minebocek) <a href="https://twitter.com/minebocek/status/1174382623499661312?ref_src=twsrc%5Etfw">September 18, 2019</a></blockquote>
+<blockquote class="twitter-tweet blockquote" align="center" data-width="300" data-lang="en" data-dnt="true" data-theme="dark">
+<p lang="en" dir="ltr">Finally an end to the <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> vs. 🐍 debate! <a href="https://t.co/IDjmE0XIRG">pic.twitter.com/IDjmE0XIRG</a></p>— Mine Çetinkaya-Rundel (@minebocek) <a href="https://twitter.com/minebocek/status/1174382623499661312?ref_src=twsrc%5Etfw">September 18, 2019</a>
+</blockquote>
 
 </div>
 </div>
@@ -260,7 +236,9 @@ ul.task-list li input[type="checkbox"] {
 <p>¿Aprender R es complicado? No, bueno, ya hablaré de eso en clase. No mires el siguiente tweet:</p>
 <div class="cell">
 <div class="cell-output-display">
-<blockquote class="twitter-tweet blockquote" align="center" data-width="400" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Learning curve of R versus other tools (h/t <a href="https://twitter.com/timothycbates?ref_src=twsrc%5Etfw">@timothycbates</a>) <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/UItBGTZ1s4">pic.twitter.com/UItBGTZ1s4</a></p>— rogier kievit (@rogierK) <a href="https://twitter.com/rogierK/status/730863729420701697?ref_src=twsrc%5Etfw">May 12, 2016</a></blockquote>
+<blockquote class="twitter-tweet blockquote" align="center" data-width="400" data-lang="en" data-dnt="true" data-theme="light">
+<p lang="en" dir="ltr">Learning curve of R versus other tools (h/t <a href="https://twitter.com/timothycbates?ref_src=twsrc%5Etfw">@timothycbates</a>) <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/UItBGTZ1s4">pic.twitter.com/UItBGTZ1s4</a></p>— rogier kievit (@rogierK) <a href="https://twitter.com/rogierK/status/730863729420701697?ref_src=twsrc%5Etfw">May 12, 2016</a>
+</blockquote>
 
 </div>
 </div>
@@ -268,18 +246,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p><br></p>
-</section>
-<section id="qué-es-rstudio" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="qué-es-rstudio"><span class="header-section-number">2</span> ¿Qué es RStudio?</h2>
+</section><section id="qué-es-rstudio" class="level2" data-number="2"><h2 data-number="2" class="anchored" data-anchor-id="qué-es-rstudio">
+<span class="header-section-number">2</span> ¿Qué es RStudio?</h2>
 <p>Sí, es un programa de ordenador, <strong>pero</strong> no es un programa para hacer estadística ni es un lenguaje de programación. RStudio nos servirá para poder interactuar con R de forma más cómoda y eficiente.</p>
 <p>Para entenderlo: cuando hacemos un análisis estadístico, R es el que hace los cálculos, gráficos etc… R lo hace todo pero le damos las ordenes a R a través de RStudio. RStudio es una interfaz para acceder a R de manera más cómoda. Técnicamente RStudio es un IDE (Integrated development environment) diseñado especialmente para R. Intuitivamente es un programa que nos facilita dar nuestras ordenes a R: si R y RStudio formasen parte de un coche, R sería el motor y Rstudio el volante y los pedales.</p>
 <p>RStudio fue <a href="https://www.rstudio.com/blog/rstudio-new-open-source-ide-for-r/">creado en 2011</a> y actualmente es el entorno, o IDE, más usado para programar con R.</p>
 <p>Todavía no sabemos que es Quarto, pero RStudio nos facilita la interacción tanto con R como con Quarto. Son ellos, son R y Quarto, los que harán el “trabajo duro”, concreta mente R hará los cálculos, si es que nuestro documento/informe es de índole cuantitativo, y Quarto generará el documento final, ya sea este un tutorial, unas slides, página web, etc …</p>
 <p>A pesar de que Quarto y R son los que generan los resultados, nosotros no veremos habitualmente a estos dos programas, porque interactuaremos con ellos a través de RStudio.</p>
 <p><br></p>
-</section>
-<section id="qué-es-quarto" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="qué-es-quarto"><span class="header-section-number">3</span> ¿Qué es Quarto?</h2>
+</section><section id="qué-es-quarto" class="level2" data-number="3"><h2 data-number="3" class="anchored" data-anchor-id="qué-es-quarto">
+<span class="header-section-number">3</span> ¿Qué es Quarto?</h2>
 <p>Sí, también es un programa de ordenador, por tanto tenemos que instalarlo.</p>
 <p>Es un programa sin interfaz gráfica (sin menús ni ventanas). Se maneja a través la Términal con lineas de comandos, así que técnicamente es un programa de tipo CLI (command line interface), pero no sufras porque (casi siempre) interactuaremos con él a través de RStudio.</p>
 <p>Quarto es un programa para confeccionar documentos, documentos reproducibles. Se trata de escribir las ordenes que generan el documento en un archivo (source document) para que Quarto al procesarlo genere el documento final. Este documento final puede ser de diferentes tipos (tutoriales, informes, slides, webs, blogs, …) y formatos (html, pdf, docx, …).</p>
@@ -312,16 +288,10 @@ Un poco de historia: en un principio fueron los dinosaurios, luego Rmarkdown
 </div>
 
 
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
-
+</section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
 <ol>
 <li id="fn1"><p>Un programa para hacer estadística creado en los Bell Labs por John Chambers entre otros<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</ol></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -469,13 +439,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">© 2022 Pedro J. Pérez</div>   
       <div class="nav-footer-center">Hecho con <a href="https://quarto.org">Quarto</a></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
+<li class="nav-item compact">
     <a class="nav-link" href="https://github.com/perezp44">
       <i class="bi bi-github" role="img">
 </i> 
@@ -500,10 +469,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <a class="nav-link" href="https://orcid.org/0000-0001-9375-6330"><i class="ai ai-orcid" role="img"></i></a>
   </li>  
 </ul>
-    </div>
+</div>
   </div>
 </footer>
-
 
 
 <script src="../site_libs/quarto-html/zenscroll-min.js"></script>

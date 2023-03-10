@@ -225,12 +225,58 @@ embed-resources: true
 
 -   [Matt Worthington](https://www.mrworthington.com/) (el repo [aqui](https://github.com/mrworthington/mrworthington.github.io))
 
+- [Ilya Kashnitsky](https://ikashnitsky.github.io/) (el repo [aquí](https://github.com/ikashnitsky/ikashnitsky.github.io))
+
 <br>
 
 #### Más opciones:
 
 -   La [Gallery de Quarto](https://quarto.org/docs/gallery/#websites)
 
+
+## Ejemplos de webs (hechos con Quarto) {.smaller}
+
+- [Making shareable documents with Quarto](https://openscapes.github.io/quarto-website-tutorial/) y el [repo](https://github.com/openscapes/quarto-website-tutorial)
+
+- [Data in life](https://jhylin.github.io/Data_in_life_blog/) y el [repo](https://github.com/jhylin/Data_in_life_blog)
+
+- [Andrew Heiss](https://www.andrewheiss.com/) y el [repo](https://github.com/andrewheiss/ath-quarto)
+
+- [Program Evaluation for Public Service](https://evalsp23.classes.andrewheiss.com/) y el [repo](https://github.com/andrewheiss/evalsp23.classes.andrewheiss.com)
+
+- [Comparative Public Administration ](https://compasp23.classes.andrewheiss.com/) y el [repo](https://github.com/andrewheiss/compasp23.classes.andrewheiss.com)
+
+- [Quantum Jitter](https://www.quantumjitter.com/) y el [repo](https://github.com/cgoo4/quantumjitter)
+
+
+- [Ella Kaye](https://ellakaye.co.uk/) y el [repo](https://github.com/EllaKaye/ellakaye.co.uk)
+
+
+- [Introduction to Regression and Data Science](https://sta-112-f22.github.io/website/) y el [repo](https://github.com/sta-112-f22/website) 
+
+
+- [STA 199: Intro to Data Science](http://www2.stat.duke.edu/courses/Spring18/Sta199/) y el [repo]()
+
+
+- [ESPM 157: Data Science for Global Change Ecology](https://espm-157.carlboettiger.info/) y el [repo]()
+
+
+- [MAT555E-Statistical Data Analysis for Comp. Sciences](https://mat555e-fall22.github.io/) y el [repo](https://github.com/MAT555E-Fall22/MAT555E-Fall22.github.io)
+
+- [Antony Barja](https://ambarja.github.io/) y el [repo](https://github.com/ambarja/ambarja.github.io). Además tiene cursos sobre GIS
+
+- [The tidy trekker](https://thetidytrekker.com/about.html) y el [repo](https://github.com/Meghansaha/thetidytrekker-quarto)
+
+- [Real World Data Science](https://realworlddatascience.net/) y el [repo](https://github.com/realworlddatascience/realworlddatascience.github.io)
+
+- [Tidy Tales](https://tidytales.ca/) y el [repo](https://github.com/mccarthy-m-g/tidytales)
+
+
+
+
+
+
+- Unas [plantillas](https://andreaczhang.github.io/qtwAcademic/index.html) para webs [personales](https://andreaczhang.github.io/qtwAcademic/articles/template_personal.html) y [académicas](https://andreaczhang.github.io/qtwAcademic/articles/template_course.html) (cursos y workshops)
 
 
 # 1. Creación de un blog básico con Quarto {background-color="#EEBF8B"}

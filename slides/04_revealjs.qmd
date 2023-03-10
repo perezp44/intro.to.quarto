@@ -1,9 +1,257 @@
 ---
-title: "Revealjs slides (primeros pasos)"
+title: "Slides con Quarto"
 date: 2023-06-26  #- ISO8601 YYYY-MM-DD format 
 subtitle: "(Web del curso [aquí](https://perezp44.github.io/intro.to.quarto/))"
 date-format: long
 lang: es
+format: 
+  revealjs:
+#    theme: dark
+    scrollable: true
+    slide-level: 2
+    height: 900
+    width: 1600
+    toc: false
+    from: markdown+emoji  #- usar emojis https://gist.github.com/rxaviers/7360908)
+    center-title-slide: true
+    title-slide-attributes: #- atributos para la slide de titulo
+      data-background-color: "#562457"   #- color de R-ladies
+      #data-background-image: /imagenes/economia.gif
+      #data-background-size: contain      
+    preview-links: auto  #- true: abre un iframe en lugar de abrir ventana
+    #multiplex: true  #- para que puedas manejar las slides del publico
+    link-external-newwindow: true
+    transition: fade
+    #height: 900
+    #width: 1600
+    fontcolor: "#262d36"
+    highlight-style: a11y
+    code-line-numbers: true
+    number-sections: false
+    slide-number: c/t   # https://pandoc.org/MANUAL.html#structuring-the-slide-show
+    incremental: false   # https://quarto.org/docs/presentations/#incremental-lists
+    #code-link: true
+
+#logo: imagenes/economia.gif
+footer: |
+        {{< var webcurso >}}
+revealjs-plugins: [lightbox, pointer]
+  # - lightbox
+  # - pointer  # hay q apretar q
+#css: assets/styles_slides_intro.css
+    #theme: [moon, custom.scss]
+embed-resources: true
+---
+
+
+# Intro {background-color="#b8c2aa"}
+
+{{< var lineanaranja >}}
+
+<br>
+
+. . .
+
+1.  A veces tenemos que hacer slides :joy:
+
+2. Quarto puede hacer slides de varios tipos (ppt, slidy, beamer)
+
+3. Nos centraremos en **Revealjs**
+
+4.  Revealjs es fácil y chachi  :joy:
+
+> Revealjs is highly recommended unless you have specific requirements for Office or LaTeX output
+
+---
+
+<br><br><br>
+
+### Presentaciones con Quarto (generico) {.unnumbered background-color="#ebf5fb"} 
+
+{{< var lineanaranja >}}
+
+- Veremos primero aspectos comunes a todos los formatos de slides
+
+- [Documentación oficial](https://quarto.org/docs/presentations/)
+
+
+--- 
+
+### Creación de una nueva slide
+
+<br>
+
+- Los títulos de primer y segundo nivel crean (salvo que lo modifiquemos nosotros en el yaml) una nueva slide. Para modificar este aspecto hay que usar `slide-level:` en el YAML. Por ejemplo:
+
+
+
+``` yaml
+---
+title: "Mis slides"
+format: 
+  revealjs:   #- (pdf, beamer, slidy)
+    slide-level: 3
+---
+```
+
+<br>
+
+- También se puede crear una nueva slide usando 3 o mas guiones cortos: `---`
+
+<br>
+
+
+---
+
+### Pausas en la presentación
+
+<br>
+
+- Por defecto, los elementos de una slide se muestran todos de golpe
+
+<br>
+
+- Puedes hacer que haya pausas en la presentación de los distintos elementos usando las siguientes marcas `. . . ` ; es decir, tres puntos separados por un espacio.
+
+---
+
+### Listas incrementales
+
+
+- Por defecto las listas se muestran de golpe
+
+. . . 
+
+- Si quieres que se muestren elemento a elemento, puedes controlarlo desde el YAML:
+
+
+```yaml
+title: "My Presentation"
+format:
+  revealjs:
+    incremental: true   
+```
+
+. . . 
+
+- Se puede ir **intercalando** listas incrementales, y no-incrementales, con los siguientes **fenced div's**:
+
+:::: {.columns}
+::: {.column width="45%" .fragment}
+
+Lista **incremental** :
+
+<br>
+
+```markdown
+::: {.incremental}
+- First we take Manhatan,
+- then we take Berlin
+:::
+```
+:::
+::: {.column width="45%" .fragment}
+
+Lista **no-incremental** :
+
+<br>
+
+``` markdown
+::: {.nonincremental}
+- First we take Manhatan,
+- then we take Berlin
+:::
+```
+:::
+::::
+
+---
+
+#### Columas multiples 
+
+:::: {.columns}
+::: {.column width="35%"}
+- Como puedes ver, se puede generar contenido en **varias columnas**. Para ello hay que usar un **fenced div** con clase `columns`. 
+:::
+::: {.column width="60%"}
+> To put material in side by side columns, you can use a native div container with class .columns, containing two or more div containers with class .column and a width attribute. -- [Documentacion oficial](https://quarto.org/docs/presentations/#multiple-columns) de Quarto
+:::
+::::
+
+
+- Por ejemplo:
+
+
+```markdown
+:::: {.columns}
+
+::: {.column width="40%"}
+Mi contenido en la primera columna
+:::
+
+::: {.column width="60%"}
+Contenido en la segunda columna
+:::
+
+::::
+
+```
+
+
+
+
+<br>
+
+
+---
+
+<br>
+
+### Revealjs slides {.unnumbered background-color="#ebf5fb"} 
+
+{{< var lineanaranja >}}
+
+<br>
+
+- [reveal.js](https://revealjs.com/) es un open source HTML presentation framework.
+
+- A mi me gustan: en mi opinión tienen unas cuantas ventajas
+
+- Documentación oficial  [aquí](https://quarto.org/docs/presentations/revealjs/)
+
+- Listado (extenso) de opciones [aquí](https://quarto.org/docs/reference/formats/presentations/revealjs.html)
+
+
+
+
+---
+
+### Revealjs slides 
+
+- La primera slide se crea automáticamente con el título, autor (fecha y algunos má metadatos) del YAML.
+
+
+---
+
+### Content overflow
+
+- Si el contenido que queremos poner no se ajusta a la slide, tenemos varias posibilidades:
+
+  - Usar la `.smaller` class al crear la slide. Por ejemplo: 
+  
+    ```markdown
+    ## Título de la slide {.smaller}
+    ```
+    
+    
+    
+  
+  
+
+
+---
+
+```markdown
 format: 
   revealjs:
 #    theme: dark
@@ -39,44 +287,8 @@ revealjs-plugins: [lightbox, pointer]
 #css: assets/styles_slides_intro.css
     #theme: [moon, custom.scss]
 embed-resources: true
----
+```
 
-
-# Intro {background-color="#b8c2aa"}
-
-{{< var lineanaranja >}}
-
-<br>
-
-. . .
-
-1.  A veces tenemos que hacer slides
-
-2. Quarto puede hacer slides de varios tipos (.ppt, slidy, beamer)
-
-3. Nos centraremos en **Revealjs**
-
-4.  Revealjs es fácil y chachi
-
-> is highly recommended unless you have specific requirements for Office or LaTeX output
-
-
-
-# Presentaciones (generico) {.unnumbered background-color="#ebf5fb"} 
-
-{{< var lineanaranja >}}
-
-- [Documentación oficial](https://quarto.org/docs/presentations/)
-
-
-- To put material in side by side columns, you can use a native div container with class .columns, containing two or more div containers with class .column and a width attribute:
-
-
-
-
-# Revealjs slides {.unnumbered background-color="#ebf5fb"} 
-
-{{< var lineanaranja >}}
 
 
 
@@ -110,6 +322,8 @@ embed-resources: true
 - [Dcumentación oficial](https://quarto.org/docs/presentations/beamer.html)
 
 
-<kbd>S</kbd>
 
-pp
+```{r}
+base::sqrt(4)
+```
+    

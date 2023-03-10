@@ -78,7 +78,7 @@ format:
     code-fold: show
     code-tools: false
     #code-summary: "Show the code"
-    #code-link: true
+    code-link: true
     
 lang: es   #- {es, en}
 

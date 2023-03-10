@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.335">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="Pedro J. Pérez">
 <meta name="description" content="Intentando entender qué son y cómo usar las extensiones de Quarto">
-
 <title>Escribiendo con R y Quarto (aún muy WIP) - Extensiones</title>
 <style>
 code{white-space: pre-wrap;}
@@ -87,7 +84,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -107,8 +103,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -126,29 +121,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar"
   }
-}</script>
-<style>html{ scroll-behavior: smooth; }</style>
+}</script><style>html{ scroll-behavior: smooth; }</style>
 <style>
     .quarto-title-block .quarto-title-banner {
       background: thumbnails/thumbnail_02.png;
     }
     </style>
-
-
 <link rel="stylesheet" href="../assets/styles.css">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
-
 <body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo">
-    </a>
+    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Escribiendo con R y Quarto (aún muy WIP)</span>
     </a>
@@ -158,14 +146,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item compact">
+<li class="nav-item compact">
     <a class="nav-link" href="../index.html"><i class="bi bi-house-door" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item">
     <a class="nav-link" href="../info.html">
  <span class="menu-text">Info</span></a>
   </li>  
@@ -201,14 +189,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+<div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-right">
       <h1 class="title">Extensiones</h1>
                   <div>
@@ -261,42 +245,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Índice</h2>
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro"><span class="toc-section-number">1</span>  Intro</a></li>
+<li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro"><span class="toc-section-number">1</span>  Intro</a></li>
   <li><a href="#un-ejemplo" id="toc-un-ejemplo" class="nav-link" data-scroll-target="#un-ejemplo"><span class="toc-section-number">2</span>  Un ejemplo</a></li>
   <li><a href="#el-shortcode-video" id="toc-el-shortcode-video" class="nav-link" data-scroll-target="#el-shortcode-video"><span class="toc-section-number">3</span>  El shortcode &lt;&lt; video &gt;&gt;</a></li>
   <li><a href="#listado-de-extensiones" id="toc-listado-de-extensiones" class="nav-link" data-scroll-target="#listado-de-extensiones"><span class="toc-section-number">4</span>  Listado de extensiones</a></li>
   <li><a href="#otro-ejemplo-lightbox" id="toc-otro-ejemplo-lightbox" class="nav-link" data-scroll-target="#otro-ejemplo-lightbox"><span class="toc-section-number">5</span>  Otro ejemplo (Lightbox)</a></li>
   <li><a href="#otro-ejemplo-tweets" id="toc-otro-ejemplo-tweets" class="nav-link" data-scroll-target="#otro-ejemplo-tweets"><span class="toc-section-number">6</span>  Otro ejemplo (tweets)</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/intro.to.quarto/edit/main/blog/23_extensiones.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/intro.to.quarto/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/intro.to.quarto/edit/main/blog/23_extensiones.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/intro.to.quarto/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
+</nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
-
-
-
-
-<section id="intro" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="intro"><span class="header-section-number">1</span> Intro</h2>
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content"><section id="intro" class="level2" data-number="1"><h2 data-number="1" class="anchored" data-anchor-id="intro">
+<span class="header-section-number">1</span> Intro</h2>
 <p>Una de las novedades de Quarto es la posibilidad de usar <strong>extensiones</strong>. Las extensiones se escriben en el lenguaje <a href="https://es.wikipedia.org/wiki/Lua">Lua</a>. <a href="https://quarto.org/docs/extensions/starter-templates.html">Aquí</a> la documentación oficial.</p>
 <p>Vamos a aprender a usar las extensiones con un ejemplo: vamos a instalar la extensión “quarto-youtube-embed” que sirve para incluir vídeos de youtube en un documento <code>.qmd</code>.</p>
 <p><br></p>
-</section>
-<section id="un-ejemplo" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="un-ejemplo"><span class="header-section-number">2</span> Un ejemplo</h2>
+</section><section id="un-ejemplo" class="level2" data-number="2"><h2 data-number="2" class="anchored" data-anchor-id="un-ejemplo">
+<span class="header-section-number">2</span> Un ejemplo</h2>
 <p>Con Rmd alguna vez he puesto vídeos en mis slides o tutoriales. Usaba el paquete de R <a href="https://github.com/ijlyttle/vembedr">vembed</a>. Ahora, con Quarto, también podríamos hacerlo de esa forma, solo tendríamos que insertar en nuestro documento un chunk como:</p>
 <div class="cell">
-<details open="">
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="in">```{r}</span></span>
+<details open=""><summary>Código</summary><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="in">```{r}</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="co">#| eval: false</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(<span class="st">"vembedr"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="fu">embed_url</span>(<span class="st">"https://www.youtube.com/watch?v=ACv9zaBa1A4"</span>)</span>
@@ -319,47 +290,39 @@ Tarea: Instalar y usar una extensión
 <li>Lo primero es instalar la extensión de Quarto. Como pone en el repo, lo haremos desde la Terminal así:</li>
 </ul>
 <div class="cell">
-<details open="">
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb2" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension sellorm/quarto-youtube-embed</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details open=""><summary>Código</summary><div class="sourceCode cell-code" id="cb2" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension sellorm/quarto-youtube-embed</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <ul>
 <li>Una vez instalada, podemos incrustar un vídeo usando el siguiente “shortcode” en nuestro documento .qmd:</li>
 </ul>
 <div class="cell">
-<details open="">
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>{{<span class="sc">&lt;</span> youtube zk9zHqXm6m0 <span class="sc">&gt;</span>}}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details open=""><summary>Código</summary><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>{{<span class="sc">&lt;</span> youtube zk9zHqXm6m0 <span class="sc">&gt;</span>}}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <p>Con lo que habremos incrustado el vídeo en nuestro documento .html final.</p>
-<p></p><div id="youtube-frame" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;"><iframe width="100%" height="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/zk9zHqXm6m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
+<p></p>
+<div id="youtube-frame" style="position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;"><iframe width="100%" height="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/zk9zHqXm6m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </div>
 </div>
 <p><br></p>
-</section>
-<section id="el-shortcode-video" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="el-shortcode-video"><span class="header-section-number">3</span> El shortcode &lt;&lt; video &gt;&gt;</h2>
+</section><section id="el-shortcode-video" class="level2" data-number="3"><h2 data-number="3" class="anchored" data-anchor-id="el-shortcode-video">
+<span class="header-section-number">3</span> El shortcode &lt;&lt; video &gt;&gt;</h2>
 <p>La extensión <strong>“quarto-youtube-embed”</strong> funcionaba perfectamente pero se ha quedado obsoleta porque Quarto ya incorpora de serie una extensión para incrustar vídeos. Solo hay que usar el siguiente <a href="https://quarto.org/docs/extensions/shortcodes.html">shortcode</a>:</p>
 <div class="cell">
-<details open="">
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>{{<span class="sc">&lt;</span> video https<span class="sc">:</span><span class="er">//</span>youtu.be<span class="sc">/</span>7SVYNyvi0wQ <span class="sc">&gt;</span>}}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details open=""><summary>Código</summary><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>{{<span class="sc">&lt;</span> video https<span class="sc">:</span><span class="er">//</span>youtu.be<span class="sc">/</span>7SVYNyvi0wQ <span class="sc">&gt;</span>}}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/7SVYNyvi0wQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p><br></p>
 <p><a href="https://quarto.org/docs/authoring/videos.html">Aquí</a> la documentación oficial del shortcode <code>{{ &lt; video   &gt;}}</code>. Como ves, se ha mejorado la extensión original ya que ahora permite, no sólo insertar vídeos de youtube, sino también de otros servicios como Vimeo, y puedes fijar el minuto en el que empieza el vídeo y algunas cosas más.</p>
 <p><br></p>
-</section>
-<section id="listado-de-extensiones" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="listado-de-extensiones"><span class="header-section-number">4</span> Listado de extensiones</h2>
+</section><section id="listado-de-extensiones" class="level2" data-number="4"><h2 data-number="4" class="anchored" data-anchor-id="listado-de-extensiones">
+<span class="header-section-number">4</span> Listado de extensiones</h2>
 <p><a href="https://github.com/mcanouil/awesome-quarto#extensions">Aquí</a> tienes un <strong>listado de extensiones disponibles</strong>. Las extensiones oficiales de Quarto están <a href="https://quarto.org/docs/extensions/listing-filters.html">aquí</a>.</p>
 <p><br></p>
-</section>
-<section id="otro-ejemplo-lightbox" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="otro-ejemplo-lightbox"><span class="header-section-number">5</span> Otro ejemplo (Lightbox)</h2>
+</section><section id="otro-ejemplo-lightbox" class="level2" data-number="5"><h2 data-number="5" class="anchored" data-anchor-id="otro-ejemplo-lightbox">
+<span class="header-section-number">5</span> Otro ejemplo (Lightbox)</h2>
 <p>Vamos a <strong>instalar y usar una nueva extensión</strong>, concretamente la extensión <strong>“Lightbox”</strong>.</p>
 <p>Lo que hace esta extensión es que podamos pinchar en una imagen y verla ampliada y con una descripción. <a href="https://quarto-ext.github.io/lightbox/">Aquí</a> puedes ver ejemplos de lo que se puede hacer con “Lightbox”.</p>
 <p>En el <a href="https://github.com/quarto-ext/lightbox">repo</a> se explica con más detalle lo que se puede hacer con “Lightbox”.</p>
@@ -378,9 +341,7 @@ Tarea: Instalar y usar la extensión “Lightbox”
 <li>Lo primero es instalar la extensión desde la Terminal:</li>
 </ul>
 <div class="cell">
-<details open="">
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb5" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension quarto-ext/lightbox</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details open=""><summary>Código</summary><div class="sourceCode cell-code" id="cb5" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension quarto-ext/lightbox</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <p>Esta vez, para poder usar la extensión en un documento <code>.qmd</code> hemos de incluir en el yaml del documento lo siguiente:</p>
@@ -396,8 +357,7 @@ Tarea: Instalar y usar la extensión “Lightbox”
 <p><strong>Con lo que veríamos algo como:</strong></p>
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="./imagenes/economia.gif" class="lightbox" title="Mi imagen con Lighbox activado" data-description="El
+<figure class="figure"><p><a href="./imagenes/economia.gif" class="lightbox" title="Mi imagen con Lighbox activado" data-description="El
 
 logo-nano
 
@@ -426,9 +386,8 @@ València" data-gallery="quarto-lightbox-gallery-1"><img src="./imagenes/economi
 </div>
 </div>
 <p><br></p>
-</section>
-<section id="otro-ejemplo-tweets" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="otro-ejemplo-tweets"><span class="header-section-number">6</span> Otro ejemplo (tweets)</h2>
+</section><section id="otro-ejemplo-tweets" class="level2" data-number="6"><h2 data-number="6" class="anchored" data-anchor-id="otro-ejemplo-tweets">
+<span class="header-section-number">6</span> Otro ejemplo (tweets)</h2>
 <p>Voy a instalar una nueva extensión, concretamente la extensión <strong>Quarto social embeds</strong>. Concretamente con esta extensión podremos insertar en nuestros documentos: <strong>gists de GitHub</strong>, <strong>videos de Loom</strong>, youtube y Vimeo y <strong>tweets</strong>. Realmente la instalo porque quiero tenerla disponible para insertar tweets.</p>
 <p>En el <a href="https://github.com/sellorm/quarto-social-embeds">repo</a> se explica con más detalle lo que se puede hacer con <strong>Quarto social embeds</strong>.</p>
 <div class="callout-important callout callout-style-default no-icon callout-captioned">
@@ -446,30 +405,25 @@ Instalar y usar la extensión <strong>Quarto social embeds</strong>
 <li>Lo primero es instalar la extensión desde la Terminal:</li>
 </ul>
 <div class="cell">
-<details open="">
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension sellorm/quarto-social-embeds</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details open=""><summary>Código</summary><div class="sourceCode cell-code" id="cb7" data-code-line-numbers="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install extension sellorm/quarto-social-embeds</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <p><br></p>
 <p>Para insertar un <strong>tweet</strong> has de:</p>
 <div class="cell">
-<details open="">
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>{{<span class="sc">&lt;</span> tweet user<span class="ot">=</span><span class="er">&lt;</span>username<span class="sc">&gt;</span> id<span class="ot">=</span><span class="er">&lt;</span>id<span class="sc">&gt;</span> <span class="er">&gt;</span>}}</span>
+<details open=""><summary>Código</summary><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>{{<span class="sc">&lt;</span> tweet user<span class="ot">=</span><span class="er">&lt;</span>username<span class="sc">&gt;</span> id<span class="ot">=</span><span class="er">&lt;</span>id<span class="sc">&gt;</span> <span class="er">&gt;</span>}}</span>
 <span id="cb8-2"><a href="#cb8-2"></a></span>
 <span id="cb8-3"><a href="#cb8-3"></a>por ejemplo<span class="sc">:</span></span>
 <span id="cb8-4"><a href="#cb8-4"></a></span>
 <span id="cb8-5"><a href="#cb8-5"></a>{{<span class="sc">&lt;</span> tweet user<span class="ot">=</span>ambitocultural id<span class="ot">=</span><span class="dv">1589543369512026112</span> <span class="sc">&gt;</span>}}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p></p><div id="tweet-72034"></div><script>tweet={"url":"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112","author_name":"Ámbito Cultural","author_url":"https:\/\/twitter.com\/ambitocultural","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEl cantautor Nacho Vegas está de vuelta en la escena musical con un nuevo trabajo lleno de gran hondura poética \uD83D\uDC49 Mundos inmóviles derrumbándose \uD83C\uDFA4 Estará acompañado por \u003Ca href=\"https:\/\/twitter.com\/fneirad?ref_src=twsrc%5Etfw\"\u003E@fneirad\u003C\/a\u003E, crítico y periodista musical, en un evento único\uD83D\uDD1D\u003Cbr\u003E\u003Cbr\u003E\uD83D\uDD17\u003Ca href=\"https:\/\/t.co\/kn4uJeMRWo\"\u003Ehttps:\/\/t.co\/kn4uJeMRWo\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/hzdwJzxrfj\"\u003Epic.twitter.com\/hzdwJzxrfj\u003C\/a\u003E\u003C\/p\u003E&mdash; Ámbito Cultural (@ambitocultural) \u003Ca href=\"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-72034").innerHTML = tweet["html"];</script><p></p>
-<p><br><br></p>
+<p></p>
+<div id="tweet-23345"></div>
+<script>tweet={"url":"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112","author_name":"Ámbito Cultural","author_url":"https:\/\/twitter.com\/ambitocultural","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"es\" dir=\"ltr\"\u003EEl cantautor Nacho Vegas está de vuelta en la escena musical con un nuevo trabajo lleno de gran hondura poética \uD83D\uDC49 Mundos inmóviles derrumbándose \uD83C\uDFA4 Estará acompañado por \u003Ca href=\"https:\/\/twitter.com\/fneirad?ref_src=twsrc%5Etfw\"\u003E@fneirad\u003C\/a\u003E, crítico y periodista musical, en un evento único\uD83D\uDD1D\u003Cbr\u003E\u003Cbr\u003E\uD83D\uDD17\u003Ca href=\"https:\/\/t.co\/kn4uJeMRWo\"\u003Ehttps:\/\/t.co\/kn4uJeMRWo\u003C\/a\u003E \u003Ca href=\"https:\/\/t.co\/hzdwJzxrfj\"\u003Epic.twitter.com\/hzdwJzxrfj\u003C\/a\u003E\u003C\/p\u003E&mdash; Ámbito Cultural (@ambitocultural) \u003Ca href=\"https:\/\/twitter.com\/ambitocultural\/status\/1589543369512026112?ref_src=twsrc%5Etfw\"\u003ENovember 7, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-23345").innerHTML = tweet["html"];</script><p><br><br></p>
 <p>Para insertar un <strong>gist de Github</strong> has de:</p>
 <div class="cell">
-<details open="">
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>{{<span class="sc">&lt;</span> gist sellorm 20525aff669acafb975b7495b8f2066e <span class="sc">&gt;</span>}}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details open=""><summary>Código</summary><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>{{<span class="sc">&lt;</span> gist sellorm 20525aff669acafb975b7495b8f2066e <span class="sc">&gt;</span>}}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <p><script src="https://gist.github.com/sellorm/20525aff669acafb975b7495b8f2066e.js"></script></p>
@@ -477,10 +431,7 @@ Instalar y usar la extensión <strong>Quarto social embeds</strong>
 </div>
 
 
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -628,13 +579,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">© 2022 Pedro J. Pérez</div>   
       <div class="nav-footer-center">Hecho con <a href="https://quarto.org">Quarto</a></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
+<li class="nav-item compact">
     <a class="nav-link" href="https://github.com/perezp44">
       <i class="bi bi-github" role="img">
 </i> 
@@ -659,11 +609,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <a class="nav-link" href="https://orcid.org/0000-0001-9375-6330"><i class="ai ai-orcid" role="img"></i></a>
   </li>  
 </ul>
-    </div>
+</div>
   </div>
-</footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","loop":true,"descPosition":"bottom"});</script>
-
+</footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","loop":true,"selector":".lightbox"});</script>
 
 
 <script src="../site_libs/quarto-html/zenscroll-min.js"></script>

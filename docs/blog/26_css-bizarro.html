@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.335">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="Pedro J. Pérez">
 <meta name="description" content="El contenido de este post es el mismo que el del anterior, PERO , pero ahora haciendo cambios bizarros!! con CSS.">
-
 <title>Escribiendo con R y Quarto (aún muy WIP) - Tuneando con CSS (cambios bizarros!!)</title>
 <style>
 code{white-space: pre-wrap;}
@@ -87,7 +84,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
@@ -104,8 +100,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -123,25 +118,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar"
   }
-}</script>
-<style>html{ scroll-behavior: smooth; }</style>
-
-
+}</script><style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="../assets/styles.css">
 <link rel="stylesheet" href="assets/styles.css">
 <link rel="stylesheet" href="assets/post_26.css">
 </head>
-
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo">
-    </a>
+    <img src="../imagenes/ababol_redondeado.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Escribiendo con R y Quarto (aún muy WIP)</span>
     </a>
@@ -151,14 +139,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item compact">
+<li class="nav-item compact">
     <a class="nav-link" href="../index.html"><i class="bi bi-house-door" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item">
     <a class="nav-link" href="../info.html">
  <span class="menu-text">Info</span></a>
   </li>  
@@ -194,35 +182,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+<div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Índice</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#cómo-incorporar-cambios-con-css" id="toc-cómo-incorporar-cambios-con-css" class="nav-link active" data-scroll-target="#cómo-incorporar-cambios-con-css"><span class="toc-section-number">1</span>  ¿Cómo incorporar cambios con CSS?</a>
+<li>
+<a href="#c%C3%B3mo-incorporar-cambios-con-css" id="toc-cómo-incorporar-cambios-con-css" class="nav-link active" data-scroll-target="#c%C3%B3mo-incorporar-cambios-con-css"><span class="toc-section-number">1</span>  ¿Cómo incorporar cambios con CSS?</a>
   <ul class="collapse">
-  <li><a href="#utilizando-spans" id="toc-utilizando-spans" class="nav-link" data-scroll-target="#utilizando-spans">Utilizando <strong>spans</strong></a></li>
+<li><a href="#utilizando-spans" id="toc-utilizando-spans" class="nav-link" data-scroll-target="#utilizando-spans">Utilizando <strong>spans</strong></a></li>
   <li><a href="#con-ficheros-.css" id="toc-con-ficheros-.css" class="nav-link" data-scroll-target="#con-ficheros-.css">Con ficheros <code>.css</code></a></li>
-  </ul></li>
-  <li><a href="#algunos-estilos-útiles" id="toc-algunos-estilos-útiles" class="nav-link" data-scroll-target="#algunos-estilos-útiles"><span class="toc-section-number">2</span>  Algunos estilos útiles</a></li>
-  <li><a href="#estilos-útiles-pero-un-poco-bizarros" id="toc-estilos-útiles-pero-un-poco-bizarros" class="nav-link" data-scroll-target="#estilos-útiles-pero-un-poco-bizarros"><span class="toc-section-number">3</span>  Estilos útiles pero (un poco) bizarros!!</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/intro.to.quarto/edit/main/blog/26_css-bizarro.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/intro.to.quarto/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
+</li>
+  <li><a href="#algunos-estilos-%C3%BAtiles" id="toc-algunos-estilos-útiles" class="nav-link" data-scroll-target="#algunos-estilos-%C3%BAtiles"><span class="toc-section-number">2</span>  Algunos estilos útiles</a></li>
+  <li><a href="#estilos-%C3%BAtiles-pero-un-poco-bizarros" id="toc-estilos-útiles-pero-un-poco-bizarros" class="nav-link" data-scroll-target="#estilos-%C3%BAtiles-pero-un-poco-bizarros"><span class="toc-section-number">3</span>  Estilos útiles pero (un poco) bizarros!!</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/perezp44/intro.to.quarto/edit/main/blog/26_css-bizarro.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/perezp44/intro.to.quarto/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">Tuneando con CSS (cambios bizarros!!)</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Quarto</div>
@@ -272,18 +254,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </div>
   
 
-</header>
-
-<p>La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es dar una clase sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS.</p>
+</header><p>La apariencia visual del blog puede cambiarse utilizando CSS. El objetivo no es dar una clase sobre CSS, de hecho yo sé muy poquito CSS, sino solo mostrar con un ejemplo cómo poder incorporar algunos cambios en nuestro blog mediante el uso de CSS.</p>
 <p><br></p>
-<section id="cómo-incorporar-cambios-con-css" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="cómo-incorporar-cambios-con-css"><span class="header-section-number">1</span> ¿Cómo incorporar cambios con CSS?</h2>
-<section id="utilizando-spans" class="level3">
-<h3 class="anchored" data-anchor-id="utilizando-spans">Utilizando <strong>spans</strong></h3>
+<section id="cómo-incorporar-cambios-con-css" class="level2" data-number="1"><h2 data-number="1" class="anchored" data-anchor-id="cómo-incorporar-cambios-con-css">
+<span class="header-section-number">1</span> ¿Cómo incorporar cambios con CSS?</h2>
+<section id="utilizando-spans" class="level3"><h3 class="anchored" data-anchor-id="utilizando-spans">Utilizando <strong>spans</strong>
+</h3>
 <p>En <a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/11-spans/">este quarto-tip</a>, Mine Çetinkaya-Rundel lo explica muy bien.</p>
-<p>Para cambiar la apariencia de un trozo de texto, tienes que meterlo dentro de <code>[]</code> y usando <code>{}</code> para definir el estilo que quieres aplicar a ese texto. Con un ejemplo se entiende mejor:</p>
+<p>Para cambiar la apariencia de un trozo de texto, tienes que meterlo dentro de <code>[]</code> y usando <code><a href="https://rdrr.io/r/base/Paren.html">{}</a></code> para definir el estilo que quieres aplicar a ese texto. Con un ejemplo se entiende mejor:</p>
 <div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Para que se muestre esto …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Has de escribir</a></li></ul>
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Para que se muestre esto …</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Has de escribir</a></li>
+</ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Para llamar la atención puedes escribir en <span style="color: red">rojo</span> o con un <span style="background-color: yellow">fondo amarillo</span>; o las <span style="color: red; background-color: yellow;">dos cosas a la vez</span>.</p>
@@ -296,9 +279,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p><br></p>
-</section>
-<section id="con-ficheros-.css" class="level3">
-<h3 class="anchored" data-anchor-id="con-ficheros-.css">Con ficheros <code>.css</code></h3>
+</section><section id="con-ficheros-.css" class="level3"><h3 class="anchored" data-anchor-id="con-ficheros-.css">Con ficheros <code>.css</code>
+</h3>
 <p>Si piensas reutilizar algunos estilos, entonces es mejor definir los estilos en un archivo <code>.css</code>.</p>
 <p>Si quisiéramos poder reutilizar los estilos que hemos definido en la anterior sección, tendríamos que crearlos como clases en un archivo css. Por ejemplo crearíamos el archivo: <code>./assets/mis_estilos_01.css</code> con el siguiente contenido:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">/* css styles */</span></span>
@@ -321,7 +303,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Una vez incluido el fichero css en el yaml, ya podemos usar los estilos, para ello tendríamos que hacer lo siguiente:</p></li>
 </ol>
 <div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Para que se muestre esto …</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Has de escribir</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">También podríamos haberlo hecho así:</a></li></ul>
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Para que se muestre esto …</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Has de escribir</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">También podríamos haberlo hecho así:</a></li>
+</ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>Para llamar la atención puedes escribir en <span class="rojo">rojo</span> o con un <span class="yellow-background">fondo amarillo</span>; o las <span class="yellow-background"><span class="rojo">dos cosas a la vez</span></span>.</p>
@@ -339,15 +325,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p><br></p>
-</section>
-</section>
-<section id="algunos-estilos-útiles" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="algunos-estilos-útiles"><span class="header-section-number">2</span> Algunos estilos útiles</h2>
+</section></section><section id="algunos-estilos-útiles" class="level2" data-number="2"><h2 data-number="2" class="anchored" data-anchor-id="algunos-estilos-útiles">
+<span class="header-section-number">2</span> Algunos estilos útiles</h2>
 <p>Con CSS se puede modificar la apariencia de todos los elementos de una página web. En el chunk de abajo muestro algunas de las posibilidades que usaba en mis <code>xaringan slides</code>.</p>
 <div class="cell">
-<details open="">
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="sc">/</span><span class="er">*</span> css styles<span class="sc">:</span> algunos q usaba en xaringan <span class="sc">*</span><span class="er">/</span></span>
+<details open=""><summary>Código</summary><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="sc">/</span><span class="er">*</span> css styles<span class="sc">:</span> algunos q usaba en xaringan <span class="sc">*</span><span class="er">/</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a></span>
 <span id="cb5-3"><a href="#cb5-3"></a>.rotate<span class="dv">-45</span> {transform<span class="sc">:</span> <span class="fu">rotate</span>(45deg); }</span>
 <span id="cb5-4"><a href="#cb5-4"></a>.large { font<span class="sc">-</span>size<span class="sc">:</span> <span class="dv">140</span>%; }</span>
@@ -389,15 +371,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </details>
 </div>
 <p><br></p>
-</section>
-<section id="estilos-útiles-pero-un-poco-bizarros" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="estilos-útiles-pero-un-poco-bizarros"><span class="header-section-number">3</span> Estilos útiles pero (un poco) bizarros!!</h2>
+</section><section id="estilos-útiles-pero-un-poco-bizarros" class="level2" data-number="3"><h2 data-number="3" class="anchored" data-anchor-id="estilos-útiles-pero-un-poco-bizarros">
+<span class="header-section-number">3</span> Estilos útiles pero (un poco) bizarros!!</h2>
 <p>En clase, para mostrar como podemos modificar algunos de los elementos de un documento hecho con Rmd (ahora con Quarto) usaba un archivo css con cambios digamos un poco raros: a lo mejor ponía el titulo en pink, el autor en verde etc.. etc… Sólo era un ejemplo para mostrar algunas de las posibilidades para modificar la apariencia de un documento con CSS.</p>
 <p>Si quieres ver como quedaría este mismo post pero sin utilizar las reglas CSS (bizarras) que puedes ver abajo, puedes hacerlo <a href="../posts/post_05_css.html">aquí</a></p>
 <div class="cell">
-<details>
-<summary>Código</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="sc">/</span><span class="er">*</span> definiendo estilos del body <span class="sc">:</span> de toda la página <span class="sc">*</span><span class="er">/</span> </span>
+<details><summary>Código</summary><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="sc">/</span><span class="er">*</span> definiendo estilos del body <span class="sc">:</span> de toda la página <span class="sc">*</span><span class="er">/</span> </span>
 <span id="cb6-2"><a href="#cb6-2"></a>body { </span>
 <span id="cb6-3"><a href="#cb6-3"></a>  background<span class="sc">-</span>color<span class="sc">:</span> aliceblue; }  <span class="sc">/</span><span class="er">*</span> color del fondo<span class="sc">*</span><span class="er">/</span> </span>
 <span id="cb6-4"><a href="#cb6-4"></a></span>
@@ -482,16 +461,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 
 
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
-
+</section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
 <ol>
 <li id="fn1"><p>O en <code>_metadata.yml</code> si quisiéramos usar los estilos en todos los posts<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</ol></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reutilizar</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.es">https://creativecommons.org/licenses/by/4.0/deed.es</a></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -639,13 +612,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">© 2022 Pedro J. Pérez</div>   
       <div class="nav-footer-center">Hecho con <a href="https://quarto.org">Quarto</a></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
+<li class="nav-item compact">
     <a class="nav-link" href="https://github.com/perezp44">
       <i class="bi bi-github" role="img">
 </i> 
@@ -670,10 +642,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <a class="nav-link" href="https://orcid.org/0000-0001-9375-6330"><i class="ai ai-orcid" role="img"></i></a>
   </li>  
 </ul>
-    </div>
+</div>
   </div>
 </footer>
-
 
 
 <script src="../site_libs/quarto-html/zenscroll-min.js"></script>

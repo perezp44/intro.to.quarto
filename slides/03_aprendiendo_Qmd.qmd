@@ -29,6 +29,7 @@ format:
     number-sections: false
     slide-number: c/t   # https://pandoc.org/MANUAL.html#structuring-the-slide-show
     incremental: false   # https://quarto.org/docs/presentations/#incremental-lists
+
 #logo: imagenes/economia.gif
 footer: |
         {{< var webcurso >}}
@@ -384,13 +385,23 @@ embed-resources: true
 
 ### (II) Chunks: otras opciones
 
-<br>
-
 Ahora, en Quarto, hay **más opciones para los chunks**. Por ejemplo:
+
+. . . 
 
   - Hacer **folding code** con `#| code-fold: true`  
   
-  - Si el código es muy largo, puedes usar `#| code-overflow: wrap` o  scroll
+      - Puedes combinarlo con `#| code-summary: "Para ver el código, pincha"`
+      
+      <br>
+      
+. . . 
+  
+  - Si el código es muy largo, puedes usar `#| code-overflow: wrap` (o  scroll)
+
+<br>
+
+. . . 
 
   - Puedes hacer que se muestren los **números de linea** con `#| code-line-numbers: true`
 
@@ -400,6 +411,17 @@ La documentación oficial la tienes [aquí](https://quarto.org/docs/output-forma
 
 
 <br>
+
+
+Vamos a probar esto:
+
+```yaml
+format:
+  html:
+  code-fold: true
+  code-tools: true
+```
+
 
 
 
