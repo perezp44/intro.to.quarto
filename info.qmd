@@ -1,31 +1,30 @@
 ---
-title: "Información sobre el curso"
+#title: "Información sobre el curso"
 ---
 
 
 ::: {.callout-note collapse="false" appearance="default" icon="false"}
 
-## Contexto
+## Información sobre el curso
 
-- El curso forma parte de la oferta del [SFPIE](https://www.uv.es/uvweb/servei-formacio-permanent-innovacio-educativa/ca/sfpie-1286203488816.html){target="_blank"} de la Universitat de València. La ficha oficial del curso está [aquí](https://www.uv.es/uvweb/servei-formacio-permanent-innovacio-educativa/ca/oferta-formativa/-creacio-documents-reprodu-bles-pagines-webs-r-1286213964422/PDIFormacio.html?id=1286294968633){target="_blank"}.
+- Forma parte de la oferta del [SFPIE](https://www.uv.es/uvweb/servei-formacio-permanent-innovacio-educativa/ca/sfpie-1286203488816.html){target="_blank"} de la Universitat de València. La ficha oficial del curso está [aquí](https://www.uv.es/uvweb/servei-formacio-permanent-innovacio-educativa/ca/oferta-formativa/-creacio-documents-reprodu-bles-pagines-webs-r-1286213964422/PDIFormacio.html?id=1286294968633){target="_blank"}.
 
 - El curso es una **introducción a Quarto**. Quarto es un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc...) científicas y técnicas. Puedes ver ejemplos en esta [Gallery](https://quarto.org/docs/gallery/){target="_blank"}.
 
--   El  curso está pensado para interactuar con [R](https://cran.r-project.org/){target="_blank"} y, fundamentalmente con [Quarto](https://quarto.org/docs/get-started/){target="_blank"}, a través del IDE [RStudio](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"}. 
+-   Está pensado para interactuar con [R](https://cran.r-project.org/){target="_blank"} y, fundamentalmente con [Quarto](https://quarto.org/docs/get-started/){target="_blank"}, a través del IDE [RStudio](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"}. 
 
 
 - Es muy-muy conveniente acudir al curso con tu propio ordenador.
 
 - Se recomienda tener instaladas **versiones recientes** de los 3 programas. Tienes instrucciones de instalación más abajo
 
-- Los materiales que usaremos en el curso están en [Materiales](materiales.qmd).
+- Los materiales que usaremos están en [Materiales](materiales.qmd).
 :::
 
 
 ::: {.callout-note collapse="false" appearance="default" icon="false"}
-## Horario y aula
 
-<br>
+## Horario y aula
 
 | Día                     | Hora              | Lugar                                    |
 |-------------------------|-------------------|------------------------------------------|
@@ -33,26 +32,26 @@ title: "Información sobre el curso"
 | 28 de junio (miércoles) | 16:00 a 20:00     | Aula 302 (Aulario Sur, Campus Tarongers) |
 | 3 de julio  (lunes)     | 16:00 a 20:00     | Aula 302 (Aulario Sur, Campus Tarongers) |
 
-<br>
-
-- Las clases se desarrollarán en el **aula 302** del **aulario Sur del Campus de Tarongers**.
+:::
 
 
 ```{r}
 #| echo: false
+#| eval: false
 library(leaflet)
 leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
 addMarkers(lng = -0.34371, lat = 39.47795, popup = "Aulario Sur del Campus de Tarongers)")
 ```
 
+::: {.callout-note collapse="false" appearance="default" icon="false"}
+## Lugar
+
+- Las clases se desarrollarán en el **aula 302** del **aulario Sur del Campus de Tarongers**, Universitat de València.
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.620706245074!2d-0.34585198436775366!3d39.47789667012178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604885bfd7753f%3A0x9ce3658009b3a33!2sAulari%20Sud%20%2F%20Aulario%20Sur!5e0!3m2!1ses!2ses!4v1678529561371!5m2!1ses!2ses" width="1120" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 :::
-
-
-
- 
-
-
 
 ::: {.callout-important collapse="false" appearance="default" icon="false"}
 ## Instalación de R, RStudio y Quarto
@@ -68,7 +67,7 @@ addMarkers(lng = -0.34371, lat = 39.47795, popup = "Aulario Sur del Campus de Ta
   3. Quarto: <https://quarto.org/docs/download/>
 
 
--   No creo que tengas ningun problema para instalarlos pero [aquí](https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html){target="_blank"} tienes un tutorial para instalar R y RStudio. Sólo tendrías que completar la primera parte del tutorial.
+-   No creo que tengas ningún problema para instalarlos pero [aquí](https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html){target="_blank"} tienes un tutorial para instalar R y RStudio. Sólo tendrías que completar la primera parte del tutorial.
 
 :::
 
