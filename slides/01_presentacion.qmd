@@ -127,31 +127,25 @@ embed-resources: true
 
 # Calendario {background-color="#b8c2aa"}
 
-------------------------------------------------------------------------
 
 ## Calendario
 
--   Lunes 26 de junio:
+<br>
 
-    -   Intro
 
-    -   Primeros pasos con R/RStudio/Quarto,
++-------------------------------+---------------------------------------------------------------+
+| Día                           |                                                               |
++===============================+===============================================================+
+|  26 de junio (lunes)          | Presentación (slides 01)    \                                 |
+|                               | Primeros pasos (slides 02)   \                                |
+|                               | Aprendiendo a escribir en QMD (slides 03)   \                 | 
+|                               | Slides con Quarto (slides 04)    \                            |
++-------------------------------+---------------------------------------------------------------+
+|  28 de junio (miércoles)      | Mi primer web/blog (slides 05)      \                         |
++-------------------------------+---------------------------------------------------------------+
+|  3 de julio (lunes)           | Más cosas con Quarto (slides 06)      \                       |
++-------------------------------+---------------------------------------------------------------+
 
-    -   Markdown
-
-    -   Creación de tutorial básico
-
--   Miércoles 28 de junio:
-
-    -   Mejorando/tuneando nuestro tutorial,
-
-    -   Creación de slides
-
-    -   Más tipos de documentos
-
--   Lunes 3 de julio:
-
-    -   Creación de webs y /blogs
 
 # Para conocermos un poco mejor {background-color="#b8c2aa"}
 

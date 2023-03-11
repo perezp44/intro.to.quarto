@@ -5,39 +5,48 @@ title: "Materiales para el Taller"
 
 
 
-::: {.callout-note appearance="default" icon="false"}
-#### Contexto
+::: {.callout-important appearance="default" icon="false"}
+#### Importante!!
 
 -   Durante el curso se interactuará con [R](https://cran.r-project.org/) y [Quarto](https://quarto.org/) a través de [RStudio](https://www.rstudio.com/products/rstudio/). Se recomienda tener instaladas **versiones recientes** de los 3 programas.
 
-- En la sección `Setup` tienes instrucciones para instalar el software necesario para el taller
+- En [Info](info.qmd) tienes los links de instalación.
 :::
 
 <br>
 
 
 
-## Materiales
 
-Durante el curso se utilizarán las siguientes slides:
-
-
-### [Slides 01: Presentación](./slides/01_presentacion.qmd){target="_blank"}
-
-### [Slides 02: Primeros pasos](./slides/02_primeros_pasos.qmd){target="_blank"}
-
-### [Slides 03: Aprendiendo a escribir en QMD](./slides/03_aprendiendo_Qmd.qmd){target="_blank"}
+Durante el curso se utilizarán las siguientes **slides**:
 
 
-### [Slides 04: Revealsjs slides](./slides/04_revealjs.qmd){target="_blank"}
+- [Slides 01: Presentación](./slides/01_presentacion.qmd){target="_blank"}
 
-### [Slides 05: Webs/blogs con Quarto](./slides/05_primer_web.qmd){target="_blank"}
+- [Slides 02: Primeros pasos](./slides/02_primeros_pasos.qmd){target="_blank"}
+
+- [Slides 03: Aprendiendo a escribir en QMD](./slides/03_aprendiendo_Qmd.qmd){target="_blank"}
+
+- [Slides 04: Revealjs slides](./slides/04_revealjs.qmd){target="_blank"}
+
+- [Slides 05: Webs/blogs con Quarto](./slides/05_primer_web.qmd){target="_blank"}
+
+- [Slides 06: Más cosas con Quarto](./slides/06_mas_cosas.qmd){target="_blank"}
 
 
 
+
+<br>
+
+Además, en los artículos del [blog](blog.qmd) se desarrollan algunos de los tópicos que se ven durante el curso.
+
+En la sección [Recursos](recursos.qmd) puedes encontrar bibliografía/recursos adicionales sobre Quarto.
+
+<br>
 
 ----------------------
 
+<br>
 
 Seguramente usaremos esta [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV){target="_blank"}.
 

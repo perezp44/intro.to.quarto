@@ -25,11 +25,15 @@ title: "Información sobre el curso"
 ::: {.callout-note collapse="false" appearance="default" icon="false"}
 ## Horario y aula
 
-- La duración del curso son **12 horas** repartidas en **3 sesiones** de 4 horas.
+<br>
 
-- Las 3 sesiones serán el **26 y 28 de junio** y el **3 de julio** de 2023.
+| Día                     | Hora              | Lugar                                    |
+|-------------------------|-------------------|------------------------------------------|
+| 26 de junio (lunes)     | 16:00 a 20:00     | Aula 302 (Aulario Sur, Campus Tarongers) |
+| 28 de junio (miércoles) | 16:00 a 20:00     | Aula 302 (Aulario Sur, Campus Tarongers) |
+| 3 de julio  (lunes)     | 16:00 a 20:00     | Aula 302 (Aulario Sur, Campus Tarongers) |
 
-- El horario de las 3 sesiones es de **16:00 a 20:00**. 
+<br>
 
 - Las clases se desarrollarán en el **aula 302** del **aulario Sur del Campus de Tarongers**.
 
@@ -53,9 +57,18 @@ addMarkers(lng = -0.34371, lat = 39.47795, popup = "Aulario Sur del Campus de Ta
 ::: {.callout-important collapse="false" appearance="default" icon="false"}
 ## Instalación de R, RStudio y Quarto
 
--   Todos sabemos instalar R y Rstudio, si no fuese así, [aquí](https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html){target="_blank"} tienes un tutorial. Sólo tendrías que completar la primera parte del tutorial.
+- En el curso usaremos 3 programas: R, RStudio y Quarto, así que tenemos que instalarlos
 
--   Instalación de **Quarto**: si tienes una versión de RStudio superior o igual a RStudio 2022.07.1, ya tienes una versión de Quarto instalada. Si no fuese así, [aquí](https://quarto.org/docs/get-started/){target="_blank"} tienes los instaladores para los principales sistemas operativos.
+- Has de instalar los programas en este orden:
+
+  1. R: <https://cran.r-project.org/>
+
+  2. RStudio: <https://posit.co/download/rstudio-desktop/>
+
+  3. Quarto: <https://quarto.org/docs/download/>
+
+
+-   No creo que tengas ningun problema para instalarlos pero [aquí](https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html){target="_blank"} tienes un tutorial para instalar R y RStudio. Sólo tendrías que completar la primera parte del tutorial.
 
 :::
 
