@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.335">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Escribiendo con R y Quarto (aún muy WIP) - Pedro J. Pérez</title>
+<title>Escribiendo con R y Quarto (aún WIP) - Pedro J. Pérez</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./imagenes/ababol_redondeado.png" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Escribiendo con R y Quarto (aún muy WIP)</span>
+    <span class="navbar-title">Escribiendo con R y Quarto (aún WIP)</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -146,12 +146,10 @@ ul.task-list li input[type="checkbox"] {
   </a>
 </div>
   </div>
-  <div class="about-contents"><main class="content column-page" id="quarto-document-content"><p>Mi nombre es Pedro J. Pérez. Soy <strong>profesor</strong> del departamento de Análisis Económico de la <strong>Universitat de València</strong>.</p>
-<p>Me gusta aprender y trastear con <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg>; vamos, que aún soy un <strong>entusiasta de R</strong>. Me divierto!!</p>
-<p>Tengo “bastante” experiencia con <strong>R</strong> porque <strong>lo utilizo en mi docencia e investigación</strong>; de hecho imparto una signatura en el grado de Economía que es una <strong>introducción a R</strong>, <a href="https://perezp44.github.io/intro-ds-22-23-web/">aquí</a> puedes ver su web. También imparto un curso de introducción a R en el SFPIE, <a href="https://perezp44.github.io/curso_R_SFPIE_2021/">aquí</a> puedes ver la web de una de sus ediciones.</p>
-<p>¿Y cuanta experiencia tienes sobre Quarto? Bueno, no mucha porque Quarto apareció en junio de 2022, pero ya he impartido el taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a> en las <a href="http://r-es.org/12jr/">XII Jornadas de Usuarios de R</a> en noviembre de 2022.</p>
-<p>A pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien soy un creador y <strong>liquidador de blogs</strong>. <a href="./slides/zz_sobre-mi.html" target="_blank">Aquí</a>, puedes ver un listado <strong>no exhaustivo</strong> de los blogs que he liquidado.</p>
-<p>La verdad es que <strong>me gusta escribir posts</strong>, tienes mucha más libertad que al escribir un informe o un artículo académico; además, los posts <strong>no tienen porque estar perfectos</strong>, cuando te apetece los puedes dejar. Aunque los posts no estén acabados del todo, el pensar que alguien puede leerlos <strong>te hace pensar y reflexionar</strong> sobre lo que escribes.</p>
+  <div class="about-contents"><main class="content column-page" id="quarto-document-content"><p>Mi nombre es Pedro J. Pérez. Soy <strong>profesor</strong> del departamento de Análisis Económico de la <strong>Universitat de València</strong>. Me gusta aprender y trastear con <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg>; vamos, que aún soy un <strong>entusiasta de R</strong>. Me divierto!!</p>
+<p>Podemos decir que tengo “bastante” experiencia con <strong>R</strong> porque <strong>lo utilizo en mi docencia e investigación</strong>; de hecho, imparto una signatura en el grado de Economía que es una <strong>introducción a R</strong>, <a href="https://perezp44.github.io/intro-ds-22-23-web/">aquí</a> puedes ver su web. También imparto un curso de introducción a R en el SFPIE, <a href="https://perezp44.github.io/curso_R_SFPIE_2021/">aquí</a> puedes ver la web de una de sus ediciones.</p>
+<p>¿Y cuanta experiencia tienes sobre Quarto? Bueno, no mucha porque Quarto apareció en junio de 2022, pero ya he impartido el taller <a href="https://perezp44.github.io/taller.primer.blog/">Mi primer blog con Quarto</a> en las <a href="http://r-es.org/12jr/">XII Jornadas de Usuarios de R</a> en noviembre de 2022. A pesar de ello, no soy bloguero, mas bien soy un creador y <strong>liquidador de blogs</strong>. <a href="./slides/zz_sobre-mi.html" target="_blank">Aquí</a>, puedes ver un listado <strong>no exhaustivo</strong> de los blogs que he liquidado.</p>
+<p>La verdad es que <strong>me gusta escribir posts</strong>, tienes mucha más libertad que al escribir un informe o un artículo académico, <strong>no tienen que estar perfectos</strong> ni acabados del todo, pero el simple hecho de pensar que alguien puede leerlos <strong>te hace pensar y reflexionar</strong>.</p>
 <blockquote class="blockquote">
 <p>Remember kids, the only difference between screwing around and science is writing it down — Adam Savage de <a href="https://es.wikipedia.org/wiki/MythBusters">MythBusters</a></p>
 </blockquote>

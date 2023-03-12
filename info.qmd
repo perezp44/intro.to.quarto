@@ -9,9 +9,9 @@
 
 - Forma parte de la oferta del [SFPIE](https://www.uv.es/uvweb/servei-formacio-permanent-innovacio-educativa/ca/sfpie-1286203488816.html){target="_blank"} de la Universitat de València. La ficha oficial del curso está [aquí](https://www.uv.es/uvweb/servei-formacio-permanent-innovacio-educativa/ca/oferta-formativa/-creacio-documents-reprodu-bles-pagines-webs-r-1286213964422/PDIFormacio.html?id=1286294968633){target="_blank"}.
 
-- El curso es una **introducción a Quarto**. Quarto es un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc...) científicas y técnicas. Puedes ver ejemplos en esta [Gallery](https://quarto.org/docs/gallery/){target="_blank"}.
+- El curso es una **introducción a Quarto**, un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc...) científicas y técnicas. Puedes ver ejemplos en esta [Gallery](https://quarto.org/docs/gallery/){target="_blank"}.
 
--   Está pensado para interactuar con [R](https://cran.r-project.org/){target="_blank"} y, fundamentalmente con [Quarto](https://quarto.org/docs/get-started/){target="_blank"}, a través del IDE [RStudio](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"}. 
+-   En el curso usaremos [R](https://cran.r-project.org/){target="_blank"}, y fundamentalmente [Quarto](https://quarto.org/docs/get-started/){target="_blank"}, a través del IDE [RStudio](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"}. 
 
 
 - Es muy-muy conveniente acudir al curso con tu propio ordenador.
@@ -67,7 +67,7 @@ addMarkers(lng = -0.34371, lat = 39.47795, popup = "Aulario Sur del Campus de Ta
   3. Quarto: <https://quarto.org/docs/download/>
 
 
--   No creo que tengas ningún problema para instalarlos pero [aquí](https://perezp44.github.io/intro-ds-22-23-web/mas-recursos/01_instrucciones-instalacion.html){target="_blank"} tienes un tutorial para instalar R y RStudio. Sólo tendrías que completar la primera parte del tutorial.
+- Solamente has de descargar las versiones de los instaladores adecuadas para tu sistema operativo
 
 :::
 

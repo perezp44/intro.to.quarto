@@ -12,7 +12,7 @@ project:
     
 website:
   #page-navigation: true
-  title: "Escribiendo con R y Quarto (aún muy WIP)"
+  title: "Escribiendo con R y Quarto (aún WIP)"
   favicon: imagenes/ababol_redondeado.ico
   site-url: https://perezp44.github.io/intro.to.quarto/
   repo-url: https://github.com/perezp44/intro.to.quarto

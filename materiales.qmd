@@ -13,7 +13,6 @@ title: "Materiales para el Taller"
 - En [Info](info.qmd) tienes los links de instalación.
 :::
 
-<br>
 
 
 
@@ -36,17 +35,14 @@ Durante el curso se utilizarán las siguientes **slides**:
 
 
 
-<br>
 
 Además, en los artículos del [blog](blog.qmd) se desarrollan algunos de los tópicos que se ven durante el curso.
 
 En la sección [Recursos](recursos.qmd) puedes encontrar bibliografía/recursos adicionales sobre Quarto.
 
-<br>
 
 ----------------------
 
-<br>
 
 Seguramente usaremos esta [Etherpad](https://etherpad.wikimedia.org/p/curso_intro_DS_UV){target="_blank"}.
 

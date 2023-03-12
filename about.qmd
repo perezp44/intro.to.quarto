@@ -20,17 +20,13 @@ format:
     code-tools: false
 ---
 
-Mi nombre es Pedro J. Pérez. Soy **profesor** del departamento de Análisis Económico de la **Universitat de València**. 
+Mi nombre es Pedro J. Pérez. Soy **profesor** del departamento de Análisis Económico de la **Universitat de València**. Me gusta aprender y trastear con `r fontawesome::fa(name = "r-project", fill = "steelblue")`; vamos, que aún soy un **entusiasta de R**. Me divierto!!
 
-Me gusta aprender y trastear con `r fontawesome::fa(name = "r-project", fill = "steelblue")`; vamos, que aún soy un **entusiasta de R**. Me divierto!!
+Podemos decir que tengo "bastante" experiencia con **R** porque **lo utilizo en mi docencia e investigación**; de hecho, imparto una signatura en el grado de Economía que es una **introducción a R**, [aquí](https://perezp44.github.io/intro-ds-22-23-web/) puedes ver su web. También imparto un curso de introducción a R en el SFPIE, [aquí](https://perezp44.github.io/curso_R_SFPIE_2021/) puedes ver la web de una de sus ediciones.
 
-Tengo "bastante" experiencia con **R** porque **lo utilizo en mi docencia e investigación**; de hecho imparto una signatura en el grado de Economía que es una **introducción a R**, [aquí](https://perezp44.github.io/intro-ds-22-23-web/) puedes ver su web. También imparto un curso de introducción a R en el SFPIE, [aquí](https://perezp44.github.io/curso_R_SFPIE_2021/) puedes ver la web de una de sus ediciones.
+¿Y cuanta experiencia tienes sobre Quarto? Bueno, no mucha porque Quarto apareció en junio de 2022, pero ya he impartido el taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/) en las [XII Jornadas de Usuarios de R](http://r-es.org/12jr/) en noviembre de 2022. A pesar de ello, no soy bloguero, mas bien soy un creador y **liquidador de blogs**. [Aquí](slides/zz_sobre-mi.qmd){target="_blank"}, puedes ver un listado **no exhaustivo** de los blogs que he liquidado.
 
-¿Y cuanta experiencia tienes sobre Quarto? Bueno, no mucha porque Quarto apareció en junio de 2022, pero ya he impartido el taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/) en las [XII Jornadas de Usuarios de R](http://r-es.org/12jr/) en noviembre de 2022.
-
-A pesar de haber tenido ya unos cuantos blogs, no soy bloguero, mas bien soy un creador y **liquidador de blogs**. [Aquí](slides/zz_sobre-mi.qmd){target="_blank"}, puedes ver un listado **no exhaustivo** de los blogs que he liquidado.
-
-La verdad es que **me gusta escribir posts**, tienes mucha más libertad que al escribir un informe o un artículo académico; además, los posts **no tienen porque estar perfectos**, cuando te apetece los puedes dejar. Aunque los posts no estén acabados del todo, el pensar que alguien puede leerlos **te hace pensar y reflexionar** sobre lo que escribes.
+La verdad es que **me gusta escribir posts**, tienes mucha más libertad que al escribir un informe o un artículo académico, **no tienen que estar perfectos** ni acabados del todo, pero el simple hecho de pensar que alguien puede leerlos **te hace pensar y reflexionar**.
 
 > Remember kids, the only difference between screwing around and science is writing it down  --- Adam Savage de [MythBusters](https://es.wikipedia.org/wiki/MythBusters)
 

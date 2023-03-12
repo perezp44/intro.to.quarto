@@ -9,4 +9,9 @@
 
 <br>
 
+- Borra todos los archivos del Qproject excepto el fichero `.Rproj`
+
+
+<br>
+
 :::

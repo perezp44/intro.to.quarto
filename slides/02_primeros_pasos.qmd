@@ -57,20 +57,23 @@ embed-resources: true
 
 ### Documentos ¿reproducibles?
 
-- Todos tenemos que hacer documentos con algún contenido estadístico: informes o transparencias o .... Quarto hace posible que podamos hacer esos documentos directamente desde R. Además, nuestros informes serán Reproducibles!!
+- Todos tenemos que hacer documentos con algún **contenido estadístico**: informes o transparencias o ....
+
+- Al usar **Quarto y R**, nuestros informes serán Reproducibles!!
+
+. . . 
 
 - ¿Cómo lo haremos?
 
 
-. . .
 
-![By [Allison Horst](https://allisonhorst.com/)](imagenes/ss_02_img_00_quarto-workflow.png){#fig-00 fig-align="center" width="40%"}
+![](imagenes/ss_02_img_00_quarto-workflow.png){#fig-00 fig-align="center" width="40%"}
 
 . . .
 
 ::: {columns}
 ::: {.column width="42%"}
-#### source code
+#### source code (escrito en QMD)
 
 ```{r echo = FALSE, comment = "",  out.width = '100%', fig.align = 'center'}
 knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01.png") )
@@ -98,28 +101,38 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 
 ---
 
-##### Investigación reproducible
+### Investigación reproducible
+
+<br>
+
+Es un tema de creciente interés, por ejemplo [aquí](https://www.tandfonline.com/toc/ujse21/30/3?nav=tocList) y [aquí](https://www.whitehouse.gov/ostp/news-updates/2023/01/11/fact-sheet-biden-harris-administration-announces-new-actions-to-advance-open-and-equitable-research/).
 
 
-<div>
-> **Reproducibility is the minimum standard in research quality**. When with the same data and analysis we obtain the same results and we are able to check the results of others.  -- [Why open science is 'just good science in a digital era'](https://realworlddatascience.net/news-and-views/interviews/posts/02/03/heidi-seibold.html).
-
-
--   Es un tema de creciente interés, por ejemplo [aquí](https://www.tandfonline.com/toc/ujse21/30/3?nav=tocList) y [aquí](https://www.whitehouse.gov/ostp/news-updates/2023/01/11/fact-sheet-biden-harris-administration-announces-new-actions-to-advance-open-and-equitable-research/).
-
-</div>
+> **Reproducibility is the minimum standard in research quality**. When with the same data and analysis we obtain the same results and we are able to check the results of others.  -- [Why open science is just good science in a digital era](https://realworlddatascience.net/news-and-views/interviews/posts/02/03/heidi-seibold.html).
 
 . . . 
 
 <br>
 
-<div>
+Tiene **ventajas**: 
 
-##### Ventajas de los documentos **reproducibles**
+  - credibilidad de los resultados
+  - facilidad de replicar
+  - detección de errores
+  - facilita la colaboración
+
+
+
+----
+
+
+### Ventajas de los documentos **reproducibles**
+
+<br>
 
 . . .
 
--   **Ciencia reproducible** (credibilidad de los resultados, facilidad de replicar, detección de errores, facilita la colaboración)
+-   Los mismos que la **investigación  reproducible**: credibilidad de los resultados, facilidad de replicar, detección de errores, [facilita la colaboración]{.fragment  .strike}
 
 . . .
 
@@ -127,37 +140,48 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 
 . . .
 
--   Si incluyes código, se acaba el corta y pega para gráficos, tablas de resultados, etc...
+-   Si incluyes código, **se acaba el corta y pega** para gráficos, tablas de resultados, etc...
 
 . . .
 
--   Informes parametrizados
+-   **Informes parametrizados**
 
 . . .
 
--   Facilidad de generación de páginas web (!!)
+-   Facilidad de generación de **páginas web** ( 🤔 )
 
-</div>
 
-<br><br>
+. . . 
+
+- Ahorras tiempo 🤔 🤔
+
+
+<br>
 
 ------------------------------------------------------------------------
 
-### ¿Qué son Quarto/RStudio/R?
+### "Entorno R": ¿qué son **Quarto/RStudio/R**?
 
--   Son 3 programas de ordenador
+. . . 
 
-    -   R es un lenguaje de programación y un entorno para hacer análisis estadísticos
+<div>
 
-    -   RStudio es un IDE (para usar R, y Quarto, de manera más cómoda)
+-   Son **3 programas de ordenador**
+
+    -   **R** es un lenguaje de programación y un entorno para hacer análisis estadísticos
+
+    -   **RStudio** es un IDE (para usar R, y Quarto, de manera más cómoda)
 
     -   **Quarto** es el que realmente hará los documentos, webs etc ...
 
 <br>
 
-. . .
+</div>
 
-### Importante: sólo interactuaremos con RStudio
+. . . 
+
+<div>
+#### Importante: sólo interactuaremos con RStudio
 
 - No "veremos" a R ni a Quarto.
 
@@ -169,6 +193,9 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 ::: footer
 \[Más info [aquí](https://perezp44.github.io/intro.to.quarto/blog/02_que-es-quarto.html)\]
 :::
+</div>
+
+
 
 ------------------------------------------------------------------------
 
@@ -282,7 +309,7 @@ Repito, vamos a trabajar con proyectos, concretamente con ...
 
 #### ¿Qué es un **Q**project?
 
--   Es simplemente una **carpeta** donde tendremos los "materiales" que necesitemos para uno de nuestros proyectos (tutorial, blog, slides, etc ...)
+-   Es simplemente una **carpeta** donde tendremos los "materiales" que necesitemos para uno de nuestros proyectos
 
 -   Usarlos tiene ventajas (rutas relativas y ...)
 
@@ -332,7 +359,7 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_03b.png") )
 :::
 :::
 
-. . .
+----------
 
 {{< include ./_includes/_ss_02_tarea_04.qmd >}}
 
@@ -356,9 +383,9 @@ Vamos ya a crear nuestro primer fichero `.qmd`
 
 <br><br>
 
-------------------------------------------------------------------------
 
-## Vamos a jugar un rato con RStudio {background-color="#ebf5fb"}
+
+## <br><br>Vamos a jugar un rato con RStudio {background-color="#ebf5fb"}
 
 {{< var lineanaranja >}}
 
@@ -374,6 +401,8 @@ Nos servirá para familiarizarnos con :
 
 <br>
 
+. . .
+
 ... y empezar a entender la **sintaxis** de "Quarto Markdown"
 
 ------------------------------------------------------------------------
@@ -382,13 +411,13 @@ Nos servirá para familiarizarnos con :
 
 <br>
 
-. . .
+------------------------------------------------------------------------
 
 {{< include ./_includes/_ss_02_tarea_07.qmd >}}
 
 <br>
 
-. . .
+------------------------------------------------------------------------
 
 {{< include ./_includes/_ss_02_tarea_08.qmd >}}
 

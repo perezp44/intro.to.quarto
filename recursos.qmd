@@ -6,7 +6,6 @@ Desde que **Quarto** se hizo publico con [We don't talk about Quarto](https://ww
 
 Obviamente la **principal referencia** es la [web de Quarto](https://quarto.org/): **absolutamente fantástica**!!! En ella hay, entre otras secciones, una [Guide](https://quarto.org/docs/guide/), una [Reference](https://quarto.org/docs/reference/) y una [Gallery](https://quarto.org/docs/gallery/).
 
-<br>
 
 Entre los materiales que he visto sobre Quarto **destacar los siguientes**:
 

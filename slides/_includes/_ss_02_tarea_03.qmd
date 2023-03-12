@@ -7,7 +7,6 @@
 
 - Mira cuantos archivos hay en la carpeta del proyecto 
 
-- Borra todos los archivos excepto el fichero `.Rproj`
 :::
 
 

@@ -32,7 +32,7 @@ format:
     incremental: false   # https://quarto.org/docs/presentations/#incremental-lists
 #logo: imagenes/economia.gif
 footer: |
-       [https://go.uv.es/pjperez/primer.blog](https://go.uv.es/pjperez/primer.blog)
+       [https://go.uv.es/pjperez/intro.to.quarto/slides.01](https://go.uv.es/pjperez/intro.to.quarto/slides.01)
     #theme: [moon, custom.scss]
 revealjs-plugins:
   - pointer
@@ -112,7 +112,7 @@ embed-resources: true
 
 
 <div>
-### Algunos ejemplos:
+#### Algunos ejemplos:
 
 -   **Tutoriales**: por ejemplo [este](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html){target="blank"} o [este](https://perezp44.github.io/web.Econometria.GADE/materiales/cuestionario_practicas.html){target="blank"} 
 
@@ -184,5 +184,7 @@ embed-resources: true
 -   Experiencia con R y RStudio
 
 -   Experiencia con Rmarkdown y Quarto
+
+-   Experiencia con webs/blogs
 
 # Comenzamos el curso !!!! :computer::crossed_fingers: 💪🏼 💪🏼 {background-color="#562457"}
