@@ -38,6 +38,9 @@ footer: |
 #css: /assets/styles_slides_tareas.css
 ---
 
+Use ```` ``` ```` to delimit blocks of source code:
+
+
 
 ## Outline
 
