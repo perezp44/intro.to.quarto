@@ -307,7 +307,7 @@ Repito, vamos a trabajar con proyectos, concretamente con ...
 
 ------------------------------------------------------------------------
 
-#### ¿Qué es un **Q**project?
+### ¿Qué es un **Q**project?
 
 -   Es simplemente una **carpeta** donde tendremos los "materiales" que necesitemos para uno de nuestros proyectos
 

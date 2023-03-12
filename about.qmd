@@ -26,9 +26,5 @@ Podemos decir que tengo "bastante" experiencia con **R** porque **lo utilizo en 
 
 ¿Y cuanta experiencia tienes sobre Quarto? Bueno, no mucha porque Quarto apareció en junio de 2022, pero ya he impartido el taller [Mi primer blog con Quarto](https://perezp44.github.io/taller.primer.blog/) en las [XII Jornadas de Usuarios de R](http://r-es.org/12jr/) en noviembre de 2022. A pesar de ello, no soy bloguero, mas bien soy un creador y **liquidador de blogs**. [Aquí](slides/zz_sobre-mi.qmd){target="_blank"}, puedes ver un listado **no exhaustivo** de los blogs que he liquidado.
 
-La verdad es que **me gusta escribir posts**, tienes mucha más libertad que al escribir un informe o un artículo académico, **no tienen que estar perfectos** ni acabados del todo, pero el simple hecho de pensar que alguien puede leerlos **te hace pensar y reflexionar**.
-
-> Remember kids, the only difference between screwing around and science is writing it down  --- Adam Savage de [MythBusters](https://es.wikipedia.org/wiki/MythBusters)
-
 <br>
 

@@ -47,7 +47,7 @@ website:
       - icon: envelope
         url: "mailto:pedro.j.perez@uv.es"
   page-footer:
-    left: "© 2022 Pedro J. Pérez"
+    left: "© 2023 Pedro J. Pérez"
     center: "Hecho con [Quarto](https://quarto.org)"
     right:
       - icon: github

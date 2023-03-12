@@ -1,6 +1,10 @@
 
+#- highlight
+I need to highlight these <mark>very important words</mark>.
 
 
+#- es para inline code
+<span style="background-color: #e5e5e5; border-radius: 3px; padding: 4px; font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;"><code> inline code </code></span>
 
 # ¿Qué es Quarto? {.unnumbered background-color="#ebf5fb"} #- titulo azulito
 

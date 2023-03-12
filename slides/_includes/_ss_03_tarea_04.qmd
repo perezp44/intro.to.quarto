@@ -1,0 +1,12 @@
+::: {.callout-important icon="false"}
+#### Tarea 3.4: Escribiendo en Markdown
+
+Para practicar a escribir con Markdown podemos:
+
+- Hacerlo en RStudio, por ejmeplo podemos utilizar  el archivo `prueba_01.qmd` para escribir algo y darle formato
+
+- Alternativamente, podemos usar editores online como [este](https://dillinger.io/) o [este](https://vuejs.org/examples/#markdown)
+
+<br>
+
+:::

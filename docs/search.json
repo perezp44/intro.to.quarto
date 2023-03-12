@@ -16,9 +16,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Escribiendo con R y Quarto (aún WIP)",
+    "title": "Bienvenidos al curso!!!",
     "section": "",
-    "text": "Bienvenidos!!!\nBienvenidos a la web del curso “Creación de documentos reproducibles y páginas web con R”. Un título más amable podría ser “Escribiendo con R y Quarto”.\nEl curso es una introducción a Quarto, un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc…) científicas y técnicas.\nEn el curso usaremos Quarto y R a través de RStudio.\nLos materiales del curso están en Materiales.\nPara seguir el curso hay que tener acceso a R, RStudio y Quarto. En Info tienes las instrucciones de instalación de los 3 programas.\nLos detalles sobre el curso: horario, aula , etc … están también en Info."
+    "text": "Bienvenidos a la web del curso “Creación de documentos reproducibles y páginas web con R”. Un título más amable podría ser “Escribiendo con R y Quarto”.\nEl curso es una introducción a Quarto, un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc…) científicas y técnicas.\nEn el curso usaremos Quarto y R a través de RStudio.\nLos materiales del curso están en Materiales.\nPara seguir el curso hay que tener acceso a R, RStudio y Quarto. En Info tienes las instrucciones de instalación de los 3 programas.\nLos detalles sobre el curso: horario, aula, … están también en Info."
   },
   {
     "objectID": "blog.html",
@@ -382,7 +382,7 @@
     "href": "about.html",
     "title": "Pedro J. Pérez",
     "section": "",
-    "text": "Mi nombre es Pedro J. Pérez. Soy profesor del departamento de Análisis Económico de la Universitat de València. Me gusta aprender y trastear con ; vamos, que aún soy un entusiasta de R. Me divierto!!\nPodemos decir que tengo “bastante” experiencia con R porque lo utilizo en mi docencia e investigación; de hecho, imparto una signatura en el grado de Economía que es una introducción a R, aquí puedes ver su web. También imparto un curso de introducción a R en el SFPIE, aquí puedes ver la web de una de sus ediciones.\n¿Y cuanta experiencia tienes sobre Quarto? Bueno, no mucha porque Quarto apareció en junio de 2022, pero ya he impartido el taller Mi primer blog con Quarto en las XII Jornadas de Usuarios de R en noviembre de 2022. A pesar de ello, no soy bloguero, mas bien soy un creador y liquidador de blogs. Aquí, puedes ver un listado no exhaustivo de los blogs que he liquidado.\nLa verdad es que me gusta escribir posts, tienes mucha más libertad que al escribir un informe o un artículo académico, no tienen que estar perfectos ni acabados del todo, pero el simple hecho de pensar que alguien puede leerlos te hace pensar y reflexionar.\n\nRemember kids, the only difference between screwing around and science is writing it down — Adam Savage de MythBusters"
+    "text": "Mi nombre es Pedro J. Pérez. Soy profesor del departamento de Análisis Económico de la Universitat de València. Me gusta aprender y trastear con ; vamos, que aún soy un entusiasta de R. Me divierto!!\nPodemos decir que tengo “bastante” experiencia con R porque lo utilizo en mi docencia e investigación; de hecho, imparto una signatura en el grado de Economía que es una introducción a R, aquí puedes ver su web. También imparto un curso de introducción a R en el SFPIE, aquí puedes ver la web de una de sus ediciones.\n¿Y cuanta experiencia tienes sobre Quarto? Bueno, no mucha porque Quarto apareció en junio de 2022, pero ya he impartido el taller Mi primer blog con Quarto en las XII Jornadas de Usuarios de R en noviembre de 2022. A pesar de ello, no soy bloguero, mas bien soy un creador y liquidador de blogs. Aquí, puedes ver un listado no exhaustivo de los blogs que he liquidado."
   },
   {
     "objectID": "slides/02_primeros_pasos.html#instalación",
@@ -424,7 +424,7 @@
     "href": "slides/03_aprendiendo_Qmd.html#los-documentos-.qmd-tienen-3-4-partes",
     "title": "Aprendiendo a escribir en QMD",
     "section": "Los documentos .qmd tienen 3-4 partes",
-    "text": "Los documentos .qmd tienen 3-4 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (escrito en Markdown) …\n… y todo lo demás: imágenes, links, ecuaciones, etc …\n\n\n\nUn ejemplo\n\n\nsource code\n\n\n\n\n\n\n\n\n\n\n\noutput"
+    "text": "Los documentos .qmd tienen 3-4 partes\n\nEncabezamiento (yaml header)\n\nTrozos de código R (R chunks)\n\nTexto (escrito en Markdown) …\n… y todo lo demás: imágenes, links, ecuaciones, etc …\n\n\n\nUn ejemplo\n\n\nsource code (escrito en QMD)\n\n\n\n\n\n\n\n\n\n\n\noutput"
   },
   {
     "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-qué-narices-es-esto-de-markdown",
@@ -445,7 +445,7 @@
     "href": "slides/03_aprendiendo_Qmd.html#iii-texto-dando-formato-al-texto",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: Dando formato al texto",
-    "text": "(III) Texto: Dando formato al texto\n\n\nSintaxis básica de markdown\n\n\n\n\n\n\n\n\nSi escribes esto:\nSe verá esto:\n\n\n\n\ntexto normal\ntexto normal\n\n\ntexto en **negrita**\ntexto en negrita\n\n\ntexto en *cursiva*\ntexto en cursiva\n\n\nun superíndice^2^\nun superíndice2\n\n\nun subíndice~2~\nun subíndice2\n\n\npalabras ~~tachadas~~\npalabras tachadas\n\n\n`verbatim code`\nverbatim code\n\n\n> un blockquote\n\nun blockquote\n\n\n\n\nI need to highlight these ==very important words==\n\n\nMás posibilidades:\n\n\n\n\n\n\n\n\nSi escribes esto:\nSe verá esto:\n\n\n\n\n[texto subrayado]{.underline}\ntexto subrayado\n\n\n[En versalita]{.smallcaps}\nEn versalita\n\n\nel emoji :joy:\nel emoji 😂\n\n\n> :warning: **Cuidado!!** no\n\n⚠️ Cuidado!! no"
+    "text": "(III) Texto: Dando formato al texto\n\n\nSintaxis básica de markdown\n\n\n\n\n\n\n\n\nSi escribes esto:\nSe verá esto:\n\n\n\n\ntexto normal\ntexto normal\n\n\ntexto en **negrita**\ntexto en negrita\n\n\ntexto en *cursiva*\ntexto en cursiva\n\n\nun superíndice^2^\nun superíndice2\n\n\nun subíndice~2~\nun subíndice2\n\n\npalabras ~~tachadas~~\npalabras tachadas\n\n\n`verbatim code`\nverbatim code\n\n\n> un blockquote\n\nun blockquote"
   },
   {
     "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-sintaxis-básica-de-markdown",
@@ -459,14 +459,14 @@
     "href": "slides/03_aprendiendo_Qmd.html#iii-texto-creando-listas",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: Creando listas",
-    "text": "(III) Texto: Creando listas\n\n\n\n\n\n\n\n\nMas posibilidades aquí"
+    "text": "(III) Texto: Creando listas\n\n\nEn las listas es crucial la indentación (normalmente 2 espacios)\n\n\n\n\n\n\n\n\n\n\n\nMas posibilidades aquí"
   },
   {
     "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-parrafos-lineas-espacios",
     "href": "slides/03_aprendiendo_Qmd.html#iii-texto-parrafos-lineas-espacios",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: Parrafos, lineas, espacios, …",
-    "text": "(III) Texto: Parrafos, lineas, espacios, …\n\n\nPara crear un nuevo párrafo has de dejar una (o más) lineas en blanco\n\n\n\n\nSi dentro de un párrafo necesitas que una frase empiece en otra linea entonces, has de dejar 2 (o más) espacios al final; en inglés esto se conoce como un “hard line break”\n\nEl “hard line break” se puede hacer con <br>\nEl “hard line break” también se puede hacer con  seguido de nueva linea.\nEn una celda de una tabla, esta es la única forma de crear un salto de línea, ya que se ignoran los espacios finales en las celdas.\n\n\n\n\n\nSi en una linea de texto hay 2 espacios o más, estos se reducen a un espacio.\nPor lo tanto, si quieres separar palabras con más de un espacio, tendrás que usar lo que en html se conoce como “entities”: &nbsp;(1 espacio) &ensp;(2 espacios) y &emsp;(4 espacios). Otra forma sería con la etiqueta <pre>.\n\n\n\n\n\nPara crear más espacio entre párrafos (una linea en blanco extra) podemos usar: <br>\n\n\n\nLos espacios al principio de las lineas que empiezan con | se mantienen (🤓)\nPara practicar a escribir con Markdown podemos hacerlo en RStudio o usar editores online como este o este"
+    "text": "(III) Texto: Parrafos, lineas, espacios, …\n\n\nPara crear un nuevo párrafo has de dejar una (o más) lineas en blanco\n\n\n\n\nSi dentro de un párrafo necesitas que una frase empiece en otra linea entonces, has de dejar 2 (o más) espacios al final; en inglés esto se conoce como un “hard line break”\n\nEl “hard line break” también se puede hacer con <br>\nEl “hard line break” también se puede hacer con \"\\\" seguido de nueva linea.\nEn una tabla, \\ es la única forma de crear un salto de línea, ya que se ignoran los espacios finales en las celdas.\n\n\n\n\n\nSi en una linea de texto hay 2 espacios o más, estos se reducen a un espacio.\n\n\n\n\nPor lo tanto, si quieres separar palabras con más de un espacio, tendrás que usar lo que en html se conoce como “entities”: &nbsp;(1 espacio) &ensp;(2 espacios) y &emsp;(4 espacios).\n\nOtra forma sería con la etiqueta <pre>.\n\n\n\n\n\nPara crear más espacio entre párrafos; es decir, añadir una linea en blanco extra, podemos usar uno o varios: <br> o <br><br>\n\n\n\nLos espacios al principio de las lineas que empiezan con | se mantienen (🤓)"
   },
   {
     "objectID": "slides/03_aprendiendo_Qmd.html#links",
@@ -763,6 +763,13 @@
     "text": "Otras opciones para tunear desde el YAML\n\nTOC: es importante tenerlo a nuestro gusto. Aquí tienes las opciones que puedes ajustar con opciones en el yaml\nChunks: aquí tienes las opciones que puedes ajustar desde el YAML\nResizing de los thumbnails. Un gist para hacerlo.\nAlgunas opciones de tuneado que puedes implementar desde el YAML. Prueba a poner estas opciones en el archivo _quarto.yml. Nuestro blog empeorará bastante. Más opciones aquí.\n\n\nfontcolor: green          #- color del texto\nlinkcolor: purple         #- color de los enlaces\nmonobackgroundcolor: red  #- color de los cuadros de resultados de evaluar código\nfontsize: 0.6em           #- tamaño del texto (más pequeño de lo normal: 1)\nlinestretch: 2.3          #- tamaño entre las lineas (1.6 es lo \"normal\")"
   },
   {
+    "objectID": "slides/slides_tt_pruebas.html#outline",
+    "href": "slides/slides_tt_pruebas.html#outline",
+    "title": "Mi primer blog  con Quarto",
+    "section": "Outline",
+    "text": "Outline\n\nvery important words\n\nPart 1: Intro\nPart 2: Design\nPart 3: Performance\nPart 4: Next Steps\n\n\n⚠️ Warning: Do not push the big red button.\n😄 Nota: Sunrises are beautiful.\n\n\n\n\nPista\n\n\nLocaliza el fichero t0_ej_01_interest-rate.gdt en tu ordenador. Pincha 2 veces en él con el ratón y se abrirá en Gretl.\n\n\n\nHola   tete como va                 hola &nbsp jjj\nPrice of this beer:            wait for it…         5 $"
+  },
+  {
     "objectID": "slides/slides_tt_pruebas.html#estructura-del-taller",
     "href": "slides/slides_tt_pruebas.html#estructura-del-taller",
     "title": "Mi primer blog  con Quarto",
@@ -788,6 +795,76 @@
     "href": "tutoriales/01_taller_crear-blog-basico.html",
     "title": "Creación de un blog básico con Quarto",
     "section": "",
-    "text": "Hola\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
+    "text": "Hola\n\n⚠️ Warning: Do not push the big red button.\n😄 Nota: Sunrises are beautiful.\n\n\n\n\n\n\n\nPista\n\n\n\n\n\nLocaliza el fichero t0_ej_01_interest-rate.gdt en tu ordenador. Pincha 2 veces en él con el ratón y se abrirá en Gretl.\n\n\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#source-code",
+    "href": "slides/03_aprendiendo_Qmd.html#source-code",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "Source Code",
+    "text": "Source Code\nUse ``` to delimit blocks of source code:\n```\ncode\n```\nAdd a language to syntax highlight code blocks:\n```python\n1 + 1\n```\nPandoc supports syntax highlighting for over 140 different languages. If your language is not supported then you can use the default language to get a similar visual treatment:\n```default\ncode\n```\nIf you are creating HTML output there is a wide variety of options available for code block output. See the article on HTML Code for additional details."
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-dando-formato-al-texto-1",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-dando-formato-al-texto-1",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Texto: Dando formato al texto",
+    "text": "(III) Texto: Dando formato al texto\n\nMás posibilidades:\n\n\n\n\n\n\n\n\nSi escribes esto:\nSe verá esto:\n\n\n\n\n[texto subrayado]{.underline}\ntexto subrayado\n\n\n<mark>texto destacado</mark>\ntexto destacado\n\n\n[En versalita]{.smallcaps}\nEn versalita\n\n\nel emoji :joy:\nel emoji 😂\n\n\n> :warning: **Cuidado!!** no\n\n⚠️ Cuidado!! no\n\n\n\n\n\n\n\n\n\n(**) Los emojis mejor desde el editor visual o copiándolo."
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-títulos",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-títulos",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Texto: Títulos",
+    "text": "(III) Texto: Títulos\n\n\n\n\n\n\n\n\nMarkdown:\nSe verá esto:\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-párrafos",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-párrafos",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Texto: Párrafos",
+    "text": "(III) Texto: Párrafos\n\n\n\nPara crear un nuevo párrafo has de dejar una (o más) lineas en blanco\n\n\n\n\n\nSi dentro de un párrafo necesitas que una frase empiece en otra linea entonces, has de dejar 2 (o más) espacios al final; en inglés esto se conoce como un “hard line break”\n\nEl “hard line break” también se puede hacer con <br>\nEl “hard line break” también se puede hacer con \"\\\" seguido de nueva linea.\nEn una tabla, \\ es la única forma de crear un salto de línea, ya que se ignoran los espacios finales en las celdas."
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-lineas-espacios",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-lineas-espacios",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Texto: Lineas, espacios, …",
+    "text": "(III) Texto: Lineas, espacios, …\n\n\nSi en una linea de texto hay 2 espacios o más, estos se reducen a un espacio.\n\n\n\n\nPor lo tanto, si quieres separar palabras con más de un espacio, tendrás que usar lo que en html se conoce como “entities”: &nbsp;(1 espacio) &ensp;(2 espacios) y &emsp;(4 espacios).\n\nOtra forma sería con la etiqueta <pre>.\n\n\n\n\n\n\nPara crear más espacio entre párrafos; es decir, añadir una linea en blanco extra, podemos usar uno o varios: <br> o <br><br>\n\n\n\n\n\nLos espacios al principio de las lineas que empiezan con | se mantienen (🤓)"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-ecuaciones",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-ecuaciones",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Más elementos: Ecuaciones",
+    "text": "(III) Más elementos: Ecuaciones\n\n\nMarkdown admite ecuaciones escritas en Latex si van entre \\(** para ecuaciones inline y **\\)$ para ecuaciones independientes. Aquí tienes un editor de ecuaciones en latex online, y aquí algunos ejemplos de ecuaciones escritas en Latex.\n\nUse $ delimiters for inline math and $$ delimiters for display math. For example:\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\ninline math: $E = mc^{2}$\ninline math: \\(E=mc^{2}\\)\n\n\ndisplay math:\n\n$$E = mc^{2}$$\ndisplay math:\n\\[E = mc^{2}\\]\n\n\n\nIf you want to define custom TeX macros, include them within $$ delimiters enclosed in a .hidden block. For example:\n::: {.hidden}\n$$\n \\def\\RR{{\\bf R}}\n \\def\\bold#1{{\\bf #1}}\n$$\n:::\nFor HTML math processed using MathJax (the default) you can use the \\def, \\newcommand, \\renewcommand, \\newenvironment, \\renewenvironment, and \\let commands to create your own macros and environments."
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-hyper-links",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-hyper-links",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Más elementos: hyper-links",
+    "text": "(III) Más elementos: hyper-links\n\n\n\n\n Si escribes esto:\nAl procesarse se verá esto:\n\n\n\n\n<https://quarto.org>\nhttps://quarto.org\n\n\n [Web de Quarto](https://quarto.org)\nWeb de Quarto"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-imágenes",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-imágenes",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Más elementos: Imágenes",
+    "text": "(III) Más elementos: Imágenes\n\nDocumentación oficial aquí\n\n\n\n\n\n\n\n\n\nSi escribes esto:\nAl procesarse se verá esto:\n\n\n\n\n![](imagenes/img_01_h1.png)\n\n\n\n![](./imagenes/img_01_h1.png)\n\n\n\n\n\n\n\n\nOtras formas\n\n\n\nCaption\n\n\n\n\n\nCaption"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-tablas-con-markdown",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-tablas-con-markdown",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Más elementos: Tablas con Markdown",
+    "text": "(III) Más elementos: Tablas con Markdown\n\nDocumentación oficial para tablas aquí\nTablas: por ejemplo knitr::kable(df), o gt::gt(df), o DT::datatable(df) y más. Si te interesa el tema de las tablas puedes visitar esto o esto\n\nMarkdown Syntax\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\nOutput\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n                 **tete** feo"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-notas-al-pie",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-notas-al-pie",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Más elementos: Notas al pie",
+    "text": "(III) Más elementos: Notas al pie\n\nNotas al pie: si quieres poner una nota al pie aquí^[el texto que quieres en la nota al pie]"
   }
 ]

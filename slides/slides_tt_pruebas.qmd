@@ -38,8 +38,34 @@ footer: |
 #css: /assets/styles_slides_tareas.css
 ---
 
+
+## Outline
+
+```{=html}
+<style>
+.semi-transparent {
+  opacity: 0.2;
+}
+</style>
+```
+
+<mark>very important words</mark>
+
+- Part 1: Intro
+- [Part 2: Design]{.semi-transparent}
+- [Part 3: Performance]{.semi-transparent}
+- [Part 4: Next Steps]{.semi-transparent}
+
+
 > :warning: **Warning:** Do not push the big red button.  
 > :smile: **Nota:** Sunrises are beautiful.
+
+
+::: {.callout-warning icon="false" collapse="true"}
+####### Pista
+
+Localiza el fichero `t0_ej_01_interest-rate.gdt` en tu ordenador. Pincha 2 veces en él con el ratón y se abrirá en Gretl.
+:::
 
 
 Hola &hairsp; tete como va &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; hola &nbsp jjj

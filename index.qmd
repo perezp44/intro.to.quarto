@@ -1,11 +1,11 @@
 ---
-#title: ""
+title: "<br>**Bienvenidos al curso!!!**<br>"
 image: imagenes/portada_web_01.png
 about:
   #- https://quarto.org/docs/websites/website-about.html#templates
   template: trestles  #- {jolla, solana, trestles}
   #- https://quarto.org/docs/websites/website-about.html#image
-  image-width: 28em  #- 39
+  image-width: 35em  #- 39
   image-shape: rectangle
   #- https://quarto.org/docs/websites/website-about.html#links
   links:
@@ -17,18 +17,15 @@ about:
       url: "mailto:<pedro.j.perez@uv.es>"
 ---
 
-#### **Bienvenidos!!!**
-
-
 Bienvenidos a la web del curso "Creación de documentos reproducibles y páginas web con R". Un título más amable podría ser "**Escribiendo con R y Quarto**".
 
 El curso es una **introducción a [Quarto](https://quarto.org/){target="_blank"}**, un nuevo sistema para generar publicaciones (libros, transparencias, blogs, webs, etc...) científicas y técnicas. 
 
 En el curso usaremos Quarto y **R** a través de **RStudio**.
 
-Los materiales del curso están en [Materiales](materiales.qmd).
+Los **materiales** del curso están en [Materiales](materiales.qmd).
 
-Para seguir el curso hay que tener acceso a R, RStudio y Quarto. En [Info](info.qmd) tienes las instrucciones de instalación de los 3 programas.
+Para seguir el curso hay que tener acceso a R, RStudio y Quarto. En [Info](info.qmd) tienes las **instrucciones de instalación** de los 3 programas.
 
 
-Los detalles sobre el curso: horario, aula , etc ... están también en [Info](info.qmd).
+Los **detalles sobre el curso**: horario, aula, ... están también en [Info](info.qmd).
