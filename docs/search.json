@@ -410,7 +410,7 @@
     "href": "slides/03_aprendiendo_Qmd.html#qué-es-quarto-1",
     "title": "Aprendiendo a escribir en QMD",
     "section": "¿Qué es Quarto?",
-    "text": "¿Qué es Quarto?\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nPermite incorporar texto y código para producir documentos (reproducibles) en multiples formatos\n\n\n\n\nEs … la “segunda generación de Rmarkdown”\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R. Soporta lenguajes como Phyton, Julia y Observable.\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos\n\n\n\n\nQuarto unifica funcionalidades de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , …\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI\n\n\n\n\n\n\n\n\nVentajas de Quarto [Opcional]\n\n\n\nProyecto en desarrollo activo … mientras que Rmarkdown it’s not going away pero …\nUnifica algunas de las funcionalidades de Rmarkdown\nPor ejemplo: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans\nPara ver si estas ventajas merecen la pena para ti puedes leer a Occasional Divergences, Nick Tierney, Alison Hill, Danielle Navarro, o esta pregunta de Stack Overflow.\n\n\n#::: {.smaller width=\"67%\"}\n#{{< tweet user=DanOvand0 id=1580343517154770944 >}}\n#:::\n\n\n\n\n\n\n\n\n\n\n\n¿Qué es Rmarkdown? ¿Para qué sirve? [Opcional]\n\n\n\nEl predecesor de Quarto\nUn “entorno” para hacer informes/publicaciones/transparencias REPRODUCIBLES con R.\n\n\nIs an authoring framework for data science, combining your code, its results, and your prose. R Markdown documents are fully reproducible and support dozens of output formats, like PDFs, Word files, slideshows, and more.\n\n\nCon Rmd se pueden generar multitud de outputs. Por ejemplo, visita está galería o este listado\n\n\nUna oda a Rmarkdown\n\nHow Rmarkdown changed my life: charla de Rob Hyndman sobre su proceso hasta llegar a usar Rmarkdown para hacer sus documentos científicos y webs."
+    "text": "¿Qué es Quarto?\n\n\nUn nuevo sistema de publicación científica y técnica de código abierto basado en Pandoc\n\n\n\n\nQuarto no es un paquete, es un programa independiente, un CLI\n\n\n\n\nPermite incorporar texto y código para producir documentos (reproducibles) en múltiples formatos\n\n\n\n\nEs … la “segunda generación de Rmarkdown”\n\n\n\n\nMuy parecido a Rmarkdown, pero … no requiere R. Soporta lenguajes como Phyton, Julia y Observable.\nQuarto utiliza Knitr para ejecutar el código R; así que es capaz de procesar también los ficheros .Rmd sin modificarlos"
   },
   {
     "objectID": "slides/03_aprendiendo_Qmd.html#para-poder-practicar-lo-que-vayamos-aprendiendo",
@@ -452,21 +452,21 @@
     "href": "slides/03_aprendiendo_Qmd.html#iii-texto-dando-formato-al-texto-1",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: Dando formato al texto",
-    "text": "(III) Texto: Dando formato al texto\n\nMás posibilidades:\n\n\n\n\n\n\n\n\nSi escribes esto:\nSe verá esto:\n\n\n\n\n[texto subrayado]{.underline}\ntexto subrayado\n\n\n<mark>texto destacado</mark>\ntexto destacado\n\n\n[En versalita]{.smallcaps}\nEn versalita\n\n\nel emoji :joy:\nel emoji 😂\n\n\n> :warning: **Cuidado!!** no\n\n⚠️ Cuidado!! no\n\n\n\n\n\n\n\n\n\n(**) Los emojis mejor desde el editor visual o copiándolo."
+    "text": "(III) Texto: Dando formato al texto\n\nMás posibilidades:\n\n\n\n\n\n\n\n\nSi escribes esto:\nSe verá esto:\n\n\n\n\n[texto subrayado]{.underline}\ntexto subrayado\n\n\n<mark>texto destacado</mark>\ntexto destacado\n\n\n[En versalita]{.smallcaps}\nEn versalita\n\n\nel emoji :joy:\nel emoji 😂\n\n\n> :warning: **Cuidado!!** no\n\n⚠️ Cuidado!! no\n\n\n\n\n\n\n\n\n\n(**) Los emojis mejor desde el editor visual o copiándolos."
   },
   {
     "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-títulos",
     "href": "slides/03_aprendiendo_Qmd.html#iii-texto-títulos",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: Títulos",
-    "text": "(III) Texto: Títulos\n\n\n\n\n\n\n\n\nMarkdown:\nSe verá esto:\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
+    "text": "(III) Texto: Títulos\n\n\n\n\n\n\n\n\n\nMarkdown:\nSe verá esto:\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
   },
   {
     "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-creando-listas",
     "href": "slides/03_aprendiendo_Qmd.html#iii-texto-creando-listas",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Texto: Creando listas",
-    "text": "(III) Texto: Creando listas\n\n\nEn las listas es crucial la indentación (normalmente 2 espacios)\n\n\n\n\n\n\n\n\n\n\n\nMas posibilidades aquí"
+    "text": "(III) Texto: Creando listas\n\n\nEn las listas es crucial la indentación (normalmente 2 espacios)\n\n\n\n\n\n\n\n\n\n\n\nMas posibilidades aquí y aquí"
   },
   {
     "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-párrafos",
@@ -494,7 +494,7 @@
     "href": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-imágenes",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Más elementos: Imágenes",
-    "text": "(III) Más elementos: Imágenes\n\nDocumentación oficial aquí\n\n\n\n\n\n\n\n\n\nSi escribes esto:\nAl procesarse se verá esto:\n\n\n\n\n![](imagenes/img_01_h1.png)\n\n\n\n![](./imagenes/img_01_h1.png)\n\n\n\n\n\n\n\n\nOtras formas\n\n\n\nCaption\n\n\n\n\n\nCaption"
+    "text": "(III) Más elementos: Imágenes\n\nDocumentación oficial aquí\n\n\n\n\n\n\n\n\n\nSi escribes esto:\nAl procesarse se verá esto:\n\n\n\n\n![](imagenes/imgagenes_ababol.jpg)\n\n\n\n![](./imagenes/img_01_h1.png)\n\n\n\n\n\n\n\n\n\nPuedes ver como hacer composiciones de imágenes en el blog, concretamente aquí"
   },
   {
     "objectID": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-tablas-con-markdown",
@@ -508,7 +508,7 @@
     "href": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-ecuaciones",
     "title": "Aprendiendo a escribir en QMD",
     "section": "(III) Más elementos: Ecuaciones",
-    "text": "(III) Más elementos: Ecuaciones\n\n\nMarkdown admite ecuaciones escritas en Latex si van entre \\(** para ecuaciones inline y **\\)$ para ecuaciones independientes. Aquí tienes un editor de ecuaciones en latex online, y aquí algunos ejemplos de ecuaciones escritas en Latex.\n\nUse $ delimiters for inline math and $$ delimiters for display math. For example:\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\ninline math: $E = mc^{2}$\ninline math: \\(E=mc^{2}\\)\n\n\ndisplay math:\n\n$$E = mc^{2}$$\ndisplay math:\n\\[E = mc^{2}\\]\n\n\n\nIf you want to define custom TeX macros, include them within $$ delimiters enclosed in a .hidden block. For example:\n::: {.hidden}\n$$\n \\def\\RR{{\\bf R}}\n \\def\\bold#1{{\\bf #1}}\n$$\n:::\nFor HTML math processed using MathJax (the default) you can use the \\def, \\newcommand, \\renewcommand, \\newenvironment, \\renewenvironment, and \\let commands to create your own macros and environments."
+    "text": "(III) Más elementos: Ecuaciones\n\nMarkdown admite ecuaciones escritas en Latex si van entre un $ para ecuaciones inline y $$ para ecuaciones independientes.\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\necuación inline: $E = mc^{2}$\necuación inline: \\(E=mc^{2}\\)\n\n\necuación independiente:\n\n$$E = mc^{2}$$\necuación independiente:\n\\[E = mc^{2}\\]\n\n\n\n\n\n\nAquí tienes un editor de ecuaciones en latex online, y aquí algunos ejemplos de ecuaciones escritas en Latex."
   },
   {
     "objectID": "slides/03_aprendiendo_Qmd.html#iii-más-elementos-notas-al-pie",
@@ -817,5 +817,40 @@
     "title": "Creación de un blog básico con Quarto",
     "section": "",
     "text": "Hola\n\n⚠️ Warning: Do not push the big red button.\n😄 Nota: Sunrises are beautiful.\n\n\n\n\n\n\n\nPista\n\n\n\n\n\nLocaliza el fichero t0_ej_01_interest-rate.gdt en tu ordenador. Pincha 2 veces en él con el ratón y se abrirá en Gretl.\n\n\n\n\n\n\nReutilizarhttps://creativecommons.org/licenses/by/4.0/deed.es"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iv-más-elementos-hyper-links",
+    "href": "slides/03_aprendiendo_Qmd.html#iv-más-elementos-hyper-links",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(IV) Más elementos: hyper-links",
+    "text": "(IV) Más elementos: hyper-links\n\n\n\n\n Si escribes esto:\nAl procesarse se verá esto:\n\n\n\n\n<https://quarto.org>\nhttps://quarto.org\n\n\n [Web de Quarto](https://quarto.org)\nWeb de Quarto"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iv-más-elementos-imágenes",
+    "href": "slides/03_aprendiendo_Qmd.html#iv-más-elementos-imágenes",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(IV) Más elementos: Imágenes",
+    "text": "(IV) Más elementos: Imágenes\n\nDocumentación oficial aquí\n\n\n\n\n\n\n\n\nSi escribes esto:\nAl procesarse se verá esto:\n\n\n\n\n![](imagenes/imgagenes_ababol.jpg)\n\n\n\n![](./imagenes/img_01_h1.png)\n\n\n\n\n\n\n\n\n\nPuedes ver como hacer composiciones de imágenes en el blog, concretamente aquí"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iv-más-elementos-tablas-con-markdown",
+    "href": "slides/03_aprendiendo_Qmd.html#iv-más-elementos-tablas-con-markdown",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(IV) Más elementos: Tablas con Markdown",
+    "text": "(IV) Más elementos: Tablas con Markdown\n\nDocumentación oficial para tablas aquí\n\n\n\n\n\nSintaxis Markdown para tablas\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\n: Título de la tabla\n\nGenera lo siguiente:\n\nTítulo de la tabla\n\n\nDefault\nLeft\nRight\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n\n\n\n\n\nComo ves no es fácil-fácil generar tablas con Mardown pero, puedes usar un generador de tablas, por ejemplo este o este. También se puede usar el editor visual de Rstudio"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iv-más-elementos-tablas-con-r",
+    "href": "slides/03_aprendiendo_Qmd.html#iv-más-elementos-tablas-con-r",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(IV) Más elementos: Tablas con R",
+    "text": "(IV) Más elementos: Tablas con R\n\nTablas: por ejemplo knitr::kable(df), o gt::gt(df), o DT::datatable(df) y más. Si te interesa el tema de las tablas puedes visitar esto o esto"
+  },
+  {
+    "objectID": "slides/03_aprendiendo_Qmd.html#iii-texto-notas-al-píe",
+    "href": "slides/03_aprendiendo_Qmd.html#iii-texto-notas-al-píe",
+    "title": "Aprendiendo a escribir en QMD",
+    "section": "(III) Texto: Notas al píe",
+    "text": "(III) Texto: Notas al píe\nSe usa la marca ^, y hay 2 sintaxis:\n\n\n1.Con sintaxis inline:\nSintáxis (inline) para insertar una nota al píe^[Se llama inline \nporque el contenido de la nota al píe se entremezcla con el texto principal]. Suele ser\nla sintáxis que yo uso. \n\n\nNo-inline\n\nAquí voy a poner otra nota al píe [^1] , y otra más.[^b]\n\n[^1]: Esta otra sintaxis me gusta menos. Pero igual es más clara\n\n[^b]: No sufras por la numerácion. lo hará Pandoc!!\n\n\n\n\nDocumentación oficial aquí"
   }
 ]

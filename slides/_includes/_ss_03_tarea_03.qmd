@@ -13,8 +13,9 @@ format:
   code-summary: "Para ver el código, pincha"
   code-line-numbers: true
 ```
+<br>
 
-- Prueba también a usar la opción `code-tools: true`
+- Prueba también a usar la opción `code-tools: true` y ver que ocurre.
 
 <br>
 

@@ -71,9 +71,15 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 -   Un **nuevo sistema de publicación científica y técnica** de código abierto basado en Pandoc
 
+
 . . .
 
--   Permite incorporar **texto y código** para producir documentos (reproducibles) en multiples formatos
+-   Quarto no es un paquete, **es un programa independiente**, un CLI
+
+
+. . .
+
+-   Permite incorporar **texto y código** para producir documentos (reproducibles) en múltiples formatos
 
 . . .
 
@@ -85,22 +91,19 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 
 -   Quarto utiliza Knitr para ejecutar el código R; así que es **capaz de procesar también los ficheros .Rmd** sin modificarlos
 
-. . .
 
--   Quarto **unifica funcionalidades** de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
-
-. . .
-
--   Quarto no es un paquete, **es un programa independiente**, un CLI
 
 <br>
 
+------
+
+
 ::: {.callout-tip collapse="true" icon="true"}
-##### Ventajas de Quarto \[Opcional\]
+##### Ventajas de Quarto sobre RMD
 
 -   Proyecto en [desarrollo activo](https://quarto.org/docs/download/) ... mientras que Rmarkdown [it's not going away](https://yihui.org/en/2022/04/quarto-r-markdown/) pero ...
 
--   **Unifica** algunas de las funcionalidades de Rmarkdown
+-   Quarto **unifica funcionalidades** de varios paquetes del entorno Rmd como xaringan, bookdown, blogdown , ...
 
 -   **Por ejemplo**: Cross references, Call-outs, Advanced Layout (tb para imágenes), Extensiones, Interactividad, YAML inteligence, Quarto Pub, Divs, Spans
 
@@ -115,6 +118,8 @@ Puedes ver [este video](https://www.youtube.com/watch?v=_20US068pzk) de 100 segu
 :::
 
 <br>
+
+------ 
 
 ::: {.callout-tip collapse="true" icon="true"}
 ##### ¿Qué es Rmarkdown? ¿Para qué sirve? \[Opcional\]
@@ -197,7 +202,7 @@ knitr::include_graphics(here::here("slides", "imagenes",  "ss_02_img_01b.png") )
 
 ### (I) El encabezamiento o "yaml header"
 
--   Se (suele) poner al ppio del documento, entre estas marcas: **`---`**
+-   Se (suele) poner al principio del documento, entre estas marcas: **`---`**
 
 -   En el yaml son MUY importantes los **espacios y la indentación**
 
@@ -317,11 +322,12 @@ embed-resources: true     #- hace el documento auto-contenido
 -  Por ejemplo:  
 
 
-![](./imagenes/ss_03_img_01_chunk-04.png)
+![](./imagenes/ss_03_img_01_chunk_04.png)   
 
 
 
-``` {{r}}
+
+```{{r}}
 #| echo: true
 #| eval: false
 2 + 2
@@ -334,15 +340,25 @@ embed-resources: true     #- hace el documento auto-contenido
 
 . . . 
 
--   `include`: si en un chunk pones `#| include: false`, el código de ese chunk **se ejecutará pero no se mostrará nada**, ni el código, ni el resultado, ni mensajes, ni errores. Esta opción es útil, por ejemplo, para cargar los paquetes de R.
+<br>
+
+-   `include`: si en un chunk pones 
+<span style="background-color: #e5e5e5; border-radius: 3px; padding: 4px; font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;"><code> #| include: false </code></span>,
+el código de ese chunk **se ejecutará pero no se mostrará nada**, ni el código, ni el resultado, ni mensajes, ni errores. Esta opción es útil, por ejemplo, para cargar los paquetes de R.
 
 . . . 
 
--   `echo`: además de los típicos true y false, ahora **incorpora un nuevo valor `#| echo: fenced`** que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo).
+<br>
+
+-   `echo`: además de los típicos true y false, ahora **incorpora un nuevo valor**
+<span style="background-color: #e5e5e5; border-radius: 3px; padding: 4px; font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;"><code> #| echo: fenced` </code></span>
+ que facilita mostrar las marcas de los chunks en el documento final. Documentación [aquí](https://quarto.org/docs/computations/execution-options.html#fenced-echo).
 
 . . . 
 
-- `output: asis`: permite generar raw-markdown. Un ejemplo [aquí](https://quarto.org/docs/computations/execution-options.html#raw-output)
+<br>
+
+- <span style="background-color: #e5e5e5; border-radius: 3px; padding: 4px; font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;"><code> #| output: asis </code></span>: permite generar raw-markdown. Un ejemplo [aquí](https://quarto.org/docs/computations/execution-options.html#raw-output)
 
 
 <br>
@@ -358,23 +374,23 @@ embed-resources: true     #- hace el documento auto-contenido
 
 - En el YAML, podemos fijar los valores por defecto de las opciones de los chunks
 
-  - anidadas dentro de `execute: `
+  - **anidadas dentro de** `execute: `
 
 . . . 
 
-##### Por ejemplo: 
+###### Por ejemplo: 
 
 
 ::: {columns}
 ::: {.column width="46%"}
-##### .Qmd (chunk options en el chunk)
+###### .Qmd (chunk options en el chunk)
 
 ![](./imagenes/ss_03_img_05b.png){fig-align="left" width="100%"}
 
 :::
 
 ::: {.column width="46%"}
-#### .Qmd (chunk options en el yaml)
+##### .Qmd (chunk options en el yaml)
 
 ![](./imagenes/ss_03_img_05a.png){fig-align="left" width="100%"}
 ::: 
@@ -399,11 +415,11 @@ embed-resources: true     #- hace el documento auto-contenido
 ### (II) Chunks: otras opciones
 
 
-<br>
-
 Ahora, en Quarto, hay **más opciones para los chunks**. Documentación oficial [aquí](https://quarto.org/docs/output-formats/html-code.html). Por ejemplo:
 
 . . . 
+
+<br>
 
   - Hacer **folding code** con `#| code-fold: true`  
   
@@ -437,7 +453,7 @@ Todas estas opciones **también pueden ir en el YAML**.
 
 ------------------------------------------------------------------------
 
-### (II) "Chunks": inline code
+### (II) Código: inline code
 
 
 - La mayoría del código suele ir en los chunks, pero a veces necesitamos <mark>inline code</mark> ; es decir, código R dentro de nuestro texto.
@@ -489,15 +505,13 @@ Todas estas opciones **también pueden ir en el YAML**.
 ```
 ````
 
-- Pandoc soportas syntax highlighting para cerca de [140 different languages](https://github.com/jgm/skylighting/tree/master/skylighting-core/xml). If your language is not supported then you can use the `default` language.
+- Pandoc soporta syntax highlighting para cerca de [140 different languages](https://github.com/jgm/skylighting/tree/master/skylighting-core/xml). si no estuviese el lenguaje que necesitas, usa el `default` language.
 
-
-If you are creating HTML output there is a wide variety of options available for code block output. See the article on [HTML Code](../output-formats/html-code.qmd) for additional details.
 
 
 . . . 
 
-- Documentación oficial [aquí](https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks), pero no hay mucho.
+- Documentación oficial [aquí](https://quarto.org/docs/computations/execution-options.html#unexecuted-blocks).
 
 <br>
 
@@ -643,7 +657,6 @@ If you are creating HTML output there is a wide variety of options available for
 <br><br>
 
 
-------------------------------------------------------------------------
 
 ## (III) Texto: Dando formato al texto 
 
@@ -666,15 +679,57 @@ If you are creating HTML output there is a wide variety of options available for
 
 <br>
 
-(**) Los emojis mejor desde el editor visual o copiándolo.
+(**) Los emojis mejor desde el editor visual o copiándolos.
 
 
 
 <br>
 
+## (III) Texto: Notas al píe
+
+
+
+
+Se usa la marca `^`, y  hay 2 sintaxis:
+
+<br>
+
+. . . 
+
+  1.Con sintaxis inline:
+
+
+  ``` markdown
+  Sintáxis (inline) para insertar una nota al píe^[Se llama inline 
+  porque el contenido de la nota al píe se entremezcla con el texto principal]. Suele ser
+  la sintáxis que yo uso. 
+  ```
+
+<br>
+
+  2. **No-**inline
+
+
+  ``` markdown
+  Aquí voy a poner otra nota al píe [^1] , y otra más.[^b]
+  
+  [^1]: Esta otra sintaxis me gusta menos. Pero igual es más clara
+
+  [^b]: No sufras por la numerácion. lo hará Pandoc!!
+  ```
+
+<br>
+
+. . . 
+
+- Documentación oficial [aquí](https://quarto.org/docs/authoring/footnotes-and-citations.html#footnotes)
+
+
 ## (III) Texto: Títulos
 
 . . . 
+
+<br>
 
 +---------------------+-----------------------------------+
 | Markdown:           | Se verá esto:                     |
@@ -710,7 +765,8 @@ If you are creating HTML output there is a wide variety of options available for
 </div>
 
 
-- Mas posibilidades [aquí](https://quarto.org/docs/authoring/markdown-basics.html#lists)
+- Mas posibilidades [aquí](https://quarto.org/docs/authoring/markdown-basics.html#lists) y [aquí](https://quarto.org/docs/visual-editor/content.html#editing-lists)
+
 
 <br>
 
@@ -764,7 +820,7 @@ If you are creating HTML output there is a wide variety of options available for
 {{< include ./_includes/_ss_03_tarea_04.qmd >}}
 
 
-# (III) Más elementos {.unnumbered background-color="#ebf5fb"}
+# (IV) Más elementos {.unnumbered background-color="#ebf5fb"}
 
 {{< var lineanaranja >}}
 
@@ -774,10 +830,10 @@ If you are creating HTML output there is a wide variety of options available for
 
 . . . 
 
-- Por ejemplo: links, imágenes, videos, ecuaciones, tablas, notas al pie, bibliografía, etc ....
+- Por ejemplo: links, imágenes, vídeos, ecuaciones, tablas, notas al pie, bibliografía, etc ....
 
 
-## (III) Más elementos: hyper-**links**
+## (IV) Más elementos: hyper-**links**
 
 <br>
 
@@ -793,112 +849,110 @@ If you are creating HTML output there is a wide variety of options available for
 
 
 
-## (III) Más elementos: **Imágenes**
+## (IV) Más elementos: **Imágenes**
 
 -  Documentación oficial [aquí](https://quarto.org/docs/authoring/figures.html)
 
 
 
-. . . 
-
-
 +-----------------------------------------------------+--------------------------------------+
 |Si escribes esto:                                    | Al procesarse se verá esto:          |
 +=====================================================+======================================+
-|     ![](imagenes/img_01_h1.png)                     | ![](imagenes/img_01_h1.png)          |
+|     ![](imagenes/imgagenes_ababol.jpg)              | ![](imagenes/imagen_ababol.jpg)      |
 +-----------------------------------------------------+--------------------------------------+
-|     ![](./imagenes/img_01_h1.png)                   | ![](./imagenes/img_01_h1.png)        |
+|     ![](./imagenes/img_01_h1.png)                   | ![](./imagenes/imagen_ababol.jpg)    |
 +-----------------------------------------------------+--------------------------------------+
 +-----------------------------------------------------+--------------------------------------+
 
-Otras formas
+- Puedes ver como hacer composiciones de imágenes en el blog, concretamente [aquí](https://perezp44.github.io/intro.to.quarto/blog/24_imagenes.html)
 
-[![Caption](imagenes/img_01_h1.png)](https://quarto.org)    
-     
-[![Caption](imagenes/img_01_h1.png)](https://quarto.org "An elephant")
-    
-[![](imagenes/img_01_h1.png){fig-alt="Alt text"}](https://quarto.org)
-    
+<br>
 
-
-
-## (III) Más elementos: Tablas <mark>con Markdown</mark>
-
-
+## (IV) Más elementos: Tablas <mark>con Markdown</mark>
 
 -  Documentación oficial para tablas [aquí](https://quarto.org/docs/authoring/tables.html)
 
+<br>
 
-- **Tablas**: por ejemplo `knitr::kable(df)`, o `gt::gt(df)`, o `DT::datatable(df)` y más. Si te interesa el tema de las tablas puedes visitar [esto](https://perezp44.github.io/intro-ds-21-22-web/tutoriales/tt_08_tablas-Rmarkdown.html) o [esto](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/)
+. . . 
 
+:::: {.columns}
+::: {.column width="45%"}
 
-#### Markdown Syntax
+##### Sintaxis Markdown para tablas
 
     | Right | Left | Default | Center |
     |------:|:-----|---------|:------:|
     |   12  |  12  |    12   |    12  |
     |  123  |  123 |   123   |   123  |
     |    1  |    1 |     1   |     1  |
+    
+    : Título de la tabla
+:::
+::: {.column width="30%"}
 
-#### Output
+**Genera lo siguiente:**
 
-| Right | Left | Default | Center |
-|------:|:-----|---------|:------:|
-|    12 | 12   | 12      |   12   |
-|   123 | 123  | 123     |  123   |
-|     1 | 1    | 1       |   1    |
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Título de la tabla
+:::
+::::
+
+. . . 
 
 
-                     **tete** feo
+- Como ves no es fácil-fácil generar tablas con Mardown pero, **puedes usar un generador de tablas**, por ejemplo [este](https://www.tablesgenerator.com/markdown_tables) o [este](https://tableconvert.com/markdown-generator). También se puede usar el [editor visual de Rstudio](https://quarto.org/docs/visual-editor/content.html#editing-tables)
+
+
+## (IV) Más elementos: Tablas <mark>con R</mark>
+
+
+- **Tablas**: por ejemplo `knitr::kable(df)`, o `gt::gt(df)`, o `DT::datatable(df)` y más. Si te interesa el tema de las tablas puedes visitar [esto](https://perezp44.github.io/intro-ds-21-22-web/tutoriales/tt_08_tablas-Rmarkdown.html) o [esto](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/)
+
+
 
 
 
 ## (III) Más elementos: Ecuaciones
 
-<br>
 
-- Markdown admite ecuaciones **escritas en Latex** si van entre **$** para ecuaciones inline y **$$** para ecuaciones independientes. [Aquí](http://www.sciweavers.org/free-online-latex-equation-editor) tienes un editor de ecuaciones en latex online, y [aquí](https://dereksonderegger.github.io/570L/16-rmarkdown-tricks.html) algunos ejemplos de ecuaciones escritas en Latex.
+- Markdown admite ecuaciones **escritas en Latex** si van entre un **`$`** para ecuaciones inline y  **`$$`** para ecuaciones independientes. 
 
-
-
-Use `$` delimiters for inline math and `$$` delimiters for display math. For example:
-
-+-------------------------------+-------------------------+
-| Markdown Syntax               | Output                  |
-+===============================+=========================+
-|     inline math: $E = mc^{2}$ | inline math: $E=mc^{2}$ |
-+-------------------------------+-------------------------+
-|     display math:             | display math:\          |
-|                               | $$E = mc^{2}$$          |
-|     $$E = mc^{2}$$            |                         |
-+-------------------------------+-------------------------+
-
-If you want to define custom TeX macros, include them within `$$` delimiters enclosed in a `.hidden` block. For example:
-
-``` tex
-::: {.hidden}
-$$
- \def\RR{{\bf R}}
- \def\bold#1{{\bf #1}}
-$$
-:::
-```
-
-For HTML math processed using [MathJax](https://docs.mathjax.org/) (the default) you can use the `\def`, `\newcommand`, `\renewcommand`, `\newenvironment`, `\renewenvironment`, and `\let` commands to create your own macros and environments.
-
+. . . 
 
 <br>
 
-## (III) Más elementos: Notas al pie
++-------------------------------------+-----------------------------+
+| Markdown Syntax                     | Output                      |
++=====================================+=============================+
+|     ecuación inline: $E = mc^{2}$   | ecuación inline: $E=mc^{2}$ |
++-------------------------------------+-----------------------------+
+|     ecuación independiente:         | ecuación independiente: \   |
+|                                     | $$E = mc^{2}$$              |
+|     $$E = mc^{2}$$                  |                             |
++-------------------------------------+-----------------------------+
 
+. . .
 
-- **Notas al pie**: si quieres poner una nota al pie aquí`^[el texto que quieres en la nota al pie]`
+- [Aquí](http://www.sciweavers.org/free-online-latex-equation-editor) tienes un editor de ecuaciones en latex online, y [aquí](https://dereksonderegger.github.io/570L/16-rmarkdown-tricks.html) algunos ejemplos de ecuaciones escritas en Latex.
 
 <br>
 
 
-## Resto: tablas, divs etc ...
+# Aún quedan más elementos!! {.unnumbered background-color="#ebf5fb"}
 
-## mas elementos para escribir (layout, CSS)
+{{< var lineanaranja >}}
 
-## Práctica: un tutorial
+<br>
+
+- Pandoc fenced divs, Pandoc bracketed spans
+
+- Layout, CSS, ....
+
+- ... pero será más adelante
+
