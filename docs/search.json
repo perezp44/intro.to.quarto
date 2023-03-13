@@ -154,6 +154,83 @@
     "text": "(III) Más elementos: Ecuaciones\n\nMarkdown admite ecuaciones escritas en Latex si van entre un $ para ecuaciones inline y $$ para ecuaciones independientes.\n\n\n\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\necuación inline: $E = mc^{2}$\necuación inline: \\(E=mc^{2}\\)\n\n\necuación independiente:\n\n$$E = mc^{2}$$\necuación independiente:\n\\[E = mc^{2}\\]\n\n\n\n\n\n\nTienes editores online de ecuaciones en Latex aquí y aquí. Puedes ver algunos ejemplos de ecuaciones escritas en Latex aquí"
   },
   {
+    "objectID": "slides/04_revealjs.html#transiciones",
+    "href": "slides/04_revealjs.html#transiciones",
+    "title": "Slides con Quarto",
+    "section": "Transiciones",
+    "text": "Transiciones\n\nDocumentación oficial aquí\n\n\n\n\n\n\n\n\nTransition\nDescription\n\n\n\n\nnone\nNo transition (switch instantly)\n\n\nfade\nCross fade\n\n\nslide\nSlide horizontally\n\n\nconvex\nSlide at a convex angle\n\n\nconcave\nSlide at a concave angle\n\n\nzoom\nScale the incoming slide so it grows in from the center of the screen.\n\n\n\n\n---\ntitle: \"Presentation\"\nformat:\n  revealjs:\n    transition: slide\n    transition-speed: fast\n---"
+  },
+  {
+    "objectID": "slides/04_revealjs.html#sizing",
+    "href": "slides/04_revealjs.html#sizing",
+    "title": "Slides con Quarto",
+    "section": "Sizing",
+    "text": "Sizing\nDocumentación oficial aquí\n\n\n\n\n\n\n\nwidth\nThe “normal” width of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units.\n\n\n\n\nheight\nThe “normal” height of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units.\n\n\n\nformat:\n  revealjs:\n    height: 900\n    width: 1600"
+  },
+  {
+    "objectID": "slides/04_revealjs.html#slide-numbering",
+    "href": "slides/04_revealjs.html#slide-numbering",
+    "title": "Slides con Quarto",
+    "section": "Slide numbering",
+    "text": "Slide numbering\n\n\n\n\n\n\n\nslide-number\nDisplay the page number of the current slide\n\ntrue: Show slide number\nfalse: Hide slide number\n\nCan optionally be set as a string that specifies the number formatting:\n\nh.v: Horizontal . vertical slide number\nh/v: Horizontal / vertical slide number\nc: Flattened slide number\nc/t: Flattened slide number / total slides (default)\n\n\n\n\n\n---\nformat:\n  revealjs:\n    slide-number: c/t #< collapsed/total\n---"
+  },
+  {
+    "objectID": "slides/04_revealjs.html#presentation-preview",
+    "href": "slides/04_revealjs.html#presentation-preview",
+    "title": "Slides con Quarto",
+    "section": "Presentation preview",
+    "text": "Presentation preview\n\nIn the latest version of RStudio, Quarto revealjs presentations will open up as a “background job” in the Presentation tab."
+  },
+  {
+    "objectID": "slides/04_revealjs.html#fragments",
+    "href": "slides/04_revealjs.html#fragments",
+    "title": "Slides con Quarto",
+    "section": "Fragments",
+    "text": "Fragments\nYou can also make a point with fragments\n\n\nFade in\n\n\nFade out\n\n\nHighlight red\n\n\nFade in, then out\n\n\nSlide up while fading in"
+  },
+  {
+    "objectID": "slides/04_revealjs.html#fragments-1",
+    "href": "slides/04_revealjs.html#fragments-1",
+    "title": "Slides con Quarto",
+    "section": "Fragments",
+    "text": "Fragments\n::: {.fragment}\nFade in\n:::\n\n::: {.fragment .fade-out}\nFade out\n:::\n\n::: {.fragment .highlight-red}\nHighlight red\n:::\n\n::: {.fragment .fade-in-then-out}\nFade in, then out\n:::\n\n::: {.fragment .fade-up}\nSlide up while fading in\n:::"
+  },
+  {
+    "objectID": "slides/04_revealjs.html#fragments-nesting",
+    "href": "slides/04_revealjs.html#fragments-nesting",
+    "title": "Slides con Quarto",
+    "section": "Fragments, nesting",
+    "text": "Fragments, nesting\nFragments can be nested to affect the same “text” multiple times\n\n\n\nFade in > Turn red > Semi fade out"
+  },
+  {
+    "objectID": "slides/04_revealjs.html#fragments-nesting-1",
+    "href": "slides/04_revealjs.html#fragments-nesting-1",
+    "title": "Slides con Quarto",
+    "section": "Fragments, nesting",
+    "text": "Fragments, nesting\n::: {.fragment .fade-in}\n::: {.fragment .highlight-red}\n::: {.fragment .semi-fade-out}\nFade in > Turn red > Semi fade out\n:::\n:::\n:::"
+  },
+  {
+    "objectID": "slides/04_revealjs.html#fragments-spans",
+    "href": "slides/04_revealjs.html#fragments-spans",
+    "title": "Slides con Quarto",
+    "section": "Fragments, spans",
+    "text": "Fragments, spans\nThis is an important sentence!\n\nThis is an [important sentence!]{.fragment .highlight-red}\n\n\n\nMind the gap when riding the rail!\n\n\nMind the [gap]{.fragment .fade-in} when riding the rail!"
+  },
+  {
+    "objectID": "slides/04_revealjs.html#fragments-order",
+    "href": "slides/04_revealjs.html#fragments-order",
+    "title": "Slides con Quarto",
+    "section": "Fragments, order",
+    "text": "Fragments, order\n\nAppears last\n\n\nAppears first\n\n\nAppears second"
+  },
+  {
+    "objectID": "slides/04_revealjs.html#fragments-order-1",
+    "href": "slides/04_revealjs.html#fragments-order-1",
+    "title": "Slides con Quarto",
+    "section": "Fragments, order",
+    "text": "Fragments, order\n::: {.fragment fragment-index=3}\nAppears last\n:::\n\n::: {.fragment fragment-index=1}\nAppears first\n:::\n\n::: {.fragment fragment-index=2}\nAppears second\n:::"
+  },
+  {
     "objectID": "slides/imagenes/tt_01/ejemplo_2.html",
     "href": "slides/imagenes/tt_01/ejemplo_2.html",
     "title": "Documentos Rmarkdown (.Rmd)",
@@ -802,6 +879,6 @@
     "href": "recursos.html",
     "title": "Recursos sobre Quarto",
     "section": "",
-    "text": "Desde que Quarto se hizo publico con We don’t talk about Quarto ha sido un no parar de workshops, posts, etc… En esta página tienes una selección de recursos sobre Quarto.\nObviamente la principal referencia es la web de Quarto: absolutamente fantástica!!! En ella hay, entre otras secciones, una Guide, una Reference y una Gallery.\nEntre los materiales que he visto sobre Quarto destacar los siguientes:\n\nAWESOME Quarto: un listado muy extenso de recursos Quarto hecho por Mickaël Canouil.\nQuarto tip a day: Un blog de Mine Çetinkaya-Rundel con consejos y tips sobre Quarto.\nGet Started with Quarto: un workshop de Thomas Mock. El video, y otro video de 3h.\nBeautiful Reports and Presentations with Quarto: un workshop de Thomas Mock. El video y el repo.\nIntroducción a RMarkdown, creando reportes con R y Python en RStudio: workshop de Renzo Cáceres para LatinR 2022.\nMaking shareable documents with Quarto: una web de Openscapes.\nQuarto/RMarkdown - What’s Different?: unas slides de Ted Laderas.\nRstudio::conf(2022) Playlist: la presentación en sociedad de Quarto con varias charlas sobre Quarto, Hello Quarto: Share, Collaborate, Teach, Reimagine, Websites & Books & Blogs, oh my! Creating Rich Content with Quarto, Quarto for the Curious entre otras.\nRstudio::conf(2022) Workshops: por ejemplo, Get Started with Quarto o Rmarkdown to Quarto.\nReproducible authoring with Quarto: un video de Mine Çetinkaya-Rundel donde se hace evidente las ventajas de Quarto y la utilidad del editor visual de RStudio. Sus slides aquí.\n\n\n\nRecursos específicos sobre web/blogs\n\nQuarto - Creating a Blog: documentación oficial.\nBuilding a blog with Quarto: un workshop de Isabella Velásquez acerca de cómo construir un blog con Quarto. El repo de los ejercicios, video y RStudioCloud project.\nWebsites & Books & Blogs, oh my! Creating Rich Content with Quarto: ponencia de Devin Pastoor en el marco de RStudio::conf(2022).\nModifying the Default Quarto Blog Structure: post de Eric Ekholm 2022.\nCreating a Blog with Quarto in 10 Steps: post de Bea Milz.\n100 seconds from zero to public site: vídeo de Thomas Mock donde crea una web con Quarto en 100 segundos.\nPorting a Distill Blog to Quarto: post de Danielle Navarro."
+    "text": "Desde que Quarto se hizo publico con We don’t talk about Quarto ha sido un no parar de workshops, posts, etc… En esta página tienes una selección de recursos sobre Quarto.\nObviamente la principal referencia es la web de Quarto: absolutamente fantástica!!! En ella hay, entre otras secciones, una Guide, una Reference y una Gallery.\n\nPara dudas, consejos, trucos:\n\nQuarto CLI-dev repo: Issues and Discussions.\nStackoverflow: preguntas sobre Quarto aquí\nTabla con “useful Quarto tips” de Sharon Machlis, aquí\n\n\nEntre los materiales que he visto sobre Quarto destacar los siguientes:\n\nAWESOME Quarto: un listado muy extenso de recursos Quarto hecho por Mickaël Canouil.\nQuarto tip a day: Un blog de Mine Çetinkaya-Rundel con consejos y tips sobre Quarto.\nGet Started with Quarto: un workshop de Thomas Mock. El video, y otro video de 3h.\nBeautiful Reports and Presentations with Quarto: un workshop de Thomas Mock. El video y el repo.\nIntroducción a RMarkdown, creando reportes con R y Python en RStudio: workshop de Renzo Cáceres para LatinR 2022.\nMaking shareable documents with Quarto: una web de Openscapes.\nQuarto/RMarkdown - What’s Different?: unas slides de Ted Laderas.\nRstudio::conf(2022) Playlist: la presentación en sociedad de Quarto con varias charlas sobre Quarto, Hello Quarto: Share, Collaborate, Teach, Reimagine, Websites & Books & Blogs, oh my! Creating Rich Content with Quarto, Quarto for the Curious entre otras.\nRstudio::conf(2022) Workshops: por ejemplo, Get Started with Quarto o Rmarkdown to Quarto.\nReproducible authoring with Quarto: un video de Mine Çetinkaya-Rundel donde se hace evidente las ventajas de Quarto y la utilidad del editor visual de RStudio. Sus slides aquí.\n\n\n\nRecursos específicos sobre web/blogs\n\nQuarto - Creating a Blog: documentación oficial.\nBuilding a blog with Quarto: un workshop de Isabella Velásquez acerca de cómo construir un blog con Quarto. El repo de los ejercicios, video y RStudioCloud project.\nWebsites & Books & Blogs, oh my! Creating Rich Content with Quarto: ponencia de Devin Pastoor en el marco de RStudio::conf(2022).\nModifying the Default Quarto Blog Structure: post de Eric Ekholm 2022.\nCreating a Blog with Quarto in 10 Steps: post de Bea Milz.\n100 seconds from zero to public site: vídeo de Thomas Mock donde crea una web con Quarto en 100 segundos.\nPorting a Distill Blog to Quarto: post de Danielle Navarro.\n\n\n\n\nOtros recursos\n\nUna fantástica guía sobre Markdown"
   }
 ]

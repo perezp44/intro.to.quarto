@@ -81,7 +81,9 @@ embed-resources: true
 
 <br>
 
-- Los títulos de primer y segundo nivel crean (salvo que lo modifiquemos nosotros en el yaml) una nueva slide. Para modificar este aspecto hay que usar `slide-level:` en el YAML. Por ejemplo:
+- Los títulos de primer nivel crean una nueva slide  (y tb una nueva sección)
+
+- Los títulos de segundo nivel crean (salvo que lo modifiquemos nosotros en el yaml) una nueva slide. Para modificar este aspecto hay que usar `slide-level:` en el YAML. Por ejemplo:
 
 
 
@@ -96,7 +98,7 @@ format:
 
 <br>
 
-- También se puede crear una nueva slide usando 3 o mas guiones cortos: `---`
+- También se puede crear una nueva slide usando 3 o mas guiones cortos: `---` o dejando la marca del título sin texto (or leave the heading “blank” for untitled slides)
 
 <br>
 
@@ -228,10 +230,9 @@ Contenido en la segunda columna
 
 ### Revealjs slides 
 
-- La primera slide se crea automáticamente con el título, autor (fecha y algunos má metadatos) del YAML.
+- La primera slide se crea automáticamente con el título, autor (fecha y algunos metadatos más) del YAML.
 
 
----
 
 ### Content overflow
 
@@ -244,9 +245,226 @@ Contenido en la segunda columna
     ```
     
     
-    
+
+## Transiciones
+
+- Documentación oficial [aquí](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions)
+
++-------------+------------------------------------------------------------------------+
+| Transition  | Description                                                            |
++=============+========================================================================+
+| `none`      | No transition (switch instantly)                                       |
++-------------+------------------------------------------------------------------------+
+| `fade`      | Cross fade                                                             |
++-------------+------------------------------------------------------------------------+
+| `slide`     | Slide horizontally                                                     |
++-------------+------------------------------------------------------------------------+
+| `convex`    | Slide at a convex angle                                                |
++-------------+------------------------------------------------------------------------+
+| `concave`   | Slide at a concave angle                                               |
++-------------+------------------------------------------------------------------------+
+| `zoom`      | Scale the incoming slide so it grows in from the center of the screen. |
++-------------+------------------------------------------------------------------------+
   
+
+. . .
+
+``` yaml
+---
+title: "Presentation"
+format:
+  revealjs:
+    transition: slide
+    transition-speed: fast
+---
+```  
   
+
+
+## Sizing
+
+Documentación oficial [aquí](https://quarto.org/docs/presentations/revealjs/advanced.html#presentation-size)
+
++----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `width`  | The "normal" width of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units.  |
++:=========+:===============================================================================================================================================================================+
+| `height` | The "normal" height of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units. |
++----------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+``` yaml
+format:
+  revealjs:
+    height: 900
+    width: 1600
+```
+
+## Slide numbering
+
+
+
++----------------+-------------------------------------------------------------------------+
+| `slide-number` | Display the page number of the current slide                            |
+|                |                                                                         |
+|                | -   `true`: Show slide number                                           |
+|                |                                                                         |
+|                | -   `false`: Hide slide number                                          |
+|                |                                                                         |
+|                | Can optionally be set as a string that specifies the number formatting: |
+|                |                                                                         |
+|                | -   `h.v`: Horizontal . vertical slide number                           |
+|                |                                                                         |
+|                | -   `h/v`: Horizontal / vertical slide number                           |
+|                |                                                                         |
+|                | -   `c`: Flattened slide number                                         |
+|                |                                                                         |
+|                | -   `c/t`: Flattened slide number / total slides (default)              |
++----------------+-------------------------------------------------------------------------+
+
+. . .
+
+``` yaml
+---
+format:
+  revealjs:
+    slide-number: c/t #< collapsed/total
+---
+```
+
+## Presentation preview
+
+-   In the latest version of RStudio, Quarto `revealjs` presentations will open up as a "background job" in the Presentation tab.
+
+
+
+
+## Fragments
+
+You can also make a point with fragments
+
+. . .
+
+::: fragment
+Fade in
+:::
+
+::: {.fragment .fade-out}
+Fade out
+:::
+
+::: {.fragment .highlight-red}
+Highlight red
+:::
+
+::: {.fragment .fade-in-then-out}
+Fade in, then out
+:::
+
+::: {.fragment .fade-up}
+Slide up while fading in
+:::
+
+## Fragments
+
+    ::: {.fragment}
+    Fade in
+    :::
+
+    ::: {.fragment .fade-out}
+    Fade out
+    :::
+
+    ::: {.fragment .highlight-red}
+    Highlight red
+    :::
+
+    ::: {.fragment .fade-in-then-out}
+    Fade in, then out
+    :::
+
+    ::: {.fragment .fade-up}
+    Slide up while fading in
+    :::
+
+## Fragments, nesting
+
+Fragments can be nested to affect the same "text" multiple times
+
+::: {.fragment .fade-in}
+::: {.fragment .highlight-red}
+::: {.fragment .semi-fade-out}
+Fade in \> Turn red \> Semi fade out
+:::
+:::
+:::
+
+## Fragments, nesting
+
+    ::: {.fragment .fade-in}
+    ::: {.fragment .highlight-red}
+    ::: {.fragment .semi-fade-out}
+    Fade in > Turn red > Semi fade out
+    :::
+    :::
+    :::
+
+## Fragments, spans
+
+This is an [important sentence!]{.fragment .highlight-red}
+
+. . .
+
+    This is an [important sentence!]{.fragment .highlight-red}
+
+. . .
+
+<br>
+
+Mind the [gap]{.fragment .fade-in} when riding the rail!
+
+. . .
+
+    Mind the [gap]{.fragment .fade-in} when riding the rail!
+
+## Fragments, order
+
+::: {.fragment fragment-index="3"}
+Appears last
+:::
+
+::: {.fragment fragment-index="1"}
+Appears first
+:::
+
+::: {.fragment fragment-index="2"}
+Appears second
+:::
+
+## Fragments, order
+
+    ::: {.fragment fragment-index=3}
+    Appears last
+    :::
+
+    ::: {.fragment fragment-index=1}
+    Appears first
+    :::
+
+    ::: {.fragment fragment-index=2}
+    Appears second
+    :::
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---

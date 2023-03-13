@@ -6,6 +6,17 @@ Desde que **Quarto** se hizo publico con [We don't talk about Quarto](https://ww
 
 Obviamente la **principal referencia** es la [web de Quarto](https://quarto.org/): **absolutamente fantástica**!!! En ella hay, entre otras secciones, una [Guide](https://quarto.org/docs/guide/), una [Reference](https://quarto.org/docs/reference/) y una [Gallery](https://quarto.org/docs/gallery/).
 
+<br>
+
+Para dudas, consejos, trucos:
+
+- Quarto CLI-dev repo: [Issues](https://github.com/quarto-dev/quarto-cli/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and [Discussions](https://github.com/quarto-dev/quarto-cli/discussions).
+
+-  Stackoverflow: preguntas sobre Quarto [aquí](https://stackoverflow.com/questions/tagged/quarto)
+
+- Tabla con "useful Quarto tips" de [Sharon Machlis](https://fosstodon.org/@smach), [aquí](https://apps.machlis.com/shiny/quartotips/)
+
+<br>
 
 Entre los materiales que he visto sobre Quarto **destacar los siguientes**:
 
@@ -51,3 +62,11 @@ Entre los materiales que he visto sobre Quarto **destacar los siguientes**:
 - [100 seconds from zero to public site](https://youtube.com/watch?v=t8qtcDyCRFA&t=1s): vídeo de Thomas Mock donde crea una web con Quarto en 100 segundos.
 
 - [Porting a Distill Blog to Quarto](https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/): post de Danielle Navarro.
+
+
+<br>
+
+###### Otros recursos
+
+- Una fantástica [guía sobre **Markdown**](https://www.markdownguide.org/)
+

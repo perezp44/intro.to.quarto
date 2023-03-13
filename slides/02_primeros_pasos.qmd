@@ -144,6 +144,8 @@ Tiene **ventajas**:
 
 . . .
 
+- **Informes periódicos** ([aquí](https://twitter.com/dgkeyes/status/1613247003898826752) una buena justificación)
+
 -   **Informes parametrizados**
 
 . . .

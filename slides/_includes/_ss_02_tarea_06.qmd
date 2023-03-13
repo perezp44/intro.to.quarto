@@ -5,8 +5,17 @@
 
 - Utiliza  `"prueba.qmd"` para generar unas "revealjs slides"
 
-- Pégale un vistazo a otros posibles formatos que nos ofrece Quarto
+<br>
+
+- Pégale un vistazo a otros **formatos que nos ofrece Quarto**. Lo puedes hacer de 2 formas:
+
+  - Desde el yaml: borras el tipo de formato, sitúas el cursor en `fomat:` y pulsas el tabulador, aparecerá un listado de formatos
+  
+  - El mismo listado puedes verlo [aquí](https://quarto.org/docs/output-formats/all-formats.html)
+
+
 
 <br>
 
 :::
+

@@ -1248,7 +1248,8 @@ margin-right: 0; }
 <h3 id="creación-de-una-nueva-slide">Creación de una nueva slide</h3>
 <p><br></p>
 <ul>
-<li>Los títulos de primer y segundo nivel crean (salvo que lo modifiquemos nosotros en el yaml) una nueva slide. Para modificar este aspecto hay que usar <code>slide-level:</code> en el YAML. Por ejemplo:</li>
+<li><p>Los títulos de primer nivel crean una nueva slide (y tb una nueva sección)</p></li>
+<li><p>Los títulos de segundo nivel crean (salvo que lo modifiquemos nosotros en el yaml) una nueva slide. Para modificar este aspecto hay que usar <code>slide-level:</code> en el YAML. Por ejemplo:</p></li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="pp">---</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Mis slides&quot;</span></span>
@@ -1258,7 +1259,7 @@ margin-right: 0; }
 <span id="cb1-6"><a href="#cb1-6"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
 <ul>
-<li>También se puede crear una nueva slide usando 3 o mas guiones cortos: <code>---</code></li>
+<li>También se puede crear una nueva slide usando 3 o mas guiones cortos: <code>---</code> o dejando la marca del título sin texto (or leave the heading “blank” for untitled slides)</li>
 </ul>
 <p><br></p>
 </section>
@@ -1359,11 +1360,8 @@ margin-right: 0; }
 
 <h3 id="revealjs-slides-1">Revealjs slides</h3>
 <ul>
-<li>La primera slide se crea automáticamente con el título, autor (fecha y algunos má metadatos) del YAML.</li>
+<li>La primera slide se crea automáticamente con el título, autor (fecha y algunos metadatos más) del YAML.</li>
 </ul>
-</section>
-<section class="slide level2">
-
 <h3 id="content-overflow">Content overflow</h3>
 <ul>
 <li><p>Si el contenido que queremos poner no se ajusta a la slide, tenemos varias posibilidades:</p>
@@ -1373,43 +1371,265 @@ margin-right: 0; }
 </ul></li>
 </ul>
 </section>
+<section id="transiciones" class="slide level2">
+<h2>Transiciones</h2>
+<ul>
+<li>Documentación oficial <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions">aquí</a></li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 83%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Transition</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>none</code></td>
+<td>No transition (switch instantly)</td>
+</tr>
+<tr class="even">
+<td><code>fade</code></td>
+<td>Cross fade</td>
+</tr>
+<tr class="odd">
+<td><code>slide</code></td>
+<td>Slide horizontally</td>
+</tr>
+<tr class="even">
+<td><code>convex</code></td>
+<td>Slide at a convex angle</td>
+</tr>
+<tr class="odd">
+<td><code>concave</code></td>
+<td>Slide at a concave angle</td>
+</tr>
+<tr class="even">
+<td><code>zoom</code></td>
+<td>Scale the incoming slide so it grows in from the center of the screen.</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1"></a><span class="pp">---</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Presentation&quot;</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="at">    </span><span class="fu">transition</span><span class="kw">:</span><span class="at"> slide</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="at">    </span><span class="fu">transition-speed</span><span class="kw">:</span><span class="at"> fast</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="sizing" class="slide level2">
+<h2>Sizing</h2>
+<p>Documentación oficial <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#presentation-size">aquí</a></p>
+<table>
+<colgroup>
+<col style="width: 5%">
+<col style="width: 94%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><code>width</code></th>
+<th style="text-align: left;">The “normal” width of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>height</code></td>
+<td style="text-align: left;">The “normal” height of the presentation, aspect ratio will be preserved when the presentation is scaled to fit different resolutions. Can be specified using percentage units.</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="at">    </span><span class="fu">height</span><span class="kw">:</span><span class="at"> </span><span class="dv">900</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="at">    </span><span class="fu">width</span><span class="kw">:</span><span class="at"> </span><span class="dv">1600</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="slide-numbering" class="slide level2">
+<h2>Slide numbering</h2>
+<table>
+<colgroup>
+<col style="width: 18%">
+<col style="width: 81%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><code>slide-number</code></td>
+<td><p>Display the page number of the current slide</p>
+<ul>
+<li><p><code>true</code>: Show slide number</p></li>
+<li><p><code>false</code>: Hide slide number</p></li>
+</ul>
+<p>Can optionally be set as a string that specifies the number formatting:</p>
+<ul>
+<li><p><code>h.v</code>: Horizontal . vertical slide number</p></li>
+<li><p><code>h/v</code>: Horizontal / vertical slide number</p></li>
+<li><p><code>c</code>: Flattened slide number</p></li>
+<li><p><code>c/t</code>: Flattened slide number / total slides (default)</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1"></a><span class="pp">---</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="at">    </span><span class="fu">slide-number</span><span class="kw">:</span><span class="at"> c/t</span><span class="co"> #&lt; collapsed/total</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="pp">---</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="presentation-preview" class="slide level2">
+<h2>Presentation preview</h2>
+<ul>
+<li>In the latest version of RStudio, Quarto <code>revealjs</code> presentations will open up as a “background job” in the Presentation tab.</li>
+</ul>
+</section>
+<section id="fragments" class="slide level2">
+<h2>Fragments</h2>
+<p>You can also make a point with fragments</p>
+<div class="fragment">
+<div class="fragment">
+<p>Fade in</p>
+</div>
+<div class="fragment fade-out">
+<p>Fade out</p>
+</div>
+<div class="fragment highlight-red">
+<p>Highlight red</p>
+</div>
+<div class="fragment fade-in-then-out">
+<p>Fade in, then out</p>
+</div>
+<div class="fragment fade-up">
+<p>Slide up while fading in</p>
+</div>
+</div>
+</section>
+<section id="fragments-1" class="slide level2">
+<h2>Fragments</h2>
+<pre><code>::: {.fragment}
+Fade in
+:::
+
+::: {.fragment .fade-out}
+Fade out
+:::
+
+::: {.fragment .highlight-red}
+Highlight red
+:::
+
+::: {.fragment .fade-in-then-out}
+Fade in, then out
+:::
+
+::: {.fragment .fade-up}
+Slide up while fading in
+:::</code></pre>
+</section>
+<section id="fragments-nesting" class="slide level2">
+<h2>Fragments, nesting</h2>
+<p>Fragments can be nested to affect the same “text” multiple times</p>
+<div class="fragment fade-in">
+<div class="fragment highlight-red">
+<div class="fragment semi-fade-out">
+<p>Fade in &gt; Turn red &gt; Semi fade out</p>
+</div>
+</div>
+</div>
+</section>
+<section id="fragments-nesting-1" class="slide level2">
+<h2>Fragments, nesting</h2>
+<pre><code>::: {.fragment .fade-in}
+::: {.fragment .highlight-red}
+::: {.fragment .semi-fade-out}
+Fade in &gt; Turn red &gt; Semi fade out
+:::
+:::
+:::</code></pre>
+</section>
+<section id="fragments-spans" class="slide level2">
+<h2>Fragments, spans</h2>
+<p>This is an <span class="fragment highlight-red">important sentence!</span></p>
+<div class="fragment">
+<pre><code>This is an [important sentence!]{.fragment .highlight-red}</code></pre>
+</div>
+<div class="fragment">
+<p><br></p>
+<p>Mind the <span class="fragment fade-in">gap</span> when riding the rail!</p>
+</div>
+<div class="fragment">
+<pre><code>Mind the [gap]{.fragment .fade-in} when riding the rail!</code></pre>
+</div>
+</section>
+<section id="fragments-order" class="slide level2">
+<h2>Fragments, order</h2>
+<div class="fragment" data-fragment-index="3">
+<p>Appears last</p>
+</div>
+<div class="fragment" data-fragment-index="1">
+<p>Appears first</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>Appears second</p>
+</div>
+</section>
+<section id="fragments-order-1" class="slide level2">
+<h2>Fragments, order</h2>
+<pre><code>::: {.fragment fragment-index=3}
+Appears last
+:::
+
+::: {.fragment fragment-index=1}
+Appears first
+:::
+
+::: {.fragment fragment-index=2}
+Appears second
+:::</code></pre>
+</section>
 <section class="slide level2">
 
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb7-2"><a href="#cb7-2"></a>  revealjs:</span>
-<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">#    theme: dark</span></span>
-<span id="cb7-4"><a href="#cb7-4"></a>    scrollable: true</span>
-<span id="cb7-5"><a href="#cb7-5"></a>    slide-level: 2</span>
-<span id="cb7-6"><a href="#cb7-6"></a>    height: 900</span>
-<span id="cb7-7"><a href="#cb7-7"></a>    width: 1600</span>
-<span id="cb7-8"><a href="#cb7-8"></a>    toc: false</span>
-<span id="cb7-9"><a href="#cb7-9"></a>    from: markdown+emoji  #- usar emojis https://gist.github.com/rxaviers/7360908)</span>
-<span id="cb7-10"><a href="#cb7-10"></a>    center-title-slide: true</span>
-<span id="cb7-11"><a href="#cb7-11"></a>    title-slide-attributes: #- atributos para la slide de titulo</span>
-<span id="cb7-12"><a href="#cb7-12"></a>      data-background-color: &quot;#562457&quot;   #- color de R-ladies</span>
-<span id="cb7-13"><a href="#cb7-13"></a>      #data-background-image: /imagenes/economia.gif</span>
-<span id="cb7-14"><a href="#cb7-14"></a>      #data-background-size: contain      </span>
-<span id="cb7-15"><a href="#cb7-15"></a>    preview-links: auto  #- true: abre un iframe en lugar de abrir ventana</span>
-<span id="cb7-16"><a href="#cb7-16"></a>    #multiplex: true  #- para que puedas manejar las slides del publico</span>
-<span id="cb7-17"><a href="#cb7-17"></a>    link-external-newwindow: true</span>
-<span id="cb7-18"><a href="#cb7-18"></a>    transition: fade</span>
-<span id="cb7-19"><a href="#cb7-19"></a>    #height: 900</span>
-<span id="cb7-20"><a href="#cb7-20"></a>    #width: 1600</span>
-<span id="cb7-21"><a href="#cb7-21"></a>    fontcolor: &quot;#262d36&quot;</span>
-<span id="cb7-22"><a href="#cb7-22"></a>    highlight-style: a11y</span>
-<span id="cb7-23"><a href="#cb7-23"></a>    code-line-numbers: true</span>
-<span id="cb7-24"><a href="#cb7-24"></a>    number-sections: false</span>
-<span id="cb7-25"><a href="#cb7-25"></a>    slide-number: c/t   # https://pandoc.org/MANUAL.html#structuring-the-slide-show</span>
-<span id="cb7-26"><a href="#cb7-26"></a>    incremental: false   # https://quarto.org/docs/presentations/#incremental-lists</span>
-<span id="cb7-27"><a href="#cb7-27"></a>#logo: imagenes/economia.gif</span>
-<span id="cb7-28"><a href="#cb7-28"></a>footer: |</span>
-<span id="cb7-29"><a href="#cb7-29"></a>        https://go.uv.es/pjperez/intro.to.quarto</span>
-<span id="cb7-30"><a href="#cb7-30"></a>revealjs-plugins: <span class="co">[</span><span class="ot">lightbox, pointer</span><span class="co">]</span></span>
-<span id="cb7-31"><a href="#cb7-31"></a>  # - lightbox</span>
-<span id="cb7-32"><a href="#cb7-32"></a>  # - pointer  # hay q apretar q</span>
-<span id="cb7-33"><a href="#cb7-33"></a>#css: assets/styles_slides_intro.css</span>
-<span id="cb7-34"><a href="#cb7-34"></a>    #theme: <span class="co">[</span><span class="ot">moon, custom.scss</span><span class="co">]</span></span>
-<span id="cb7-35"><a href="#cb7-35"></a>embed-resources: true</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb15-2"><a href="#cb15-2"></a>  revealjs:</span>
+<span id="cb15-3"><a href="#cb15-3"></a><span class="fu">#    theme: dark</span></span>
+<span id="cb15-4"><a href="#cb15-4"></a>    scrollable: true</span>
+<span id="cb15-5"><a href="#cb15-5"></a>    slide-level: 2</span>
+<span id="cb15-6"><a href="#cb15-6"></a>    height: 900</span>
+<span id="cb15-7"><a href="#cb15-7"></a>    width: 1600</span>
+<span id="cb15-8"><a href="#cb15-8"></a>    toc: false</span>
+<span id="cb15-9"><a href="#cb15-9"></a>    from: markdown+emoji  #- usar emojis https://gist.github.com/rxaviers/7360908)</span>
+<span id="cb15-10"><a href="#cb15-10"></a>    center-title-slide: true</span>
+<span id="cb15-11"><a href="#cb15-11"></a>    title-slide-attributes: #- atributos para la slide de titulo</span>
+<span id="cb15-12"><a href="#cb15-12"></a>      data-background-color: &quot;#562457&quot;   #- color de R-ladies</span>
+<span id="cb15-13"><a href="#cb15-13"></a>      #data-background-image: /imagenes/economia.gif</span>
+<span id="cb15-14"><a href="#cb15-14"></a>      #data-background-size: contain      </span>
+<span id="cb15-15"><a href="#cb15-15"></a>    preview-links: auto  #- true: abre un iframe en lugar de abrir ventana</span>
+<span id="cb15-16"><a href="#cb15-16"></a>    #multiplex: true  #- para que puedas manejar las slides del publico</span>
+<span id="cb15-17"><a href="#cb15-17"></a>    link-external-newwindow: true</span>
+<span id="cb15-18"><a href="#cb15-18"></a>    transition: fade</span>
+<span id="cb15-19"><a href="#cb15-19"></a>    #height: 900</span>
+<span id="cb15-20"><a href="#cb15-20"></a>    #width: 1600</span>
+<span id="cb15-21"><a href="#cb15-21"></a>    fontcolor: &quot;#262d36&quot;</span>
+<span id="cb15-22"><a href="#cb15-22"></a>    highlight-style: a11y</span>
+<span id="cb15-23"><a href="#cb15-23"></a>    code-line-numbers: true</span>
+<span id="cb15-24"><a href="#cb15-24"></a>    number-sections: false</span>
+<span id="cb15-25"><a href="#cb15-25"></a>    slide-number: c/t   # https://pandoc.org/MANUAL.html#structuring-the-slide-show</span>
+<span id="cb15-26"><a href="#cb15-26"></a>    incremental: false   # https://quarto.org/docs/presentations/#incremental-lists</span>
+<span id="cb15-27"><a href="#cb15-27"></a>#logo: imagenes/economia.gif</span>
+<span id="cb15-28"><a href="#cb15-28"></a>footer: |</span>
+<span id="cb15-29"><a href="#cb15-29"></a>        https://go.uv.es/pjperez/intro.to.quarto</span>
+<span id="cb15-30"><a href="#cb15-30"></a>revealjs-plugins: <span class="co">[</span><span class="ot">lightbox, pointer</span><span class="co">]</span></span>
+<span id="cb15-31"><a href="#cb15-31"></a>  # - lightbox</span>
+<span id="cb15-32"><a href="#cb15-32"></a>  # - pointer  # hay q apretar q</span>
+<span id="cb15-33"><a href="#cb15-33"></a>#css: assets/styles_slides_intro.css</span>
+<span id="cb15-34"><a href="#cb15-34"></a>    #theme: <span class="co">[</span><span class="ot">moon, custom.scss</span><span class="co">]</span></span>
+<span id="cb15-35"><a href="#cb15-35"></a>embed-resources: true</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section id="otros-formatos" class="title-slide slide level1 unnumbered center" data-background-color="#ebf5fb">
 <h1>Otros formatos</h1>
@@ -1440,7 +1660,7 @@ margin-right: 0; }
 <li><a href="https://quarto.org/docs/presentations/beamer.html">Dcumentación oficial</a></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>base<span class="sc">::</span><span class="fu">sqrt</span>(<span class="dv">4</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>base<span class="sc">::</span><span class="fu">sqrt</span>(<span class="dv">4</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
