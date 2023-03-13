@@ -57,7 +57,7 @@ embed-resources: true
 
 
 
-## Estructura del taller {.smaller}
+## Estructura del "taller" {.smaller}
 
 <br>
 
@@ -609,15 +609,21 @@ En esta sección dedicaremos un tiempo a la **práctica libre para que adaptes e
 
 ## El `yaml` de un post se puede especificar en **3 niveles** {background-color="#f7f5d2"}
 
-<br>
+. . . 
 
-1.  **Nivel proyecto**:todo Qproject tiene archivo `_quarto.yml`. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en `_quarto.yml`.
+1.  **Nivel proyecto**: todo Qproject tiene archivo `_quarto.yml`. Todo documento que se procese dentro del proyecto, heredará los metadatos definidos en `_quarto.yml`.
+
+. . . 
 
 2.  **Nivel carpeta**: si en una carpeta existe un documento `_metadata.yml`, los documentos de esa carpeta heredan sus metadatos. La carpeta `./posts/` de un blog suele tener un archivo `_metadata.yml`.
 
-3.  **Nivel documento**: En el yaml del propio documento `.qmd`
+. . . 
+
+3.  **Nivel documento**: en el yaml del propio documento `.qmd`
 
 <br>
+
+. . . 
 
 -   Si hay conflictos **prevalecen las opciones del nivel documento**, luego nivel carpeta y finalmente nivel proyecto.
 
@@ -688,9 +694,10 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 
 ::: columns
 ::: {.column width="48%"}
-```{=html}
-<iframe width="600px" height="400px" style="border:2px solid #dee2e6;" src="https://quarto.org/docs/guide/"></iframe>
-```
+
+<iframe src="https://quarto.org/docs/guide/" title="https://quarto.org/docs/guide/" width="960" height="500" data-external="1"></iframe>
+
+
 :::
 
 ::: {.column width="48%"}
@@ -737,6 +744,8 @@ Si quieres ver un documento `_quarto.yml` completito, ve [aquí](https://github.
 -   Sintaxis básica de `markdown`
 
 {{< include ./_includes/_tt_05_12_sintaxis-markdown.qmd >}}
+
+<br>
 
 # 3. CHUNKS {.unnumbered background-color="#b8c2aa"}
 
@@ -930,7 +939,7 @@ linestretch: 2.3          #- tamaño entre las lineas (1.6 es lo "normal")
 
 -   La apariencia visual del blog puede cambiarse utilizando CSS.
 
--   Veamos un ejemplo con el siguiente [post](/posts/post_05_css.html)
+-   Veamos un ejemplo con el siguiente [post](/blog/25_css.html)
 
 # 3. Utilizando SASS {.unnumbered background-color="#b8c2aa"}
 
@@ -946,7 +955,7 @@ linestretch: 2.3          #- tamaño entre las lineas (1.6 es lo "normal")
 
 -   **Otras referencias**, por ejemplo: [Customizing Quarto Websites: Make your website stand out using SASS](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide) o [este video](https://www.youtube.com/watch?v=ErRX8plZpQE)
 
--   Tengo una "práctica" en el [tutorial nº 6](../taller/06_taller_tuneado-del-blog.html) del taller.
+-   Tengo una "práctica" en el [tutorial nº6](https://perezp44.github.io/taller.primer.blog/taller/06_taller_tuneado-del-blog.html#sass){target="_blank"} del taller "Mi primer blog con Quarto".
 
 # Publicando el blog {.unnumbered background-color="#b8c2aa"}
 

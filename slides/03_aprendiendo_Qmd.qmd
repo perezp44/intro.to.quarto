@@ -939,7 +939,7 @@ Se usa la marca `^`, y  hay 2 sintaxis:
 
 . . .
 
-- [Aquí](http://www.sciweavers.org/free-online-latex-equation-editor) tienes un editor de ecuaciones en latex online, y [aquí](https://dereksonderegger.github.io/570L/16-rmarkdown-tricks.html) algunos ejemplos de ecuaciones escritas en Latex.
+- Tienes editores online de ecuaciones en Latex [aquí](https://www.latex4technics.com/) y [aquí](http://www.sciweavers.org/free-online-latex-equation-editor). Puedes ver algunos ejemplos de ecuaciones escritas en Latex [aquí](https://dereksonderegger.github.io/570L/16-rmarkdown-tricks.html) 
 
 <br>
 

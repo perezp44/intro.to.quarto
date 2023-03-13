@@ -3,15 +3,24 @@
 #### Layouts {.unnumbered}
 
 
-- Además de yaml, texto y chunk, para escribir con Quarto **conviene conocer la estructura o layout de los artículos** que se generan con él.
+- Además de yaml, texto y chunk, para escribir con Quarto **conviene conocer la estructura o layout de las páginas web** que generamos con Quarto.
 
-- Los "artículos" tienen un **body**, un **margin** y un área para las **sidebars**, que en nuestro caso contiene el TOC^[Además, el layout puede venir afectado por la opción `page-layout: custom   #- {article, full, custom}`]. 
+- Nuestra páginas web tienen 2 zonas si la miramos en horizontal: la sidebar y la zona reservada para el artículo
 
+- A su vez, la zona del artículo se divide en 2:  **body** y **margin**.
+
+- La versión 1.3 de Quarto, aún no disponible, permitirá controlar estos componentes del layout. Puedes verlo [aquí](https://quarto.org/docs/prerelease/1.3/grid.html)
+
+- Además, el layout puede venir afectado por la opción `page-layout: full` que tiene 3 opciones: article, full y custom 
+
+<br>
+
+> :warning: **Importante!!**
 
 - Usando **divs** se puede hacer que **alguna sección de nuestra página ocupe un espacio mayor al habitual**; es decir, mayor al espacio habitualmente reservado para el body.
 
 
-- Veamos las **posibilidades que tenemos de layout** con [este post](/posts/post_01_layout.html){target="_blank"} 
+- Veamos las **posibilidades que tenemos de layout** con [este post](/blog/21_layouts.html){target="_blank"} 
 
 <br>
 
@@ -21,7 +30,7 @@
 
 - Una de las novedades de Quarto es la posibilidad de usar **extensiones**.  Las extensiones se escriben en lenguaje [Lua](https://es.wikipedia.org/wiki/Lua). 
 
-- Para ver como **instalar y usar extensiones** vamos a ir, otra vez, a otro de los post del blog del taller: concretamente [aquí](/posts/post_02_extensiones.html){target="_blank"}  
+- Para ver como **instalar y usar extensiones** vamos a ir, otra vez, a otro de los post del blog del curso: concretamente [aquí](/blog/23_extensiones.html){target="_blank"}  
 
 
 <br>
@@ -30,8 +39,8 @@
 
 #### Imágenes {.unnumbered}
 
-- Conocemos la sintaxis básica para insertar imágenes `![](<ruta-a-imagen>)`; ahora veremos posibilidades más avanzadas
+- Conocemos ya la sintaxis básica para insertar imágenes `![](<ruta-a-imagen>)`; ahora veremos posibilidades más avanzadas
 
-- Veamos como **insertar imágenes** con [este post](/posts/post_03_imagenes.html){target="_blank"} del blog del taller.
+- Veamos como **insertar imágenes** con [este post](/blog/24_imagenes.html){target="_blank"} del blog del curso
 
 <br>
