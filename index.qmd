@@ -28,4 +28,4 @@ Los **materiales** del curso están en [Materiales](materiales.qmd).
 Para seguir el curso hay que tener acceso a R, RStudio y Quarto. En [Info](info.qmd) tienes las **instrucciones de instalación** de los 3 programas.
 
 
-Los **detalles sobre el curso**: horario, aula, ... están también en [Info](info.qmd).
+Los **detalles sobre el curso** (horario, aula, ...) están también en [Info](info.qmd).
